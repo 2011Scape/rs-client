@@ -5,8 +5,7 @@ import java.math.BigInteger;
 import java.net.URL;
 import java.util.Properties;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public class RS2Loader extends Applet {
 	private static final long serialVersionUID = 1L;
@@ -81,6 +80,8 @@ public class RS2Loader extends Applet {
 		appletFrame.getContentPane().add(appletPanel, "Center");
 		appletFrame.pack();
 		appletFrame.setVisible(true);
+		appletFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		appletFrame.setLocationRelativeTo(null);
 	}
 
 	void drawClient() {
