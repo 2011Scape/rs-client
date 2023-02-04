@@ -18,6 +18,8 @@ public class RS2Loader extends Applet {
 
 	public static boolean ENABLE_LOBBY = false;
 
+	public static boolean ENABLE_LARGE_FRAME = true;
+
 	public static void main(String[] strings) {
 		RS2Loader loader = new RS2Loader();
 		loader.doFrame();
@@ -76,7 +78,11 @@ public class RS2Loader extends Applet {
 		appletFrame.setLayout(new BorderLayout());
 		appletPanel.setLayout(new BorderLayout());
 		appletPanel.add(this);
-		appletPanel.setPreferredSize(new Dimension(765, 503));
+		if(ENABLE_LARGE_FRAME) {
+			appletPanel.setPreferredSize(new Dimension(1450, 795));
+		} else {
+			appletPanel.setPreferredSize(new Dimension(765, 503));
+		}
 		appletFrame.getContentPane().add(appletPanel, "Center");
 		appletFrame.pack();
 		appletFrame.setVisible(true);
