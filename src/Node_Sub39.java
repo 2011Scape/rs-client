@@ -11,7 +11,7 @@ public class Node_Sub39 extends Node
 	static int anInt7471;
 	static int anInt7472;
 	static int anInt7473;
-	protected int anInt7474;
+	protected int javaRelease;
 	private boolean aBoolean7475;
 	private String aString7476;
 	private int anInt7477;
@@ -72,7 +72,7 @@ public class Node_Sub39 extends Node
 		buffer.method2226(!aBoolean7475 ? 0 : 1, false);
 		buffer.method2226(anInt7488, false);
 		buffer.method2226(anInt7496, false);
-		buffer.method2226(anInt7474, false);
+		buffer.method2226(javaRelease, false);
 		buffer.method2226(anInt7470, false);
 		buffer.method2226(anInt7480, false);
 		buffer.method2226(!aBoolean7489 ? 0 : 1, false);
@@ -259,7 +259,7 @@ public class Node_Sub39 extends Node
 			} catch (Exception exception) {
 				/* empty */
 			}
-			anInt7474 = i_4_;
+			javaRelease = i_4_;
 			i = SignLink.aString3995.indexOf('.', 2) - -1;
 			i_4_ = 0;
 			try {
@@ -289,7 +289,7 @@ public class Node_Sub39 extends Node
 				/* empty */
 			}
 			anInt7480 = i_4_;
-			if ((anInt7474 ^ 0xffffffff) < -4) {
+			if ((javaRelease ^ 0xffffffff) < -4) {
 				anInt7482 = Class263.anInt3336;
 			} else {
 				anInt7482 = 0;

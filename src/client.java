@@ -1798,9 +1798,6 @@ public class client extends GameStub
 			Class366.aSeekableFile4529 = null;
 			Class99.aSeekableFile1289 = null;
 		}
-		if (Class240.aClass329_2943 != Node_Sub38_Sub1.aClass329_10086) {
-			Node_Sub15_Sub2.aBoolean9780 = true;
-		}
 		EntityNode_Sub6.aString5991 = Class22.aClass22_375.method297(-12273, Class35.anInt537);
 	}
 	
@@ -2499,8 +2496,8 @@ public class client extends GameStub
 			string += "12)" + Class213.aNode_Sub27_2512.aClass320_Sub19_7301.method3751(false) + "|";
 			string += "13)" + Class201.anInt2446 + "|";
 			string += "14)" + Class151.anInt1843;
-			if (Node_Sub23.aNode_Sub39_7201 != null) {
-				string += "|15)" + Node_Sub23.aNode_Sub39_7201.anInt7484;
+			if (Node_Sub23.instance != null) {
+				string += "|15)" + Node_Sub23.instance.anInt7484;
 			}
 			try {
 				if ((Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) ^ 0xffffffff) == -3) {

@@ -708,10 +708,12 @@ public class FloatBuffer extends Buffer
 			return true;
 		}
 		if (class123.aClass192_1576 == Class43.aClass192_665) {
+			int val = packet.method2219(-130546744);
+			System.out.println(val);
 			if (!Class329.method3833((byte) -61, Class151.anInt1843)) {
-				Node_Sub19.anInt7163 = 30 * packet.method2219(-130546744);
+				Node_Sub19.anInt7163 = 30 * val;
 			} else {
-				Node_Sub19.anInt7163 = (int) ((float) packet.method2219(-130546744) * 2.5F);
+				Node_Sub19.anInt7163 = (int) ((float) val * 2.5F);
 			}
 			class123.aClass192_1576 = null;
 			Node_Sub23_Sub1.anInt9926 = Class345.anInt4270;
@@ -1541,13 +1543,14 @@ public class FloatBuffer extends Buffer
 			return true;
 		}
 		if (class123.aClass192_1576 == Class365_Sub1.aClass192_8766) {
-			int i_223_ = packet.method2213((byte) 127);
-			int i_224_ = packet.method2209((byte) -109);
-			if ((i_224_ ^ 0xffffffff) == -65536) {
-				i_224_ = -1;
+			int delay = packet.method2213((byte) 127);
+			int song = packet.method2209((byte) -109);
+			if ((song ^ 0xffffffff) == -65536) {
+				song = -1;
 			}
-			int i_225_ = packet.method2238(true);
-			Class40.method432(i_225_, 114, i_224_, i_223_);
+			int volume = packet.method2238(true);
+			System.err.println("delay: " + delay + ", song: " + song + ", vol: " + volume);
+			Class40.method432(volume, 114, song, delay);
 			class123.aClass192_1576 = null;
 			return true;
 		}

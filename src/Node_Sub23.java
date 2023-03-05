@@ -11,7 +11,7 @@ abstract class Node_Sub23 extends Node
 	static int anInt7198;
 	static int anInt7199;
 	static int[] anIntArray7200 = new int[1];
-	static Node_Sub39 aNode_Sub39_7201;
+	static Node_Sub39 instance;
 	static int anInt7202;
 	static long aLong7203;
 	static int anInt7204;
@@ -20,7 +20,7 @@ abstract class Node_Sub23 extends Node
 	static final void method2622(int i, GraphicsToolkit graphicstoolkit, int i_0_, int i_1_, int i_2_, byte b, int i_3_) {
 		anInt7196++;
 		if (b != -77) {
-			aNode_Sub39_7201 = null;
+			instance = null;
 		}
 		if ((Class290_Sub1.aGLSprite8062 == null || Class40.aGLSprite621 == null || Exception_Sub1.aGLSprite98 == null) && Node_Sub38_Sub39.aClass302_10500.method3510(GLDrawableModel.anInt5710, (byte) 63) && Node_Sub38_Sub39.aClass302_10500.method3510(EntityNode_Sub3.anInt5965, (byte) 63) && Node_Sub38_Sub39.aClass302_10500.method3510(Class150.anInt5088, (byte) 63)) {
 			Class383 class383 = Class383.method4194(Node_Sub38_Sub39.aClass302_10500, EntityNode_Sub3.anInt5965, 0);
@@ -97,7 +97,7 @@ abstract class Node_Sub23 extends Node
 	abstract boolean method2627(byte b);
 	
 	public static void method2628(boolean bool) {
-		aNode_Sub39_7201 = null;
+		instance = null;
 		if (bool != true) {
 			anIntArray7200 = null;
 		}
@@ -109,7 +109,7 @@ abstract class Node_Sub23 extends Node
 	int method2630(int i) {
 		anInt7199++;
 		if (i != 1) {
-			aNode_Sub39_7201 = null;
+			instance = null;
 		}
 		return 0;
 	}

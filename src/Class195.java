@@ -446,8 +446,8 @@ public class Class195
 						packet.method2226(buffer.anInt7002, false);
 						packet.method2223(buffer.anInt7002, (byte) 4, buffer.aByteArray7019, 0);
 						Class269.aBoolean3472 = true;
-						Buffer buffer_39_ = new Buffer(Node_Sub23.aNode_Sub39_7201.method2923((byte) 66));
-						Node_Sub23.aNode_Sub39_7201.method2920(buffer_39_, -19819);
+						Buffer buffer_39_ = new Buffer(Node_Sub23.instance.method2923((byte) 66));
+						Node_Sub23.instance.method2920(buffer_39_, -19819);
 						packet.method2223(buffer_39_.aByteArray7019.length, (byte) 4, buffer_39_.aByteArray7019, 0);
 						packet.method2179((byte) -5, Class175.anInt2097);
 						packet.method2200(Node_Sub32.aLong7385, 1817671800);

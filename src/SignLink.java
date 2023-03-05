@@ -351,11 +351,7 @@ public class SignLink implements Runnable
 											Frame frame = new Frame("Jagex Full Screen");
 											class241.anObject2956 = frame;
 											frame.setResizable(false);
-											if (aBoolean3985) {
-												aClass11_3997.method191(frame, class241.anInt2951 >> 16, 0xffff & class241.anInt2951, 0xffff & class241.anInt2952, 106, class241.anInt2952 >>> 16);
-											} else {
-												Class.forName("cia").getMethod("enter", new Class[] { aClass4006 == null ? aClass4006 = method3646("java.awt.Frame") : aClass4006, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE }).invoke(anObject3980, new Object[] { frame, new Integer(class241.anInt2952 >>> 16), new Integer(0xffff & class241.anInt2952), new Integer(class241.anInt2951 >> 16), new Integer(0xffff & class241.anInt2951) });
-											}
+											Class.forName("cia").getMethod("enter", new Class[] { aClass4006 == null ? aClass4006 = method3646("java.awt.Frame") : aClass4006, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE }).invoke(anObject3980, new Object[] { frame, new Integer(class241.anInt2952 >>> 16), new Integer(0xffff & class241.anInt2952), new Integer(class241.anInt2951 >> 16), new Integer(0xffff & class241.anInt2951) });
 										} else if (i == 7) {
 											if (aBoolean3985) {
 												aClass11_3997.method192((Frame) class241.anObject2954, 8);
@@ -377,11 +373,7 @@ public class SignLink implements Runnable
 											} else if (aBoolean4005 && i == 15) {
 												boolean bool = (class241.anInt2952 ^ 0xffffffff) != -1;
 												Component component = (Component) class241.anObject2954;
-												if (aBoolean3985) {
-													aCallback_Sub1_3988.method82(bool, component, (byte) 95);
-												} else {
-													Class.forName("Class208").getDeclaredMethod("method2045", new Class[] { aClass4007 == null ? aClass4007 = method3646("java.awt.Component") : aClass4007, Boolean.TYPE }).invoke(anObject3990, new Object[] { component, new Boolean(bool) });
-												}
+												Class.forName("Class208").getDeclaredMethod("method2045", new Class[] { aClass4007 == null ? aClass4007 = method3646("java.awt.Component") : aClass4007, Boolean.TYPE }).invoke(anObject3990, new Object[] { component, new Boolean(bool) });
 											} else if (!aBoolean3985 && (i ^ 0xffffffff) == -18) {
 												Object[] objects = (Object[]) class241.anObject2954;
 												Class.forName("Class208").getDeclaredMethod("method2047", new Class[] { aClass4007 == null ? aClass4007 = method3646("java.awt.Component") : aClass4007, aClass4008 == null ? aClass4008 = method3646("[I") : aClass4008, Integer.TYPE, Integer.TYPE, aClass4009 == null ? aClass4009 = method3646("java.awt.Point") : aClass4009 }).invoke(anObject3990, new Object[] { (Component) objects[0], (int[]) objects[1], new Integer(class241.anInt2952), new Integer(class241.anInt2951), (Point) objects[2] });

@@ -24,7 +24,7 @@ public class Node_Sub41 extends Node
 		boolean bool_1_ = false;
 		if (Class240.aSignLink2946.aBoolean4005 && !Class240.aSignLink2946.aBoolean3985) {
 			bool = true;
-			if (Node_Sub23.aNode_Sub39_7201.anInt7484 < 512 && (Node_Sub23.aNode_Sub39_7201.anInt7484 ^ 0xffffffff) != -1) {
+			if (Node_Sub23.instance.anInt7484 < 512 && (Node_Sub23.instance.anInt7484 ^ 0xffffffff) != -1) {
 				bool = false;
 			}
 			if (SignLink.aString3981.startsWith("win")) {

@@ -44,35 +44,7 @@ public class Callback_Sub1 extends Callback
 			User32.SetCursorPos(i, i_6_);
 		}
 	}
-	
-	final void method82(boolean bool, Component component, byte b) {
-		WComponentPeer wcomponentpeer = (WComponentPeer) component.getPeer();
-		int i = wcomponentpeer.getTopHwnd();
-		if (i != anInt2 || bool != aBoolean3) {
-			if (!aBoolean5) {
-				anInt4 = User32.LoadCursor(0, 32512);
-				Root.alloc(this);
-				aBoolean5 = true;
-			}
-			if ((anInt2 ^ 0xffffffff) != (i ^ 0xffffffff)) {
-				if (anInt2 != 0) {
-					aBoolean3 = true;
-					User32.SendMessage(i, 101024, 0, 0);
-					synchronized (this) {
-						User32.SetWindowLong(anInt2, -4, anInt1);
-					}
-				}
-				synchronized (this) {
-					anInt2 = i;
-					anInt1 = User32.SetWindowLong(anInt2, -4, (Object) this);
-				}
-			}
-			int i_7_ = 1 % ((b - 35) / 46);
-			aBoolean3 = bool;
-			User32.SendMessage(i, 101024, 0, 0);
-		}
-	}
-	
+
 	Callback_Sub1() {
 		/* empty */
 	}

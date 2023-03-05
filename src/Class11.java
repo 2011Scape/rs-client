@@ -15,22 +15,6 @@ public class Class11 implements IEnumModesCallback
 	private static int anInt177;
 	private DirectDraw aDirectDraw178 = new DirectDraw();
 	private static int[] anIntArray179;
-	
-	final void method191(Frame frame, int i, int i_0_, int i_1_, int i_2_, int i_3_) {
-		frame.setVisible(true);
-		WComponentPeer wcomponentpeer = (WComponentPeer) frame.getPeer();
-		int i_4_ = wcomponentpeer.getHwnd();
-		User32.SetWindowLong(i_4_, -16, -2147483648);
-		User32.SetWindowLong(i_4_, -20, 8);
-		if (i_2_ > 105) {
-			aDirectDraw178.setCooperativeLevel((java.awt.Component) frame, 17);
-			aDirectDraw178.setDisplayMode(i_3_, i_1_, i, i_0_, 0);
-			frame.setBounds(0, 0, i_3_, i_1_);
-			frame.toFront();
-			frame.requestFocus();
-		}
-	}
-	
 	public Class11() {
 		aDirectDraw178.initialize(null);
 	}

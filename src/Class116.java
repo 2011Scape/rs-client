@@ -5,7 +5,7 @@
 public class Class116 implements Interface7
 {
 	protected int anInt5071;
-	static boolean aBoolean5072 = false;
+	static boolean aBoolean5072 = true;
 	static Class318 aClass318_5073 = new Class318(13, 2);
 	static int anInt5074;
 	static Class94 aClass94_5075 = new Class94();

@@ -4581,17 +4581,19 @@ public class Class305
 				return;
 			}
 			if (i == 5436) {
-				if (Node_Sub23.aNode_Sub39_7201.anInt7474 < 6) {
+				// TODO: utilize this properly
+				/*if (Node_Sub23.instance.javaRelease < 6) {
 					anIntArray3840[anInt3846++] = 0;
 				} else {
-					if (Node_Sub23.aNode_Sub39_7201.anInt7474 == 6 && Node_Sub23.aNode_Sub39_7201.anInt7480 < 10) {
+					if (Node_Sub23.instance.javaRelease == 6 && Node_Sub23.instance.anInt7480 < 10) {
 						anIntArray3840[anInt3846++] = 0;
 					} else {
 						anIntArray3840[anInt3846++] = 1;
 						return;
 					}
 					return;
-				}
+				}*/
+				anIntArray3840[anInt3846++] = 1;
 				return;
 			}
 		} else if (i < 5600) {
@@ -5324,7 +5326,7 @@ public class Class305
 				return;
 			}
 			if (i == 6147) {
-				anIntArray3840[anInt3846++] = Node_Sub23.aNode_Sub39_7201.anInt7484 < 512 || CacheNode_Sub1.aBoolean9425 || Node_Sub12.aBoolean5456 ? 1 : 0;
+				anIntArray3840[anInt3846++] = Node_Sub23.instance.anInt7484 < 512 || CacheNode_Sub1.aBoolean9425 || Node_Sub12.aBoolean5456 ? 1 : 0;
 				return;
 			}
 			if (i == 6148) {

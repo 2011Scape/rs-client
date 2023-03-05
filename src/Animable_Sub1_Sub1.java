@@ -342,11 +342,11 @@ public class Animable_Sub1_Sub1 extends Animable_Sub1 implements Interface19
 				file = new File(file.getCanonicalPath());
 				Class var_class_31_ = Class.forName("java.lang.Runtime");
 				Class var_class_32_ = Class.forName("java.lang.reflect.AccessibleObject");
-				Method method = var_class_32_.getDeclaredMethod("setAccessible", new Class[] { Boolean.TYPE });
-				Method method_33_ = var_class_31_.getDeclaredMethod("load0", new Class[] { Class.forName("java.lang.Class"), Class.forName("java.lang.String") });
-				method.invoke(method_33_, new Object[] { Boolean.TRUE });
-				method_33_.invoke(Runtime.getRuntime(), new Object[] { var_class, file.getPath() });
-				method.invoke(method_33_, new Object[] { Boolean.FALSE });
+				Method method = var_class_32_.getDeclaredMethod("setAccessible", Boolean.TYPE);
+				Method method_33_ = var_class_31_.getDeclaredMethod("load0", Class.forName("java.lang.Class"), Class.forName("java.lang.String"));
+				method.invoke(method_33_, Boolean.TRUE);
+				method_33_.invoke(Runtime.getRuntime(), var_class, file.getPath());
+				method.invoke(method_33_, Boolean.FALSE);
 				Class71.aHashtable958.put(string, var_class);
 				return true;
 			} catch (NoSuchMethodException nosuchmethodexception) {

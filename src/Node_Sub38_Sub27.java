@@ -59,7 +59,7 @@ public class Node_Sub38_Sub27 extends Node_Sub38
 				if (Class93.aGraphicsToolkit1241.k()) {
 					boolean bool_1_ = true;
 					try {
-						bool_1_ = Node_Sub23.aNode_Sub39_7201.anInt7484 > 256;
+						bool_1_ = Node_Sub23.instance.anInt7484 > 256;
 					} catch (Throwable throwable) {
 						/* empty */
 					}

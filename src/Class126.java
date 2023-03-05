@@ -265,7 +265,7 @@ public class Class126
 				}
 				if (string.equals("systemmem")) {
 					try {
-						Node_Sub7.method2422((byte) 43, "System memory: " + jagmisc.getAvailablePhysicalMemory() / 1048576L + "/" + Node_Sub23.aNode_Sub39_7201.anInt7484 + "Mb");
+						Node_Sub7.method2422((byte) 43, "System memory: " + jagmisc.getAvailablePhysicalMemory() / 1048576L + "/" + Node_Sub23.instance.anInt7484 + "Mb");
 					} catch (Throwable throwable) {
 						/* empty */
 					}

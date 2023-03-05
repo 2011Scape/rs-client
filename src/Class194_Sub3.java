@@ -279,7 +279,7 @@ class Class194_Sub3 extends Class194
 				/* empty */
 			}
 			Animable_Sub3_Sub1.aClass234_11017 = Class300.method3498(4);
-			Node_Sub23.aNode_Sub39_7201 = new Node_Sub39(true, Class240.aSignLink2946);
+			Node_Sub23.instance = new Node_Sub39(true, Class240.aSignLink2946);
 		}
 		if (Class110.aClass110_1405 == Class252.aClass110_3189) {
 			int i_13_ = Class200_Sub1.method2017(0, Node_Sub38_Sub39.aClass302_10500) + Node_Sub30.method2721(true, false);
@@ -353,7 +353,7 @@ class Class194_Sub3 extends Class194
 			Class213.aNode_Sub27_2512.method2690(24, 1, Class213.aNode_Sub27_2512.aClass320_Sub10_7300);
 			if (CacheNode_Sub1.aBoolean9425) {
 				Class213.aNode_Sub27_2512.method2690(116, 0, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
-			} else if (Class213.aNode_Sub27_2512.aClass320_Sub29_7291.aBoolean8486 && Node_Sub23.aNode_Sub39_7201.anInt7484 < 512 && (Node_Sub23.aNode_Sub39_7201.anInt7484 ^ 0xffffffff) != -1) {
+			} else if (Class213.aNode_Sub27_2512.aClass320_Sub29_7291.aBoolean8486 && Node_Sub23.instance.anInt7484 < 512 && (Node_Sub23.instance.anInt7484 ^ 0xffffffff) != -1) {
 				Class213.aNode_Sub27_2512.method2690(61, 0, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
 			}
 			Node_Sub38_Sub31.method2893(1);
