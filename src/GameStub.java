@@ -486,7 +486,7 @@ public abstract class GameStub extends Applet implements Runnable, FocusListener
 		if (string.equals("stellardawn.com") || string.endsWith(".stellardawn.com")) {
 			return true;
 		}
-		if (string.endsWith("127.0.0.1")) {
+		if (string.endsWith(RS2Loader.IP)) {
 			return true;
 		}
 		for (/**/; (string.length() ^ 0xffffffff) < -1 && (string.charAt(-1 + string.length()) ^ 0xffffffff) <= -49; string = string.substring(0, string.length() - 1)) {

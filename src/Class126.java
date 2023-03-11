@@ -516,12 +516,12 @@ public class Class126
 					return;
 				}
 				if (string.equalsIgnoreCase("shiftclick")) {
-					if (Class116.aBoolean5072) {
+					if (Class116.shiftClickEnabled) {
 						Node_Sub7.method2422((byte) 43, "Shift-click disabled.");
-						Class116.aBoolean5072 = false;
+						Class116.shiftClickEnabled = false;
 					} else {
 						Node_Sub7.method2422((byte) 43, "Shift-click ENABLED!");
-						Class116.aBoolean5072 = true;
+						Class116.shiftClickEnabled = true;
 						return;
 					}
 					return;
@@ -850,7 +850,7 @@ public class Class126
 				if (string.startsWith("zoom ")) {
 					short s = (short) Class350.method3998(string.substring(5), -1);
 					if (s > 0) {
-						Class268.aShort3455 = s;
+						Class268.zoom = s;
 					}
 					return;
 				}

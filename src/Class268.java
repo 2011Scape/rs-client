@@ -8,7 +8,7 @@ public class Class268
 	static int anInt3452;
 	protected int anInt3453;
 	protected int anInt3454;
-	static short aShort3455 = 320;
+	static short zoom = 320;
 	protected int anInt3456;
 	protected short aShort3457;
 	protected short aShort3458;

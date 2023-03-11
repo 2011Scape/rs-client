@@ -44,7 +44,7 @@ public class Class168
 				Node_Sub38_Sub23.aCacheNode_Sub13_10343 = null;
 				Class52.aCacheNode_Sub13_788 = null;
 			} else {
-				if (!Class116.aBoolean5072 || !Class175.aClass291_2100.method3450(-69, 81) || (Class315.anInt4035 ^ 0xffffffff) >= -3) {
+				if (!Class116.shiftClickEnabled || !Class175.aClass291_2100.method3450(-69, 81) || (Class315.anInt4035 ^ 0xffffffff) >= -3) {
 					Node_Sub38_Sub23.aCacheNode_Sub13_10343 = (CacheNode_Sub13) Class368.aClass312_4549.aNode3958.aNode2799;
 				} else {
 					Node_Sub38_Sub23.aCacheNode_Sub13_10343 = (CacheNode_Sub13) Class368.aClass312_4549.aNode3958.aNode2799.aNode2799;

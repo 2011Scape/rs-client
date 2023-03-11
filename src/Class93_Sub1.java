@@ -123,8 +123,17 @@ public class Class93_Sub1 extends Class93 implements MouseListener, MouseMotionL
 	public final synchronized void mouseWheelMoved(MouseWheelEvent mousewheelevent) {
 		int i = mousewheelevent.getX();
 		int i_5_ = mousewheelevent.getY();
-		int i_6_ = mousewheelevent.getWheelRotation();
-		method1052(i_5_, i, 6, 0, i_6_);
+		int rotation = mousewheelevent.getWheelRotation();
+
+		if(mousewheelevent.isControlDown()) {
+			if (Class268.zoom <= 150 && rotation == -1 || Class268.zoom >= 400 && rotation == 1) {
+				return;
+			}
+			int diff = rotation == -1 ? -15 : 15;
+			Class268.zoom = (short) (Class268.zoom + diff);
+			return;
+		}
+		method1052(i_5_, i, 6, 0, rotation);
 		mousewheelevent.consume();
 	}
 	

@@ -50,7 +50,7 @@ public class Class295
 			int i_0_ = 87 / ((-34 - i) / 61);
 			String string;
 			if (!Class87.aBoolean1185 || (Class315.anInt4035 ^ 0xffffffff) <= -3) {
-				if (!Class116.aBoolean5072 || !Class175.aClass291_2100.method3450(-46, 81) || Class315.anInt4035 <= 2) {
+				if (!Class116.shiftClickEnabled || !Class175.aClass291_2100.method3450(-46, 81) || Class315.anInt4035 <= 2) {
 					CacheNode_Sub13 cachenode_sub13 = Node_Sub38_Sub23.aCacheNode_Sub13_10343;
 					if (cachenode_sub13 == null) {
 						return;

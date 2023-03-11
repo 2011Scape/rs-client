@@ -19,6 +19,8 @@ public class RS2Loader extends Applet {
 	public static boolean ENABLE_LOBBY = false;
 
 	public static boolean ENABLE_LARGE_FRAME = true;
+	
+	public static String IP = "127.0.0.1";
 
 	public static void main(String[] strings) {
 		RS2Loader loader = new RS2Loader();
@@ -46,7 +48,7 @@ public class RS2Loader extends Applet {
 		properties.put("colourid", "0");
 		properties.put("worldid", "16");
 		properties.put("lobbyid", "15");
-		properties.put("lobbyaddress", loadRunescape ? "lobby7.runescape.com" : "127.0.0.1");
+		properties.put("lobbyaddress", loadRunescape ? "lobby7.runescape.com" : RS2Loader.IP);
 		properties.put("demoid", "0");
 		properties.put("demoaddress", "");
 		properties.put("modewhere", "1");
@@ -62,7 +64,7 @@ public class RS2Loader extends Applet {
 		properties.put("haveie6", "0");
 		properties.put("havefirefox", "1");
 		properties.put("cookieprefix", "");
-		properties.put("cookiehost", "127.0.0.1");
+		properties.put("cookiehost", RS2Loader.IP);
 		properties.put("cachesubdirid", "0");
 		properties.put("crashurl", "");
 		properties.put("unsignedurl", "");
@@ -74,7 +76,7 @@ public class RS2Loader extends Applet {
 	}
 
 	void openFrame() {
-		appletFrame = new JFrame("Jagex");
+		appletFrame = new JFrame("2011Scape");
 		appletFrame.setLayout(new BorderLayout());
 		appletPanel.setLayout(new BorderLayout());
 		appletPanel.add(this);
@@ -114,7 +116,7 @@ public class RS2Loader extends Applet {
 			if (loadRunescape) {
 				return new URL("http://world157.runescape.com/");
 			}
-			return new URL("http://127.0.0.1");
+			return new URL("http://" + RS2Loader.IP);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;

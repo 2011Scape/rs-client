@@ -63,7 +63,7 @@ abstract class Node_Sub23 extends Node
 		} else if (i_16_ > 100) {
 			i_16_ = 100;
 		}
-		int i_17_ = i_16_ * (Class268.aShort3455 - Class144_Sub1.aShort6804) / 100 + Class144_Sub1.aShort6804;
+		int i_17_ = i_16_ * (Class268.zoom - Class144_Sub1.aShort6804) / 100 + Class144_Sub1.aShort6804;
 		Class308.anInt3912 = Class308.anInt3916 * i_17_ >> 8;
 		i_9_ = i_17_ * i_9_ >> 8;
 		int i_18_ = 0x3fff & -i + 16384;

@@ -5356,9 +5356,9 @@ public class Class305
 				if (Class144_Sub1.aShort6804 <= 0) {
 					Class144_Sub1.aShort6804 = (short) 256;
 				}
-				Class268.aShort3455 = (short) anIntArray3840[anInt3846 + 1];
-				if (Class268.aShort3455 <= 0) {
-					Class268.aShort3455 = (short) 320;
+				Class268.zoom = (short) anIntArray3840[anInt3846 + 1];
+				if (Class268.zoom <= 0) {
+					Class268.zoom = (short) 320;
 				}
 				return;
 			}
@@ -5397,7 +5397,7 @@ public class Class305
 			}
 			if (i == 6204) {
 				anIntArray3840[anInt3846++] = Class144_Sub1.aShort6804;
-				anIntArray3840[anInt3846++] = Class268.aShort3455;
+				anIntArray3840[anInt3846++] = Class268.zoom;
 				return;
 			}
 			if (i == 6205) {

@@ -1759,9 +1759,9 @@ public class client extends GameStub
 			Node_Sub15_Sub13.aClass197_9871.anInt2417 = Node_Sub15_Sub13.aClass197_9871.worldId + 40000;
 			Node_Sub15_Sub13.aClass197_9871.worldPort = 50000 + Node_Sub15_Sub13.aClass197_9871.worldId;
 		} else if (CacheNode_Sub2.aClass329_9436 == Node_Sub38_Sub1.aClass329_10086) {
-			Class320_Sub24.aClass197_8443.aString2422 = "127.0.0.1";
+			Class320_Sub24.aClass197_8443.aString2422 = RS2Loader.IP;
 			Class320_Sub24.aClass197_8443.anInt2417 = 40000 - -Class320_Sub24.aClass197_8443.worldId;
-			Node_Sub15_Sub13.aClass197_9871.aString2422 = "127.0.0.1";
+			Node_Sub15_Sub13.aClass197_9871.aString2422 = RS2Loader.IP;
 			Class320_Sub24.aClass197_8443.worldPort = Class320_Sub24.aClass197_8443.worldId + 50000;
 			Node_Sub15_Sub13.aClass197_9871.anInt2417 = Node_Sub15_Sub13.aClass197_9871.worldId + 40000;
 			Node_Sub15_Sub13.aClass197_9871.worldPort = 50000 + Node_Sub15_Sub13.aClass197_9871.worldId;
