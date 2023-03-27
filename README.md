@@ -9,12 +9,12 @@
 
 # RS2 Client
 
-This repository hosts the client files. The main loader class is RS2Loader and requires JDK11.
+This repository hosts the com.jagex.client files. The main loader class is com.jagex.RS2Loader and requires JDK11.
 
 # Community
 
 - Discord: [2011Scape Discord](https://discord.gg/jDbBAKjhxh)
-- Reddit: [r/2011Scape](https://www.reddit.com/r/2011scape/)
+- Reddit: [com.jagex.r/2011Scape](https://www.reddit.com/com.jagex.r/2011scape/)
 
 # Quick Links
 
@@ -25,6 +25,6 @@ This repository hosts the client files. The main loader class is RS2Loader and r
 - [Installation Guide](https://github.com/2011Scape/installation-guide)
 
 <b>Extras</b>
-- [OpenRS2 Archive](https://archive.openrs2.org/)
+- [OpenRS2 com.jagex.Archive](https://archive.openrs2.org/)
 - [Lost City, 2004 Emulator](https://discord.gg/hN3tHUmZEN)
 - [2009Scape, 2009 Emulator](https://2009scape.org)
