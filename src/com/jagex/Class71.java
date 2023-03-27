@@ -10,7 +10,7 @@ public class Class71
 	static int anInt955;
 	protected int anInt956;
 	static int anInt957;
-	static Hashtable aHashtable958 = new Hashtable();
+	static Hashtable<String, Class>  aHashtable958 = new Hashtable();
 	static int anInt959;
 	private Class61 aClass61_960 = new Class61(64);
 	protected int anInt961 = 0;

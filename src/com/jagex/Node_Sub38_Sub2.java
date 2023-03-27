@@ -15,7 +15,7 @@ public class Node_Sub38_Sub2 extends Node_Sub38
 		if (i != 1) {
 			return true;
 		}
-		return Animable_Sub1_Sub1.method830(aClass10097 == null ? aClass10097 = method2795("com.jagex.Class304") : aClass10097, true, string);
+		return Animable_Sub1_Sub1.method830(aClass10097 == null ? aClass10097 = method2795("com.jagex.Class304") : aClass10097, string);
 	}
 	
 	final int[][] method2778(int i, boolean bool) {

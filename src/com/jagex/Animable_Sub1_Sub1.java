@@ -1,6 +1,5 @@
 package com.jagex;
 import java.io.File;
-import java.lang.reflect.Method;
 
 public class Animable_Sub1_Sub1 extends Animable_Sub1 implements Interface19
 {
@@ -318,41 +317,21 @@ public class Animable_Sub1_Sub1 extends Animable_Sub1 implements Interface19
 			}
 		}
 	}
-	
-	static final boolean method830(Class var_class, boolean bool, String string) {
-		if (bool != true) {
-			method827((byte) 100);
-		}
-		anInt10591++;
-		Class var_class_30_ = (Class) Class71.aHashtable958.get(string);
+
+	static boolean method830(Class<?> var_class, String string) {
+		Class<?> var_class_30_ = (Class<?>) Class71.aHashtable958.get(string);
 		if (var_class_30_ != null) {
-			if (var_class_30_.getClassLoader() != var_class.getClassLoader()) {
-				return false;
-			}
-			return true;
+			return var_class_30_.getClassLoader() == var_class.getClassLoader();
 		}
-		File file = null;
-		if (file == null) {
-			file = (File) Class85.aHashtable1157.get(string);
-		}
+		File file = (File) Class85.aHashtable1157.get(string);
 		if (file != null) {
 			try {
 				file = new File(file.getCanonicalPath());
-				Class var_class_31_ = Class.forName("java.lang.Runtime");
-				Class var_class_32_ = Class.forName("java.lang.reflect.AccessibleObject");
-				Method method = var_class_32_.getDeclaredMethod("setAccessible", Boolean.TYPE);
-				Method method_33_ = var_class_31_.getDeclaredMethod("load0", Class.forName("java.lang.Class"), Class.forName("java.lang.String"));
-				method.invoke(method_33_, Boolean.TRUE);
-				method_33_.invoke(Runtime.getRuntime(), var_class, file.getPath());
-				method.invoke(method_33_, Boolean.FALSE);
+				System.load(file.getPath());
 				Class71.aHashtable958.put(string, var_class);
 				return true;
-			} catch (NoSuchMethodException nosuchmethodexception) {
-				System.load(file.getPath());
-				Class71.aHashtable958.put(string, aClass10619 == null ? aClass10619 = method832("Class304") : aClass10619);
-				return true;
 			} catch (Throwable throwable) {
-				/* empty */
+				throw new RuntimeException(throwable);
 			}
 		}
 		return false;
