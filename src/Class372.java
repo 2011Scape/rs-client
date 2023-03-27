@@ -41,6 +41,9 @@ public class Class372
 	static final void method4103(int i, Actor actor, int i_0_) {
 		anInt4587++;
 		if (actor.anIntArray10817 != null) {
+			if(i_0_ > actor.anIntArray10817.length) {
+				i_0_ = actor.anIntArray10817.length - 2;
+			}
 			int i_1_ = actor.anIntArray10817[1 + i_0_];
 			if (actor.anAnimator10876.method250((byte) -126) != i_1_) {
 				actor.anAnimator10876.method234(actor.anAnimator10876.method223(88), i_1_, 127);
