@@ -125,7 +125,7 @@ public class Class93_Sub1 extends Class93 implements MouseListener, MouseMotionL
 		int i_5_ = mousewheelevent.getY();
 		int rotation = mousewheelevent.getWheelRotation();
 
-		if(mousewheelevent.isControlDown()) {
+		if(mousewheelevent.isControlDown() && !mousewheelevent.isShiftDown()) {
 			if (Class268.zoom <= 150 && rotation == -1 || Class268.zoom >= 400 && rotation == 1) {
 				return;
 			}
