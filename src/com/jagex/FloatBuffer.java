@@ -24,7 +24,7 @@ public class FloatBuffer extends Buffer
 				interface19 = (Interface19) CacheNode_Sub8.method2320(node_sub19.anInt7165, node_sub19.anInt7171, node_sub19.anInt7161);
 			}
 			if ((node_sub19.anInt7166 ^ 0xffffffff) == -3) {
-				interface19 = (Interface19) Class262_Sub20.method3203(node_sub19.anInt7165, node_sub19.anInt7171, node_sub19.anInt7161, aClass9385 != null ? aClass9385 : (aClass9385 = method2253("Interface19")));
+				interface19 = (Interface19) Class262_Sub20.method3203(node_sub19.anInt7165, node_sub19.anInt7171, node_sub19.anInt7161, aClass9385 != null ? aClass9385 : (aClass9385 = method2253("com.jagex.Interface19")));
 			}
 			if ((node_sub19.anInt7166 ^ 0xffffffff) == -4) {
 				interface19 = (Interface19) Class270_Sub1_Sub1.method3303(node_sub19.anInt7165, node_sub19.anInt7171, node_sub19.anInt7161);
