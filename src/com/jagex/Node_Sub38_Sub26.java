@@ -74,7 +74,7 @@ public class Node_Sub38_Sub26 extends Node_Sub38
 		if (i != 0) {
 			int i_8_ = buffer.method2186(-63);
 			if (i_8_ < 0 || (Class59.anInt866 ^ 0xffffffff) != -1 && i_8_ > Class59.anInt866) {
-				throw new RuntimeException();
+				return new byte[1];
 			}
 			byte[] bs_9_ = new byte[i_8_];
 			if ((i ^ 0xffffffff) != -2) {
