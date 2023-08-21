@@ -212,7 +212,7 @@ abstract class GraphicsToolkit
 			return Node_Sub20.method2613(i_113_, 1, class302, var_d, canvas);
 		}
 		if ((i_114_ ^ 0xffffffff) == -4) {
-			return Class306.method3566(class302, i_113_, 89, var_d, canvas);
+			return Class306.initD3D(class302, i_113_, var_d, canvas);
 		}
 		throw new IllegalArgumentException("UM");
 	}
