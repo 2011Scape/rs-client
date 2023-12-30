@@ -68,7 +68,7 @@ public class Class331
 		anInt4137++;
 		String string = "tele " + i + "," + (i_9_ >> 6) + "," + (i_8_ >> 6) + "," + (i_9_ & 0x3f) + "," + (i_8_ & 0x3f);
 		System.out.println(string);
-		Class126.method1538(90, true, bool, string);
+		DevConsoleNode.processConsoleCommands(90, true, bool, string);
 	}
 	
 	Class331(Buffer buffer) {

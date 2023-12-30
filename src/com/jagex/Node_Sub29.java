@@ -7,7 +7,7 @@ abstract class Node_Sub29 extends Node
 	static int anInt7335;
 	private int anInt7336;
 	static int anInt7337;
-	static boolean aBoolean7338 = false;
+	static boolean areNpcsHidden = false;
 	protected float aFloat7339;
 	protected int anInt7340;
 	private int anInt7341;

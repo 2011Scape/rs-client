@@ -40,7 +40,7 @@ public class client extends GameStub
 		if (aa.anInt101 == 3) {
 			i_0_ = Class121.aClass206Array1529.length;
 		} else {
-			i_0_ = Node_Sub29.aBoolean7338 ? i : i + Node_Sub25_Sub3.anInt9987;
+			i_0_ = Node_Sub29.areNpcsHidden ? i : i + Node_Sub25_Sub3.anInt9987;
 		}
 		for (int i_1_ = 0; i_1_ < i_0_; i_1_++) {
 			Actor actor;
@@ -88,7 +88,7 @@ public class client extends GameStub
 		if (aa.anInt101 == 3) {
 			i_4_ = Class121.aClass206Array1529.length;
 		} else {
-			i_4_ = Node_Sub29.aBoolean7338 ? i_3_ : i_3_ + Node_Sub25_Sub3.anInt9987;
+			i_4_ = Node_Sub29.areNpcsHidden ? i_3_ : i_3_ + Node_Sub25_Sub3.anInt9987;
 		}
 		for (int i_5_ = 0; i_5_ < i_4_; i_5_++) {
 			Actor actor;

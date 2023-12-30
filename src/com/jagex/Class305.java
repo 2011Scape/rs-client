@@ -4533,7 +4533,7 @@ public class Class305
 				return;
 			}
 			if (i == 5429) {
-				Class126.method1538(100, false, false, aStringArray3855[--anInt3841]);
+				DevConsoleNode.processConsoleCommands(100, false, false, aStringArray3855[--anInt3841]);
 				return;
 			}
 			if (i == 5430) {

@@ -20,10 +20,10 @@ public class SignLink implements Runnable
 	private static int anInt3978;
 	protected FileOnDisk aFileOnDisk3979 = null;
 	private Object anObject3980;
-	static String aString3981;
-	static String aString3982;
+	static String osName;
+	static String osVersion;
 	private Class241 aClass241_3983 = null;
-	static String aString3984;
+	static String osArchitecture;
 	protected boolean aBoolean3985;
 	private Class241 aClass241_3986;
 	private static String aString3987;
@@ -80,7 +80,7 @@ public class SignLink implements Runnable
 	
 	private static final FileOnDisk method3630(String string, int i, String string_5_, int i_6_) {
 		if (i_6_ != 19613) {
-			aString3984 = null;
+			osArchitecture = null;
 		}
 		String string_7_;
 		if (i == 33) {
@@ -377,7 +377,7 @@ public class SignLink implements Runnable
 												Class.forName("com.jagex.Class208").getDeclaredMethod("method2047", new Class[] { aClass4007 == null ? aClass4007 = method3646("java.awt.Component") : aClass4007, aClass4008 == null ? aClass4008 = method3646("[I") : aClass4008, Integer.TYPE, Integer.TYPE, aClass4009 == null ? aClass4009 = method3646("java.awt.Point") : aClass4009 }).invoke(anObject3990, new Object[] { (Component) objects[0], (int[]) objects[1], new Integer(class241.anInt2952), new Integer(class241.anInt2951), (Point) objects[2] });
 											} else if (i == 16) {
 												try {
-													if (!aString3981.startsWith("win")) {
+													if (!osName.startsWith("win")) {
 														throw new Exception();
 													}
 													String string = (String) class241.anObject2954;
@@ -475,16 +475,16 @@ public class SignLink implements Runnable
 		} catch (Exception exception) {
 			aString4001 = "Unknown";
 		}
-		aString3981 = aString4001.toLowerCase();
+		osName = aString4001.toLowerCase();
 		try {
-			aString3984 = System.getProperty("os.arch").toLowerCase();
+			osArchitecture = System.getProperty("os.arch").toLowerCase();
 		} catch (Exception exception) {
-			aString3984 = "";
+			osArchitecture = "";
 		}
 		try {
-			aString3982 = System.getProperty("os.version").toLowerCase();
+			osVersion = System.getProperty("os.version").toLowerCase();
 		} catch (Exception exception) {
-			aString3982 = "";
+			osVersion = "";
 		}
 		try {
 			aString3996 = System.getProperty("user.home");

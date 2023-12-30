@@ -7,7 +7,7 @@ public class Node_Sub15_Sub2 extends Node_Sub15
 	static int anInt9777;
 	private long aLong9778 = -1L;
 	static Class104 aClass104_9779;
-	static boolean aBoolean9780 = false;
+	static boolean displayRenderData = false;
 	static int anInt9781;
 	static int anInt9782;
 	static int anInt9783;
@@ -38,7 +38,7 @@ public class Node_Sub15_Sub2 extends Node_Sub15
 			i_0_ += i_2_;
 		}
 		if (i_4_ != -1941613085) {
-			aBoolean9780 = false;
+			displayRenderData = false;
 		}
 		return false;
 	}

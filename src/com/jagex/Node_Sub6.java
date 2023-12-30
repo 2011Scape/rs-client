@@ -186,7 +186,7 @@ public class Node_Sub6 extends Node
 								continue;
 							}
 							if (widget.anInt4814 == AnimableAnimator_Sub1.anInt9093) {
-								if (Node_Sub15_Sub2.aBoolean9780 || Class186.aBoolean2259) {
+								if (Node_Sub15_Sub2.displayRenderData || Class186.aBoolean2259) {
 									int i_27_ = i_14_ + widget.anInt4809;
 									int i_28_ = i_15_ + 15;
 									if (Class71.aBoolean967) {
@@ -196,7 +196,7 @@ public class Node_Sub6 extends Node
 											Class362.method4053(i_10_, i_12_, i_9_, (byte) 76, i_11_);
 										}
 									}
-									if (Node_Sub15_Sub2.aBoolean9780) {
+									if (Node_Sub15_Sub2.displayRenderData) {
 										int i_29_ = -256;
 										if (Node_Sub9_Sub4.anInt9732 < 20) {
 											i_29_ = -65536;

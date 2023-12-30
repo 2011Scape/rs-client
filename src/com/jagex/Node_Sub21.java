@@ -20,7 +20,7 @@ public class Node_Sub21 extends Node
 		anInt7182++;
 		if (Node_Sub10.aString7081.length() != 0) {
 			Node_Sub7.method2422((byte) 43, "--> " + Node_Sub10.aString7081);
-			Class126.method1538(120, false, bool, Node_Sub10.aString7081);
+			DevConsoleNode.processConsoleCommands(120, false, bool, Node_Sub10.aString7081);
 			Class332.anInt4145 = i;
 			if (!bool) {
 				Class315.anInt4034 = 0;

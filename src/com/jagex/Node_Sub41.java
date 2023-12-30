@@ -25,7 +25,7 @@ public class Node_Sub41 extends Node
 			if (Node_Sub23.instance.anInt7484 < 512 && (Node_Sub23.instance.anInt7484 ^ 0xffffffff) != -1) {
 				bool = false;
 			}
-			if (SignLink.aString3981.startsWith("win")) {
+			if (SignLink.osName.startsWith("win")) {
 				bool_1_ = true;
 				bool_0_ = true;
 			} else {

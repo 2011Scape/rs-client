@@ -80,7 +80,7 @@ public class Class140
 		}
 		anInt1734++;
 		if (bool_4_) {
-			if (SignLink.aString3981.startsWith("win") && signlink.aBoolean4005) {
+			if (SignLink.osName.startsWith("win") && signlink.aBoolean4005) {
 				String string_5_ = null;
 				if (Class96.anApplet1270 != null) {
 					string_5_ = Class96.anApplet1270.getParameter("haveie6");
@@ -93,7 +93,7 @@ public class Class140
 					return;
 				}
 			}
-			if (SignLink.aString3981.startsWith("mac")) {
+			if (SignLink.osName.startsWith("mac")) {
 				String string_6_ = null;
 				if (Class96.anApplet1270 != null) {
 					string_6_ = Class96.anApplet1270.getParameter("havefirefox");

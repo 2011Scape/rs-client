@@ -301,7 +301,7 @@ public class Animable_Sub1_Sub1 extends Animable_Sub1 implements Interface19
 					Node_Sub15_Sub4.anInt9800 = 20;
 				}
 			}
-			if (Node_Sub15_Sub2.aBoolean9780) {
+			if (Node_Sub15_Sub2.displayRenderData) {
 				int i_26_ = -5 + (i_18_ + i_16_);
 				int i_27_ = i_17_ + (i_15_ + -8);
 				StandardSprite.aClass52_8945.method543((byte) 123, i_26_, "Fps:" + Node_Sub9_Sub4.anInt9732, 16776960, -1, i_27_);

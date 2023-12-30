@@ -178,9 +178,9 @@ public class Node_Sub39 extends Node
 	
 	Node_Sub39(boolean bool, SignLink signlink) {
 		if (bool) {
-			if (!SignLink.aString3981.startsWith("win")) {
-				if (!SignLink.aString3981.startsWith("mac")) {
-					if (SignLink.aString3981.startsWith("linux")) {
+			if (!SignLink.osName.startsWith("win")) {
+				if (!SignLink.osName.startsWith("mac")) {
+					if (SignLink.osName.startsWith("linux")) {
 						anInt7485 = 3;
 					} else {
 						anInt7485 = 4;
@@ -191,22 +191,22 @@ public class Node_Sub39 extends Node
 			} else {
 				anInt7485 = 1;
 			}
-			if (!SignLink.aString3984.startsWith("amd64") && !SignLink.aString3984.startsWith("x86_64")) {
+			if (!SignLink.osArchitecture.startsWith("amd64") && !SignLink.osArchitecture.startsWith("x86_64")) {
 				aBoolean7475 = false;
 			} else {
 				aBoolean7475 = true;
 			}
 			if ((anInt7485 ^ 0xffffffff) == -2) {
-				if (SignLink.aString3982.indexOf("4.0") != -1) {
+				if (SignLink.osVersion.indexOf("4.0") != -1) {
 					anInt7488 = 1;
-				} else if ((SignLink.aString3982.indexOf("4.1") ^ 0xffffffff) == 0) {
-					if ((SignLink.aString3982.indexOf("4.9") ^ 0xffffffff) == 0) {
-						if ((SignLink.aString3982.indexOf("5.0") ^ 0xffffffff) == 0) {
-							if ((SignLink.aString3982.indexOf("5.1") ^ 0xffffffff) != 0) {
+				} else if ((SignLink.osVersion.indexOf("4.1") ^ 0xffffffff) == 0) {
+					if ((SignLink.osVersion.indexOf("4.9") ^ 0xffffffff) == 0) {
+						if ((SignLink.osVersion.indexOf("5.0") ^ 0xffffffff) == 0) {
+							if ((SignLink.osVersion.indexOf("5.1") ^ 0xffffffff) != 0) {
 								anInt7488 = 5;
-							} else if (SignLink.aString3982.indexOf("6.0") != -1) {
+							} else if (SignLink.osVersion.indexOf("6.0") != -1) {
 								anInt7488 = 6;
-							} else if (SignLink.aString3982.indexOf("6.1") != -1) {
+							} else if (SignLink.osVersion.indexOf("6.1") != -1) {
 								anInt7488 = 7;
 							}
 						} else {
@@ -219,12 +219,12 @@ public class Node_Sub39 extends Node
 					anInt7488 = 2;
 				}
 			} else if ((anInt7485 ^ 0xffffffff) == -3) {
-				if (SignLink.aString3982.indexOf("10.4") != -1) {
+				if (SignLink.osVersion.indexOf("10.4") != -1) {
 					anInt7488 = 20;
-				} else if ((SignLink.aString3982.indexOf("10.5") ^ 0xffffffff) != 0) {
+				} else if ((SignLink.osVersion.indexOf("10.5") ^ 0xffffffff) != 0) {
 					anInt7488 = 21;
-				} else if ((SignLink.aString3982.indexOf("10.6") ^ 0xffffffff) == 0) {
-					if ((SignLink.aString3982.indexOf("10.7") ^ 0xffffffff) != 0) {
+				} else if ((SignLink.osVersion.indexOf("10.6") ^ 0xffffffff) == 0) {
+					if ((SignLink.osVersion.indexOf("10.7") ^ 0xffffffff) != 0) {
 						anInt7488 = 23;
 					}
 				} else {

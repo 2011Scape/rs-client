@@ -479,14 +479,14 @@ public class Node_Sub27 extends Node
 	
 	Node_Sub27(Class353 class353, int i) {
 		aClass353_7263 = class353;
-		aClass187_7292 = new Class187(Class240.aSignLink2946.aBoolean4005, Class201.anInt2446, Class263.anInt3336, (SignLink.aString3984.toLowerCase().indexOf("arm") ^ 0xffffffff) != 0);
+		aClass187_7292 = new Class187(Class240.aSignLink2946.aBoolean4005, Class201.anInt2446, Class263.anInt3336, (SignLink.osArchitecture.toLowerCase().indexOf("arm") ^ 0xffffffff) != 0);
 		aClass320_Sub29_7270 = new Class320_Sub29(i, this);
 		method2689(true, (byte) -103);
 	}
 	
 	Node_Sub27(Buffer buffer, Class353 class353, int i) {
 		aClass353_7263 = class353;
-		aClass187_7292 = new Class187(Class240.aSignLink2946.aBoolean4005, Class201.anInt2446, Class263.anInt3336, (SignLink.aString3984.indexOf("arm") ^ 0xffffffff) != 0);
+		aClass187_7292 = new Class187(Class240.aSignLink2946.aBoolean4005, Class201.anInt2446, Class263.anInt3336, (SignLink.osArchitecture.indexOf("arm") ^ 0xffffffff) != 0);
 		aClass320_Sub29_7270 = new Class320_Sub29(i, this);
 		method2688(buffer, true);
 	}
