@@ -2063,8 +2063,8 @@ public class client extends GameStub
 											int[] is = new int[3];
 											cachenode_sub11.method2340(i_105_, (byte) 17, i_104_, is);
 											if (is != null) {
-												if (Class175.aClass291_2100.method3450(118, 82) && Class339_Sub7.anInt8729 > 0) {
-													Class331.method3843(false, is[0], is[2], is[1]);
+												if (Class175.aClass291_2100.method3450(118, 82) && Class339_Sub7.playerPrivilege > 0) {
+													Class331.processAdminTeleport(false, is[0], is[2], is[1]);
 													continue;
 												}
 												FileOnDisk.aBoolean1319 = true;

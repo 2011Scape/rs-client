@@ -16,7 +16,7 @@ public class Class339_Sub7 extends Class339
 	static Class192 aClass192_8726 = new Class192(67, 3);
 	private boolean aBoolean8727 = false;
 	static int anInt8728;
-	static int anInt8729 = 0;
+	static int playerPrivilege = 0;
 	private Class301 aClass301_8730;
 	
 	final boolean method3922(byte b) {

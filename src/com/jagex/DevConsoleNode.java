@@ -212,7 +212,7 @@ public class DevConsoleNode extends Node
 			Node_Sub7.method2422((byte) 43, Class22.aClass22_365.method297(-12273, Class35.anInt537));
 			return;
 		}
-		if (Class240.aClass329_2943 != Node_Sub38_Sub1.aClass329_10086 || Class339_Sub7.anInt8729 >= 2) {
+		if (Class240.aClass329_2943 != Node_Sub38_Sub1.aClass329_10086 || Class339_Sub7.playerPrivilege >= 2) {
 			if (string.equalsIgnoreCase("errortest")) {
 				throw new RuntimeException();
 			}
@@ -242,6 +242,15 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("fpsoff")) {
 					Node_Sub15_Sub2.displayRenderData = false;
 					Node_Sub7.method2422((byte) 43, "fps debug disabled");
+					return;
+				}
+				if (string.equalsIgnoreCase("fpsoff")) {
+					Node_Sub15_Sub2.displayRenderData = false;
+					Node_Sub7.method2422((byte) 43, "fps debug disabled");
+					return;
+				}
+				if (string.equalsIgnoreCase("privilege")) {
+					Node_Sub7.method2422((byte) 43, "privilege: " + Class339_Sub7.playerPrivilege);
 					return;
 				}
 				if (string.equals("systemmem")) {
@@ -508,6 +517,7 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.equalsIgnoreCase("getcgcoord")) {
+					//tele
 					Node_Sub7.method2422((byte) 43, "x:" + (Class295.aPlayer3692.anInt5934 >> 9) + " z:" + (Class295.aPlayer3692.anInt5940 >> 9));
 					return;
 				}

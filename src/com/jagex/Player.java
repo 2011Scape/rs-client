@@ -384,7 +384,7 @@ public class Player extends Actor
 		anInt11129 = buffer.method2214((byte) 96);
 		anInt11130 = buffer.method2214((byte) -81);
 		aBoolean11131 = (buffer.method2214((byte) 32) ^ 0xffffffff) == -2;
-		if (Class240.aClass329_2943 == Node_Sub38_Sub1.aClass329_10086 && Class339_Sub7.anInt8729 >= 2) {
+		if (Class240.aClass329_2943 == Node_Sub38_Sub1.aClass329_10086 && Class339_Sub7.playerPrivilege >= 2) {
 			aBoolean11131 = false;
 		}
 		anInt11134 = 0;

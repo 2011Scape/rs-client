@@ -628,7 +628,7 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 						if (Class58.aWidget861 != null) {
 							Class277_Sub1.method3357(true);
 						}
-						if ((Class339_Sub7.anInt8729 ^ 0xffffffff) < -1 && Class175.aClass291_2100.method3450(i ^ 0x38a0, 82) && Class175.aClass291_2100.method3450(-71, 81) && (Class339_Sub8.anInt8739 ^ 0xffffffff) != -1) {
+						if ((Class339_Sub7.playerPrivilege ^ 0xffffffff) < -1 && Class175.aClass291_2100.method3450(i ^ 0x38a0, 82) && Class175.aClass291_2100.method3450(-71, 81) && (Class339_Sub8.anInt8739 ^ 0xffffffff) != -1) {
 							int i_38_ = -Class339_Sub8.anInt8739 + Class295.aPlayer3692.aByte5933;
 							if (i_38_ >= 0) {
 								if (i_38_ > 3) {
@@ -637,7 +637,7 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 							} else {
 								i_38_ = 0;
 							}
-							Class331.method3843(false, i_38_, Class295.aPlayer3692.anIntArray10908[0] + Class320_Sub4.anInt8243, Node_Sub53.anInt7668 - -Class295.aPlayer3692.anIntArray10910[0]);
+							Class331.processAdminTeleport(false, i_38_, Class295.aPlayer3692.anIntArray10908[0] + Class320_Sub4.anInt8243, Node_Sub53.anInt7668 - -Class295.aPlayer3692.anIntArray10910[0]);
 						}
 						Class168.method1754(true);
 						for (int i_39_ = 0; (i_39_ ^ 0xffffffff) > -6; i_39_++)

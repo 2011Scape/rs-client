@@ -1723,8 +1723,8 @@ public class Class305
 					return;
 				}
 				if (i == 3316) {
-					if (Class339_Sub7.anInt8729 >= 2) {
-						anIntArray3840[anInt3846++] = Class339_Sub7.anInt8729;
+					if (Class339_Sub7.playerPrivilege >= 2) {
+						anIntArray3840[anInt3846++] = Class339_Sub7.playerPrivilege;
 					} else {
 						anIntArray3840[anInt3846++] = 0;
 						return;
@@ -3608,7 +3608,7 @@ public class Class305
 				anInt3841 -= 2;
 				String string = aStringArray3855[anInt3841];
 				String string_326_ = aStringArray3855[anInt3841 + 1];
-				if (Class339_Sub7.anInt8729 != 0 || (!Node_Sub38_Sub18.aBoolean10282 || Class24.aBoolean436) && !Class290_Sub11.aBoolean8175) {
+				if (Class339_Sub7.playerPrivilege != 0 || (!Node_Sub38_Sub18.aBoolean10282 || Class24.aBoolean436) && !Class290_Sub11.aBoolean8175) {
 					anInt3838++;
 					Class123 class123 = Class262_Sub23.method3213((byte) -78);
 					Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class133.aClass318_1687, class123.anIsaacCipher1571);
@@ -6236,7 +6236,7 @@ public class Class305
 	}
 	
 	private static final void method3562(String string, int i) {
-		if (Class339_Sub7.anInt8729 != 0 || (!Node_Sub38_Sub18.aBoolean10282 || Class24.aBoolean436) && !Class290_Sub11.aBoolean8175) {
+		if (Class339_Sub7.playerPrivilege != 0 || (!Node_Sub38_Sub18.aBoolean10282 || Class24.aBoolean436) && !Class290_Sub11.aBoolean8175) {
 			String string_566_ = string.toLowerCase();
 			int i_567_ = 0;
 			if (string_566_.startsWith(Class22.aClass22_410.method297(-12273, 0))) {

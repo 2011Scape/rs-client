@@ -620,7 +620,7 @@ public class Class195
 							}
 							Class320_Sub23.aClass123_8432.aClass365_1557.method4065((byte) -82, packet.aByteArray7019, Node_Sub8.anInt7070, 0);
 							packet.anInt7002 = 0;
-							Class339_Sub7.anInt8729 = packet.method2233(255);
+							Class339_Sub7.playerPrivilege = packet.method2233(255);
 							Class25.anInt452 = packet.method2233(255);
 							Node_Sub38_Sub18.aBoolean10282 = packet.method2233(255) == 1;
 							Class24.aBoolean436 = (packet.method2233(255) ^ 0xffffffff) == -2;
@@ -656,7 +656,7 @@ public class Class195
 								Class262_Sub23.aClass197_7884.anInt2417 = 40000 - -Class262_Sub23.aClass197_7884.worldId;
 								Class262_Sub23.aClass197_7884.worldPort = 50000 - -Class262_Sub23.aClass197_7884.worldId;
 							}
-							if (CacheNode_Sub2.aClass329_9436 != Node_Sub38_Sub1.aClass329_10086 && (Node_Sub38_Sub1.aClass329_10086 != Class379.aClass329_4873 || (Class339_Sub7.anInt8729 ^ 0xffffffff) > -3) && Class181.aClass197_2155.method2002(-129, Class320_Sub24.aClass197_8443)) {
+							if (CacheNode_Sub2.aClass329_9436 != Node_Sub38_Sub1.aClass329_10086 && (Node_Sub38_Sub1.aClass329_10086 != Class379.aClass329_4873 || (Class339_Sub7.playerPrivilege ^ 0xffffffff) > -3) && Class181.aClass197_2155.method2002(-129, Class320_Sub24.aClass197_8443)) {
 								EntityNode.method802(2126);
 							}
 						} else {
@@ -665,7 +665,7 @@ public class Class195
 							}
 							Class320_Sub23.aClass123_8432.aClass365_1557.method4065((byte) -84, packet.aByteArray7019, Node_Sub8.anInt7070, 0);
 							packet.anInt7002 = 0;
-							Class339_Sub7.anInt8729 = packet.method2233(255);
+							Class339_Sub7.playerPrivilege = packet.method2233(255);
 							Class25.anInt452 = packet.method2233(255);
 							Node_Sub38_Sub18.aBoolean10282 = packet.method2233(255) == 1;
 							Class24.aBoolean436 = (packet.method2233(255) ^ 0xffffffff) == -2;

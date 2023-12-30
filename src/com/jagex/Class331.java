@@ -64,7 +64,7 @@ public class Class331
 		}
 	}
 	
-	static final void method3843(boolean bool, int i, int i_8_, int i_9_) {
+	static final void processAdminTeleport(boolean bool, int i, int i_8_, int i_9_) {
 		anInt4137++;
 		String string = "tele " + i + "," + (i_9_ >> 6) + "," + (i_8_ >> 6) + "," + (i_9_ & 0x3f) + "," + (i_8_ & 0x3f);
 		System.out.println(string);
