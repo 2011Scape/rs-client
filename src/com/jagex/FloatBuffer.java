@@ -1109,7 +1109,7 @@ public class FloatBuffer extends Buffer
 					Class50.method513(string_149_, (byte) -59);
 				}
 			} else {
-				Node_Sub7.method2422((byte) 43, string_149_);
+				Node_Sub7.generateTimestamp((byte) 43, string_149_);
 			}
 			class123.aClass192_1576 = null;
 			return true;

@@ -29,39 +29,69 @@ public class Node_Sub7 extends Node
 		client.method114((byte) 118, Class277.aCacheNode_Sub13_3509);
 	}
 	
-	static final void method2422(byte b, String string) {
-		anInt7062++;
-		if (Class210.aStringArray2502 == null) {
-			Class147.method1647(87);
-		}
-		Class247.aCalendar3144.setTime(new Date(Class313.method3650(false)));
-		int i = Class247.aCalendar3144.get(11);
-		if (b != 43) {
-			anInt7063 = -16;
-		}
-		int i_0_ = Class247.aCalendar3144.get(12);
-		int i_1_ = Class247.aCalendar3144.get(13);
-		String string_2_ = Integer.toString(i / 10) + i % 10 + ":" + i_0_ / 10 + i_0_ % 10 + ":" + i_1_ / 10 + i_1_ % 10;
-		String[] strings = Class106.method1120((byte) -113, string, '\n');
-		for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (strings.length ^ 0xffffffff); i_3_++) {
-			for (int i_4_ = Class144_Sub4.anInt6848; i_4_ > 0; i_4_--)
-				Class210.aStringArray2502[i_4_] = Class210.aStringArray2502[-1 + i_4_];
-			Class210.aStringArray2502[0] = string_2_ + ": " + strings[i_3_];
-			if (Class270_Sub1.aFileOutputStream8027 != null) {
-				try {
-					Class270_Sub1.aFileOutputStream8027.write(Class320_Sub21.method3763(-128, Class210.aStringArray2502[0] + "\n"));
-				} catch (java.io.IOException ioexception) {
-					/* empty */
-				}
-			}
-			if ((Class144_Sub4.anInt6848 ^ 0xffffffff) > (Class210.aStringArray2502.length + -1 ^ 0xffffffff)) {
-				Class144_Sub4.anInt6848++;
-				if ((Class118.anInt5406 ^ 0xffffffff) < -1) {
-					Class118.anInt5406++;
-				}
-			}
-		}
+	static void generateTimestamp(byte b, String logMessage) {
+	    incrementCounter();
+	    initializeStringArray();
+
+	    String timestamp = generateTimestampString();
+	    String[] messages = splitMessages(logMessage, '\n');
+
+	    for (String message : messages) {
+	        updateStringArray(timestamp, message);
+	        writeToFile();
+	        updateCounters();
+	    }
 	}
+
+	private static void incrementCounter() {
+	    anInt7062++;
+	}
+
+	private static void initializeStringArray() {
+	    if (Class210.aStringArray2502 == null) {
+	        Class147.method1647(87);
+	    }
+	}
+
+	private static String generateTimestampString() {
+	    Class247.aCalendar3144.setTime(new Date(Class313.method3650(false)));
+	    int hour = Class247.aCalendar3144.get(11);
+	    int minute = Class247.aCalendar3144.get(12);
+	    int second = Class247.aCalendar3144.get(13);
+
+	    return String.format("%d%d:%d%d:%d%d", hour / 10, hour % 10, minute / 10, minute % 10, second / 10, second % 10);
+	}
+
+	private static String[] splitMessages(String logMessage, char delimiter) {
+	    return Class106.method1120((byte) -113, logMessage, delimiter);
+	}
+
+	private static void updateStringArray(String timestamp, String message) {
+	    for (int i = Class144_Sub4.anInt6848; i > 0; i--) {
+	        Class210.aStringArray2502[i] = Class210.aStringArray2502[i - 1];
+	    }
+	    Class210.aStringArray2502[0] = timestamp + ": " + message;
+	}
+
+	private static void writeToFile() {
+	    if (Class270_Sub1.aFileOutputStream8027 != null) {
+	        try {
+	            Class270_Sub1.aFileOutputStream8027.write(Class320_Sub21.method3763(-128, Class210.aStringArray2502[0] + "\n"));
+	        } catch (java.io.IOException ignored) {
+	            /* empty */
+	        }
+	    }
+	}
+
+	private static void updateCounters() {
+	    if (Class144_Sub4.anInt6848 < Class210.aStringArray2502.length - 1) {
+	        Class144_Sub4.anInt6848++;
+	        if (Class118.anInt5406 > 0) {
+	            Class118.anInt5406++;
+	        }
+	    }
+	}
+
 	
 	Node_Sub7(String string) {
 		aString7064 = string;

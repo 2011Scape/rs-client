@@ -33,7 +33,7 @@ class Class194
 					} catch (Exception exception) {
 						/* empty */
 					}
-					Node_Sub7.method2422((byte) 43, "Pausing for " + i_1_ + " seconds...");
+					Node_Sub7.generateTimestamp((byte) 43, "Pausing for " + i_1_ + " seconds...");
 					Class339_Sub1.aStringArray8631 = strings;
 					Class194_Sub3.anInt6904 = 1 + i_0_;
 					Class163.aLong2020 = (long) (1000 * i_1_) + Class313.method3650(false);

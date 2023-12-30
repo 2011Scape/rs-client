@@ -101,7 +101,7 @@ public class Class262_Sub23 extends Class262
 					} catch (Exception exception) {
 						/* empty */
 					}
-					Node_Sub7.method2422((byte) 43, "Pausing for " + i_2_ + " seconds...");
+					Node_Sub7.generateTimestamp((byte) 43, "Pausing for " + i_2_ + " seconds...");
 					Class194_Sub3.anInt6904 = 1 + i_1_;
 					Class163.aLong2020 = (long) (i_2_ * 1000) + Class313.method3650(false);
 					return;

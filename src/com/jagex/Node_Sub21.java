@@ -19,7 +19,7 @@ public class Node_Sub21 extends Node
 	static final void method2618(boolean bool, int i) {
 		anInt7182++;
 		if (Node_Sub10.aString7081.length() != 0) {
-			Node_Sub7.method2422((byte) 43, "--> " + Node_Sub10.aString7081);
+			Node_Sub7.generateTimestamp((byte) 43, "--> " + Node_Sub10.aString7081);
 			DevConsoleNode.processConsoleCommands(120, false, bool, Node_Sub10.aString7081);
 			Class332.anInt4145 = i;
 			if (!bool) {

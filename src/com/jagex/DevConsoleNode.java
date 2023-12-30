@@ -164,12 +164,12 @@ public class DevConsoleNode extends Node
 		Class126.anInt1618++;
 		try {
 			if (string.equalsIgnoreCase("commands") || string.equalsIgnoreCase("help")) {
-				Node_Sub7.method2422((byte) 43, "commands - This command");
-				Node_Sub7.method2422((byte) 43, "cls - Clear console");
-				Node_Sub7.method2422((byte) 43, "displayfps - Toggle FPS and other information");
-				Node_Sub7.method2422((byte) 43, "renderer - Print graphics renderer information");
-				Node_Sub7.method2422((byte) 43, "heap - Print java memory information");
-				Node_Sub7.method2422((byte) 43, "getcamerapos - Print location and direction of camera for use in bug reports");
+				Node_Sub7.generateTimestamp((byte) 43, "commands - This command");
+				Node_Sub7.generateTimestamp((byte) 43, "cls - Clear console");
+				Node_Sub7.generateTimestamp((byte) 43, "displayfps - Toggle FPS and other information");
+				Node_Sub7.generateTimestamp((byte) 43, "renderer - Print graphics renderer information");
+				Node_Sub7.generateTimestamp((byte) 43, "heap - Print java memory information");
+				Node_Sub7.generateTimestamp((byte) 43, "getcamerapos - Print location and direction of camera for use in bug reports");
 				return;
 			}
 			if (string.equalsIgnoreCase("cls")) {
@@ -183,33 +183,33 @@ public class DevConsoleNode extends Node
 			if (string.equalsIgnoreCase("displayfps")) {
 				Node_Sub15_Sub2.displayRenderData = !Node_Sub15_Sub2.displayRenderData;
 				if (!Node_Sub15_Sub2.displayRenderData) {
-					Node_Sub7.method2422((byte) 43, "FPS off");
+					Node_Sub7.generateTimestamp((byte) 43, "FPS off");
 				} else {
-					Node_Sub7.method2422((byte) 43, "FPS on");
+					Node_Sub7.generateTimestamp((byte) 43, "FPS on");
 					return;
 				}
 				return;
 			}
 			if (string.equals("renderer")) {
 				Renderer renderer = Class93.aGraphicsToolkit1241.c();
-				Node_Sub7.method2422((byte) 43, "Vendor: " + renderer.anInt3656);
-				Node_Sub7.method2422((byte) 43, "Name: " + renderer.aString3664);
-				Node_Sub7.method2422((byte) 43, "Version: " + renderer.anInt3658);
-				Node_Sub7.method2422((byte) 43, "Device: " + renderer.aString3660);
-				Node_Sub7.method2422((byte) 43, "Driver Version: " + renderer.aLong3661);
+				Node_Sub7.generateTimestamp((byte) 43, "Vendor: " + renderer.anInt3656);
+				Node_Sub7.generateTimestamp((byte) 43, "Name: " + renderer.aString3664);
+				Node_Sub7.generateTimestamp((byte) 43, "Version: " + renderer.anInt3658);
+				Node_Sub7.generateTimestamp((byte) 43, "Device: " + renderer.aString3660);
+				Node_Sub7.generateTimestamp((byte) 43, "Driver Version: " + renderer.aLong3661);
 				return;
 			}
 			if (string.equals("heap")) {
-				Node_Sub7.method2422((byte) 43, "Heap: " + Class201.anInt2446 + "MB");
+				Node_Sub7.generateTimestamp((byte) 43, "Heap: " + Class201.anInt2446 + "MB");
 				return;
 			}
 			if (string.equalsIgnoreCase("getcamerapos")) {
-				Node_Sub7.method2422((byte) 43, "Pos: " + Class295.aPlayer3692.aByte5933 + "," + ((Class98.anInt5061 >> 9) + Node_Sub53.anInt7668 >> 6) + "," + ((Node_Sub10.anInt7079 >> 9) - -Class320_Sub4.anInt8243 >> 6) + "," + ((Class98.anInt5061 >> 9) - -Node_Sub53.anInt7668 & 0x3f) + "," + ((Node_Sub10.anInt7079 >> 9) - -Class320_Sub4.anInt8243 & 0x3f) + " Height: " + (Node_Sub38_Sub7.method2809(Class295.aPlayer3692.aByte5933, -29754, Node_Sub10.anInt7079, Class98.anInt5061) + -Class190.anInt2331));
-				Node_Sub7.method2422((byte) 43, "Look: " + Class295.aPlayer3692.aByte5933 + "," + (Class238.anInt2911 + Node_Sub53.anInt7668 >> 6) + "," + (Class320_Sub4.anInt8243 + Class10.anInt174 >> 6) + "," + (0x3f & Node_Sub53.anInt7668 + Class238.anInt2911) + "," + (0x3f & Class320_Sub4.anInt8243 + Class10.anInt174) + " Height: " + (Node_Sub38_Sub7.method2809(Class295.aPlayer3692.aByte5933, -29754, Class10.anInt174, Class238.anInt2911) + -Class134_Sub1.anInt9015));
+				Node_Sub7.generateTimestamp((byte) 43, "Pos: " + Class295.aPlayer3692.aByte5933 + "," + ((Class98.anInt5061 >> 9) + Node_Sub53.anInt7668 >> 6) + "," + ((Node_Sub10.anInt7079 >> 9) - -Class320_Sub4.anInt8243 >> 6) + "," + ((Class98.anInt5061 >> 9) - -Node_Sub53.anInt7668 & 0x3f) + "," + ((Node_Sub10.anInt7079 >> 9) - -Class320_Sub4.anInt8243 & 0x3f) + " Height: " + (Node_Sub38_Sub7.method2809(Class295.aPlayer3692.aByte5933, -29754, Node_Sub10.anInt7079, Class98.anInt5061) + -Class190.anInt2331));
+				Node_Sub7.generateTimestamp((byte) 43, "Look: " + Class295.aPlayer3692.aByte5933 + "," + (Class238.anInt2911 + Node_Sub53.anInt7668 >> 6) + "," + (Class320_Sub4.anInt8243 + Class10.anInt174 >> 6) + "," + (0x3f & Node_Sub53.anInt7668 + Class238.anInt2911) + "," + (0x3f & Class320_Sub4.anInt8243 + Class10.anInt174) + " Height: " + (Node_Sub38_Sub7.method2809(Class295.aPlayer3692.aByte5933, -29754, Class10.anInt174, Class238.anInt2911) + -Class134_Sub1.anInt9015));
 				return;
 			}
 		} catch (Exception exception) {
-			Node_Sub7.method2422((byte) 43, Class22.aClass22_365.method297(-12273, Class35.anInt537));
+			Node_Sub7.generateTimestamp((byte) 43, Class22.aClass22_365.method297(-12273, Class35.anInt537));
 			return;
 		}
 		if (Class240.aClass329_2943 != Node_Sub38_Sub1.aClass329_10086 || Class339_Sub7.playerPrivilege >= 2) {
@@ -221,41 +221,41 @@ public class DevConsoleNode extends Node
 			}
 			try {
 				if (string.equalsIgnoreCase("printfps")) {
-					Node_Sub7.method2422((byte) 43, "FPS: " + Node_Sub9_Sub4.anInt9732);
+					Node_Sub7.generateTimestamp((byte) 43, "FPS: " + Node_Sub9_Sub4.anInt9732);
 					return;
 				}
 				if (string.equalsIgnoreCase("occlude")) {
 					Class12.aBoolean194 = !Class12.aBoolean194;
 					if (!Class12.aBoolean194) {
-						Node_Sub7.method2422((byte) 43, "Occlsion now off!");
+						Node_Sub7.generateTimestamp((byte) 43, "Occlsion now off!");
 					} else {
-						Node_Sub7.method2422((byte) 43, "Occlsion now on!");
+						Node_Sub7.generateTimestamp((byte) 43, "Occlsion now on!");
 						return;
 					}
 					return;
 				}
 				if (string.equalsIgnoreCase("fpson")) {
 					Node_Sub15_Sub2.displayRenderData = true;
-					Node_Sub7.method2422((byte) 43, "fps debug enabled");
+					Node_Sub7.generateTimestamp((byte) 43, "fps debug enabled");
 					return;
 				}
 				if (string.equalsIgnoreCase("fpsoff")) {
 					Node_Sub15_Sub2.displayRenderData = false;
-					Node_Sub7.method2422((byte) 43, "fps debug disabled");
+					Node_Sub7.generateTimestamp((byte) 43, "fps debug disabled");
 					return;
 				}
 				if (string.equalsIgnoreCase("fpsoff")) {
 					Node_Sub15_Sub2.displayRenderData = false;
-					Node_Sub7.method2422((byte) 43, "fps debug disabled");
+					Node_Sub7.generateTimestamp((byte) 43, "fps debug disabled");
 					return;
 				}
 				if (string.equalsIgnoreCase("privilege")) {
-					Node_Sub7.method2422((byte) 43, "privilege: " + Class339_Sub7.playerPrivilege);
+					Node_Sub7.generateTimestamp((byte) 43, "privilege: " + Class339_Sub7.playerPrivilege);
 					return;
 				}
 				if (string.equals("systemmem")) {
 					try {
-						Node_Sub7.method2422((byte) 43, "System memory: " + jagmisc.getAvailablePhysicalMemory() / 1048576L + "/" + Node_Sub23.instance.anInt7484 + "Mb");
+						Node_Sub7.generateTimestamp((byte) 43, "System memory: " + jagmisc.getAvailablePhysicalMemory() / 1048576L + "/" + Node_Sub23.instance.anInt7484 + "Mb");
 					} catch (Throwable throwable) {
 						/* empty */
 					}
@@ -263,7 +263,7 @@ public class DevConsoleNode extends Node
 				}
 				if (string.equalsIgnoreCase("cleartext")) {
 					Class226.aClass103_2684.method1112((byte) -122);
-					Node_Sub7.method2422((byte) 43, "Text coords cleared");
+					Node_Sub7.generateTimestamp((byte) 43, "Text coords cleared");
 					return;
 				}
 				if (string.equalsIgnoreCase("gc")) {
@@ -272,7 +272,7 @@ public class DevConsoleNode extends Node
 						System.gc();
 					Runtime runtime = Runtime.getRuntime();
 					int i_13_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
-					Node_Sub7.method2422((byte) 43, "mem=" + i_13_ + "k");
+					Node_Sub7.generateTimestamp((byte) 43, "mem=" + i_13_ + "k");
 					return;
 				}
 				if (string.equalsIgnoreCase("compact")) {
@@ -281,21 +281,21 @@ public class DevConsoleNode extends Node
 						System.gc();
 					Runtime runtime = Runtime.getRuntime();
 					int i_15_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
-					Node_Sub7.method2422((byte) 43, "Memory before cleanup=" + i_15_ + "k");
+					Node_Sub7.generateTimestamp((byte) 43, "Memory before cleanup=" + i_15_ + "k");
 					Class189.method1934((byte) 17);
 					Class355.method4021(112);
 					for (int i_16_ = 0; (i_16_ ^ 0xffffffff) > -11; i_16_++)
 						System.gc();
 					i_15_ = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);
-					Node_Sub7.method2422((byte) 43, "Memory after cleanup=" + i_15_ + "k");
+					Node_Sub7.generateTimestamp((byte) 43, "Memory after cleanup=" + i_15_ + "k");
 					return;
 				}
 				if (string.equalsIgnoreCase("unloadnatives")) {
-					Node_Sub7.method2422((byte) 43, !Class377_Sub1.method4128(0) ? "Library unloading failed!" : "Libraries unloaded");
+					Node_Sub7.generateTimestamp((byte) 43, !Class377_Sub1.method4128(0) ? "Library unloading failed!" : "Libraries unloaded");
 					return;
 				}
 				if (string.equalsIgnoreCase("clientdrop")) {
-					Node_Sub7.method2422((byte) 43, "Dropped client connection");
+					Node_Sub7.generateTimestamp((byte) 43, "Dropped client connection");
 					if (Class151.anInt1843 != 11) {
 						if (Class151.anInt1843 == 12) {
 							Class218.worldResponseBuffer.aBoolean1580 = true;
@@ -307,17 +307,17 @@ public class DevConsoleNode extends Node
 				}
 				if (string.equalsIgnoreCase("rotateconnectmethods")) {
 					Class181.aClass197_2155.method1997(17418);
-					Node_Sub7.method2422((byte) 43, "Rotated connection methods");
+					Node_Sub7.generateTimestamp((byte) 43, "Rotated connection methods");
 					return;
 				}
 				if (string.equalsIgnoreCase("clientjs5drop")) {
 					Class267.aClass266_3449.method3235(false);
-					Node_Sub7.method2422((byte) 43, "Dropped client js5 net queue");
+					Node_Sub7.generateTimestamp((byte) 43, "Dropped client js5 net queue");
 					return;
 				}
 				if (string.equalsIgnoreCase("serverjs5drop")) {
 					Class267.aClass266_3449.method3242(-110);
-					Node_Sub7.method2422((byte) 43, "Dropped server js5 net queue");
+					Node_Sub7.generateTimestamp((byte) 43, "Dropped server js5 net queue");
 					return;
 				}
 				if (string.equalsIgnoreCase("breakcon")) {
@@ -330,13 +330,13 @@ public class DevConsoleNode extends Node
 						}
 					}
 					Class267.aClass266_3449.method3245(-2);
-					Node_Sub7.method2422((byte) 43, "Breaking new connections for 5 seconds");
+					Node_Sub7.generateTimestamp((byte) 43, "Breaking new connections for 5 seconds");
 					return;
 				}
 				if (string.equalsIgnoreCase("rebuild")) {
 					Class243.method3061(7);
 					Node_Sub18.method2606(126);
-					Node_Sub7.method2422((byte) 43, "Rebuilding map");
+					Node_Sub7.generateTimestamp((byte) 43, "Rebuilding map");
 					return;
 				}
 				if (string.equalsIgnoreCase("rebuildprofile")) {
@@ -344,15 +344,15 @@ public class DevConsoleNode extends Node
 					Class19.aBoolean313 = true;
 					Class243.method3061(7);
 					Node_Sub18.method2606(126);
-					Node_Sub7.method2422((byte) 43, "Rebuilding map (with profiling)");
+					Node_Sub7.generateTimestamp((byte) 43, "Rebuilding map (with profiling)");
 					return;
 				}
 				if (string.equalsIgnoreCase("wm1")) {
 					Node_Sub38_Sub19.method2850(3, 1, -1, false, -1);
 					if (Class188_Sub2_Sub1.method1908(3) != 1) {
-						Node_Sub7.method2422((byte) 43, "wm1 failed");
+						Node_Sub7.generateTimestamp((byte) 43, "wm1 failed");
 					} else {
-						Node_Sub7.method2422((byte) 43, "wm1 succeeded");
+						Node_Sub7.generateTimestamp((byte) 43, "wm1 succeeded");
 						return;
 					}
 					return;
@@ -360,9 +360,9 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("wm2")) {
 					Node_Sub38_Sub19.method2850(3, 2, -1, false, -1);
 					if (Class188_Sub2_Sub1.method1908(3) != 2) {
-						Node_Sub7.method2422((byte) 43, "wm2 failed");
+						Node_Sub7.generateTimestamp((byte) 43, "wm2 failed");
 					} else {
-						Node_Sub7.method2422((byte) 43, "wm2 succeeded");
+						Node_Sub7.generateTimestamp((byte) 43, "wm2 succeeded");
 						return;
 					}
 					return;
@@ -370,9 +370,9 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("wm3")) {
 					Node_Sub38_Sub19.method2850(3, 3, 1024, false, 768);
 					if (Class188_Sub2_Sub1.method1908(3) != 3) {
-						Node_Sub7.method2422((byte) 43, "wm3 failed");
+						Node_Sub7.generateTimestamp((byte) 43, "wm3 failed");
 					} else {
-						Node_Sub7.method2422((byte) 43, "wm3 succeeded");
+						Node_Sub7.generateTimestamp((byte) 43, "wm3 succeeded");
 						return;
 					}
 					return;
@@ -380,12 +380,12 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("tk0")) {
 					Class22.method300(0, true, false);
 					if ((Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) ^ 0xffffffff) == -1) {
-						Node_Sub7.method2422((byte) 43, "Entered tk0");
+						Node_Sub7.generateTimestamp((byte) 43, "Entered tk0");
 						Class213.aNode_Sub27_2512.method2690(102, 0, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
 						Node_Sub38_Sub31.method2893(1);
 						Class269.aBoolean3472 = false;
 					} else {
-						Node_Sub7.method2422((byte) 43, "Failed to enter tk0");
+						Node_Sub7.generateTimestamp((byte) 43, "Failed to enter tk0");
 						return;
 					}
 					return;
@@ -393,12 +393,12 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("tk1")) {
 					Class22.method300(1, true, false);
 					if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) == 1) {
-						Node_Sub7.method2422((byte) 43, "Entered tk1");
+						Node_Sub7.generateTimestamp((byte) 43, "Entered tk1");
 						Class213.aNode_Sub27_2512.method2690(103, 1, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
 						Node_Sub38_Sub31.method2893(1);
 						Class269.aBoolean3472 = false;
 					} else {
-						Node_Sub7.method2422((byte) 43, "Failed to enter tk1");
+						Node_Sub7.generateTimestamp((byte) 43, "Failed to enter tk1");
 						return;
 					}
 					return;
@@ -406,12 +406,12 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("tk2")) {
 					Class22.method300(2, true, false);
 					if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) == 2) {
-						Node_Sub7.method2422((byte) 43, "Entered tk2");
+						Node_Sub7.generateTimestamp((byte) 43, "Entered tk2");
 						Class213.aNode_Sub27_2512.method2690(104, 2, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
 						Node_Sub38_Sub31.method2893(1);
 						Class269.aBoolean3472 = false;
 					} else {
-						Node_Sub7.method2422((byte) 43, "Failed to enter tk2");
+						Node_Sub7.generateTimestamp((byte) 43, "Failed to enter tk2");
 						return;
 					}
 					return;
@@ -419,9 +419,9 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("tk3")) {
 					Class22.method300(3, true, false);
 					if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) != 3) {
-						Node_Sub7.method2422((byte) 43, "Failed to enter tk3");
+						Node_Sub7.generateTimestamp((byte) 43, "Failed to enter tk3");
 					} else {
-						Node_Sub7.method2422((byte) 43, "Entered tk3");
+						Node_Sub7.generateTimestamp((byte) 43, "Entered tk3");
 						Class213.aNode_Sub27_2512.method2690(27, 3, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
 						Node_Sub38_Sub31.method2893(1);
 						Class269.aBoolean3472 = false;
@@ -432,28 +432,28 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("tk5")) {
 					Class22.method300(5, true, false);
 					if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) == 5) {
-						Node_Sub7.method2422((byte) 43, "Entered tk5");
+						Node_Sub7.generateTimestamp((byte) 43, "Entered tk5");
 						Class213.aNode_Sub27_2512.method2690(127, 5, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
 						Node_Sub38_Sub31.method2893(1);
 						Class269.aBoolean3472 = false;
 					} else {
-						Node_Sub7.method2422((byte) 43, "Failed to enter tk5");
+						Node_Sub7.generateTimestamp((byte) 43, "Failed to enter tk5");
 						return;
 					}
 					return;
 				}
 				if (string.startsWith("setba")) {
 					if (string.length() < 6) {
-						Node_Sub7.method2422((byte) 43, "Invalid buildarea value");
+						Node_Sub7.generateTimestamp((byte) 43, "Invalid buildarea value");
 					} else {
 						int i_18_ = Class350.method3998(string.substring(6), -1);
 						if (i_18_ < 0 || (i_18_ ^ 0xffffffff) < (Class248.method3084(Class201.anInt2446, 128) ^ 0xffffffff)) {
-							Node_Sub7.method2422((byte) 43, "Invalid buildarea value");
+							Node_Sub7.generateTimestamp((byte) 43, "Invalid buildarea value");
 						} else {
 							Class213.aNode_Sub27_2512.method2690(28, i_18_, Class213.aNode_Sub27_2512.aClass320_Sub5_7297);
 							Node_Sub38_Sub31.method2893(1);
 							Class269.aBoolean3472 = false;
-							Node_Sub7.method2422((byte) 43, "maxbuildarea=" + Class213.aNode_Sub27_2512.aClass320_Sub5_7297.method3697(false));
+							Node_Sub7.generateTimestamp((byte) 43, "maxbuildarea=" + Class213.aNode_Sub27_2512.aClass320_Sub5_7297.method3697(false));
 							return;
 						}
 						return;
@@ -462,34 +462,34 @@ public class DevConsoleNode extends Node
 				}
 				if (string.startsWith("rect_debug")) {
 					if ((string.length() ^ 0xffffffff) > -11) {
-						Node_Sub7.method2422((byte) 43, "Invalid rect_debug value");
+						Node_Sub7.generateTimestamp((byte) 43, "Invalid rect_debug value");
 					} else {
 						Class12.anInt193 = Class350.method3998(string.substring(10).trim(), -1);
-						Node_Sub7.method2422((byte) 43, "rect_debug=" + Class12.anInt193);
+						Node_Sub7.generateTimestamp((byte) 43, "rect_debug=" + Class12.anInt193);
 						return;
 					}
 					return;
 				}
 				if (string.equalsIgnoreCase("qa_op_test")) {
 					Class54.aBoolean817 = true;
-					Node_Sub7.method2422((byte) 43, "qa_op_test=" + Class54.aBoolean817);
+					Node_Sub7.generateTimestamp((byte) 43, "qa_op_test=" + Class54.aBoolean817);
 					return;
 				}
 				if (string.equalsIgnoreCase("clipcomponents")) {
 					Class204.aBoolean2454 = !Class204.aBoolean2454;
-					Node_Sub7.method2422((byte) 43, "clipcomponents=" + Class204.aBoolean2454);
+					Node_Sub7.generateTimestamp((byte) 43, "clipcomponents=" + Class204.aBoolean2454);
 					return;
 				}
 				if (string.startsWith("bloom")) {
 					boolean bool_19_ = Class93.aGraphicsToolkit1241.w();
 					if (Node_Sub19.method2610((byte) -58, !bool_19_)) {
 						if (bool_19_) {
-							Node_Sub7.method2422((byte) 43, "Bloom disabled");
+							Node_Sub7.generateTimestamp((byte) 43, "Bloom disabled");
 						} else {
-							Node_Sub7.method2422((byte) 43, "Bloom enabled");
+							Node_Sub7.generateTimestamp((byte) 43, "Bloom enabled");
 						}
 					} else {
-						Node_Sub7.method2422((byte) 43, "Failed to enable bloom");
+						Node_Sub7.generateTimestamp((byte) 43, "Failed to enable bloom");
 						return;
 					}
 					return;
@@ -497,20 +497,20 @@ public class DevConsoleNode extends Node
 				if (string.equalsIgnoreCase("tween")) {
 					if (!Class320_Sub12.aBoolean8325) {
 						Class320_Sub12.aBoolean8325 = true;
-						Node_Sub7.method2422((byte) 43, "Forced tweening ENABLED!");
+						Node_Sub7.generateTimestamp((byte) 43, "Forced tweening ENABLED!");
 					} else {
 						Class320_Sub12.aBoolean8325 = false;
-						Node_Sub7.method2422((byte) 43, "Forced tweening disabled.");
+						Node_Sub7.generateTimestamp((byte) 43, "Forced tweening disabled.");
 						return;
 					}
 					return;
 				}
 				if (string.equalsIgnoreCase("shiftclick")) {
 					if (Class116.shiftClickEnabled) {
-						Node_Sub7.method2422((byte) 43, "Shift-click disabled.");
+						Node_Sub7.generateTimestamp((byte) 43, "Shift-click disabled.");
 						Class116.shiftClickEnabled = false;
 					} else {
-						Node_Sub7.method2422((byte) 43, "Shift-click ENABLED!");
+						Node_Sub7.generateTimestamp((byte) 43, "Shift-click ENABLED!");
 						Class116.shiftClickEnabled = true;
 						return;
 					}
@@ -518,11 +518,11 @@ public class DevConsoleNode extends Node
 				}
 				if (string.equalsIgnoreCase("getcgcoord")) {
 					//tele
-					Node_Sub7.method2422((byte) 43, "x:" + (Class295.aPlayer3692.anInt5934 >> 9) + " z:" + (Class295.aPlayer3692.anInt5940 >> 9));
+					Node_Sub7.generateTimestamp((byte) 43, "x:" + (Class295.aPlayer3692.anInt5934 >> 9) + " z:" + (Class295.aPlayer3692.anInt5940 >> 9));
 					return;
 				}
 				if (string.equalsIgnoreCase("getheight")) {
-					Node_Sub7.method2422((byte) 43, "Height: " + Class320_Sub10.aPlaneArray8300[Class295.aPlayer3692.aByte5933].method3251(Class295.aPlayer3692.anInt5940 >> 9, Class295.aPlayer3692.anInt5934 >> 9, (byte) -118));
+					Node_Sub7.generateTimestamp((byte) 43, "Height: " + Class320_Sub10.aPlaneArray8300[Class295.aPlayer3692.aByte5933].method3251(Class295.aPlayer3692.anInt5940 >> 9, Class295.aPlayer3692.anInt5934 >> 9, (byte) -118));
 					return;
 				}
 				if (string.equalsIgnoreCase("resetminimap")) {
@@ -531,7 +531,7 @@ public class DevConsoleNode extends Node
 					Node_Sub54.aClass338_7671.method3908(-32478);
 					Class304.aClass215_3834.method2071(7);
 					Node_Sub18.method2606(126);
-					Node_Sub7.method2422((byte) 43, "Minimap reset");
+					Node_Sub7.generateTimestamp((byte) 43, "Minimap reset");
 					return;
 				}
 				if (string.startsWith("mc")) {
@@ -546,24 +546,24 @@ public class DevConsoleNode extends Node
 						}
 						Class244.anInt3081 = i_20_;
 						Class243.method3061(7);
-						Node_Sub7.method2422((byte) 43, "Render cores now: " + Class244.anInt3081);
+						Node_Sub7.generateTimestamp((byte) 43, "Render cores now: " + Class244.anInt3081);
 					} else {
-						Node_Sub7.method2422((byte) 43, "Current toolkit doesn't support multiple cores");
+						Node_Sub7.generateTimestamp((byte) 43, "Current toolkit doesn't support multiple cores");
 						return;
 					}
 					return;
 				}
 				if (string.startsWith("cachespace")) {
-					Node_Sub7.method2422((byte) 43, "I(s): " + Class252.aClass61_3190.method595(1188) + "/" + Class252.aClass61_3190.method597(22349));
-					Node_Sub7.method2422((byte) 43, "I(m): " + Class166.aClass61_5097.method595(1188) + "/" + Class166.aClass61_5097.method597(22349));
-					Node_Sub7.method2422((byte) 43, "O(s): " + EntityNode_Sub3_Sub1.aClass86_9166.aClass12_1179.method201(48) + "/" + EntityNode_Sub3_Sub1.aClass86_9166.aClass12_1179.method200(0));
+					Node_Sub7.generateTimestamp((byte) 43, "I(s): " + Class252.aClass61_3190.method595(1188) + "/" + Class252.aClass61_3190.method597(22349));
+					Node_Sub7.generateTimestamp((byte) 43, "I(m): " + Class166.aClass61_5097.method595(1188) + "/" + Class166.aClass61_5097.method597(22349));
+					Node_Sub7.generateTimestamp((byte) 43, "O(s): " + EntityNode_Sub3_Sub1.aClass86_9166.aClass12_1179.method201(48) + "/" + EntityNode_Sub3_Sub1.aClass86_9166.aClass12_1179.method200(0));
 					return;
 				}
 				if (string.equals("renderprofile") || string.equals("rp")) {
 					Class186.aBoolean2259 = !Class186.aBoolean2259;
 					Class93.aGraphicsToolkit1241.b(Class186.aBoolean2259);
 					Class64.method712(25053);
-					Node_Sub7.method2422((byte) 43, "showprofiling=" + Class186.aBoolean2259);
+					Node_Sub7.generateTimestamp((byte) 43, "showprofiling=" + Class186.aBoolean2259);
 					return;
 				}
 				if (string.startsWith("performancetest")) {
@@ -587,35 +587,35 @@ public class DevConsoleNode extends Node
 						}
 					}
 					if ((i_21_ ^ 0xffffffff) != 0) {
-						Node_Sub7.method2422((byte) 43, "Performance: " + Class194.method1961(i_22_, i_21_, 13968));
+						Node_Sub7.generateTimestamp((byte) 43, "Performance: " + Class194.method1961(i_22_, i_21_, 13968));
 					} else {
-						Node_Sub7.method2422((byte) 43, "Java toolkit: " + Class194.method1961(i_22_, 0, 13968));
-						Node_Sub7.method2422((byte) 43, "SSE toolkit:  " + Class194.method1961(i_22_, 2, 13968));
-						Node_Sub7.method2422((byte) 43, "D3D toolkit:  " + Class194.method1961(i_22_, 3, 13968));
-						Node_Sub7.method2422((byte) 43, "GL toolkit:   " + Class194.method1961(i_22_, 1, 13968));
-						Node_Sub7.method2422((byte) 43, "GLX toolkit:  " + Class194.method1961(i_22_, 5, 13968));
+						Node_Sub7.generateTimestamp((byte) 43, "Java toolkit: " + Class194.method1961(i_22_, 0, 13968));
+						Node_Sub7.generateTimestamp((byte) 43, "SSE toolkit:  " + Class194.method1961(i_22_, 2, 13968));
+						Node_Sub7.generateTimestamp((byte) 43, "D3D toolkit:  " + Class194.method1961(i_22_, 3, 13968));
+						Node_Sub7.generateTimestamp((byte) 43, "GL toolkit:   " + Class194.method1961(i_22_, 1, 13968));
+						Node_Sub7.generateTimestamp((byte) 43, "GLX toolkit:  " + Class194.method1961(i_22_, 5, 13968));
 						return;
 					}
 					return;
 				}
 				if (string.equals("nonpcs")) {
 					Node_Sub29.areNpcsHidden = !Node_Sub29.areNpcsHidden;
-					Node_Sub7.method2422((byte) 43, "nonpcs=" + Node_Sub29.areNpcsHidden);
+					Node_Sub7.generateTimestamp((byte) 43, "nonpcs=" + Node_Sub29.areNpcsHidden);
 					return;
 				}
 				if (string.equals("autoworld")) {
 					EntityNode.method802(2126);
-					Node_Sub7.method2422((byte) 43, "auto world selected");
+					Node_Sub7.generateTimestamp((byte) 43, "auto world selected");
 					return;
 				}
 				if (string.startsWith("switchworld")) {
 					int i_23_ = Integer.parseInt(string.substring(12));
 					Class188_Sub1_Sub2.method1899(i_23_, (byte) 27, Class327.method3823(100, i_23_).aString8773);
-					Node_Sub7.method2422((byte) 43, "switched");
+					Node_Sub7.generateTimestamp((byte) 43, "switched");
 					return;
 				}
 				if (string.equals("getworld")) {
-					Node_Sub7.method2422((byte) 43, "w: " + Class181.aClass197_2155.worldId);
+					Node_Sub7.generateTimestamp((byte) 43, "w: " + Class181.aClass197_2155.worldId);
 					return;
 				}
 				if (string.startsWith("pc")) {
@@ -632,7 +632,7 @@ public class DevConsoleNode extends Node
 				}
 				if (string.equals("savevarcs")) {
 					Class144.method1631((byte) 125);
-					Node_Sub7.method2422((byte) 43, "perm varcs saved");
+					Node_Sub7.generateTimestamp((byte) 43, "perm varcs saved");
 					return;
 				}
 				if (string.equals("scramblevarcs")) {
@@ -645,38 +645,38 @@ public class DevConsoleNode extends Node
 						}
 					}
 					Class144.method1631((byte) 118);
-					Node_Sub7.method2422((byte) 43, "perm varcs scrambled");
+					Node_Sub7.generateTimestamp((byte) 43, "perm varcs scrambled");
 					return;
 				}
 				if (string.equals("showcolmap")) {
 					Class320_Sub3.aBoolean8235 = true;
 					Node_Sub18.method2606(126);
-					Node_Sub7.method2422((byte) 43, "colmap is shown");
+					Node_Sub7.generateTimestamp((byte) 43, "colmap is shown");
 					return;
 				}
 				if (string.equals("hidecolmap")) {
 					Class320_Sub3.aBoolean8235 = false;
 					Node_Sub18.method2606(126);
-					Node_Sub7.method2422((byte) 43, "colmap is hidden");
+					Node_Sub7.generateTimestamp((byte) 43, "colmap is hidden");
 					return;
 				}
 				if (string.equals("resetcache")) {
 					Node_Sub36_Sub2.method2761((byte) 125);
-					Node_Sub7.method2422((byte) 43, "Caches reset");
+					Node_Sub7.generateTimestamp((byte) 43, "Caches reset");
 					return;
 				}
 				if (string.equals("profilecpu")) {
-					Node_Sub7.method2422((byte) 43, String.valueOf(CacheNode_Sub4.method2302((byte) 88)) + "ms");
+					Node_Sub7.generateTimestamp((byte) 43, String.valueOf(CacheNode_Sub4.method2302((byte) 88)) + "ms");
 					return;
 				}
 				if (string.startsWith("getclientvarpbit")) {
 					int i_27_ = Integer.parseInt(string.substring(17));
-					Node_Sub7.method2422((byte) 43, "varpbit=" + Class24.aClass275_442.method64(i_27_, (byte) -42));
+					Node_Sub7.generateTimestamp((byte) 43, "varpbit=" + Class24.aClass275_442.method64(i_27_, (byte) -42));
 					return;
 				}
 				if (string.startsWith("getclientvarp")) {
 					int i_28_ = Integer.parseInt(string.substring(14));
-					Node_Sub7.method2422((byte) 43, "varp=" + Class24.aClass275_442.method65(i_28_, 107));
+					Node_Sub7.generateTimestamp((byte) 43, "varp=" + Class24.aClass275_442.method65(i_28_, 107));
 					return;
 				}
 				if (string.startsWith("directlogin")) {
@@ -712,16 +712,16 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.equals("soundstreamcount")) {
-					Node_Sub7.method2422((byte) 43, "Active streams: " + Class176.aNode_Sub9_Sub3_2106.method2512());
+					Node_Sub7.generateTimestamp((byte) 43, "Active streams: " + Class176.aNode_Sub9_Sub3_2106.method2512());
 					return;
 				}
 				if (string.equals("autosetup")) {
 					Node_Sub41.method2931((byte) -103);
-					Node_Sub7.method2422((byte) 43, "Complete. Toolkit now: " + Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false));
+					Node_Sub7.generateTimestamp((byte) 43, "Complete. Toolkit now: " + Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false));
 					return;
 				}
 				if (string.equals("errormessage")) {
-					Node_Sub7.method2422((byte) 43, Class158.aClient1983.method100(10));
+					Node_Sub7.generateTimestamp((byte) 43, Class158.aClient1983.method100(10));
 					return;
 				}
 				if (string.equals("heapdump")) {
@@ -730,26 +730,26 @@ public class DevConsoleNode extends Node
 					} else {
 						AbstractToolkit.method1272(0, new File("C:\\Temp\\heap.dump"), false);
 					}
-					Node_Sub7.method2422((byte) 43, "Done");
+					Node_Sub7.generateTimestamp((byte) 43, "Done");
 					return;
 				}
 				if (string.equals("os")) {
-					Node_Sub7.method2422((byte) 43, "Name: " + SignLink.osName);
-					Node_Sub7.method2422((byte) 43, "Arch: " + SignLink.osArchitecture);
-					Node_Sub7.method2422((byte) 43, "Ver: " + SignLink.osVersion);
+					Node_Sub7.generateTimestamp((byte) 43, "Name: " + SignLink.osName);
+					Node_Sub7.generateTimestamp((byte) 43, "Arch: " + SignLink.osArchitecture);
+					Node_Sub7.generateTimestamp((byte) 43, "Ver: " + SignLink.osVersion);
 					return;
 				}
 				if (string.startsWith("w2debug")) {
 					int i_33_ = Integer.parseInt(string.substring(8, 9));
 					Node_Sub9_Sub5.anInt9766 = i_33_;
 					Class243.method3061(7);
-					Node_Sub7.method2422((byte) 43, "Toggled!");
+					Node_Sub7.generateTimestamp((byte) 43, "Toggled!");
 					return;
 				}
 				if (string.startsWith("ortho ")) {
 					int i_34_ = string.indexOf(' ');
 					if ((i_34_ ^ 0xffffffff) > -1) {
-						Node_Sub7.method2422((byte) 43, "Syntax: ortho <n>");
+						Node_Sub7.generateTimestamp((byte) 43, "Syntax: ortho <n>");
 					} else {
 						int i_35_ = Class350.method3998(string.substring(i_34_ + 1), -1);
 						Class213.aNode_Sub27_2512.method2690(119, i_35_, Class213.aNode_Sub27_2512.aClass320_Sub3_7298);
@@ -757,9 +757,9 @@ public class DevConsoleNode extends Node
 						Class269.aBoolean3472 = false;
 						Class34_Sub1.method378(-4);
 						if (i_35_ != Class213.aNode_Sub27_2512.aClass320_Sub3_7298.method3691(false)) {
-							Node_Sub7.method2422((byte) 43, "Failed to change ortho mode");
+							Node_Sub7.generateTimestamp((byte) 43, "Failed to change ortho mode");
 						} else {
-							Node_Sub7.method2422((byte) 43, "Successfully changed ortho mode");
+							Node_Sub7.generateTimestamp((byte) 43, "Successfully changed ortho mode");
 							return;
 						}
 						return;
@@ -768,11 +768,11 @@ public class DevConsoleNode extends Node
 				}
 				if (string.startsWith("orthozoom ")) {
 					if ((Class213.aNode_Sub27_2512.aClass320_Sub3_7298.method3691(false) ^ 0xffffffff) == -1) {
-						Node_Sub7.method2422((byte) 43, "enable ortho mode first (use 'ortho <n>')");
+						Node_Sub7.generateTimestamp((byte) 43, "enable ortho mode first (use 'ortho <n>')");
 					} else {
 						int i_36_ = Class350.method3998(string.substring(1 + string.indexOf(' ')), -1);
 						Class308.anInt3916 = i_36_;
-						Node_Sub7.method2422((byte) 43, "orthozoom=" + Class308.anInt3916);
+						Node_Sub7.generateTimestamp((byte) 43, "orthozoom=" + Class308.anInt3916);
 						return;
 					}
 					return;
@@ -780,19 +780,19 @@ public class DevConsoleNode extends Node
 				if (string.startsWith("orthotilesize ")) {
 					int i_37_ = Class350.method3998(string.substring(1 + string.indexOf(' ')), -1);
 					Class22.anInt432 = Node_Sub36_Sub1.anInt10039 = i_37_;
-					Node_Sub7.method2422((byte) 43, "ortho tile size=" + i_37_);
+					Node_Sub7.generateTimestamp((byte) 43, "ortho tile size=" + i_37_);
 					Class34_Sub1.method378(-4);
 					return;
 				}
 				if (string.equals("orthocamlock")) {
 					Class336_Sub2.aBoolean8588 = !Class336_Sub2.aBoolean8588;
-					Node_Sub7.method2422((byte) 43, "ortho camera lock is " + (Class336_Sub2.aBoolean8588 ? "on" : "off"));
+					Node_Sub7.generateTimestamp((byte) 43, "ortho camera lock is " + (Class336_Sub2.aBoolean8588 ? "on" : "off"));
 					return;
 				}
 				if (string.startsWith("skydetail ")) {
 					int i_38_ = Class350.method3998(string.substring(string.indexOf(' ') - -1), -1);
 					Class213.aNode_Sub27_2512.method2690(36, i_38_, Class213.aNode_Sub27_2512.aClass320_Sub2_7272);
-					Node_Sub7.method2422((byte) 43, "skydetail is " + (Class213.aNode_Sub27_2512.aClass320_Sub2_7272.method3686(false) != 0 ? "high" : "low"));
+					Node_Sub7.generateTimestamp((byte) 43, "skydetail is " + (Class213.aNode_Sub27_2512.aClass320_Sub2_7272.method3686(false) != 0 ? "high" : "low"));
 					return;
 				}
 				if (string.startsWith("setoutput ")) {
@@ -800,7 +800,7 @@ public class DevConsoleNode extends Node
 					if (file.exists()) {
 						file = new File(string.substring(10) + "." + Class313.method3650(false) + ".log");
 						if (file.exists()) {
-							Node_Sub7.method2422((byte) 43, "file already exists!");
+							Node_Sub7.generateTimestamp((byte) 43, "file already exists!");
 							return;
 						}
 					}
@@ -811,9 +811,9 @@ public class DevConsoleNode extends Node
 					try {
 						Class270_Sub1.aFileOutputStream8027 = new FileOutputStream(file);
 					} catch (java.io.FileNotFoundException filenotfoundexception) {
-						Node_Sub7.method2422((byte) 43, "Could not create " + file.getName());
+						Node_Sub7.generateTimestamp((byte) 43, "Could not create " + file.getName());
 					} catch (SecurityException securityexception) {
-						Node_Sub7.method2422((byte) 43, "Cannot write to " + file.getName());
+						Node_Sub7.generateTimestamp((byte) 43, "Cannot write to " + file.getName());
 					}
 					return;
 				}
@@ -827,12 +827,12 @@ public class DevConsoleNode extends Node
 				if (string.startsWith("runscript ")) {
 					File file = new File(string.substring(10));
 					if (!file.exists()) {
-						Node_Sub7.method2422((byte) 43, "No such file");
+						Node_Sub7.generateTimestamp((byte) 43, "No such file");
 						return;
 					}
 					byte[] bs = Class337.method3904((byte) 113, file);
 					if (bs == null) {
-						Node_Sub7.method2422((byte) 43, "Failed to read file");
+						Node_Sub7.generateTimestamp((byte) 43, "Failed to read file");
 						return;
 					}
 					String[] strings = Class106.method1120((byte) -57, Class197.method1998(Class329.method3835(bs, true), "", (byte) 26, '\r'), '\n');
@@ -849,11 +849,11 @@ public class DevConsoleNode extends Node
 					if ((string.length() ^ 0xffffffff) >= -10 || (string.charAt(8) ^ 0xffffffff) != -33) {
 						Class305.aString3870 = null;
 						Class305.aBoolean3868 = !Class305.aBoolean3868;
-						Node_Sub7.method2422((byte) 43, "cs2debug:" + Class305.aBoolean3868);
+						Node_Sub7.generateTimestamp((byte) 43, "cs2debug:" + Class305.aBoolean3868);
 					} else {
 						Class305.aString3870 = string.substring(9);
 						Class305.aBoolean3868 = true;
-						Node_Sub7.method2422((byte) 43, "cs2debug: (" + Class305.aString3870 + ")");
+						Node_Sub7.generateTimestamp((byte) 43, "cs2debug: (" + Class305.aString3870 + ")");
 						return;
 					}
 					return;
@@ -872,12 +872,12 @@ public class DevConsoleNode extends Node
 					return;
 				}
 			} catch (Exception exception) {
-				Node_Sub7.method2422((byte) 43, Class22.aClass22_365.method297(-12273, Class35.anInt537));
+				Node_Sub7.generateTimestamp((byte) 43, Class22.aClass22_365.method297(-12273, Class35.anInt537));
 				return;
 			}
 		}
 		if (Class151.anInt1843 != 11) {
-			Node_Sub7.method2422((byte) 43, Class22.aClass22_366.method297(-12273, Class35.anInt537) + string);
+			Node_Sub7.generateTimestamp((byte) 43, Class22.aClass22_366.method297(-12273, Class35.anInt537) + string);
 		}
 	}
 }

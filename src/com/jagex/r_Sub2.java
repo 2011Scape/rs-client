@@ -694,7 +694,7 @@ public class r_Sub2 extends r
 				Node_Sub38_Sub10.method2824(0);
 				Class194_Sub1.aBoolean6892 = true;
 				if (Class19.aBoolean313) {
-					Node_Sub7.method2422((byte) 43, "Took: " + (-Class366.aLong4528 + Class313.method3650(false)) + "ms");
+					Node_Sub7.generateTimestamp((byte) 43, "Took: " + (-Class366.aLong4528 + Class313.method3650(false)) + "ms");
 					Class19.aBoolean313 = false;
 				}
 			}
