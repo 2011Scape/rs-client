@@ -556,7 +556,7 @@ public class GLSprite_Sub1 extends GLSprite
 		int i = -90 % ((b - -44) / 32);
 		cachenode_sub4.method2275(-94);
 		for (CacheNode_Sub4 cachenode_sub4_118_ = (CacheNode_Sub4) Class184.aClass158_2189.method1723(13); cachenode_sub4_118_ != null; cachenode_sub4_118_ = (CacheNode_Sub4) Class184.aClass158_2189.method1721(0)) {
-			if (Node_Sub42.method2935((byte) 69, cachenode_sub4.method2300((byte) 88), cachenode_sub4_118_.method2300((byte) 88))) {
+			if (DevConsoleNode.method2935((byte) 69, cachenode_sub4.method2300((byte) 88), cachenode_sub4_118_.method2300((byte) 88))) {
 				bool = true;
 				Node_Sub38_Sub19.method2847(255, cachenode_sub4_118_, cachenode_sub4);
 				break;

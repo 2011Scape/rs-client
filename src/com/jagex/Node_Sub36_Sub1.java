@@ -25,7 +25,7 @@ public class Node_Sub36_Sub1 extends Node_Sub36
 			int i_0_ = -96 % ((32 - i) / 56);
 			int i_1_ = Class270_Sub1.anInt8033;
 			int i_2_ = Class131.anInt5447;
-			int i_3_ = -i_1_ + Class36.anInt542 + -Class360.anInt4480;
+			int i_3_ = -i_1_ + Class36.anInt542 + -Class360.windowWidth;
 			int i_4_ = -i_2_ + (CacheNode_Sub3.anInt9441 - Class205.anInt5115);
 			do {
 				if (i_1_ > 0 || (i_3_ ^ 0xffffffff) < -1 || i_2_ > 0 || i_4_ > 0) {

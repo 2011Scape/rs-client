@@ -500,17 +500,17 @@ public class Npc extends Actor
 				Class131.anInt5447 = 0;
 				Class205.anInt5115 = Class257.anInt3244;
 				Class270_Sub1.anInt8033 = (-Node_Sub38_Sub12.anInt10225 + Class36.anInt542) / 2;
-				Class360.anInt4480 = Node_Sub38_Sub12.anInt10225;
+				Class360.windowWidth = Node_Sub38_Sub12.anInt10225;
 			}
 			if (Node_Sub38_Sub1.aClass329_10086 != Class240.aClass329_2943) {
-				if (Class360.anInt4480 < 1024 && Class205.anInt5115 < 768) {
+				if (Class360.windowWidth < 1024 && Class205.anInt5115 < 768) {
 					/* empty */
 				}
 			}
-			Node_Sub38_Sub20.aCanvas10309.setSize(Class360.anInt4480, Class205.anInt5115);
+			Node_Sub38_Sub20.aCanvas10309.setSize(Class360.windowWidth, Class205.anInt5115);
 			if (Class93.aGraphicsToolkit1241 != null) {
 				if (!Class71.aBoolean967) {
-					Class93.aGraphicsToolkit1241.a(Node_Sub38_Sub20.aCanvas10309, Class360.anInt4480, Class205.anInt5115);
+					Class93.aGraphicsToolkit1241.a(Node_Sub38_Sub20.aCanvas10309, Class360.windowWidth, Class205.anInt5115);
 				} else {
 					Class302.method3535(Node_Sub38_Sub20.aCanvas10309, true);
 				}

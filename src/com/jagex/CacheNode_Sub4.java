@@ -82,7 +82,7 @@ public class CacheNode_Sub4 extends CacheNode
 		}
 		CacheNode_Sub13 cachenode_sub13_2_ = (CacheNode_Sub13) aClass158_9457.method1723(13);
 		while (cachenode_sub13_2_ != null) {
-			if (Node_Sub42.method2935((byte) 69, cachenode_sub13.anInt9562, cachenode_sub13_2_.anInt9562)) {
+			if (DevConsoleNode.method2935((byte) 69, cachenode_sub13.anInt9562, cachenode_sub13_2_.anInt9562)) {
 				Class76.method767(false, cachenode_sub13, cachenode_sub13_2_);
 				anInt9462++;
 				if (bool) {

@@ -15,7 +15,7 @@ public class Class360 implements Runnable
 	private byte[] aByteArray4477;
 	private OutputStream anOutputStream4478;
 	private Thread aThread4479;
-	static int anInt4480;
+	static int windowWidth;
 	static int anInt4481;
 	
 	final void method4041(int i) {

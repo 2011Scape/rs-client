@@ -135,7 +135,7 @@ public class Class340 implements Runnable
 							i_5_ = i_5_ << 24 | 0xffffff;
 							i = 0xffffff | i << 24;
 							Class93.aGraphicsToolkit1241.GA(0);
-							GLSprite glsprite = Class93.aGraphicsToolkit1241.a(Class360.anInt4480, Class205.anInt5115, true);
+							GLSprite glsprite = Class93.aGraphicsToolkit1241.a(Class360.windowWidth, Class205.anInt5115, true);
 							Class93.aGraphicsToolkit1241.method1245(glsprite, -1);
 							anInterface16_4228.method63(true, (byte) -95);
 							Class93.aGraphicsToolkit1241.v();

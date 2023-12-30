@@ -74,7 +74,7 @@ public class Class323
 				method3807(23, -15, 97);
 			}
 			int i_7_ = Class362.anInt4492 + Node_Sub6.anInt7043;
-			if (i_4_ + i_7_ > Class360.anInt4480) {
+			if (i_4_ + i_7_ > Class360.windowWidth) {
 				i_7_ = Node_Sub6.anInt7043 - i_4_;
 			}
 			if (i_7_ < 0) {

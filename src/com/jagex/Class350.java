@@ -103,7 +103,7 @@ public class Class350 implements Interface16
 		}
 		anInt5365++;
 		if (aBoolean5370) {
-			return (Class360.anInt4480 - i_3_) / 2;
+			return (Class360.windowWidth - i_3_) / 2;
 		}
 		return 0;
 	}
@@ -255,10 +255,10 @@ public class Class350 implements Interface16
 					int i = Class243.aClass340_3069.method3958((byte) 84);
 					String string = Class243.aClass340_3069.method3957((byte) 106);
 					if (Class54.anImage813 == null) {
-						Class54.anImage813 = Node_Sub38_Sub20.aCanvas10309.createImage(Class360.anInt4480, Class205.anInt5115);
+						Class54.anImage813 = Node_Sub38_Sub20.aCanvas10309.createImage(Class360.windowWidth, Class205.anInt5115);
 					}
 					Graphics graphics_12_ = Class54.anImage813.getGraphics();
-					graphics_12_.clearRect(0, 0, Class360.anInt4480, Class205.anInt5115);
+					graphics_12_.clearRect(0, 0, Class360.windowWidth, Class205.anInt5115);
 					int i_13_ = anImage5383.getWidth(null);
 					int i_14_ = anImage5398.getWidth(null);
 					int i_15_ = anImage5386.getWidth(null);

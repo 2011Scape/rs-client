@@ -30,7 +30,7 @@ public class Class379
 	
 	final int method4160(int i, int i_0_, int i_1_) {
 		anInt4870++;
-		int i_2_ = (Class360.anInt4480 ^ 0xffffffff) < (i_0_ ^ 0xffffffff) ? Class360.anInt4480 : i_0_;
+		int i_2_ = (Class360.windowWidth ^ 0xffffffff) < (i_0_ ^ 0xffffffff) ? Class360.windowWidth : i_0_;
 		if (Class294.aClass379_3689 == this) {
 			return 0;
 		}

@@ -891,7 +891,7 @@ abstract class AbstractToolkit extends GraphicsToolkit
 		SeekableFile.anAnimableArray3884 = new Animable[2];
 		Node_Sub36.anAnimableArray7429 = new Animable[2];
 		Class32.anAnimableArray516 = new Animable[10000];
-		Node_Sub42.anInt7527 = 0;
+		DevConsoleNode.anInt7527 = 0;
 		Class262_Sub15.anAnimableArray7817 = new Animable[5000];
 		Class348.anInt4290 = 0;
 		Node_Sub52.aMobileArray7648 = new Mobile[5000];

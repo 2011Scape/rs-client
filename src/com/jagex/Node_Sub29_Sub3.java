@@ -15,7 +15,7 @@ public class Node_Sub29_Sub3 extends Node_Sub29
 	}
 	
 	static final void method2717(int i, boolean bool) {
-		Class13.method209(bool, Class320_Sub15.anInt8355, -104, Class205.anInt5115, Class360.anInt4480);
+		Class13.method209(bool, Class320_Sub15.anInt8355, -104, Class205.anInt5115, Class360.windowWidth);
 		if (i != 1) {
 			aShort10026 = (short) 59;
 		}

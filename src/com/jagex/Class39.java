@@ -36,7 +36,7 @@ public class Class39
 		if (aHashTable579 == null) {
 			method409(122);
 		}
-		for (Node_Sub42 node_sub42 = (Node_Sub42) aHashTable579.method1518(b ^ 0xde3, Class113.method1153(b ^ 0x5a, string)); node_sub42 != null; node_sub42 = (Node_Sub42) aHashTable579.method1524((byte) 84)) {
+		for (DevConsoleNode node_sub42 = (DevConsoleNode) aHashTable579.method1518(b ^ 0xde3, Class113.method1153(b ^ 0x5a, string)); node_sub42 != null; node_sub42 = (DevConsoleNode) aHashTable579.method1524((byte) 84)) {
 			if (node_sub42.aString7522.equals(string)) {
 				return true;
 			}
@@ -164,14 +164,14 @@ public class Class39
 					if (strings[i_24_] != null) {
 						String string = strings[i_24_];
 						long l = Class113.method1153(1, string);
-						Node_Sub42 node_sub42;
-						for (node_sub42 = (Node_Sub42) hashtable.method1518(3512, l); node_sub42 != null; node_sub42 = (Node_Sub42) hashtable.method1524((byte) 84)) {
+						DevConsoleNode node_sub42;
+						for (node_sub42 = (DevConsoleNode) hashtable.method1518(3512, l); node_sub42 != null; node_sub42 = (DevConsoleNode) hashtable.method1524((byte) 84)) {
 							if (node_sub42.aString7522.equals(string)) {
 								break;
 							}
 						}
 						if (node_sub42 == null) {
-							node_sub42 = new Node_Sub42(string, 0);
+							node_sub42 = new DevConsoleNode(string, 0);
 							hashtable.method1515(l, node_sub42, -126);
 						}
 						node_sub42.anInt7521++;
@@ -187,8 +187,8 @@ public class Class39
 								break;
 							}
 						}
-						Node_Sub42 node_sub42;
-						for (node_sub42 = (Node_Sub42) hashtable.method1518(3512, l); node_sub42 != null; node_sub42 = (Node_Sub42) hashtable.method1524((byte) 84)) {
+						DevConsoleNode node_sub42;
+						for (node_sub42 = (DevConsoleNode) hashtable.method1518(3512, l); node_sub42 != null; node_sub42 = (DevConsoleNode) hashtable.method1524((byte) 84)) {
 							if (node_sub42.aString7522.equals(string)) {
 								break;
 							}
@@ -207,14 +207,14 @@ public class Class39
 				HashTable hashtable_27_ = new HashTable(hashtable.method1522(false));
 				for (Node_Sub18 node_sub18 = (Node_Sub18) hashtable.method1516(false); node_sub18 != null; node_sub18 = (Node_Sub18) hashtable.method1520(100)) {
 					long l = Class113.method1153(1, node_sub18.aString7149);
-					Node_Sub42 node_sub42;
-					for (node_sub42 = (Node_Sub42) hashtable_27_.method1518(3512, l); node_sub42 != null; node_sub42 = (Node_Sub42) hashtable_27_.method1524((byte) 84)) {
+					DevConsoleNode node_sub42;
+					for (node_sub42 = (DevConsoleNode) hashtable_27_.method1518(3512, l); node_sub42 != null; node_sub42 = (DevConsoleNode) hashtable_27_.method1524((byte) 84)) {
 						if (node_sub42.aString7522.equals(node_sub18.aString7149)) {
 							break;
 						}
 					}
 					if (node_sub42 == null) {
-						node_sub42 = new Node_Sub42(node_sub18.aString7149, 0);
+						node_sub42 = new DevConsoleNode(node_sub18.aString7149, 0);
 						hashtable_27_.method1515(l, node_sub42, -126);
 					}
 					node_sub42.anInt7521++;
@@ -227,8 +227,8 @@ public class Class39
 							break;
 						}
 					}
-					Node_Sub42 node_sub42;
-					for (node_sub42 = (Node_Sub42) hashtable_27_.method1518(3512, l); node_sub42 != null; node_sub42 = (Node_Sub42) hashtable_27_.method1524((byte) 84)) {
+					DevConsoleNode node_sub42;
+					for (node_sub42 = (DevConsoleNode) hashtable_27_.method1518(3512, l); node_sub42 != null; node_sub42 = (DevConsoleNode) hashtable_27_.method1524((byte) 84)) {
 						if (node_sub42.aString7522.equals(node_sub18.aString7149)) {
 							break;
 						}

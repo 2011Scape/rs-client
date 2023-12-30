@@ -1058,7 +1058,7 @@ public class client extends GameStub
 		Class246.method3074(-87);
 		Class74.method757();
 		Class350.method4000(-13);
-		Node_Sub42.method2933(-3239);
+		DevConsoleNode.method2933(-3239);
 		CacheNode_Sub5.method2310(true);
 		EntityNode_Sub7.method975(true);
 		Class269.method3293(65);
@@ -1519,7 +1519,7 @@ public class client extends GameStub
 						}
 					}
 					if (GLXToolkit.method1401(-6279)) {
-						Node_Sub42.method2936(Class93.aGraphicsToolkit1241, -49);
+						DevConsoleNode.drawDevConsole(Class93.aGraphicsToolkit1241, -49);
 					}
 					if (Class240.aSignLink2946.aBoolean3985 && Class253.method3105(Class151.anInt1843, (byte) 80) && Class12.anInt193 == 0 && (Class188_Sub2_Sub1.method1908(3) ^ 0xffffffff) == -2 && !bool_51_) {
 						int i = 0;
@@ -2485,7 +2485,7 @@ public class client extends GameStub
 			if (Class295.aPlayer3692 != null) {
 				string += "2)" + CacheNode_Sub20_Sub1.anInt11089 + "," + (Class295.aPlayer3692.anIntArray10910[0] + Node_Sub53.anInt7668) + "," + (Class320_Sub4.anInt8243 + Class295.aPlayer3692.anIntArray10908[0]) + "|";
 			}
-			string += "3)" + Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) + "|4)" + Class213.aNode_Sub27_2512.aClass320_Sub13_7284.method3734(false) + "|5)" + Class188_Sub2_Sub1.method1908(3) + "|6)" + Class360.anInt4480 + "," + Class205.anInt5115 + "|";
+			string += "3)" + Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) + "|4)" + Class213.aNode_Sub27_2512.aClass320_Sub13_7284.method3734(false) + "|5)" + Class188_Sub2_Sub1.method1908(3) + "|6)" + Class360.windowWidth + "," + Class205.anInt5115 + "|";
 			string += "7)" + Class213.aNode_Sub27_2512.aClass320_Sub24_7317.method3773(false) + "|";
 			string += "8)" + Class213.aNode_Sub27_2512.aClass320_Sub12_7282.method3730(false) + "|";
 			string += "9)" + Class213.aNode_Sub27_2512.aClass320_Sub26_7269.method3779(false) + "|";

@@ -166,12 +166,12 @@ public class Class163
 			}
 			try {
 				if (Class54.anImage813 == null) {
-					Class54.anImage813 = Node_Sub38_Sub20.aCanvas10309.createImage(Class360.anInt4480, Class205.anInt5115);
+					Class54.anImage813 = Node_Sub38_Sub20.aCanvas10309.createImage(Class360.windowWidth, Class205.anInt5115);
 				}
 				Graphics graphics_9_ = Class54.anImage813.getGraphics();
 				graphics_9_.setColor(Color.black);
-				graphics_9_.fillRect(0, 0, Class360.anInt4480, Class205.anInt5115);
-				int i_10_ = Class360.anInt4480 / 2 + -152;
+				graphics_9_.fillRect(0, 0, Class360.windowWidth, Class205.anInt5115);
+				int i_10_ = Class360.windowWidth / 2 + -152;
 				int i_11_ = -18 + Class205.anInt5115 / 2;
 				graphics_9_.setColor(color);
 				graphics_9_.drawRect(i_10_, i_11_, 303, 33);
@@ -187,13 +187,13 @@ public class Class163
 				if (EntityNode_Sub6.aString5991 != null) {
 					graphics_9_.setFont(Node_Sub46.aFont7555);
 					graphics_9_.setColor(color_7_);
-					graphics_9_.drawString(EntityNode_Sub6.aString5991, Class360.anInt4480 / 2 + -(EntityNode_Sub6.aString5991.length() * 6 / 2), -26 + Class205.anInt5115 / 2);
+					graphics_9_.drawString(EntityNode_Sub6.aString5991, Class360.windowWidth / 2 + -(EntityNode_Sub6.aString5991.length() * 6 / 2), -26 + Class205.anInt5115 / 2);
 				}
 				graphics.drawImage(Class54.anImage813, 0, 0, null);
 			} catch (Exception exception) {
 				graphics.setColor(Color.black);
-				graphics.fillRect(0, 0, Class360.anInt4480, Class205.anInt5115);
-				int i_13_ = -152 + Class360.anInt4480 / 2;
+				graphics.fillRect(0, 0, Class360.windowWidth, Class205.anInt5115);
+				int i_13_ = -152 + Class360.windowWidth / 2;
 				int i_14_ = -18 + Class205.anInt5115 / 2;
 				graphics.setColor(color);
 				graphics.drawRect(i_13_, i_14_, 303, 33);
@@ -207,7 +207,7 @@ public class Class163
 				if (EntityNode_Sub6.aString5991 != null) {
 					graphics.setFont(Node_Sub46.aFont7555);
 					graphics.setColor(color_7_);
-					graphics.drawString(EntityNode_Sub6.aString5991, Class360.anInt4480 / 2 - 6 * EntityNode_Sub6.aString5991.length() / 2, -26 + Class205.anInt5115 / 2);
+					graphics.drawString(EntityNode_Sub6.aString5991, Class360.windowWidth / 2 - 6 * EntityNode_Sub6.aString5991.length() / 2, -26 + Class205.anInt5115 / 2);
 				}
 				graphics.drawString(string, i_13_ + (304 + -(6 * string.length())) / 2, 22 + i_14_);
 			}

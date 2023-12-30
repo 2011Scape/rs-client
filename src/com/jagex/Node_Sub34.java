@@ -31,7 +31,7 @@ public class Node_Sub34 extends Node
 					i_1_ = Class67.method733(-106);
 					i_2_ = Class226.method2112(256);
 				}
-				BufferedConnection.method422(i_2_ - -Class205.anInt5115, i_2_, -1, i_2_, i_0_, i_0_ + i_2_, i_1_ + Class360.anInt4480, i_1_, Class320_Sub15.anInt8355, i, i_1_ + i, i_1_);
+				BufferedConnection.method422(i_2_ - -Class205.anInt5115, i_2_, -1, i_2_, i_0_, i_0_ + i_2_, i_1_ + Class360.windowWidth, i_1_, Class320_Sub15.anInt8355, i, i_1_ + i, i_1_);
 				if (Class66_Sub1.aWidget8983 != null) {
 					Node_Sub15_Sub11.method2580((byte) -114, i + i_1_, i_0_ - -i_2_);
 				}

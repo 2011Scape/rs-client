@@ -1869,7 +1869,7 @@ public class Class320_Sub11 extends Class320 {
 		Class320_Sub6.anInt8259 = 0;
 		Class339_Sub1.anInt8632 = 0;
 		Buffer.anInt6973 = 0;
-		Node_Sub42.anInt7520 = 0;
+		DevConsoleNode.anInt7520 = 0;
 		GLToolkit.anInt6575 = 0;
 		Class169.anInt4963 = 0;
 		Class320_Sub13.anInt8328 = 0;
@@ -1999,7 +1999,7 @@ public class Class320_Sub11 extends Class320 {
 		CacheNode_Sub15.anInt9587 = 0;
 		Mobile_Sub4.anInt10980 = 0;
 		Class379.anInt4868 = 0;
-		Node_Sub42.anInt7525 = 0;
+		DevConsoleNode.anInt7525 = 0;
 		Class371.anInt4582 = 0;
 		Class275.anInt5413 = 0;
 		Class47.anInt685 = 0;
@@ -2220,7 +2220,7 @@ public class Class320_Sub11 extends Class320 {
 		Class84.anInt1131 = 0;
 		Class339_Sub6.anInt8701 = 0;
 		Plane.anInt3400 = 0;
-		Node_Sub42.anInt7524 = 0;
+		DevConsoleNode.anInt7524 = 0;
 		Class64.anInt5040 = 0;
 		Player.anInt11170 = 0;
 		GLToolkit.anInt6472 = 0;

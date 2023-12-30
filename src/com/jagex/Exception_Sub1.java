@@ -27,9 +27,9 @@ public class Exception_Sub1 extends Exception
 			i_0_ = Class67.method733(-78);
 			i_1_ = Class226.method2112(256);
 		}
-		Class282.method3385(Class320_Sub15.anInt8355, i_0_, Class360.anInt4480 + i_0_, i_1_, i_1_, -1, i_0_, true, Class205.anInt5115 + i_1_);
+		Class282.method3385(Class320_Sub15.anInt8355, i_0_, Class360.windowWidth + i_0_, i_1_, i_1_, -1, i_0_, true, Class205.anInt5115 + i_1_);
 		if (Class236.aWidgetArray2899 != null) {
-			Node_Sub6.method2416(-1412584499, Class118.anInt5410, Class236.aWidgetArray2899, i_0_, i_1_, i_1_ + Class205.anInt5115, Class186.aWidget2257.anInt4703, true, 20, i_0_ + Class360.anInt4480, CacheNode_Sub7.anInt9488);
+			Node_Sub6.method2416(-1412584499, Class118.anInt5410, Class236.aWidgetArray2899, i_0_, i_1_, i_1_ + Class205.anInt5115, Class186.aWidget2257.anInt4703, true, 20, i_0_ + Class360.windowWidth, CacheNode_Sub7.anInt9488);
 			Class236.aWidgetArray2899 = null;
 		}
 	}

@@ -42,7 +42,7 @@ public class r_Sub1 extends r
 			if ((Class151.anInt1843 ^ 0xffffffff) == -12 && client.method113(widget).method2748((byte) -98, -1 + i_3_)) {
 				if (i_3_ == 1) {
 					Class188_Sub2_Sub1.anInt9350++;
-					Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Node_Sub42.aClass318_7526, Class218.worldResponseBuffer.anIsaacCipher1571);
+					Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, DevConsoleNode.aClass318_7526, Class218.worldResponseBuffer.anIsaacCipher1571);
 					Animable_Sub4_Sub1.method927(i_1_, widget.anInt4718, -15, node_sub13, i_2_);
 					Class218.worldResponseBuffer.method1514(127, node_sub13);
 				}

@@ -61,7 +61,7 @@ public class Class320_Sub26 extends Class320
 		if (Class32.anAnimableArray516 != null) {
 			for (int i = 0; i < Class32.anAnimableArray516.length; i++)
 				Class32.anAnimableArray516[i] = null;
-			Node_Sub42.anInt7527 = 0;
+			DevConsoleNode.anInt7527 = 0;
 		}
 		if (Class262_Sub15.anAnimableArray7817 != null) {
 			for (int i = 0; i < Class262_Sub15.anAnimableArray7817.length; i++)

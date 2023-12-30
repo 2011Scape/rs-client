@@ -28,7 +28,7 @@ public class Class240
 	
 	static final Class151 method3028(byte b, int i) {
 		anInt2950++;
-		Class151[] class151s = Node_Sub42.method2934(-46);
+		Class151[] class151s = DevConsoleNode.method2934(-46);
 		for (int i_0_ = 0; i_0_ < class151s.length; i_0_++) {
 			if (class151s[i_0_].anInt1844 == i) {
 				return class151s[i_0_];

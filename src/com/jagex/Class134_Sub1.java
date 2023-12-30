@@ -229,7 +229,7 @@ public class Class134_Sub1 extends Class134 implements Interface13_Impl3
 							class318_9_ = Class225.aClass318_2679;
 						}
 					} else {
-						class318_9_ = Node_Sub42.aClass318_7523;
+						class318_9_ = DevConsoleNode.aClass318_7523;
 					}
 				} else {
 					class318_9_ = Class320_Sub13.aClass318_8334;

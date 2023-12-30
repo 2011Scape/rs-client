@@ -139,10 +139,10 @@ public class Class34_Sub1 extends Class34
 					break;
 				}
 			} else {
-				CacheNode.method2279(-1, Class205.anInt5115, 100, Class360.anInt4480, 100, Class93.aGraphicsToolkit1241);
+				CacheNode.method2279(-1, Class205.anInt5115, 100, Class360.windowWidth, 100, Class93.aGraphicsToolkit1241);
 				break;
 			}
-			Class64.method711(Class93.aGraphicsToolkit1241, 2, Class360.anInt4480, Class22.anInt432, Node_Sub36_Sub1.anInt10039, 2, (byte) -128, Class205.anInt5115);
+			Class64.method711(Class93.aGraphicsToolkit1241, 2, Class360.windowWidth, Class22.anInt432, Node_Sub36_Sub1.anInt10039, 2, (byte) -128, Class205.anInt5115);
 		} while (false);
 		if (Class213.aNode_Sub27_2512.aClass320_Sub3_7298.method3689((byte) 122)) {
 			Class302.method3535(Node_Sub38_Sub20.aCanvas10309, true);

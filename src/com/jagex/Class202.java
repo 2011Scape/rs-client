@@ -20,7 +20,7 @@ public class Class202
 		anInt2447++;
 		Node_Sub13 node_sub13 = FloatBuffer.method2250(i + -586, Class312.aClass318_3976, Class218.worldResponseBuffer.anIsaacCipher1571);
 		node_sub13.aPacket7113.method2226(Class188_Sub2_Sub1.method1908(3), false);
-		node_sub13.aPacket7113.method2210(Class360.anInt4480, -66);
+		node_sub13.aPacket7113.method2210(Class360.windowWidth, -66);
 		node_sub13.aPacket7113.method2210(Class205.anInt5115, i + -324);
 		node_sub13.aPacket7113.method2226(Class213.aNode_Sub27_2512.aClass320_Sub13_7283.method3734(false), false);
 		Class218.worldResponseBuffer.method1514(i ^ 0xb7, node_sub13);

@@ -106,7 +106,7 @@ public class Class274 implements d
 	
 	static final void method3326(boolean bool, byte[][][] bs, int i, byte b, int i_11_, int i_12_, boolean bool_13_) {
 		int i_14_ = bool ? 1 : 0;
-		Node_Sub42.anInt7527 = 0;
+		DevConsoleNode.anInt7527 = 0;
 		Class348.anInt4290 = 0;
 		Class359.anInt4465++;
 		if ((i_12_ & 0x2) == 0) {
@@ -114,7 +114,7 @@ public class Class274 implements d
 				if (!Class150_Sub1.method1658(animable, bool, bs, i, b)) {
 					method3327(animable);
 					if (animable.anInt5944 != -1) {
-						Class32.anAnimableArray516[Node_Sub42.anInt7527++] = animable;
+						Class32.anAnimableArray516[DevConsoleNode.anInt7527++] = animable;
 					}
 				}
 			}
@@ -138,7 +138,7 @@ public class Class274 implements d
 					} else {
 						method3327(animable);
 						if (animable.anInt5944 != -1) {
-							Class32.anAnimableArray516[Node_Sub42.anInt7527++] = animable;
+							Class32.anAnimableArray516[DevConsoleNode.anInt7527++] = animable;
 						}
 					}
 				}
@@ -151,16 +151,16 @@ public class Class274 implements d
 							if (Node_Sub52.aMobileArray7648[i_15_].method813(0)) {
 								Class262_Sub15.anAnimableArray7817[Class348.anInt4290++] = Node_Sub52.aMobileArray7648[i_15_];
 							} else {
-								Class32.anAnimableArray516[Node_Sub42.anInt7527++] = Node_Sub52.aMobileArray7648[i_15_];
+								Class32.anAnimableArray516[DevConsoleNode.anInt7527++] = Node_Sub52.aMobileArray7648[i_15_];
 							}
 						}
 					}
 				}
 			}
 		}
-		if (Node_Sub42.anInt7527 > 0) {
-			Node_Sub38_Sub26.method2876(Class32.anAnimableArray516, 0, Node_Sub42.anInt7527 - 1);
-			for (int i_16_ = 0; i_16_ < Node_Sub42.anInt7527; i_16_++)
+		if (DevConsoleNode.anInt7527 > 0) {
+			Node_Sub38_Sub26.method2876(Class32.anAnimableArray516, 0, DevConsoleNode.anInt7527 - 1);
+			for (int i_16_ = 0; i_16_ < DevConsoleNode.anInt7527; i_16_++)
 				Class338.method3915(Class32.anAnimableArray516[i_16_], true, bool_13_);
 		}
 		if (Class239.aBoolean2932) {

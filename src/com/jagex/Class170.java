@@ -64,18 +64,18 @@ public class Class170
 		if (i_4_ == 2) {
 			int i_5_ = (Class36.anInt542 ^ 0xffffffff) >= -801 ? Class36.anInt542 : 800;
 			Class270_Sub1.anInt8033 = (-i_5_ + Class36.anInt542) / 2;
-			Class360.anInt4480 = i_5_;
+			Class360.windowWidth = i_5_;
 			int i_6_ = CacheNode_Sub3.anInt9441 <= 600 ? CacheNode_Sub3.anInt9441 : 600;
 			Class131.anInt5447 = 0;
 			Class205.anInt5115 = i_6_;
 		} else if (i_4_ != 1) {
 			Class131.anInt5447 = 0;
 			Class205.anInt5115 = CacheNode_Sub3.anInt9441;
-			Class360.anInt4480 = Class36.anInt542;
+			Class360.windowWidth = Class36.anInt542;
 			Class270_Sub1.anInt8033 = 0;
 		} else {
 			int i_7_ = Class36.anInt542 <= 1024 ? Class36.anInt542 : 1024;
-			Class360.anInt4480 = i_7_;
+			Class360.windowWidth = i_7_;
 			int i_8_ = (CacheNode_Sub3.anInt9441 ^ 0xffffffff) >= -769 ? CacheNode_Sub3.anInt9441 : 768;
 			Class270_Sub1.anInt8033 = (Class36.anInt542 - i_7_) / 2;
 			Class205.anInt5115 = i_8_;

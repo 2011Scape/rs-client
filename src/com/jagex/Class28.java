@@ -25,7 +25,7 @@ public class Class28
 			i_7_ = widget_6_.anInt4695;
 		} else {
 			i_7_ = Class205.anInt5115;
-			i_8_ = Class360.anInt4480;
+			i_8_ = Class360.windowWidth;
 		}
 		Node_Sub39.method2921(false, i_7_, 18815, i_8_, widget);
 		Node_Sub38_Sub23.method2862(widget, i_8_, i_7_, -8525);

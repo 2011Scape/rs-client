@@ -133,8 +133,8 @@ abstract class Plane
 			i_58_ = Class315.anInt4035 * 16 + 21;
 		}
 		int i_61_ = -(i_57_ / 2) + i_56_;
-		if ((Class360.anInt4480 ^ 0xffffffff) > (i_57_ + i_61_ ^ 0xffffffff)) {
-			i_61_ = -i_57_ + Class360.anInt4480;
+		if ((Class360.windowWidth ^ 0xffffffff) > (i_57_ + i_61_ ^ 0xffffffff)) {
+			i_61_ = -i_57_ + Class360.windowWidth;
 		}
 		int i_62_ = 16 / ((i - 56) / 41);
 		if (i_61_ < 0) {

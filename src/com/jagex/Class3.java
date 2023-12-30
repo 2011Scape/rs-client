@@ -38,7 +38,7 @@ public class Class3 implements Interface10
 		int i_0_ = -77 % ((i - 66) / 42);
 		anInt5160++;
 		if (bool) {
-			Class93.aGraphicsToolkit1241.aa(0, 0, Class360.anInt4480, Class205.anInt5115, aClass116_5163.anInt5071, 0);
+			Class93.aGraphicsToolkit1241.aa(0, 0, Class360.windowWidth, Class205.anInt5115, aClass116_5163.anInt5071, 0);
 		}
 	}
 	

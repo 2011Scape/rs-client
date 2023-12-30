@@ -434,7 +434,7 @@ public class Class195
 						}
 						packet.method2226(Node_Sub38_Sub23.anInt10347, false);
 						packet.method2226(Class188_Sub2_Sub1.method1908(3), false);
-						packet.method2210(Class360.anInt4480, -122);
+						packet.method2210(Class360.windowWidth, -122);
 						packet.method2210(Class205.anInt5115, -91);
 						packet.method2226(Class213.aNode_Sub27_2512.aClass320_Sub13_7283.method3734(false), false);
 						EntityNode_Sub3.method941(24, packet);

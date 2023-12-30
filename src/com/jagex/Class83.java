@@ -26,7 +26,7 @@ public class Class83 implements Interface10
 	
 	public final void method27(boolean bool, int i) {
 		if (bool) {
-			int i_0_ = Node_Sub38_Sub12.anInt10225 >= Class360.anInt4480 ? Node_Sub38_Sub12.anInt10225 : Class360.anInt4480;
+			int i_0_ = Node_Sub38_Sub12.anInt10225 >= Class360.windowWidth ? Node_Sub38_Sub12.anInt10225 : Class360.windowWidth;
 			int i_1_ = Class205.anInt5115 <= Class257.anInt3244 ? Class257.anInt3244 : Class205.anInt5115;
 			int i_2_ = aGLSprite5178.method1197();
 			int i_3_ = aGLSprite5178.method1186();

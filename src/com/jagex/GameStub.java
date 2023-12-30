@@ -163,7 +163,7 @@ public abstract class GameStub extends Applet implements Runnable, FocusListener
 		try {
 			CacheNode_Sub16.anApplet9601 = null;
 			Class320_Sub14.anInt8347 = i_0_;
-			Class36.anInt542 = Class360.anInt4480 = i_3_;
+			Class36.anInt542 = Class360.windowWidth = i_3_;
 			Class131.anInt5447 = 0;
 			Class270_Sub1.anInt8033 = 0;
 			CacheNode_Sub3.anInt9441 = Class205.anInt5115 = i_2_;
@@ -268,7 +268,7 @@ public abstract class GameStub extends Applet implements Runnable, FocusListener
 		if (Class339_Sub2.anInt8647++ > 50) {
 			Class355.aBoolean4366 = true;
 			Class339_Sub2.anInt8647 -= 50;
-			Node_Sub38_Sub20.aCanvas10309.setSize(Class360.anInt4480, Class205.anInt5115);
+			Node_Sub38_Sub20.aCanvas10309.setSize(Class360.windowWidth, Class205.anInt5115);
 			Node_Sub38_Sub20.aCanvas10309.setVisible(true);
 			if (Node_Sub29.aFrame7344 != null && DrawableModel.aFrame907 == null) {
 				Insets insets = Node_Sub29.aFrame7344.getInsets();
@@ -296,7 +296,7 @@ public abstract class GameStub extends Applet implements Runnable, FocusListener
 				}
 			} else {
 				CacheNode_Sub16.anApplet9601 = Class96.anApplet1270;
-				Class36.anInt542 = Class360.anInt4480 = i_8_;
+				Class36.anInt542 = Class360.windowWidth = i_8_;
 				Class320_Sub14.anInt8347 = i_7_;
 				Class270_Sub1.anInt8033 = 0;
 				CacheNode_Sub3.anInt9441 = Class205.anInt5115 = i_11_;
@@ -442,7 +442,7 @@ public abstract class GameStub extends Applet implements Runnable, FocusListener
 		container.setLayout(null);
 		Node_Sub38_Sub20.aCanvas10309 = new Canvas(this);
 		container.add(Node_Sub38_Sub20.aCanvas10309);
-		Node_Sub38_Sub20.aCanvas10309.setSize(Class360.anInt4480, Class205.anInt5115);
+		Node_Sub38_Sub20.aCanvas10309.setSize(Class360.windowWidth, Class205.anInt5115);
 		Node_Sub38_Sub20.aCanvas10309.setVisible(true);
 		if (container != Node_Sub29.aFrame7344) {
 			Node_Sub38_Sub20.aCanvas10309.setLocation(Class270_Sub1.anInt8033, Class131.anInt5447);
