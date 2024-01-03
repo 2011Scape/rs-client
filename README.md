@@ -19,12 +19,14 @@ This repository hosts the com.jagex.client files. The main loader class is com.j
 # Quick Links
 
 <b>2011Scape Related<b>
+
 - [Game Repository](https://github.com/2011Scape/game)
 - [File Server Repository](https://github.com/2011Scape/file-server)
 - [Client Repository](https://github.com/2011Scape/rs-client)
 - [Installation Guide](https://github.com/2011Scape/installation-guide)
 
 <b>Extras</b>
+
 - [OpenRS2 com.jagex.Archive](https://archive.openrs2.org/)
 - [Lost City, 2004 Emulator](https://discord.gg/hN3tHUmZEN)
 - [2009Scape, 2009 Emulator](https://2009scape.org)
