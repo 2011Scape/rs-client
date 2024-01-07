@@ -1,5 +1,6 @@
 package com.jagex;
 
-interface Interface7 {
-    Class170 method20(int i);
+interface Interface7
+{
+	public Class170 method20(int i);
 }

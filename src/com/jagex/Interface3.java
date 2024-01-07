@@ -1,5 +1,6 @@
 package com.jagex;
 
-interface Interface3 {
-    void w(boolean bool);
+interface Interface3
+{
+	public void w(boolean bool);
 }

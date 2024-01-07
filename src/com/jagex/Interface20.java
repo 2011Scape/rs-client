@@ -1,4 +1,5 @@
 package com.jagex;
 
-interface Interface20 {
+interface Interface20
+{
 }

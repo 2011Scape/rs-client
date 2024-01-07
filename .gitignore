@@ -102,7 +102,3 @@ fabric.properties
 *.iml
 .idea/*
 /bin/
-.jagex_cache_32/runescape/jagdx.dll
-.jagex_cache_32/runescape/hw3d.dll
-README.md
-*.md
