@@ -198,10 +198,10 @@ public class Node_Sub6 extends Node
 									}
 									if (Node_Sub15_Sub2.displayRenderData) {
 										int i_29_ = -256;
-										if (Node_Sub9_Sub4.anInt9732 < 20) {
+										if (Node_Sub9_Sub4.currentFPS < 20) {
 											i_29_ = -65536;
 										}
-										StandardSprite.aClass52_8945.method543((byte) -108, i_27_, "Fps:" + Node_Sub9_Sub4.anInt9732, i_29_, -1, i_28_);
+										StandardSprite.aClass52_8945.method543((byte) -108, i_27_, "Fps:" + Node_Sub9_Sub4.currentFPS, i_29_, -1, i_28_);
 										i_28_ += 15;
 										Runtime runtime = Runtime.getRuntime();
 										int i_30_ = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);

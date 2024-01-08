@@ -498,7 +498,7 @@ abstract class Actor extends Mobile
 	
 	static final boolean method859(int i, int i_48_, int i_49_, Animable_Sub2 animable_sub2, int i_50_) {
 		anInt10830++;
-		if (!Class12.aBoolean194 || !Mobile_Sub1.aBoolean10959) {
+		if (!Class12.occlusionEnabled || !Mobile_Sub1.aBoolean10959) {
 			return false;
 		}
 		if (Class233.anInt2786 < 100) {

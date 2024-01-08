@@ -386,7 +386,7 @@ class Animator
 			method222(anInt259, aClass48_233, (byte) 87);
 		}
 		i_21_ += anInt247;
-		boolean bool = Class320_Sub12.aBoolean8325 | aClass48_233.aBoolean714;
+		boolean bool = Class320_Sub12.forceTweening | aClass48_233.aBoolean714;
 		if (i_21_ > 100 && (aClass48_233.anInt696 ^ 0xffffffff) < -1) {
 			int i_22_;
 			for (i_22_ = aClass48_233.anIntArray715.length - aClass48_233.anInt696; anInt259 < i_22_; anInt259++) {

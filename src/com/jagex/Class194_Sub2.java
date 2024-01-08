@@ -25,9 +25,9 @@ public class Class194_Sub2 extends Class194
 		Class320_Sub21.anInt8406 = 0;
 		Node_Sub44.aClass54Array7548 = new Class54[500];
 		if (CacheNode_Sub18.aGraphicsToolkit9607 instanceof oa) {
-			Class12.aBoolean194 = false;
+			Class12.occlusionEnabled = false;
 		} else {
-			Class12.aBoolean194 = true;
+			Class12.occlusionEnabled = true;
 		}
 	}
 	

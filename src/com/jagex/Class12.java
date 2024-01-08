@@ -16,7 +16,7 @@ public class Class12
 	static int anInt191;
 	private int anInt192;
 	static int anInt193;
-	static boolean aBoolean194 = true;
+	static boolean occlusionEnabled = true;
 	static int anInt195;
 	static int anInt196;
 	static Class192 aClass192_197;

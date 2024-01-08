@@ -304,7 +304,7 @@ public class Animable_Sub1_Sub1 extends Animable_Sub1 implements Interface19
 			if (Node_Sub15_Sub2.displayRenderData) {
 				int i_26_ = -5 + (i_18_ + i_16_);
 				int i_27_ = i_17_ + (i_15_ + -8);
-				StandardSprite.aClass52_8945.method543((byte) 123, i_26_, "Fps:" + Node_Sub9_Sub4.anInt9732, 16776960, -1, i_27_);
+				StandardSprite.aClass52_8945.method543((byte) 123, i_26_, "Fps:" + Node_Sub9_Sub4.currentFPS, 16776960, -1, i_27_);
 				i_27_ -= 15;
 				Runtime runtime = Runtime.getRuntime();
 				int i_28_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);

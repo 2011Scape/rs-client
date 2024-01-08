@@ -22,7 +22,7 @@ public class Class313
 	
 	static final boolean method3649(boolean bool, int i, int i_2_, int i_3_) {
 		anInt4010++;
-		if (!Class12.aBoolean194 || !Mobile_Sub1.aBoolean10959) {
+		if (!Class12.occlusionEnabled || !Mobile_Sub1.aBoolean10959) {
 			return false;
 		}
 		if (Class233.anInt2786 < 100) {

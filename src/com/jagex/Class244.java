@@ -6,7 +6,7 @@ public class Class244
 	protected int anInt3078;
 	protected int anInt3079;
 	static int anInt3080;
-	static int anInt3081 = 1;
+	static int rendererCores = 1;
 	static int anInt3082;
 	static int anInt3083 = 0;
 	protected int anInt3084;

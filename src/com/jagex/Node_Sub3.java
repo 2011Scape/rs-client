@@ -45,7 +45,7 @@ public class Node_Sub3 extends Node
 	
 	static final boolean method2171(int i, int i_4_, byte b, Class171 class171, int i_5_, int i_6_, int i_7_) {
 		anInt6939++;
-		if (!Class12.aBoolean194 || !Mobile_Sub1.aBoolean10959) {
+		if (!Class12.occlusionEnabled || !Mobile_Sub1.aBoolean10959) {
 			return false;
 		}
 		if (b >= -124) {

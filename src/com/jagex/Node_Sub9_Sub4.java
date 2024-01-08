@@ -9,7 +9,7 @@ public class Node_Sub9_Sub4 extends Node_Sub9
 	static int anInt9729;
 	static int anInt9730;
 	static int anInt9731;
-	static int anInt9732;
+	static int currentFPS;
 	static int anInt9733 = 0;
 	private Node_Sub9_Sub1 aNode_Sub9_Sub1_9734;
 	static int anInt9735;
@@ -66,7 +66,7 @@ public class Node_Sub9_Sub4 extends Node_Sub9
 	
 	static final Class116 method2521(Buffer buffer, int i) {
 		if (i != -30746) {
-			anInt9732 = -68;
+			currentFPS = -68;
 		}
 		anInt9726++;
 		int i_4_ = buffer.method2186(i ^ ~0x7845);
@@ -120,7 +120,7 @@ public class Node_Sub9_Sub4 extends Node_Sub9
 	
 	public static void method2524(int i) {
 		if (i > -64) {
-			anInt9732 = -126;
+			currentFPS = -126;
 		}
 		aClass180_9727 = null;
 	}
@@ -207,6 +207,6 @@ public class Node_Sub9_Sub4 extends Node_Sub9
 	}
 	
 	static {
-		anInt9732 = 0;
+		currentFPS = 0;
 	}
 }

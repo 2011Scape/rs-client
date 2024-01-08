@@ -2,12 +2,12 @@ package com.jagex;
 
 public class Renderer
 {
-	protected int anInt3656;
+	protected int vendorName;
 	static int anInt3657;
 	protected int anInt3658;
 	static int anInt3659;
 	protected String aString3660;
-	protected long aLong3661;
+	protected long graphicsDriverVersion;
 	static Class192 aClass192_3662 = new Class192(5, 7);
 	static int anInt3663;
 	protected String aString3664;
@@ -45,9 +45,9 @@ public class Renderer
 	
 	Renderer(int i, String string, int i_3_, String string_4_, long l) {
 		aString3664 = string;
-		aLong3661 = l;
+		graphicsDriverVersion = l;
 		anInt3658 = i_3_;
 		aString3660 = string_4_;
-		anInt3656 = i;
+		vendorName = i;
 	}
 }

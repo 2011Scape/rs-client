@@ -262,7 +262,7 @@ public abstract class GameStub extends Applet implements Runnable, FocusListener
 		Class253.aLongArray3193[Class376.anInt4662] = l;
 		if (l_5_ != 0L && (l_5_ ^ 0xffffffffffffffffL) > (l ^ 0xffffffffffffffffL)) {
 			int i_6_ = (int) (l - l_5_);
-			Node_Sub9_Sub4.anInt9732 = (32000 - -(i_6_ >> 1)) / i_6_;
+			Node_Sub9_Sub4.currentFPS = (32000 - -(i_6_ >> 1)) / i_6_;
 		}
 		Class376.anInt4662 = 0x1f & 1 + Class376.anInt4662;
 		if (Class339_Sub2.anInt8647++ > 50) {

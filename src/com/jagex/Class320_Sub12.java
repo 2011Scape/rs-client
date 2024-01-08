@@ -11,7 +11,7 @@ public class Class320_Sub12 extends Class320
 	static int anInt8322;
 	static int anInt8323;
 	static Class251 aClass251_8324 = new Class251(2);
-	static boolean aBoolean8325 = false;
+	static boolean forceTweening = false;
 	static Class302 aClass302_8326;
 	static int anInt8327 = 0;
 	
@@ -123,7 +123,7 @@ public class Class320_Sub12 extends Class320
 			return 3;
 		}
 		if (b != 54) {
-			aBoolean8325 = false;
+			forceTweening = false;
 		}
 		if (aNode_Sub27_4063.aClass320_Sub30_7275.method3796(false) == 0) {
 			return 3;

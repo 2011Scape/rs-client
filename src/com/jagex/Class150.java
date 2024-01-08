@@ -25,7 +25,7 @@ class Class150 implements Interface7
 	
 	static final boolean method1652(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
 		anInt5089++;
-		if (!Class12.aBoolean194 || !Mobile_Sub1.aBoolean10959) {
+		if (!Class12.occlusionEnabled || !Mobile_Sub1.aBoolean10959) {
 			return false;
 		}
 		if ((Class233.anInt2786 ^ 0xffffffff) > -101) {

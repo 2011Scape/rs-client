@@ -1,11 +1,6 @@
 package com.jagex;
 
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
-import java.awt.image.ConvolveOp;
-import java.awt.image.Kernel;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 import jagex3.jagmisc.jagmisc;
@@ -80,7 +75,7 @@ public class DevConsoleNode extends Node
 	        offsetX = Class67.method733(-82);
 	        offsetY = Class226.method2112(256);
 	    }
-
+	    
 		graphicstoolkit.KA(offsetX, offsetY, totalWidth + offsetX, totalHeight + offsetY);
 	    graphicstoolkit.aa(offsetX, offsetY, totalWidth, totalHeight, consoleColor | (Class298.anInt3740 << 24), 1);
 	    Class362.method4053(offsetY, totalHeight + offsetY, offsetX, (byte) -108, totalWidth + offsetX);
@@ -192,11 +187,11 @@ public class DevConsoleNode extends Node
 			}
 			if (string.equals("renderer")) {
 				Renderer renderer = Class93.aGraphicsToolkit1241.c();
-				Node_Sub7.generateTimestamp((byte) 43, "Vendor: " + renderer.anInt3656);
+				Node_Sub7.generateTimestamp((byte) 43, "Vendor: " + renderer.vendorName);
 				Node_Sub7.generateTimestamp((byte) 43, "Name: " + renderer.aString3664);
 				Node_Sub7.generateTimestamp((byte) 43, "Version: " + renderer.anInt3658);
 				Node_Sub7.generateTimestamp((byte) 43, "Device: " + renderer.aString3660);
-				Node_Sub7.generateTimestamp((byte) 43, "Driver Version: " + renderer.aLong3661);
+				Node_Sub7.generateTimestamp((byte) 43, "Driver Version: " + renderer.graphicsDriverVersion);
 				return;
 			}
 			if (string.equals("heap")) {
@@ -221,15 +216,15 @@ public class DevConsoleNode extends Node
 			}
 			try {
 				if (string.equalsIgnoreCase("printfps")) {
-					Node_Sub7.generateTimestamp((byte) 43, "FPS: " + Node_Sub9_Sub4.anInt9732);
+					Node_Sub7.generateTimestamp((byte) 43, "FPS: " + Node_Sub9_Sub4.currentFPS);
 					return;
 				}
 				if (string.equalsIgnoreCase("occlude")) {
-					Class12.aBoolean194 = !Class12.aBoolean194;
-					if (!Class12.aBoolean194) {
-						Node_Sub7.generateTimestamp((byte) 43, "Occlsion now off!");
+					Class12.occlusionEnabled = !Class12.occlusionEnabled;
+					if (!Class12.occlusionEnabled) {
+						Node_Sub7.generateTimestamp((byte) 43, "Occlusion now off!");
 					} else {
-						Node_Sub7.generateTimestamp((byte) 43, "Occlsion now on!");
+						Node_Sub7.generateTimestamp((byte) 43, "Occlusion now on!");
 						return;
 					}
 					return;
@@ -481,9 +476,9 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.startsWith("bloom")) {
-					boolean bool_19_ = Class93.aGraphicsToolkit1241.w();
-					if (Node_Sub19.method2610((byte) -58, !bool_19_)) {
-						if (bool_19_) {
+					boolean bloomEnabled = Class93.aGraphicsToolkit1241.w();
+					if (Node_Sub19.method2610((byte) -58, !bloomEnabled)) {
+						if (bloomEnabled) {
 							Node_Sub7.generateTimestamp((byte) 43, "Bloom disabled");
 						} else {
 							Node_Sub7.generateTimestamp((byte) 43, "Bloom enabled");
@@ -495,11 +490,11 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.equalsIgnoreCase("tween")) {
-					if (!Class320_Sub12.aBoolean8325) {
-						Class320_Sub12.aBoolean8325 = true;
+					if (!Class320_Sub12.forceTweening) {
+						Class320_Sub12.forceTweening = true;
 						Node_Sub7.generateTimestamp((byte) 43, "Forced tweening ENABLED!");
 					} else {
-						Class320_Sub12.aBoolean8325 = false;
+						Class320_Sub12.forceTweening = false;
 						Node_Sub7.generateTimestamp((byte) 43, "Forced tweening disabled.");
 						return;
 					}
@@ -544,9 +539,9 @@ public class DevConsoleNode extends Node
 						} else {
 							i_20_ = 1;
 						}
-						Class244.anInt3081 = i_20_;
+						Class244.rendererCores = i_20_;
 						Class243.method3061(7);
-						Node_Sub7.generateTimestamp((byte) 43, "Render cores now: " + Class244.anInt3081);
+						Node_Sub7.generateTimestamp((byte) 43, "Render cores now: " + Class244.rendererCores);
 					} else {
 						Node_Sub7.generateTimestamp((byte) 43, "Current toolkit doesn't support multiple cores");
 						return;

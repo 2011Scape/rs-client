@@ -61,8 +61,8 @@ public class Node_Sub41 extends Node
 					i_4_ = Class194.method1961(1000, 3, 13968);
 					if ((Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) ^ 0xffffffff) == -4) {
 						Renderer renderer = Class93.aGraphicsToolkit1241.c();
-						long l = renderer.aLong3661 & 0xffffffffffffL;
-						int i_5_ = renderer.anInt3656;
+						long l = renderer.graphicsDriverVersion & 0xffffffffffffL;
+						int i_5_ = renderer.vendorName;
 						if ((i_5_ ^ 0xffffffff) != -4319) {
 							if (i_5_ != 4098) {
 								break;

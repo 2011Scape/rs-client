@@ -11,7 +11,7 @@ public class Class385
 	
 	static final void method4204(GraphicsToolkit graphicstoolkit, int i, byte b) {
 		anInt4909++;
-		if (!Class12.aBoolean194 || !Mobile_Sub1.aBoolean10959) {
+		if (!Class12.occlusionEnabled || !Mobile_Sub1.aBoolean10959) {
 			Class320_Sub21.anInt8406 = 0;
 		} else {
 			if (Class373.aBoolean4608) {

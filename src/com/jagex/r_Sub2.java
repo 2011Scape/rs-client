@@ -550,7 +550,7 @@ public class r_Sub2 extends r
 				if (Class93.aGraphicsToolkit1241.p()) {
 					i_35_++;
 				}
-				AbstractToolkit.method1267(Class93.aGraphicsToolkit1241, Class244.anInt3081, 9, 4, Node_Sub54.anInt7675, Class377_Sub1.anInt8774, i_35_, bool_33_, Class93.aGraphicsToolkit1241.e() > 0);
+				AbstractToolkit.method1267(Class93.aGraphicsToolkit1241, Class244.rendererCores, 9, 4, Node_Sub54.anInt7675, Class377_Sub1.anInt8774, i_35_, bool_33_, Class93.aGraphicsToolkit1241.e() > 0);
 				Class262_Sub16.method3195(Node_Sub9_Sub5.anInt9766);
 				if (Node_Sub9_Sub5.anInt9766 == 0) {
 					Node_Sub10.method2540(null);
