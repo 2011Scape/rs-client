@@ -136,7 +136,7 @@ public class RS2Loader extends Applet {
 	 * Open the applet frame with specified configurations.
 	 */
 	void openFrame() {
-		appletFrame = new JFrame("2011Scape");
+		appletFrame = new JFrame((RS2Loader.IP.equals("localhost") || RS2Loader.IP.equals("127.0.0.1")) ? "2011Scape [Local]" : "2011Scape");
 		appletFrame.setLayout(new BorderLayout());
 		appletPanel.setLayout(new BorderLayout());
 		appletPanel.add(this);

@@ -5,6 +5,9 @@ import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
 
 public class Class291_Sub1 extends Class291 implements KeyListener, FocusListener
 {
@@ -165,6 +168,12 @@ public class Class291_Sub1 extends Class291 implements KeyListener, FocusListene
 	public final synchronized void keyPressed(KeyEvent keyevent) {
 		anInt8191++;
 		method3458((byte) -51, 0, keyevent);
+		if (keyevent.isControlDown() && keyevent.getKeyCode() == KeyEvent.VK_PRINTSCREEN) {
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd-HH_mm_ss");
+			String dateTime = dateFormat.format(new Date());
+			String username =  Class295.aPlayer3692 != null && Class295.aPlayer3692.aString11132 != null && !Class295.aPlayer3692.aString11132.isEmpty() ? Class295.aPlayer3692.aString11132 : "2011Scape";
+			client.saveScreenshot(username + "_" + dateTime + ".png");
+		}
 	}
 	
 	public static void method3457(int i) {

@@ -1,7 +1,8 @@
 package com.jagex;
-import java.awt.Frame;
-import java.awt.Insets;
-import java.awt.Rectangle;
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.Socket;
@@ -1582,6 +1583,39 @@ public class client extends GameStub
 			}
 			break;
 		} while (false);
+	}
+	
+	public static void saveScreenshot(String filename, String... subfolders) {
+		String homeDir = System.getProperty("user.home") + File.separatorChar + "2011Scape";
+		
+		String subfolderPath = String.join(File.separator, subfolders);
+		if (!subfolderPath.isEmpty()) {
+			subfolderPath += File.separator;
+		}
+		
+		File outputFolder = new File(homeDir + File.separatorChar + "screenshots" + File.separatorChar + subfolderPath);
+		if (!outputFolder.exists()){
+			outputFolder.mkdirs();
+		}
+		
+		try {
+			Window window = KeyboardFocusManager.getCurrentKeyboardFocusManager().getFocusedWindow();
+			if (window == null) {
+				return;
+			}
+			Point point = window.getLocationOnScreen();
+			int x = (int) point.getX();
+			int y = (int) point.getY();
+			int w = window.getWidth();
+			int h = window.getHeight();
+			Robot robot = new Robot(window.getGraphicsConfiguration().getDevice());
+			Rectangle captureSize = new Rectangle(x, y, w, h);
+			BufferedImage image = robot.createScreenCapture(captureSize);
+			File outputFile = new File(outputFolder, filename);
+			ImageIO.write(image, "png", outputFile);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	private final void method119(boolean bool, int i) {
