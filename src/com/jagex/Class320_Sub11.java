@@ -1918,7 +1918,7 @@ public class Class320_Sub11 extends Class320 {
 		AnimableAnimator.anInt5495 = 0;
 		Class134.anInt5315 = 0;
 		CacheNode_Sub20.anInt9623 = 0;
-		Class305.anInt3852 = 0;
+		Class305.chatMessageCounter = 0;
 		Animable_Sub1_Sub1.anInt10592 = 0;
 		Animable_Sub1_Sub1.anInt10604 = 0;
 		Class262_Sub3.anInt7716 = 0;
@@ -4443,7 +4443,7 @@ public class Class320_Sub11 extends Class320 {
 		Class120.method1228(-114);
 		Node_Sub25_Sub1.aBoolean9950 = true;
 		Class343.aShortArray4255 = EntityNode_Sub3_Sub1.aShortArray9165 = Class262_Sub19.aShortArray7852 = Class129.aShortArray1665 = new short[256];
-		Class173.aString2085 = Localization.walkHere.getLocalizationFromLanguage(-12273, Class35.clientLanguage);
+		Class173.aString2085 = Localization.walkHere.getLocalizationString(-12273, Class35.clientLanguage);
 		Class213.aNode_Sub27_2512.method2690(i ^ 0x7b, Class213.aNode_Sub27_2512.aClass320_Sub4_7302.method3694(false), Class213.aNode_Sub27_2512.aClass320_Sub4_7304);
 		Class213.aNode_Sub27_2512.method2690(55, Class213.aNode_Sub27_2512.aClass320_Sub19_7277.method3751(false), Class213.aNode_Sub27_2512.aClass320_Sub19_7301);
 		Class175.anInt2097 = 0;

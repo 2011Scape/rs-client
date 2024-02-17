@@ -192,7 +192,7 @@ public class Class157
 				}
 				if (Class230.aBoolean5214) {
 					Class93.aGraphicsToolkit1241.method1239(i_3_, i_4_, i_2_, (byte) 116, i_5_, -16777216);
-					Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage), false, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+					Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationString(-12273, Class35.clientLanguage), false, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 				}
 				Class377_Sub1.method4130(false, -10385);
 			}

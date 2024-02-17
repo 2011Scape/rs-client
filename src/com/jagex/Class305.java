@@ -19,7 +19,7 @@ public class Class305
 	private static Widget aWidget3849;
 	static int anInt3850;
 	private static long[] aLongArray3851;
-	static int anInt3852;
+	static int chatMessageCounter;
 	static int anInt3853;
 	static int anInt3854;
 	private static String[] aStringArray3855;
@@ -3601,7 +3601,7 @@ public class Class305
 			}
 			if (i == 5008) {
 				String string = aStringArray3855[--anInt3841];
-				method3562(string, i);
+				sendChatMessagePacket(string, i);
 				return;
 			}
 			if (i == 5009) {
@@ -6235,128 +6235,128 @@ public class Class305
 		return string;
 	}
 	
-	private static final void method3562(String string, int i) {
+	private static final void sendChatMessagePacket(String chatMessage, int i) {
 		if (Class339_Sub7.playerPrivilege != 0 || (!Node_Sub38_Sub18.aBoolean10282 || Class24.aBoolean436) && !Class290_Sub11.aBoolean8175) {
-			String string_566_ = string.toLowerCase();
-			int i_567_ = 0;
-			if (string_566_.startsWith(Localization.textEffectYellow.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 0;
-				string = string.substring(Localization.textEffectYellow.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectRed.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 1;
-				string = string.substring(Localization.textEffectRed.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectGreen.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 2;
-				string = string.substring(Localization.textEffectGreen.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectCyan.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 3;
-				string = string.substring(Localization.textEffectCyan.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectPurple.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 4;
-				string = string.substring(Localization.textEffectPurple.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectWhite.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 5;
-				string = string.substring(Localization.textEffectWhite.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectflash1.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 6;
-				string = string.substring(Localization.textEffectflash1.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectFlash2.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 7;
-				string = string.substring(Localization.textEffectFlash2.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectFlash3.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 8;
-				string = string.substring(Localization.textEffectFlash3.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectGlow1.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 9;
-				string = string.substring(Localization.textEffectGlow1.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectGlow2.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 10;
-				string = string.substring(Localization.textEffectGlow2.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectGlow3.getLocalizationFromLanguage(-12273, 0))) {
-				i_567_ = 11;
-				string = string.substring(Localization.textEffectGlow3.getLocalizationFromLanguage(-12273, 0).length());
+			String chatMessageLowerCase = chatMessage.toLowerCase();
+			int chatMessageColorId = 0;
+			if (chatMessageLowerCase.startsWith(Localization.textEffectYellow.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 0;
+				chatMessage = chatMessage.substring(Localization.textEffectYellow.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectRed.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 1;
+				chatMessage = chatMessage.substring(Localization.textEffectRed.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectGreen.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 2;
+				chatMessage = chatMessage.substring(Localization.textEffectGreen.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectCyan.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 3;
+				chatMessage = chatMessage.substring(Localization.textEffectCyan.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectPurple.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 4;
+				chatMessage = chatMessage.substring(Localization.textEffectPurple.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectWhite.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 5;
+				chatMessage = chatMessage.substring(Localization.textEffectWhite.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectflash1.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 6;
+				chatMessage = chatMessage.substring(Localization.textEffectflash1.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectFlash2.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 7;
+				chatMessage = chatMessage.substring(Localization.textEffectFlash2.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectFlash3.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 8;
+				chatMessage = chatMessage.substring(Localization.textEffectFlash3.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectGlow1.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 9;
+				chatMessage = chatMessage.substring(Localization.textEffectGlow1.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectGlow2.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 10;
+				chatMessage = chatMessage.substring(Localization.textEffectGlow2.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectGlow3.getLocalizationString(-12273, 0))) {
+				chatMessageColorId = 11;
+				chatMessage = chatMessage.substring(Localization.textEffectGlow3.getLocalizationString(-12273, 0).length());
 			} else if (Class35.clientLanguage != 0) {
-				if (string_566_.startsWith(Localization.textEffectYellow.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 0;
-					string = string.substring(Localization.textEffectYellow.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectRed.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 1;
-					string = string.substring(Localization.textEffectRed.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectGreen.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 2;
-					string = string.substring(Localization.textEffectGreen.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectCyan.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 3;
-					string = string.substring(Localization.textEffectCyan.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectPurple.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 4;
-					string = string.substring(Localization.textEffectPurple.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectWhite.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 5;
-					string = string.substring(Localization.textEffectWhite.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectflash1.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 6;
-					string = string.substring(Localization.textEffectflash1.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectFlash2.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 7;
-					string = string.substring(Localization.textEffectFlash2.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectFlash3.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 8;
-					string = string.substring(Localization.textEffectFlash3.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectGlow1.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 9;
-					string = string.substring(Localization.textEffectGlow1.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectGlow2.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 10;
-					string = string.substring(Localization.textEffectGlow2.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectGlow3.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_567_ = 11;
-					string = string.substring(Localization.textEffectGlow3.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				if (chatMessageLowerCase.startsWith(Localization.textEffectYellow.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 0;
+					chatMessage = chatMessage.substring(Localization.textEffectYellow.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectRed.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 1;
+					chatMessage = chatMessage.substring(Localization.textEffectRed.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectGreen.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 2;
+					chatMessage = chatMessage.substring(Localization.textEffectGreen.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectCyan.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 3;
+					chatMessage = chatMessage.substring(Localization.textEffectCyan.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectPurple.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 4;
+					chatMessage = chatMessage.substring(Localization.textEffectPurple.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectWhite.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 5;
+					chatMessage = chatMessage.substring(Localization.textEffectWhite.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectflash1.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 6;
+					chatMessage = chatMessage.substring(Localization.textEffectflash1.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectFlash2.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 7;
+					chatMessage = chatMessage.substring(Localization.textEffectFlash2.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectFlash3.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 8;
+					chatMessage = chatMessage.substring(Localization.textEffectFlash3.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectGlow1.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 9;
+					chatMessage = chatMessage.substring(Localization.textEffectGlow1.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectGlow2.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 10;
+					chatMessage = chatMessage.substring(Localization.textEffectGlow2.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectGlow3.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageColorId = 11;
+					chatMessage = chatMessage.substring(Localization.textEffectGlow3.getLocalizationString(-12273, Class35.clientLanguage).length());
 				}
 			}
-			string_566_ = string.toLowerCase();
-			int i_568_ = 0;
-			if (string_566_.startsWith(Localization.textEffectWave.getLocalizationFromLanguage(-12273, 0))) {
-				i_568_ = 1;
-				string = string.substring(Localization.textEffectWave.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectWave2.getLocalizationFromLanguage(-12273, 0))) {
-				i_568_ = 2;
-				string = string.substring(Localization.textEffectWave2.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectShake.getLocalizationFromLanguage(-12273, 0))) {
-				i_568_ = 3;
-				string = string.substring(Localization.textEffectShake.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectScroll.getLocalizationFromLanguage(-12273, 0))) {
-				i_568_ = 4;
-				string = string.substring(Localization.textEffectScroll.getLocalizationFromLanguage(-12273, 0).length());
-			} else if (string_566_.startsWith(Localization.textEffectSlide.getLocalizationFromLanguage(-12273, 0))) {
-				i_568_ = 5;
-				string = string.substring(Localization.textEffectSlide.getLocalizationFromLanguage(-12273, 0).length());
+			chatMessageLowerCase = chatMessage.toLowerCase();
+			int chatMessageEffectId = 0;
+			if (chatMessageLowerCase.startsWith(Localization.textEffectWave.getLocalizationString(-12273, 0))) {
+				chatMessageEffectId = 1;
+				chatMessage = chatMessage.substring(Localization.textEffectWave.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectWave2.getLocalizationString(-12273, 0))) {
+				chatMessageEffectId = 2;
+				chatMessage = chatMessage.substring(Localization.textEffectWave2.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectShake.getLocalizationString(-12273, 0))) {
+				chatMessageEffectId = 3;
+				chatMessage = chatMessage.substring(Localization.textEffectShake.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectScroll.getLocalizationString(-12273, 0))) {
+				chatMessageEffectId = 4;
+				chatMessage = chatMessage.substring(Localization.textEffectScroll.getLocalizationString(-12273, 0).length());
+			} else if (chatMessageLowerCase.startsWith(Localization.textEffectSlide.getLocalizationString(-12273, 0))) {
+				chatMessageEffectId = 5;
+				chatMessage = chatMessage.substring(Localization.textEffectSlide.getLocalizationString(-12273, 0).length());
 			} else if (Class35.clientLanguage != 0) {
-				if (string_566_.startsWith(Localization.textEffectWave.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_568_ = 1;
-					string = string.substring(Localization.textEffectWave.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectWave2.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_568_ = 2;
-					string = string.substring(Localization.textEffectWave2.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectShake.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_568_ = 3;
-					string = string.substring(Localization.textEffectShake.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectScroll.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_568_ = 4;
-					string = string.substring(Localization.textEffectScroll.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
-				} else if (string_566_.startsWith(Localization.textEffectSlide.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
-					i_568_ = 5;
-					string = string.substring(Localization.textEffectSlide.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				if (chatMessageLowerCase.startsWith(Localization.textEffectWave.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageEffectId = 1;
+					chatMessage = chatMessage.substring(Localization.textEffectWave.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectWave2.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageEffectId = 2;
+					chatMessage = chatMessage.substring(Localization.textEffectWave2.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectShake.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageEffectId = 3;
+					chatMessage = chatMessage.substring(Localization.textEffectShake.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectScroll.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageEffectId = 4;
+					chatMessage = chatMessage.substring(Localization.textEffectScroll.getLocalizationString(-12273, Class35.clientLanguage).length());
+				} else if (chatMessageLowerCase.startsWith(Localization.textEffectSlide.getLocalizationString(-12273, Class35.clientLanguage))) {
+					chatMessageEffectId = 5;
+					chatMessage = chatMessage.substring(Localization.textEffectSlide.getLocalizationString(-12273, Class35.clientLanguage).length());
 				}
 			}
-			anInt3852++;
+			chatMessageCounter++;
 			Class123 class123 = Class262_Sub23.method3213((byte) -110);
 			Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Node_Sub38_Sub11.aClass318_10221, class123.anIsaacCipher1571);
 			node_sub13.aPacket7113.method2226(0, false);
 			int i_569_ = node_sub13.aPacket7113.anInt7002;
-			node_sub13.aPacket7113.method2226(i_567_, false);
-			node_sub13.aPacket7113.method2226(i_568_, false);
-			Class194_Sub3.method1975(56, node_sub13.aPacket7113, string);
+			node_sub13.aPacket7113.method2226(chatMessageColorId, false);
+			node_sub13.aPacket7113.method2226(chatMessageEffectId, false);
+			Class194_Sub3.method1975(56, node_sub13.aPacket7113, chatMessage);
 			node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 - i_569_, (byte) -128);
 			class123.method1514(127, node_sub13);
 		}

@@ -167,7 +167,7 @@ public class Class279
 		if (Node_Sub38_Sub34.aClass353_10443 != aClass353_3553) {
 			aStringArray3568 = new String[] { null, null, null, null, null, null };
 		} else {
-			aStringArray3568 = new String[] { null, null, null, null, null, Localization.examine.getLocalizationFromLanguage(-12273, anInt3562) };
+			aStringArray3568 = new String[] { null, null, null, null, null, Localization.examine.getLocalizationString(-12273, anInt3562) };
 		}
 	}
 }

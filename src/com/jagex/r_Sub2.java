@@ -527,7 +527,7 @@ public class r_Sub2 extends r
 				Class118.anInt5407 = 2;
 			} else {
 				if ((Class118.anInt5407 ^ 0xffffffff) != -1) {
-					Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + "<br>(100%)", true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+					Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationString(-12273, Class35.clientLanguage) + "<br>(100%)", true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 				}
 				CacheNode_Sub16_Sub1.method2387((byte) -114);
 				Node_Sub36_Sub2.method2761((byte) 125);

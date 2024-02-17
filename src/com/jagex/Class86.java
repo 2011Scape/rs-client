@@ -218,7 +218,7 @@ public class Class86
 			itemdefinition.method1693(method1010(itemdefinition.anInt1928, i_16_), (byte) -121, method1010(itemdefinition.anInt1891, i_16_));
 		}
 		if (!aBoolean1162 && itemdefinition.aBoolean1871) {
-			itemdefinition.aString1860 = Localization.membersObject.getLocalizationFromLanguage(i_16_ + -26707, languageId);
+			itemdefinition.aString1860 = Localization.membersObject.getLocalizationString(i_16_ + -26707, languageId);
 			itemdefinition.aStringArray1920 = aStringArray1184;
 			itemdefinition.aStringArray1901 = aStringArray1183;
 			itemdefinition.anIntArray1926 = null;
@@ -259,10 +259,10 @@ public class Class86
 			anInt1175 = 0;
 		}
 		if (aClass353_1164 != Node_Sub38_Sub34.aClass353_10443) {
-			aStringArray1184 = new String[] { null, null, Localization.take.getLocalizationFromLanguage(-12273, languageId), null, null, null };
+			aStringArray1184 = new String[] { null, null, Localization.take.getLocalizationString(-12273, languageId), null, null, null };
 		} else {
-			aStringArray1184 = new String[] { null, null, Localization.take.getLocalizationFromLanguage(-12273, languageId), null, null, Localization.examine.getLocalizationFromLanguage(-12273, languageId) };
+			aStringArray1184 = new String[] { null, null, Localization.take.getLocalizationString(-12273, languageId), null, null, Localization.examine.getLocalizationString(-12273, languageId) };
 		}
-		aStringArray1183 = new String[] { null, null, null, null, Localization.drop.getLocalizationFromLanguage(-12273, languageId) };
+		aStringArray1183 = new String[] { null, null, null, null, Localization.drop.getLocalizationString(-12273, languageId) };
 	}
 }

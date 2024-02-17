@@ -103,10 +103,10 @@ public class Class191
 		for (int i_22_ = string.length() - i; (i_22_ ^ 0xffffffff) < -1; i_22_ -= 3)
 			string = string.substring(0, i_22_) + "," + string.substring(i_22_);
 		if ((string.length() ^ 0xffffffff) < -10) {
-			return " <col=00ff80>" + string.substring(0, -8 + string.length()) + Localization.millionsCharacter1.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + " (" + string + ")</col>";
+			return " <col=00ff80>" + string.substring(0, -8 + string.length()) + Localization.millionsCharacter1.getLocalizationString(-12273, Class35.clientLanguage) + " (" + string + ")</col>";
 		}
 		if (string.length() > 6) {
-			return " <col=ffffff>" + string.substring(0, -4 + string.length()) + Localization.thousandsCharacter1.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + " (" + string + ")</col>";
+			return " <col=ffffff>" + string.substring(0, -4 + string.length()) + Localization.thousandsCharacter1.getLocalizationString(-12273, Class35.clientLanguage) + " (" + string + ")</col>";
 		}
 		return " <col=ffff00>" + string + "</col>";
 	}

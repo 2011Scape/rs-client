@@ -44,7 +44,7 @@ public class Class225
 			if (widget.aString4784 != null) {
 				Node_Sub32.method2731(false, widget.anInt4718, 0L, widget.anInt4687, widget.anInt4822, widget.aString4784, 10, true, -1, "", (long) (widget.anInt4822 | widget.anInt4687 << 0), (byte) -18, false);
 			} else {
-				Node_Sub32.method2731(false, widget.anInt4718, 0L, widget.anInt4687, widget.anInt4822, Localization.continueWord.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 10, true, -1, "", (long) (widget.anInt4822 | widget.anInt4687 << 0), (byte) -18, false);
+				Node_Sub32.method2731(false, widget.anInt4718, 0L, widget.anInt4687, widget.anInt4822, Localization.continueWord.getLocalizationString(-12273, Class35.clientLanguage), 10, true, -1, "", (long) (widget.anInt4822 | widget.anInt4687 << 0), (byte) -18, false);
 			}
 		}
 		if (i != -6608) {

@@ -8,7 +8,7 @@ public class Localization
 	static int anInt360;
 	static int anInt361;
 	static int anInt362;
-	private String[] localizations;
+	private String[] localizationStrings;
 	static int anInt364;
 	static Localization commandError = new Localization("There was an error executing the command.", "Es gab einen Fehler beim Ausf\u00fchren des Befehls.", "Une erreur s'est produite lors de l'ex\u00e9cution de la commande.", "Houve um erro quando o comando foi executado.");
 	static Localization unknownCommand = new Localization("Unknown developer command: ", "Unbekannter Befehl: ", "Commande inconnue : ", "Comando desconhecido: ");
@@ -79,12 +79,12 @@ public class Localization
 	static int anInt431;
 	static int anInt432;
 	
-	final String getLocalizationFromLanguage(int i, int languageIndex) {
+	final String getLocalizationString(int i, int languageId) {
 		anInt362++;
 		if (i != -12273) {
 			return null;
 		}
-		return localizations[languageIndex];
+		return localizationStrings[languageId];
 	}
 	
 	static final Node_Sub13 method298(int i, byte b, int i_1_, int i_2_) {
@@ -188,12 +188,12 @@ public class Localization
 		if (bool != true) {
 			textEffectWhite = null;
 		}
-		Class356.method4024(bool, bool_3_, loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage), i);
+		Class356.method4024(bool, bool_3_, loadingPleaseWait.getLocalizationString(-12273, Class35.clientLanguage), i);
 		anInt361++;
 	}
 	
 	private Localization(String english, String german, String french, String portuguese) {
-		localizations = new String[] { english, german, french, portuguese };
+		localizationStrings = new String[] { english, german, french, portuguese };
 	}
 	
 	static {

@@ -204,7 +204,7 @@ public class DevConsoleNode extends Node
 				return;
 			}
 		} catch (Exception exception) {
-			Node_Sub7.generateTimestamp((byte) 43, Localization.commandError.getLocalizationFromLanguage(-12273, Class35.clientLanguage));
+			Node_Sub7.generateTimestamp((byte) 43, Localization.commandError.getLocalizationString(-12273, Class35.clientLanguage));
 			return;
 		}
 		if (Class240.aClass329_2943 != Node_Sub38_Sub1.aClass329_10086 || Class339_Sub7.playerPrivilege >= 2) {
@@ -867,12 +867,12 @@ public class DevConsoleNode extends Node
 					return;
 				}
 			} catch (Exception exception) {
-				Node_Sub7.generateTimestamp((byte) 43, Localization.commandError.getLocalizationFromLanguage(-12273, Class35.clientLanguage));
+				Node_Sub7.generateTimestamp((byte) 43, Localization.commandError.getLocalizationString(-12273, Class35.clientLanguage));
 				return;
 			}
 		}
 		if (Class151.anInt1843 != 11) {
-			Node_Sub7.generateTimestamp((byte) 43, Localization.unknownCommand.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + string);
+			Node_Sub7.generateTimestamp((byte) 43, Localization.unknownCommand.getLocalizationString(-12273, Class35.clientLanguage) + string);
 		}
 	}
 }

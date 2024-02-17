@@ -265,20 +265,20 @@ public class Node_Sub38_Sub37 extends Node_Sub38
 		anInt10474++;
 		if (string != null) {
 			if ((Node_Sub38_Sub14.anInt10242 ^ 0xffffffff) <= -201 && !Class64.aBoolean5046 || Node_Sub38_Sub14.anInt10242 >= 200) {
-				Class41.method436(29459, Localization.fullFriendsList.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 4);
+				Class41.method436(29459, Localization.fullFriendsList.getLocalizationString(-12273, Class35.clientLanguage), 4);
 			} else {
 				String string_46_ = Node_Sub25_Sub3.method2671(-13472, string);
 				if (string_46_ != null) {
 					for (int i = 0; (Node_Sub38_Sub14.anInt10242 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
 						String string_47_ = Node_Sub25_Sub3.method2671(-13472, Class262_Sub12.aStringArray7793[i]);
 						if (string_47_ != null && string_47_.equals(string_46_)) {
-							Class41.method436(29459, string + Localization.alreadyOnFriendsList.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 4);
+							Class41.method436(29459, string + Localization.alreadyOnFriendsList.getLocalizationString(-12273, Class35.clientLanguage), 4);
 							return;
 						}
 						if (Plane.aStringArray3403[i] != null) {
 							String string_48_ = Node_Sub25_Sub3.method2671(-13472, Plane.aStringArray3403[i]);
 							if (string_48_ != null && string_48_.equals(string_46_)) {
-								Class41.method436(29459, string + Localization.alreadyOnFriendsList.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 4);
+								Class41.method436(29459, string + Localization.alreadyOnFriendsList.getLocalizationString(-12273, Class35.clientLanguage), 4);
 								return;
 							}
 						}
@@ -286,19 +286,19 @@ public class Node_Sub38_Sub37 extends Node_Sub38
 					for (int i = 0; (i ^ 0xffffffff) > (Class235.anInt5122 ^ 0xffffffff); i++) {
 						String string_49_ = Node_Sub25_Sub3.method2671(-13472, Class338.aStringArray4197[i]);
 						if (string_49_ != null && string_49_.equals(string_46_)) {
-							Class41.method436(29459, Localization.pleaseRemoveIgnorePrefix.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + string + Localization.pleaseRemoveIgnoreSuffix.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 4);
+							Class41.method436(29459, Localization.pleaseRemoveIgnorePrefix.getLocalizationString(-12273, Class35.clientLanguage) + string + Localization.pleaseRemoveIgnoreSuffix.getLocalizationString(-12273, Class35.clientLanguage), 4);
 							return;
 						}
 						if (Class7.aStringArray164[i] != null) {
 							String string_50_ = Node_Sub25_Sub3.method2671(-13472, Class7.aStringArray164[i]);
 							if (string_50_ != null && string_50_.equals(string_46_)) {
-								Class41.method436(29459, Localization.pleaseRemoveIgnorePrefix.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + string + Localization.pleaseRemoveIgnoreSuffix.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 4);
+								Class41.method436(29459, Localization.pleaseRemoveIgnorePrefix.getLocalizationString(-12273, Class35.clientLanguage) + string + Localization.pleaseRemoveIgnoreSuffix.getLocalizationString(-12273, Class35.clientLanguage), 4);
 								return;
 							}
 						}
 					}
 					if (Node_Sub25_Sub3.method2671(-13472, Class295.aPlayer3692.aString11142).equals(string_46_)) {
-						Class41.method436(29459, Localization.cantAddSelfFriends.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 4);
+						Class41.method436(29459, Localization.cantAddSelfFriends.getLocalizationString(-12273, Class35.clientLanguage), 4);
 					} else {
 						Class76.anInt1013++;
 						if (bool != true) {
