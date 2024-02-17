@@ -174,7 +174,7 @@ public class Class112
 		if (Node_Sub38_Sub34.aClass353_10443 != aClass353_1421) {
 			aStringArray1438 = new String[] { null, null, null, null, null, null };
 		} else {
-			aStringArray1438 = new String[] { null, null, null, null, null, Class22.aClass22_385.method297(-12273, anInt1422) };
+			aStringArray1438 = new String[] { null, null, null, null, null, Localization.examine.getLocalizationFromLanguage(-12273, anInt1422) };
 		}
 	}
 }

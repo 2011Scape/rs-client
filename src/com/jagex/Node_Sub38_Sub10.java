@@ -45,7 +45,7 @@ public class Node_Sub38_Sub10 extends Node_Sub38
 			Class253.aLongArray3193[i_13_] = 0L;
 		for (int i_14_ = i; i_14_ < 32; i_14_++)
 			Class66_Sub2.aLongArray8997[i_14_] = 0L;
-		Class22.anInt431 = 0;
+		Localization.anInt431 = 0;
 	}
 	
 	final void method2780(boolean bool, Buffer buffer, int i) {

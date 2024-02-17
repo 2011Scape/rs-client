@@ -65,7 +65,7 @@ public class Class339_Sub8 extends Class339
 		}
 		if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(bool) != 2) {
 			Class213.aNode_Sub27_2512.method2690(110, 2, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
-			Class22.method300(2, !bool, false);
+			Localization.method300(2, !bool, false);
 		}
 		Node_Sub38_Sub31.method2893(1);
 		return i_1_;

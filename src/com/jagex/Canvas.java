@@ -52,7 +52,7 @@ public class Canvas extends java.awt.Canvas
 		}
 		if (i != Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false)) {
 			Class213.aNode_Sub27_2512.method2690(100, i, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
-			Class22.method300(i, true, false);
+			Localization.method300(i, true, false);
 		}
 		Node_Sub38_Sub31.method2893(1);
 		return i_1_;

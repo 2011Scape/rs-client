@@ -617,7 +617,7 @@ public class Class320_Sub11 extends Class320 {
 		Class320_Sub20.anInt8400 = 0;
 		Class274.anInt4977 = 0;
 		Class290_Sub2.anInt8075 = 0;
-		Class22.anInt362 = 0;
+		Localization.anInt362 = 0;
 		Class319.anInt4055 = 0;
 		Class310.anInt3941 = 0;
 		Class194_Sub3.anInt6906 = 0;
@@ -1090,7 +1090,7 @@ public class Class320_Sub11 extends Class320 {
 		Buffer.anInt6997 = 0;
 		Class6.anInt138 = 0;
 		Class365_Sub1.anInt8761 = 0;
-		Class22.anInt361 = 0;
+		Localization.anInt361 = 0;
 		AbstractToolkit.anInt6135 = 0;
 		GLToolkit.anInt6586 = 0;
 		Node_Sub27.anInt7288 = 0;
@@ -1414,7 +1414,7 @@ public class Class320_Sub11 extends Class320 {
 		DrawableModel.anInt908 = 0;
 		Class172.anInt2076 = 0;
 		Node_Sub31.anInt7373 = 0;
-		Class22.anInt364 = 0;
+		Localization.anInt364 = 0;
 		Class41.anInt628 = 0;
 		GLDrawableModel.anInt5636 = 0;
 		Node_Sub38_Sub4.anInt10115 = 0;
@@ -2006,7 +2006,7 @@ public class Class320_Sub11 extends Class320 {
 		Class150_Sub3.anInt8966 = 0;
 		Class99.anInt1291 = 0;
 		Class320_Sub27.anInt8464 = 0;
-		Class22.anInt360 = 0;
+		Localization.anInt360 = 0;
 		Class290_Sub1.anInt8064 = 0;
 		Node_Sub38_Sub36.anInt10460 = 0;
 		Animator.anInt235 = 0;
@@ -4443,7 +4443,7 @@ public class Class320_Sub11 extends Class320 {
 		Class120.method1228(-114);
 		Node_Sub25_Sub1.aBoolean9950 = true;
 		Class343.aShortArray4255 = EntityNode_Sub3_Sub1.aShortArray9165 = Class262_Sub19.aShortArray7852 = Class129.aShortArray1665 = new short[256];
-		Class173.aString2085 = Class22.aClass22_389.method297(-12273, Class35.anInt537);
+		Class173.aString2085 = Localization.walkHere.getLocalizationFromLanguage(-12273, Class35.clientLanguage);
 		Class213.aNode_Sub27_2512.method2690(i ^ 0x7b, Class213.aNode_Sub27_2512.aClass320_Sub4_7302.method3694(false), Class213.aNode_Sub27_2512.aClass320_Sub4_7304);
 		Class213.aNode_Sub27_2512.method2690(55, Class213.aNode_Sub27_2512.aClass320_Sub19_7277.method3751(false), Class213.aNode_Sub27_2512.aClass320_Sub19_7301);
 		Class175.anInt2097 = 0;

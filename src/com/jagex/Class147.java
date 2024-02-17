@@ -18,7 +18,7 @@ public class Class147
 		}
 		for (int i_0_ = 0; i_0_ < Class210.aStringArray2502.length; i_0_++)
 			Class210.aStringArray2502[i_0_] = "";
-		Node_Sub7.generateTimestamp((byte) 43, Class22.aClass22_359.method297(-12273, Class35.anInt537));
+		Node_Sub7.generateTimestamp((byte) 43, Localization.initialConsoleMessage.getLocalizationFromLanguage(-12273, Class35.clientLanguage));
 	}
 	
 	public static void method1648(boolean bool) {

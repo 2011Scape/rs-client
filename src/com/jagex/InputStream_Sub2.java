@@ -18,7 +18,7 @@ public class InputStream_Sub2 extends InputStream
 	
 	static final void method128(int i) {
 		if (!Class93.aGraphicsToolkit1241.l()) {
-			Class22.method300(Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false), true, false);
+			Localization.method300(Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false), true, false);
 		} else {
 			Class93.aGraphicsToolkit1241.b(Node_Sub38_Sub20.aCanvas10309);
 			Class150_Sub1.method1657(true);

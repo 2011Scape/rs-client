@@ -4,39 +4,39 @@ public class Class110
 {
 	static int anInt1377;
 	private int anInt1378;
-	protected Class22 aClass22_1379;
+	protected Localization aLocalization_1379;
 	static int anInt1380;
 	static int anInt1381;
 	protected int anInt1382;
 	protected int anInt1383;
-	static Class110 aClass110_1384 = new Class110(0, Class22.aClass22_379, Class22.aClass22_379, 0, 1);
+	static Class110 aClass110_1384 = new Class110(0, Localization.checkingUpdates, Localization.checkingUpdates, 0, 1);
 	static int anInt1385;
 	static int anInt1386;
 	protected boolean aBoolean1387;
 	static int anInt1388;
-	protected Class22 aClass22_1389;
-	static Class110 aClass110_1390 = new Class110(1, Class22.aClass22_379, 2);
+	protected Localization aLocalization_1389;
+	static Class110 aClass110_1390 = new Class110(1, Localization.checkingUpdates, 2);
 	static int anInt1391;
-	static Class110 aClass110_1392 = new Class110(2, Class22.aClass22_379, Class22.aClass22_379, 2, 3);
+	static Class110 aClass110_1392 = new Class110(2, Localization.checkingUpdates, Localization.checkingUpdates, 2, 3);
 	protected boolean aBoolean1393;
-	static Class110 aClass110_1394 = new Class110(3, Class22.aClass22_379, 3);
-	static Class110 aClass110_1395 = new Class110(4, Class22.aClass22_379, Class22.aClass22_379, 3, 4);
-	static Class110 aClass110_1396 = new Class110(5, Class22.aClass22_379, 4);
-	static Class110 aClass110_1397 = new Class110(6, Class22.aClass22_379, 4);
-	static Class110 aClass110_1398 = new Class110(7, Class22.aClass22_379, Class22.aClass22_379, 4, 5);
-	static Class110 aClass110_1399 = new Class110(8, Class22.aClass22_379, Class22.aClass22_379, 5, 98, true, true);
-	static Class110 aClass110_1400 = new Class110(9, Class22.aClass22_379, 99);
-	static Class110 aClass110_1401 = new Class110(10, Class22.aClass22_379, 100);
-	static Class110 aClass110_1402 = new Class110(11, Class22.aClass22_380, Class22.aClass22_380, 0, 92, true, true);
-	static Class110 aClass110_1403 = new Class110(12, Class22.aClass22_380, Class22.aClass22_380, 92, 92);
-	private static Class110 aClass110_1404 = new Class110(13, Class22.aClass22_380, Class22.aClass22_380, 92, 93);
-	static Class110 aClass110_1405 = new Class110(14, Class22.aClass22_380, Class22.aClass22_380, 94, 95);
-	static Class110 aClass110_1406 = new Class110(15, Class22.aClass22_380, Class22.aClass22_380, 96, 97);
-	static Class110 aClass110_1407 = new Class110(16, Class22.aClass22_380, 97);
-	static Class110 aClass110_1408 = new Class110(17, Class22.aClass22_380, 97);
-	static Class110 aClass110_1409 = new Class110(18, Class22.aClass22_380, 100);
-	static Class110 aClass110_1410 = new Class110(19, Class22.aClass22_380, 100);
-	static Class110 aClass110_1411 = new Class110(20, Class22.aClass22_380, 100);
+	static Class110 aClass110_1394 = new Class110(3, Localization.checkingUpdates, 3);
+	static Class110 aClass110_1395 = new Class110(4, Localization.checkingUpdates, Localization.checkingUpdates, 3, 4);
+	static Class110 aClass110_1396 = new Class110(5, Localization.checkingUpdates, 4);
+	static Class110 aClass110_1397 = new Class110(6, Localization.checkingUpdates, 4);
+	static Class110 aClass110_1398 = new Class110(7, Localization.checkingUpdates, Localization.checkingUpdates, 4, 5);
+	static Class110 aClass110_1399 = new Class110(8, Localization.checkingUpdates, Localization.checkingUpdates, 5, 98, true, true);
+	static Class110 aClass110_1400 = new Class110(9, Localization.checkingUpdates, 99);
+	static Class110 aClass110_1401 = new Class110(10, Localization.checkingUpdates, 100);
+	static Class110 aClass110_1402 = new Class110(11, Localization.fetchingUpdates, Localization.fetchingUpdates, 0, 92, true, true);
+	static Class110 aClass110_1403 = new Class110(12, Localization.fetchingUpdates, Localization.fetchingUpdates, 92, 92);
+	private static Class110 aClass110_1404 = new Class110(13, Localization.fetchingUpdates, Localization.fetchingUpdates, 92, 93);
+	static Class110 aClass110_1405 = new Class110(14, Localization.fetchingUpdates, Localization.fetchingUpdates, 94, 95);
+	static Class110 aClass110_1406 = new Class110(15, Localization.fetchingUpdates, Localization.fetchingUpdates, 96, 97);
+	static Class110 aClass110_1407 = new Class110(16, Localization.fetchingUpdates, 97);
+	static Class110 aClass110_1408 = new Class110(17, Localization.fetchingUpdates, 97);
+	static Class110 aClass110_1409 = new Class110(18, Localization.fetchingUpdates, 100);
+	static Class110 aClass110_1410 = new Class110(19, Localization.fetchingUpdates, 100);
+	static Class110 aClass110_1411 = new Class110(20, Localization.fetchingUpdates, 100);
 	static int anInt1412 = 0;
 	/*synthetic*/ static Class aClass1413;
 	
@@ -48,8 +48,8 @@ public class Class110
 		Class105.aClass61_5202.method598(i, -11819);
 	}
 	
-	private Class110(int i, Class22 class22, int i_0_) {
-		this(i, class22, class22, i_0_, i_0_, true, false);
+	private Class110(int i, Localization localization, int i_0_) {
+		this(i, localization, localization, i_0_, i_0_, true, false);
 	}
 	
 	public final String toString() {
@@ -57,8 +57,8 @@ public class Class110
 		throw new IllegalStateException();
 	}
 	
-	private Class110(int i, Class22 class22, Class22 class22_1_, int i_2_, int i_3_) {
-		this(i, class22, class22_1_, i_2_, i_3_, true, false);
+	private Class110(int i, Localization localization, Localization localization_1_, int i_2_, int i_3_) {
+		this(i, localization, localization_1_, i_2_, i_3_, true, false);
 	}
 	
 	final int method1130(int i) {
@@ -192,13 +192,13 @@ public class Class110
 		}
 	}
 	
-	private Class110(int i, Class22 class22, Class22 class22_14_, int i_15_, int i_16_, boolean bool, boolean bool_17_) {
+	private Class110(int i, Localization localization, Localization localization_14_, int i_15_, int i_16_, boolean bool, boolean bool_17_) {
 		anInt1383 = i_15_;
 		aBoolean1387 = bool;
 		anInt1382 = i_16_;
 		aBoolean1393 = bool_17_;
-		aClass22_1389 = class22_14_;
-		aClass22_1379 = class22;
+		aLocalization_1389 = localization_14_;
+		aLocalization_1379 = localization;
 		anInt1378 = i;
 	}
 	

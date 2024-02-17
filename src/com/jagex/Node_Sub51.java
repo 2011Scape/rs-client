@@ -41,7 +41,7 @@ public class Node_Sub51 extends Node
 			return -i_4_ + i_3_;
 		}
 		if (i == 2) {
-			return r.method2359(class377_sub1.method4131((byte) -97).aString678, (byte) -4, Class35.anInt537, class377_sub1_1_.method4131((byte) -97).aString678);
+			return r.method2359(class377_sub1.method4131((byte) -97).aString678, (byte) -4, Class35.clientLanguage, class377_sub1_1_.method4131((byte) -97).aString678);
 		}
 		if ((i ^ 0xffffffff) == -4) {
 			if (class377_sub1_1_.aString8780.equals("-")) {
@@ -59,7 +59,7 @@ public class Node_Sub51 extends Node
 				}
 				return -1;
 			}
-			return r.method2359(class377_sub1.aString8780, (byte) -4, Class35.anInt537, class377_sub1_1_.aString8780);
+			return r.method2359(class377_sub1.aString8780, (byte) -4, Class35.clientLanguage, class377_sub1_1_.aString8780);
 		}
 		if (i == 4) {
 			if (class377_sub1_1_.method4126(true)) {

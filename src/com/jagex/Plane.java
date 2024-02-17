@@ -104,7 +104,7 @@ abstract class Plane
 	
 	static final void method3258(int i, int i_55_, int i_56_) {
 		anInt3402++;
-		int i_57_ = Class262_Sub15_Sub1.aClass357_10524.method4033((byte) -6, Class22.aClass22_387.method297(-12273, Class35.anInt537));
+		int i_57_ = Class262_Sub15_Sub1.aClass357_10524.method4033((byte) -6, Localization.chooseOption.getLocalizationFromLanguage(-12273, Class35.clientLanguage));
 		int i_58_;
 		if (Class194_Sub3_Sub1.aBoolean9375) {
 			for (CacheNode_Sub4 cachenode_sub4 = (CacheNode_Sub4) Class184.aClass158_2189.method1723(13); cachenode_sub4 != null; cachenode_sub4 = (CacheNode_Sub4) Class184.aClass158_2189.method1721(0)) {

@@ -204,7 +204,7 @@ public class DevConsoleNode extends Node
 				return;
 			}
 		} catch (Exception exception) {
-			Node_Sub7.generateTimestamp((byte) 43, Class22.aClass22_365.method297(-12273, Class35.anInt537));
+			Node_Sub7.generateTimestamp((byte) 43, Localization.commandError.getLocalizationFromLanguage(-12273, Class35.clientLanguage));
 			return;
 		}
 		if (Class240.aClass329_2943 != Node_Sub38_Sub1.aClass329_10086 || Class339_Sub7.playerPrivilege >= 2) {
@@ -373,7 +373,7 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.equalsIgnoreCase("tk0")) {
-					Class22.method300(0, true, false);
+					Localization.method300(0, true, false);
 					if ((Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) ^ 0xffffffff) == -1) {
 						Node_Sub7.generateTimestamp((byte) 43, "Entered tk0");
 						Class213.aNode_Sub27_2512.method2690(102, 0, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
@@ -386,7 +386,7 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.equalsIgnoreCase("tk1")) {
-					Class22.method300(1, true, false);
+					Localization.method300(1, true, false);
 					if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) == 1) {
 						Node_Sub7.generateTimestamp((byte) 43, "Entered tk1");
 						Class213.aNode_Sub27_2512.method2690(103, 1, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
@@ -399,7 +399,7 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.equalsIgnoreCase("tk2")) {
-					Class22.method300(2, true, false);
+					Localization.method300(2, true, false);
 					if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) == 2) {
 						Node_Sub7.generateTimestamp((byte) 43, "Entered tk2");
 						Class213.aNode_Sub27_2512.method2690(104, 2, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
@@ -412,7 +412,7 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.equalsIgnoreCase("tk3")) {
-					Class22.method300(3, true, false);
+					Localization.method300(3, true, false);
 					if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) != 3) {
 						Node_Sub7.generateTimestamp((byte) 43, "Failed to enter tk3");
 					} else {
@@ -425,7 +425,7 @@ public class DevConsoleNode extends Node
 					return;
 				}
 				if (string.equalsIgnoreCase("tk5")) {
-					Class22.method300(5, true, false);
+					Localization.method300(5, true, false);
 					if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) == 5) {
 						Node_Sub7.generateTimestamp((byte) 43, "Entered tk5");
 						Class213.aNode_Sub27_2512.method2690(127, 5, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
@@ -774,7 +774,7 @@ public class DevConsoleNode extends Node
 				}
 				if (string.startsWith("orthotilesize ")) {
 					int i_37_ = Class350.method3998(string.substring(1 + string.indexOf(' ')), -1);
-					Class22.anInt432 = Node_Sub36_Sub1.anInt10039 = i_37_;
+					Localization.anInt432 = Node_Sub36_Sub1.anInt10039 = i_37_;
 					Node_Sub7.generateTimestamp((byte) 43, "ortho tile size=" + i_37_);
 					Class34_Sub1.method378(-4);
 					return;
@@ -867,12 +867,12 @@ public class DevConsoleNode extends Node
 					return;
 				}
 			} catch (Exception exception) {
-				Node_Sub7.generateTimestamp((byte) 43, Class22.aClass22_365.method297(-12273, Class35.anInt537));
+				Node_Sub7.generateTimestamp((byte) 43, Localization.commandError.getLocalizationFromLanguage(-12273, Class35.clientLanguage));
 				return;
 			}
 		}
 		if (Class151.anInt1843 != 11) {
-			Node_Sub7.generateTimestamp((byte) 43, Class22.aClass22_366.method297(-12273, Class35.anInt537) + string);
+			Node_Sub7.generateTimestamp((byte) 43, Localization.unknownCommand.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + string);
 		}
 	}
 }

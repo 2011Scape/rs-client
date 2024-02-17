@@ -326,7 +326,7 @@ public class Class195
 						Buffer buffer = Class300.method3500(3);
 						buffer.method2226(Class336_Sub2.anInt8586, false);
 						buffer.method2210((int) (Math.random() * 9.9999999E7), -36);
-						buffer.method2226(Class35.anInt537, false);
+						buffer.method2226(Class35.clientLanguage, false);
 						buffer.method2179((byte) -5, Class170.anInt2056);
 						for (int i_34_ = 0; i_34_ < 6; i_34_++)
 							buffer.method2179((byte) -5, (int) (9.9999999E7 * Math.random()));
@@ -478,7 +478,7 @@ public class Class195
 							packet.method2228(Class243.aString3076, 107);
 						}
 						packet.method2226(Class209.aClass353_2483.anInt4344, false);
-						packet.method2226(Class35.anInt537, false);
+						packet.method2226(Class35.clientLanguage, false);
 						EntityNode_Sub3.method941(24, packet);
 						packet.method2228(Class83.aString5186, 101);
 						packet.method2179((byte) -5, Class170.anInt2056);

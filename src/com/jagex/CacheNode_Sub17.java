@@ -55,7 +55,7 @@ public class CacheNode_Sub17 extends CacheNode implements Interface2
 		if (Class83.aString5186 != null) {
 			string_4_ = "/p=" + Class83.aString5186;
 		}
-		return "http://" + string + "." + Class209.aClass353_2483.aString4341 + ".com/l=" + Class35.anInt537 + "/a=" + Class170.anInt2056 + string_4_ + "/";
+		return "http://" + string + "." + Class209.aClass353_2483.aString4341 + ".com/l=" + Class35.clientLanguage + "/a=" + Class170.anInt2056 + string_4_ + "/";
 	}
 	
 	public static void method2395(int i) {

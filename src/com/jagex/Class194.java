@@ -49,7 +49,7 @@ class Class194
 			return 1;
 		}
 		if ((i_2_ ^ 0xffffffff) != (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) ^ 0xffffffff)) {
-			Class356.method4024(true, true, Class22.aClass22_376.method297(-12273, Class35.anInt537), i_2_);
+			Class356.method4024(true, true, Localization.profiling.getLocalizationFromLanguage(-12273, Class35.clientLanguage), i_2_);
 			if (i_2_ != Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false)) {
 				return -1;
 			}
@@ -59,7 +59,7 @@ class Class194
 			if (i_3_ != 13968) {
 				method1963((byte) -54);
 			}
-			Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Class22.aClass22_376.method297(-12273, Class35.anInt537), true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+			Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.profiling.getLocalizationFromLanguage(-12273, Class35.clientLanguage), true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 			Model model = Renderer.method3448(CacheNode_Sub4.aClass1_9466.anInt110, 7, 0, Class107.aClass302_1364);
 			long l = Class313.method3650(false);
 			Class93.aGraphicsToolkit1241.la();

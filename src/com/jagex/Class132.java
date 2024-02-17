@@ -56,7 +56,7 @@ public class Class132
 			method1560((byte) -33, null);
 		}
 		anInt1675++;
-		Class277.aCacheNode_Sub13_3509 = new CacheNode_Sub13(Class22.aClass22_367.method297(-12273, Class35.anInt537), "", Class239.anInt2928, 1012, -1, 0L, 0, 0, true, false, 0L, true);
+		Class277.aCacheNode_Sub13_3509 = new CacheNode_Sub13(Localization.cancel.getLocalizationFromLanguage(-12273, Class35.clientLanguage), "", Class239.anInt2928, 1012, -1, 0L, 0, 0, true, false, 0L, true);
 	}
 	
 	static final int method1564(int i, boolean bool) {
@@ -129,7 +129,7 @@ public class Class132
 			}
 		}
 		if (!bool) {
-			Class41.method436(i_1_ ^ ~0x1c6b, Class22.aClass22_384.method297(-12273, Class35.anInt537) + string, 4);
+			Class41.method436(i_1_ ^ ~0x1c6b, Localization.unableToFindAddedFriend.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + string, 4);
 		}
 	}
 }

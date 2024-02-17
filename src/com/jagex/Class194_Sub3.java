@@ -110,7 +110,7 @@ class Class194_Sub3 extends Class194
 			Class251.anInt3185 = Class273.aClass302_3490.method3505(false);
 			Node_Sub38_Sub28.method2888((byte) 61, Class320_Sub6.aClass302_8261);
 			int i_5_ = Class213.aNode_Sub27_2512.aClass320_Sub11_7264.method3722(false);
-			Class174.aClass250_2094 = new Class250(Class209.aClass353_2483, Class35.anInt537, Class273.aClass302_3490);
+			Class174.aClass250_2094 = new Class250(Class209.aClass353_2483, Class35.clientLanguage, Class273.aClass302_3490);
 			int[] is = Class174.aClass250_2094.method3091(i_5_, (byte) 104);
 			if (is.length == 0) {
 				is = Class174.aClass250_2094.method3091(0, (byte) 100);
@@ -231,37 +231,37 @@ class Class194_Sub3 extends Class194
 				return 99;
 			}
 			Class38.aD565 = new Class274(Node_Sub38_Sub10.aClass302_10197, Class282.aClass302_3583, Node_Sub38_Sub39.aClass302_10500);
-			Class188_Sub2_Sub2.aClass36_9366 = new Class36(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			InputStream_Sub2.aClass281_83 = new Class281(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122, Class63.aClass363_922);
-			Class186.aClass239_2249 = new Class239(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122, Node_Sub38_Sub39.aClass302_10500);
-			Class328.aClass362_4112 = new Class362(Class209.aClass353_2483, Class35.anInt537, Class14.aClass302_219);
-			Class290_Sub7.aClass71_8134 = new Class71(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			r.aClass58_9578 = new Class58(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Class296.aClass186_5429 = new Class186(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122, Node_Sub38_Sub39.aClass302_10500);
-			Class42.aClass181_643 = new Class181(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122, Class107.aClass302_1364);
-			Class269.aClass308_3469 = new Class308(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Class32.aClass359_508 = new Class359(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Class186.aClass112_2256 = new Class112(Class209.aClass353_2483, Class35.anInt537, true, Class247.aClass302_3143, Class107.aClass302_1364);
-			Class304.aClass215_3834 = new Class215(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122, Node_Sub38_Sub39.aClass302_10500);
-			Node_Sub54.aClass338_7671 = new Class338(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122, Node_Sub38_Sub39.aClass302_10500);
-			Class366.aClass279_4526 = new Class279(Class209.aClass353_2483, Class35.anInt537, true, Class174.aClass302_2093, Class107.aClass302_1364);
-			EntityNode_Sub3_Sub1.aClass86_9166 = new Class86(Class209.aClass353_2483, Class35.anInt537, true, Class188_Sub2_Sub2.aClass36_9366, Class205.aClass302_5104, Class107.aClass302_1364);
-			Class146.aClass32_1812 = new Class32(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Class18.aClass37_306 = new Class37(Class209.aClass353_2483, Class35.anInt537, Class262_Sub23.aClass302_7886, Class181.aClass302_2158, Class75.aClass302_1003);
-			Class171.aClass278_2062 = new Class278(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			CacheNode_Sub6.aClass57_9480 = new Class57(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Class16.aClass101_228 = new Class101(Class209.aClass353_2483, Class35.anInt537, Node_Sub15_Sub5.aClass302_9805, Class107.aClass302_1364);
-			Node_Sub9_Sub4.aClass180_9727 = new Class180(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Class382.aClass142_5246 = new Class142(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Node_Sub53.aClass176_7667 = new Class176(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			IOException_Sub1.aClass128_85 = new Class128(Class209.aClass353_2483, Class35.anInt537, Class127.aClass302_1646);
-			Class188_Sub2_Sub1.aClass229_9354 = new Class229(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Class336.aClass315_4173 = new Class315(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
-			Class291_Sub1.aClass13_8198 = new Class13(Class209.aClass353_2483, Class35.anInt537, Class4.aClass302_122);
+			Class188_Sub2_Sub2.aClass36_9366 = new Class36(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			InputStream_Sub2.aClass281_83 = new Class281(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122, Class63.aClass363_922);
+			Class186.aClass239_2249 = new Class239(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122, Node_Sub38_Sub39.aClass302_10500);
+			Class328.aClass362_4112 = new Class362(Class209.aClass353_2483, Class35.clientLanguage, Class14.aClass302_219);
+			Class290_Sub7.aClass71_8134 = new Class71(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			r.aClass58_9578 = new Class58(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Class296.aClass186_5429 = new Class186(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122, Node_Sub38_Sub39.aClass302_10500);
+			Class42.aClass181_643 = new Class181(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122, Class107.aClass302_1364);
+			Class269.aClass308_3469 = new Class308(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Class32.aClass359_508 = new Class359(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Class186.aClass112_2256 = new Class112(Class209.aClass353_2483, Class35.clientLanguage, true, Class247.aClass302_3143, Class107.aClass302_1364);
+			Class304.aClass215_3834 = new Class215(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122, Node_Sub38_Sub39.aClass302_10500);
+			Node_Sub54.aClass338_7671 = new Class338(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122, Node_Sub38_Sub39.aClass302_10500);
+			Class366.aClass279_4526 = new Class279(Class209.aClass353_2483, Class35.clientLanguage, true, Class174.aClass302_2093, Class107.aClass302_1364);
+			EntityNode_Sub3_Sub1.aClass86_9166 = new Class86(Class209.aClass353_2483, Class35.clientLanguage, true, Class188_Sub2_Sub2.aClass36_9366, Class205.aClass302_5104, Class107.aClass302_1364);
+			Class146.aClass32_1812 = new Class32(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Class18.aClass37_306 = new Class37(Class209.aClass353_2483, Class35.clientLanguage, Class262_Sub23.aClass302_7886, Class181.aClass302_2158, Class75.aClass302_1003);
+			Class171.aClass278_2062 = new Class278(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			CacheNode_Sub6.aClass57_9480 = new Class57(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Class16.aClass101_228 = new Class101(Class209.aClass353_2483, Class35.clientLanguage, Node_Sub15_Sub5.aClass302_9805, Class107.aClass302_1364);
+			Node_Sub9_Sub4.aClass180_9727 = new Class180(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Class382.aClass142_5246 = new Class142(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Node_Sub53.aClass176_7667 = new Class176(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			IOException_Sub1.aClass128_85 = new Class128(Class209.aClass353_2483, Class35.clientLanguage, Class127.aClass302_1646);
+			Class188_Sub2_Sub1.aClass229_9354 = new Class229(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Class336.aClass315_4173 = new Class315(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
+			Class291_Sub1.aClass13_8198 = new Class13(Class209.aClass353_2483, Class35.clientLanguage, Class4.aClass302_122);
 			NpcDefinition.method3001(Class293.aClass302_3681, AnimableAnimator_Sub1.aClass302_9091, Node_Sub38_Sub39.aClass302_10500, (byte) 64, Class107.aClass302_1364);
 			Node_Sub10.method2539(Class262_Sub3.aClass302_7715, -128);
-			Class42.aClass122_631 = new Class122(Class35.anInt537, Node_Sub38_Sub4.aClass302_10116, Node_Sub18.aClass302_7150);
-			Node_Sub36_Sub1.aClass109_10035 = new Class109(Class35.anInt537, Node_Sub38_Sub4.aClass302_10116, Node_Sub18.aClass302_7150, new Class220());
+			Class42.aClass122_631 = new Class122(Class35.clientLanguage, Node_Sub38_Sub4.aClass302_10116, Node_Sub18.aClass302_7150);
+			Node_Sub36_Sub1.aClass109_10035 = new Class109(Class35.clientLanguage, Node_Sub38_Sub4.aClass302_10116, Node_Sub18.aClass302_7150, new Class220());
 			OutputStream_Sub2.method139((byte) -110);
 			Class186.aClass112_2256.method1143(-2098, (Class213.aNode_Sub27_2512.aClass320_Sub19_7301.method3751(false) ^ 0xffffffff) == -1);
 			Class24.aClass275_442 = new Class275();
@@ -356,9 +356,9 @@ class Class194_Sub3 extends Class194
 			}
 			Node_Sub38_Sub31.method2893(1);
 			if (!CacheNode_Sub1.aBoolean9425) {
-				Class22.method300(Class213.aNode_Sub27_2512.aClass320_Sub29_7291.method3791(false), true, false);
+				Localization.method300(Class213.aNode_Sub27_2512.aClass320_Sub29_7291.method3791(false), true, false);
 			} else {
-				Class22.method300(0, true, false);
+				Localization.method300(0, true, false);
 			}
 			Node_Sub38_Sub19.method2850(i ^ 0x2, Class213.aNode_Sub27_2512.aClass320_Sub1_7287.method3678(false), -1, false, -1);
 			Class300.method3497((byte) 107, Class93.aGraphicsToolkit1241);

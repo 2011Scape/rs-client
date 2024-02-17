@@ -145,7 +145,7 @@ public class Class151
 			Class134.method1569();
 			for (int i_34_ = 0; i_34_ < Class159.anInt1995; i_34_++)
 				Class234.aBooleanArrayArrayArray2790[i_34_] = Class150_Sub2.aBooleanArrayArrayArray8960[i_34_];
-			if (Class22.anInt427 == 2) {
+			if (Localization.anInt427 == 2) {
 				if (Class270_Sub1.aLongArray8029[0] < Class270_Sub1.aLongArray8029[1]) {
 					if (Node_Sub38_Sub25.anIntArray10358[0] + Class270_Sub2.anIntArray8039[0] > Class129.anIntArray1669[0]) {
 						Class270_Sub2.anIntArray8039[0]++;

@@ -26,7 +26,7 @@ public class Class55
 		int[] is = Class355.method4014(-5410, node_sub13);
 		int i_0_ = node_sub13.aPacket7113.anInt7002;
 		node_sub13.aPacket7113.method2228(string, b ^ ~0x27);
-		node_sub13.aPacket7113.method2226(Class35.anInt537, false);
+		node_sub13.aPacket7113.method2226(Class35.clientLanguage, false);
 		node_sub13.aPacket7113.anInt7002 += 7;
 		node_sub13.aPacket7113.method2203(is, i_0_, false, node_sub13.aPacket7113.anInt7002);
 		node_sub13.aPacket7113.method2194(-i + node_sub13.aPacket7113.anInt7002, b + -2768);

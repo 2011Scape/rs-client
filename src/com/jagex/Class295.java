@@ -91,10 +91,10 @@ public class Class295
 					string = Mobile.method844(Node_Sub38_Sub23.aCacheNode_Sub13_10343, (byte) 126);
 				}
 			} else {
-				string = Class84.aString1148 + Class22.aClass22_395.method297(-12273, Class35.anInt537) + Class66.aString5177 + " ->";
+				string = Class84.aString1148 + Localization.spaceCharacter.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + Class66.aString5177 + " ->";
 			}
 			if ((Class315.anInt4035 ^ 0xffffffff) < -3) {
-				string += "<col=ffffff> / " + (Class315.anInt4035 - 2) + Class22.aClass22_388.method297(-12273, Class35.anInt537);
+				string += "<col=ffffff> / " + (Class315.anInt4035 - 2) + Localization.moreOptions.getLocalizationFromLanguage(-12273, Class35.clientLanguage);
 			}
 			if (Class320_Sub29.aWidget8488 != null) {
 				Class52 class52 = Class320_Sub29.aWidget8488.method4155(true, graphicstoolkit);

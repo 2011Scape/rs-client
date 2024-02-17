@@ -5,7 +5,7 @@ public class Class35
 	static int anInt534;
 	static Class151 aClass151_535 = new Class151(6, 0, 4, 2);
 	static Class192 aClass192_536 = new Class192(54, -1);
-	static int anInt537;
+	static int clientLanguage;
 	static int anInt538 = 0;
 	
 	static final void method387(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_) {
@@ -125,6 +125,6 @@ public class Class35
 	}
 	
 	static {
-		anInt537 = 0;
+		clientLanguage = 0;
 	}
 }

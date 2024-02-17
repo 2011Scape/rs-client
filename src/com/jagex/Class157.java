@@ -65,7 +65,7 @@ public class Class157
 					Class320_Sub24.method3774(-51);
 				}
 				Class34_Sub1.method375(i_5_, true, i_2_, i_4_, (byte) -95, i_3_);
-				i_5_ = Class22.anInt428;
+				i_5_ = Localization.anInt428;
 				i_3_ = Class132.anInt1684;
 				Class308.anInt3912 = Class308.anInt3916;
 				i_2_ = Mobile_Sub2.anInt10722;
@@ -192,7 +192,7 @@ public class Class157
 				}
 				if (Class230.aBoolean5214) {
 					Class93.aGraphicsToolkit1241.method1239(i_3_, i_4_, i_2_, (byte) 116, i_5_, -16777216);
-					Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Class22.aClass22_375.method297(-12273, Class35.anInt537), false, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+					Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage), false, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 				}
 				Class377_Sub1.method4130(false, -10385);
 			}

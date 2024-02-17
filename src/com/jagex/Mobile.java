@@ -142,12 +142,12 @@ abstract class Mobile extends Animable
 		anInt9117++;
 		if (cachenode_sub13.aString9565 != null && (cachenode_sub13.aString9565.length() ^ 0xffffffff) != -1) {
 			if (cachenode_sub13.aString9558 != null && (cachenode_sub13.aString9558.length() ^ 0xffffffff) < -1) {
-				return cachenode_sub13.aString9560 + Class22.aClass22_395.method297(-12273, Class35.anInt537) + cachenode_sub13.aString9558 + Class22.aClass22_395.method297(-12273, Class35.anInt537) + cachenode_sub13.aString9565;
+				return cachenode_sub13.aString9560 + Localization.spaceCharacter.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + cachenode_sub13.aString9558 + Localization.spaceCharacter.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + cachenode_sub13.aString9565;
 			}
-			return cachenode_sub13.aString9560 + Class22.aClass22_395.method297(-12273, Class35.anInt537) + cachenode_sub13.aString9565;
+			return cachenode_sub13.aString9560 + Localization.spaceCharacter.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + cachenode_sub13.aString9565;
 		}
 		if (cachenode_sub13.aString9558 != null && cachenode_sub13.aString9558.length() > 0) {
-			return cachenode_sub13.aString9560 + Class22.aClass22_395.method297(-12273, Class35.anInt537) + cachenode_sub13.aString9558;
+			return cachenode_sub13.aString9560 + Localization.spaceCharacter.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + cachenode_sub13.aString9558;
 		}
 		return cachenode_sub13.aString9560;
 	}

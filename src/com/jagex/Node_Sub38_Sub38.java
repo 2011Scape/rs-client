@@ -47,7 +47,7 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 		if (i == -15103) {
 			int i_2_ = Class194_Sub3.method1977(1);
 			if (Class252.aClass110_3189 == class110) {
-				Node_Sub15_Sub12.aString9867 = Class252.aClass110_3189.aClass22_1379.method297(-12273, Class35.anInt537);
+				Node_Sub15_Sub12.aString9867 = Class252.aClass110_3189.aLocalization_1379.getLocalizationFromLanguage(-12273, Class35.clientLanguage);
 				if (Class252.aClass110_3189.aBoolean1393) {
 					Class204.anInt2453 = Class252.aClass110_3189.anInt1383 - -(i_2_ * (Class252.aClass110_3189.anInt1382 - Class252.aClass110_3189.anInt1383) / 100);
 				}
@@ -58,7 +58,7 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 				Class243.aClass340_3069 = null;
 				Class48.method478(3, (byte) 127);
 			} else {
-				Node_Sub15_Sub12.aString9867 = class110.aClass22_1389.method297(i ^ 0x150e, Class35.anInt537);
+				Node_Sub15_Sub12.aString9867 = class110.aLocalization_1389.getLocalizationFromLanguage(i ^ 0x150e, Class35.clientLanguage);
 				if (Class252.aClass110_3189.aBoolean1387) {
 					Node_Sub15_Sub12.aString9867 += class110.anInt1382 + "%";
 				}
@@ -648,10 +648,10 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 						for (EntityNode_Sub3_Sub1 entitynode_sub3_sub1 = (EntityNode_Sub3_Sub1) Class97.aClass103_1277.method1113((byte) 100); entitynode_sub3_sub1 != null; entitynode_sub3_sub1 = (EntityNode_Sub3_Sub1) Class97.aClass103_1277.method1108(73)) {
 							if (Class313.method3650(false) / 1000L + -5L > (long) entitynode_sub3_sub1.anInt9162) {
 								if ((entitynode_sub3_sub1.aShort9164 ^ 0xffffffff) < -1) {
-									Class28.method331(entitynode_sub3_sub1.aString9156 + Class22.aClass22_382.method297(i ^ ~0x170e, Class35.anInt537), "", -37, 0, "", "", 5);
+									Class28.method331(entitynode_sub3_sub1.aString9156 + Localization.friendLoggedIn.getLocalizationFromLanguage(i ^ ~0x170e, Class35.clientLanguage), "", -37, 0, "", "", 5);
 								}
 								if (entitynode_sub3_sub1.aShort9164 == 0) {
-									Class28.method331(entitynode_sub3_sub1.aString9156 + Class22.aClass22_383.method297(-12273, Class35.anInt537), "", 99, 0, "", "", 5);
+									Class28.method331(entitynode_sub3_sub1.aString9156 + Localization.friendLoggedOut.getLocalizationFromLanguage(-12273, Class35.clientLanguage), "", 99, 0, "", "", 5);
 								}
 								entitynode_sub3_sub1.method803(false);
 							}

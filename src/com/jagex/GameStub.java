@@ -364,8 +364,8 @@ public abstract class GameStub extends Applet implements Runnable, FocusListener
 				method99(85);
 				Animable_Sub3_Sub1.aClass234_11017 = Class300.method3498(4);
 				while (Class321.aLong4068 == 0L || Class313.method3650(false) < Class321.aLong4068) {
-					Class22.anInt431 = Animable_Sub3_Sub1.aClass234_11017.method2147(Class171.aLong2071, 75);
-					for (int i = 0; (i ^ 0xffffffff) > (Class22.anInt431 ^ 0xffffffff); i++)
+					Localization.anInt431 = Animable_Sub3_Sub1.aClass234_11017.method2147(Class171.aLong2071, 75);
+					for (int i = 0; (i ^ 0xffffffff) > (Localization.anInt431 ^ 0xffffffff); i++)
 						method98(-15337);
 					method91(-74);
 					ObjectDefinition.method3049(Class240.aSignLink2946, Node_Sub38_Sub20.aCanvas10309, (byte) 102);

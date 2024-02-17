@@ -208,7 +208,7 @@ public class Class274 implements d
 						} else {
 							Class320_Sub10.aPlaneArray8300[i_17_].method3252(0, 0, 0, null, false, i_12_);
 						}
-						for (int i_25_ = 0; i_25_ < Class22.anInt427; i_25_++)
+						for (int i_25_ = 0; i_25_ < Localization.anInt427; i_25_++)
 							Class364.aClass273Array4513[i_25_].method3314(new EntityNode_Sub8(i_17_ + 1), (byte) 51);
 					} else if (i_11_ >= 0) {
 						Class320_Sub10.aPlaneArray8300[i_17_].method3259(Class216.anInt2551, EntityNode_Sub7.anInt6013, Node_Sub9_Sub1.anInt9656, Class75.aBooleanArrayArray1002, false, i_11_, i_12_);
@@ -246,7 +246,7 @@ public class Class274 implements d
 						} else {
 							Class320_Sub10.aPlaneArray8300[i_17_].method3252(0, 0, 0, null, false, i_12_);
 						}
-						for (int i_31_ = 0; i_31_ < Class22.anInt427; i_31_++)
+						for (int i_31_ = 0; i_31_ < Localization.anInt427; i_31_++)
 							Class364.aClass273Array4513[i_31_].method3314(new EntityNode_Sub8(i_17_ + 1), (byte) 51);
 					} else if (i_11_ >= 0) {
 						Class320_Sub10.aPlaneArray8300[i_17_].method3259(Class216.anInt2551, EntityNode_Sub7.anInt6013, Node_Sub9_Sub1.anInt9656, Class75.aBooleanArrayArray1002, true, i_11_, i_12_);

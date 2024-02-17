@@ -80,7 +80,7 @@ public class Class134_Sub1 extends Class134 implements Interface13_Impl3
 			} else {
 				if (i_6_ == 58) {
 					if ((Class339_Sub7.playerPrivilege ^ 0xffffffff) >= -1 || !Class175.aClass291_2100.method3450(119, 82) || !Class175.aClass291_2100.method3450(i_2_ ^ 0x6a, 81)) {
-						Node_Sub13 node_sub13 = Class22.method298(i_4_, (byte) 125, i_5_, i_7_);
+						Node_Sub13 node_sub13 = Localization.method298(i_4_, (byte) 125, i_5_, i_7_);
 						if (i_7_ == 1) {
 							node_sub13.aPacket7113.method2226(-1, false);
 							node_sub13.aPacket7113.method2226(-1, false);

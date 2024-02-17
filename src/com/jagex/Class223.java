@@ -35,7 +35,7 @@ public class Class223
 		if (Class315.anInt4035 < 400) {
 			if (player == Class295.aPlayer3692) {
 				if (Class87.aBoolean1185 && (0x10 & Class200_Sub2.anInt4943) != 0) {
-					Node_Sub32.method2731(false, -1, 0L, 0, 0, Class84.aString1148, 4, true, Class201.anInt2444, Class66.aString5177 + " -> <col=ffffff>" + Class22.aClass22_400.method297(-12273, Class35.anInt537), (long) player.anInt10858, (byte) -18, false);
+					Node_Sub32.method2731(false, -1, 0L, 0, 0, Class84.aString1148, 4, true, Class201.anInt2444, Class66.aString5177 + " -> <col=ffffff>" + Localization.self.getLocalizationFromLanguage(-12273, Class35.clientLanguage), (long) player.anInt10858, (byte) -18, false);
 					Class231.anInt2761++;
 				}
 			} else {
@@ -52,7 +52,7 @@ public class Class223
 							bool_0_ = false;
 						}
 					}
-					String string_3_ = Class169_Sub4.aClass353_8825 != Class209.aClass353_2483 ? Class22.aClass22_391.method297(-12273, Class35.anInt537) : Class22.aClass22_393.method297(-12273, Class35.anInt537);
+					String string_3_ = Class169_Sub4.aClass353_8825 != Class209.aClass353_2483 ? Localization.level.getLocalizationFromLanguage(-12273, Class35.clientLanguage) : Localization.rating.getLocalizationFromLanguage(-12273, Class35.clientLanguage);
 					if ((player.anInt11152 ^ 0xffffffff) <= (player.anInt11141 ^ 0xffffffff)) {
 						string = player.method893(false, true) + (bool_0_ ? Class368.method4077(i + -1625917681, Class295.aPlayer3692.anInt11152, player.anInt11152) : "<col=ffffff>") + " (" + string_3_ + player.anInt11152 + ")";
 					} else {
@@ -61,7 +61,7 @@ public class Class223
 				} else if (player.anInt11139 == -1) {
 					string = player.method893(false, true);
 				} else {
-					string = player.method893(false, true) + " (" + Class22.aClass22_392.method297(-12273, Class35.anInt537) + player.anInt11139 + ")";
+					string = player.method893(false, true) + " (" + Localization.skill.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + player.anInt11139 + ")";
 				}
 				if (Class87.aBoolean1185 && !bool && (0x8 & Class200_Sub2.anInt4943 ^ 0xffffffff) != -1) {
 					Class320_Sub8.anInt8285++;
@@ -74,7 +74,7 @@ public class Class223
 					for (int i_4_ = 7; i_4_ >= 0; i_4_--) {
 						if (Class320_Sub13.aStringArray8338[i_4_] != null) {
 							short s = 0;
-							if (Class209.aClass353_2483 == Node_Sub38_Sub34.aClass353_10443 && Class320_Sub13.aStringArray8338[i_4_].equalsIgnoreCase(Class22.aClass22_386.method297(-12273, Class35.anInt537))) {
+							if (Class209.aClass353_2483 == Node_Sub38_Sub34.aClass353_10443 && Class320_Sub13.aStringArray8338[i_4_].equalsIgnoreCase(Localization.attack.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 								if (Class171.aBoolean2058 && (Class295.aPlayer3692.anInt11152 ^ 0xffffffff) > (player.anInt11152 ^ 0xffffffff)) {
 									s = (short) 2000;
 								}

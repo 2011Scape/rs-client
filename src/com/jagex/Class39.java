@@ -345,7 +345,7 @@ public class Class39
 				}
 			}
 			if (!bool) {
-				Class41.method436(29459, Class22.aClass22_384.method297(i ^ ~0x58e2, Class35.anInt537) + string, 4);
+				Class41.method436(29459, Localization.unableToFindAddedFriend.getLocalizationFromLanguage(i ^ ~0x58e2, Class35.clientLanguage) + string, 4);
 			}
 			if (Class87.aBoolean1185) {
 				Node_Sub38_Sub23.method2863(-19316);

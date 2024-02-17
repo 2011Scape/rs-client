@@ -72,7 +72,7 @@ public class Class82
 		int i_6_ = Class362.anInt4492;
 		int i_7_ = Class219.anInt2627 + -3;
 		int i_8_ = 20;
-		Class50.method512(Class362.anInt4492, Class219.anInt2627, Class22.aClass22_387.method297(-12273, Class35.anInt537), graphicstoolkit, (byte) -39, i_3_ + client.anInt5481, Node_Sub6.anInt7043 - -i_2_, i_8_);
+		Class50.method512(Class362.anInt4492, Class219.anInt2627, Localization.chooseOption.getLocalizationFromLanguage(-12273, Class35.clientLanguage), graphicstoolkit, (byte) -39, i_3_ + client.anInt5481, Node_Sub6.anInt7043 - -i_2_, i_8_);
 		int i_9_ = Class106.aClass93_1356.method1050((byte) -45) - -i_2_;
 		if (i == 32712) {
 			int i_10_ = i_3_ + Class106.aClass93_1356.method1051(true);

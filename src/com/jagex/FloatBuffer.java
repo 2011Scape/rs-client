@@ -156,7 +156,7 @@ public class FloatBuffer extends Buffer
 			return true;
 		}
 		if (Class338.aClass192_4201 == class123.aClass192_1576) {
-			Class173.aString2085 = (class123.anInt1581 ^ 0xffffffff) >= -3 ? Class22.aClass22_389.method297(-12273, Class35.anInt537) : packet.method2195(-1);
+			Class173.aString2085 = (class123.anInt1581 ^ 0xffffffff) >= -3 ? Localization.walkHere.getLocalizationFromLanguage(-12273, Class35.clientLanguage) : packet.method2195(-1);
 			Class173.anInt2086 = class123.anInt1581 <= 0 ? -1 : packet.method2219(-130546744);
 			if (Class173.anInt2086 == 65535) {
 				Class173.anInt2086 = -1;

@@ -261,7 +261,7 @@ public class Class352
 			}
 			if (npcdefinition.aBoolean2854) {
 				if (npc.anInt11127 != 0) {
-					String string_15_ = Class169_Sub4.aClass353_8825 != Class209.aClass353_2483 ? Class22.aClass22_391.method297(i ^ 0x6fb7, Class35.anInt537) : Class22.aClass22_393.method297(i ^ 0x6fb7, Class35.anInt537);
+					String string_15_ = Class169_Sub4.aClass353_8825 != Class209.aClass353_2483 ? Localization.level.getLocalizationFromLanguage(i ^ 0x6fb7, Class35.clientLanguage) : Localization.rating.getLocalizationFromLanguage(i ^ 0x6fb7, Class35.clientLanguage);
 					string += Class368.method4077(i + -1625916277, Class295.aPlayer3692.anInt11152, npc.anInt11127) + " (" + (String) string_15_ + npc.anInt11127 + ")";
 				}
 				if (Class87.aBoolean1185 && !bool) {
@@ -278,7 +278,7 @@ public class Class352
 					}
 					if (strings != null) {
 						for (int i_16_ = strings.length - 1; (i_16_ ^ 0xffffffff) <= -1; i_16_--) {
-							if (strings[i_16_] != null && ((npcdefinition.aByte2855 ^ 0xffffffff) == -1 || !strings[i_16_].equalsIgnoreCase(Class22.aClass22_386.method297(-12273, Class35.anInt537)) && !strings[i_16_].equalsIgnoreCase(Class22.aClass22_385.method297(-12273, Class35.anInt537)))) {
+							if (strings[i_16_] != null && ((npcdefinition.aByte2855 ^ 0xffffffff) == -1 || !strings[i_16_].equalsIgnoreCase(Localization.attack.getLocalizationFromLanguage(-12273, Class35.clientLanguage)) && !strings[i_16_].equalsIgnoreCase(Localization.examine.getLocalizationFromLanguage(-12273, Class35.clientLanguage)))) {
 								int i_17_ = 0;
 								int i_18_ = Class230_Sub1.anInt9013;
 								if ((i_16_ ^ 0xffffffff) == -1) {
@@ -305,13 +305,13 @@ public class Class352
 								if (npcdefinition.anInt2856 == i_16_) {
 									i_18_ = npcdefinition.anInt2886;
 								}
-								Node_Sub32.method2731(false, -1, (long) npc.anInt10858, 0, 0, strings[i_16_], i_17_, true, strings[i_16_].equalsIgnoreCase(Class22.aClass22_386.method297(-12273, Class35.anInt537)) ? npcdefinition.anInt2860 : i_18_, "<col=ffff00>" + string, (long) npc.anInt10858, (byte) -18, false);
+								Node_Sub32.method2731(false, -1, (long) npc.anInt10858, 0, 0, strings[i_16_], i_17_, true, strings[i_16_].equalsIgnoreCase(Localization.attack.getLocalizationFromLanguage(-12273, Class35.clientLanguage)) ? npcdefinition.anInt2860 : i_18_, "<col=ffff00>" + string, (long) npc.anInt10858, (byte) -18, false);
 								Class216.anInt2548++;
 							}
 						}
 						if ((npcdefinition.aByte2855 ^ 0xffffffff) == -2) {
 							for (int i_19_ = 0; strings.length > i_19_; i_19_++) {
-								if (strings[i_19_] != null && (strings[i_19_].equalsIgnoreCase(Class22.aClass22_386.method297(i ^ 0x6fb7, Class35.anInt537)) || strings[i_19_].equalsIgnoreCase(Class22.aClass22_385.method297(-12273, Class35.anInt537)))) {
+								if (strings[i_19_] != null && (strings[i_19_].equalsIgnoreCase(Localization.attack.getLocalizationFromLanguage(i ^ 0x6fb7, Class35.clientLanguage)) || strings[i_19_].equalsIgnoreCase(Localization.examine.getLocalizationFromLanguage(-12273, Class35.clientLanguage)))) {
 									short s = 0;
 									if ((npc.anInt11127 ^ 0xffffffff) < (Class295.aPlayer3692.anInt11152 ^ 0xffffffff)) {
 										s = (short) 2000;
@@ -346,7 +346,7 @@ public class Class352
 										i_21_ = npcdefinition.anInt2886;
 									}
 									Actor.anInt10847++;
-									Node_Sub32.method2731(false, -1, (long) npc.anInt10858, 0, 0, strings[i_19_], s_20_, true, !strings[i_19_].equalsIgnoreCase(Class22.aClass22_386.method297(-12273, Class35.anInt537)) ? i_21_ : npcdefinition.anInt2860, "<col=ffff00>" + string, (long) npc.anInt10858, (byte) -18, false);
+									Node_Sub32.method2731(false, -1, (long) npc.anInt10858, 0, 0, strings[i_19_], s_20_, true, !strings[i_19_].equalsIgnoreCase(Localization.attack.getLocalizationFromLanguage(-12273, Class35.clientLanguage)) ? i_21_ : npcdefinition.anInt2860, "<col=ffff00>" + string, (long) npc.anInt10858, (byte) -18, false);
 								}
 							}
 						}

@@ -165,7 +165,7 @@ public class Class340 implements Runnable
 							}
 						} catch (Exception_Sub1 exception_sub1) {
 							ClanChat.method507(exception_sub1, exception_sub1.getMessage() + " (Recovered) " + Class158.aClient1983.method100(10), -108);
-							Class22.method300(0, true, true);
+							Localization.method300(0, true, true);
 						}
 					} else {
 						anInterface16_4216.method63(aBoolean4206, (byte) -113);

@@ -848,8 +848,8 @@ abstract class AbstractToolkit extends GraphicsToolkit
 	
 	static final void method1267(GraphicsToolkit graphicstoolkit, int i, int i_78_, int i_79_, int i_80_, int i_81_, int i_82_, boolean bool, boolean bool_83_) {
 		CacheNode_Sub18.aGraphicsToolkit9607 = graphicstoolkit;
-		Class22.anInt427 = i;
-		Class188_Sub2.aBoolean6868 = Class22.anInt427 > 1 && CacheNode_Sub18.aGraphicsToolkit9607.s();
+		Localization.anInt427 = i;
+		Class188_Sub2.aBoolean6868 = Localization.anInt427 > 1 && CacheNode_Sub18.aGraphicsToolkit9607.s();
 		Class36.anInt549 = i_78_;
 		Class179.anInt2129 = 1 << Class36.anInt549;
 		Class135.anInt1692 = Class179.anInt2129 >> 1;
@@ -906,7 +906,7 @@ abstract class AbstractToolkit extends GraphicsToolkit
 			if (GraphicsToolkit.aClass33Array1549 != null) {
 				Class262_Sub8.method3169();
 			}
-			GraphicsToolkit.aClass33Array1549 = new Class33[Class22.anInt427];
+			GraphicsToolkit.aClass33Array1549 = new Class33[Localization.anInt427];
 			CacheNode_Sub18.aGraphicsToolkit9607.j(GraphicsToolkit.aClass33Array1549.length + 1);
 			CacheNode_Sub18.aGraphicsToolkit9607.k(0);
 			for (int i_84_ = 0; i_84_ < GraphicsToolkit.aClass33Array1549.length; i_84_++) {
@@ -914,10 +914,10 @@ abstract class AbstractToolkit extends GraphicsToolkit
 				new Thread(GraphicsToolkit.aClass33Array1549[i_84_], "wr" + i_84_).start();
 			}
 			int i_85_;
-			if (Class22.anInt427 == 2) {
+			if (Localization.anInt427 == 2) {
 				i_85_ = 4;
 				Class290.anInt3655 = 2;
-			} else if (Class22.anInt427 == 3) {
+			} else if (Localization.anInt427 == 3) {
 				i_85_ = 6;
 				Class290.anInt3655 = 3;
 			} else {
@@ -926,7 +926,7 @@ abstract class AbstractToolkit extends GraphicsToolkit
 			}
 			Class364.aClass273Array4513 = new Class273[i_85_];
 			for (int i_86_ = 0; i_86_ < i_85_; i_86_++)
-				Class364.aClass273Array4513[i_86_] = new Class273(Node_Sub40.aStringArrayArray7505[Class22.anInt427 - 2][i_86_]);
+				Class364.aClass273Array4513[i_86_] = new Class273(Node_Sub40.aStringArrayArray7505[Localization.anInt427 - 2][i_86_]);
 		} else {
 			Class290.anInt3655 = 1;
 		}

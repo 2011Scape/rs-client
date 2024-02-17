@@ -183,16 +183,16 @@ public class client extends GameStub
 			} else {
 				Class318.aClass129_4051 = Class194_Sub3.aClass129_6901;
 			}
-			Class35.anInt537 = Class262_Sub18.method3198(strings[4], false);
-			if (Class35.anInt537 == -1) {
+			Class35.clientLanguage = Class262_Sub18.method3198(strings[4], false);
+			if (Class35.clientLanguage == -1) {
 				if (!strings[4].equals("english")) {
 					if (!strings[4].equals("german")) {
 						Class230.method2127((byte) 7, "language");
 					} else {
-						Class35.anInt537 = 1;
+						Class35.clientLanguage = 1;
 					}
 				} else {
-					Class35.anInt537 = 0;
+					Class35.clientLanguage = 0;
 				}
 			}
 			Node_Sub38_Sub21.aBoolean10320 = false;
@@ -640,10 +640,10 @@ public class client extends GameStub
 		for (EntityNode_Sub3_Sub1 entitynode_sub3_sub1 = (EntityNode_Sub3_Sub1) Class97.aClass103_1277.method1113((byte) 120); entitynode_sub3_sub1 != null; entitynode_sub3_sub1 = (EntityNode_Sub3_Sub1) Class97.aClass103_1277.method1108(104)) {
 			if (((long) entitynode_sub3_sub1.anInt9162 ^ 0xffffffffffffffffL) > (Class313.method3650(false) / 1000L + -5L ^ 0xffffffffffffffffL)) {
 				if ((entitynode_sub3_sub1.aShort9164 ^ 0xffffffff) < -1) {
-					Class28.method331(entitynode_sub3_sub1.aString9156 + Class22.aClass22_382.method297(-12273, Class35.anInt537), "", 123, 0, "", "", 5);
+					Class28.method331(entitynode_sub3_sub1.aString9156 + Localization.friendLoggedIn.getLocalizationFromLanguage(-12273, Class35.clientLanguage), "", 123, 0, "", "", 5);
 				}
 				if (entitynode_sub3_sub1.aShort9164 == 0) {
-					Class28.method331(entitynode_sub3_sub1.aString9156 + Class22.aClass22_383.method297(-12273, Class35.anInt537), "", i + 101, 0, "", "", 5);
+					Class28.method331(entitynode_sub3_sub1.aString9156 + Localization.friendLoggedOut.getLocalizationFromLanguage(-12273, Class35.clientLanguage), "", i + 101, 0, "", "", 5);
 				}
 				entitynode_sub3_sub1.method803(false);
 			}
@@ -705,7 +705,7 @@ public class client extends GameStub
 		Class9.method185((byte) 23);
 		Class62.method609((byte) 55);
 		CacheNode_Sub2.method2286(-9303);
-		Class22.method299(false);
+		Localization.method299(false);
 		Class291.method3451(1);
 		Class93.method1042((byte) 48);
 		Class102.method1096(15);
@@ -1480,29 +1480,29 @@ public class client extends GameStub
 					} else if (!Class315.method3655(Class151.anInt1843, 128)) {
 						if ((Class151.anInt1843 ^ 0xffffffff) != -12) {
 							if (Class151.anInt1843 == 14) {
-								Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Class22.aClass22_377.method297(-12273, Class35.anInt537) + "<br>" + Class22.aClass22_378.method297(-12273, Class35.anInt537), false, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+								Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.connectionLost.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + "<br>" + Localization.reconnecting.getLocalizationFromLanguage(-12273, Class35.clientLanguage), false, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 							} else if ((Class151.anInt1843 ^ 0xffffffff) == -16) {
-								Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Class22.aClass22_394.method297(-12273, Class35.anInt537), false, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+								Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.pleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage), false, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 							}
 						} else {
 							Class365.method4066(l, 105);
 						}
 					} else if (Class118.anInt5407 != 1) {
 						if ((Class118.anInt5407 ^ 0xffffffff) != -3) {
-							Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Class22.aClass22_375.method297(-12273, Class35.anInt537), true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+							Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage), true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 						} else {
 							if (Node_Sub2.anInt6937 > Class320_Sub19.anInt8388) {
 								Class320_Sub19.anInt8388 = Node_Sub2.anInt6937;
 							}
 							int i = (Class320_Sub19.anInt8388 - Node_Sub2.anInt6937) * 50 / Class320_Sub19.anInt8388 + 50;
-							Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Class22.aClass22_375.method297(-12273, Class35.anInt537) + "<br>(" + i + "%)", true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+							Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + "<br>(" + i + "%)", true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 						}
 					} else {
 						if ((Node_Sub29_Sub2.anInt10015 ^ 0xffffffff) < (Class188.anInt2287 ^ 0xffffffff)) {
 							Class188.anInt2287 = Node_Sub29_Sub2.anInt10015;
 						}
 						int i = (Class188.anInt2287 - Node_Sub29_Sub2.anInt10015) * 50 / Class188.anInt2287;
-						Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Class22.aClass22_375.method297(-12273, Class35.anInt537) + "<br>(" + i + "%)", true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+						Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage) + "<br>(" + i + "%)", true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 					}
 					if (Class12.anInt193 == 3) {
 						for (int i = 0; (i ^ 0xffffffff) > (Node_Sub11.anInt7105 ^ 0xffffffff); i++) {
@@ -1549,7 +1549,7 @@ public class client extends GameStub
 							}
 						} catch (Exception_Sub1 exception_sub1) {
 							ClanChat.method507(exception_sub1, exception_sub1.getMessage() + " (Recovered) " + method100(10), -122);
-							Class22.method300(0, true, false);
+							Localization.method300(0, true, false);
 						}
 					}
 					Node_Sub39.method2922(false);
@@ -1608,7 +1608,7 @@ public class client extends GameStub
 					} catch (Throwable throwable) {
 						ClanChat.method507(throwable, throwable.getMessage() + " (Recovered) " + method100(10), i ^ 0x5b88);
 						Node_Sub12.aBoolean5456 = true;
-						Class22.method300(0, true, false);
+						Localization.method300(0, true, false);
 					}
 				}
 				if (i == -23548) {
@@ -1796,7 +1796,7 @@ public class client extends GameStub
 			Class366.aSeekableFile4529 = null;
 			Class99.aSeekableFile1289 = null;
 		}
-		EntityNode_Sub6.aString5991 = Class22.aClass22_375.method297(-12273, Class35.anInt537);
+		EntityNode_Sub6.aString5991 = Localization.loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage);
 	}
 	
 	static final void method121(Widget[] widgets, int i, int i_58_, int i_59_, int i_60_, int i_61_, int i_62_, int i_63_, int i_64_, int i_65_, int i_66_, int i_67_) {
@@ -2040,7 +2040,7 @@ public class client extends GameStub
 												}
 											} else {
 												if (Class209.aClass353_2483 == Class169_Sub4.aClass353_8825) {
-													Node_Sub32.method2731(false, -1, 1L, i_98_, i_99_, Class22.aClass22_390.method297(-12273, Class35.anInt537), 11, true, -1, "", 0L, (byte) -18, true);
+													Node_Sub32.method2731(false, -1, 1L, i_98_, i_99_, Localization.faceHere.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 11, true, -1, "", 0L, (byte) -18, true);
 												}
 												Node_Sub32.method2731(false, -1, 1L, i_98_, i_99_, Class173.aString2085, 58, true, Class173.anInt2086, "", 0L, (byte) -18, true);
 											}
@@ -2559,9 +2559,9 @@ public class client extends GameStub
 				Class318.aClass129_4051 = Class194_Sub3.aClass129_6901;
 			}
 			try {
-				Class35.anInt537 = Integer.parseInt(this.getParameter("lang"));
+				Class35.clientLanguage = Integer.parseInt(this.getParameter("lang"));
 			} catch (Exception exception) {
-				Class35.anInt537 = 0;
+				Class35.clientLanguage = 0;
 			}
 			String string = this.getParameter("objecttag");
 			if (string == null || !string.equals("1")) {
@@ -2688,7 +2688,7 @@ public class client extends GameStub
 				} catch (Throwable throwable) {
 					ClanChat.method507(throwable, throwable.getMessage() + " (Recovered) " + method100(10), -118);
 					Node_Sub12.aBoolean5456 = true;
-					Class22.method300(0, true, false);
+					Localization.method300(0, true, false);
 				}
 			} else {
 				method118((byte) -108);

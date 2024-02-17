@@ -14,8 +14,8 @@ public class Class111
 			Class144.aByteArrayArray1782[AnimableAnimator_Sub1.anInt9090++] = bs;
 		} else if ((bs.length ^ 0xffffffff) == -5001 && (CacheNode_Sub16_Sub2.anInt11085 ^ 0xffffffff) > -251) {
 			Animable_Sub4_Sub2.aByteArrayArray10804[CacheNode_Sub16_Sub2.anInt11085++] = bs;
-		} else if ((bs.length ^ 0xffffffff) == -30001 && Class22.anInt429 < 50) {
-			Class282.aByteArrayArray3588[Class22.anInt429++] = bs;
+		} else if ((bs.length ^ 0xffffffff) == -30001 && Localization.anInt429 < 50) {
+			Class282.aByteArrayArray3588[Localization.anInt429++] = bs;
 		} else if (i == -251) {
 			if (Class113.aByteArrayArrayArray1447 != null) {
 				for (int i_0_ = 0; CacheNode_Sub1.anIntArray9427.length > i_0_; i_0_++) {
@@ -65,9 +65,9 @@ public class Class111
 			Animable_Sub4_Sub2.aByteArrayArray10804[CacheNode_Sub16_Sub2.anInt11085] = null;
 			return bs;
 		}
-		if ((i ^ 0xffffffff) == -30001 && Class22.anInt429 > 0) {
-			byte[] bs = Class282.aByteArrayArray3588[--Class22.anInt429];
-			Class282.aByteArrayArray3588[Class22.anInt429] = null;
+		if ((i ^ 0xffffffff) == -30001 && Localization.anInt429 > 0) {
+			byte[] bs = Class282.aByteArrayArray3588[--Localization.anInt429];
+			Class282.aByteArrayArray3588[Localization.anInt429] = null;
 			return bs;
 		}
 		if (bool != true) {

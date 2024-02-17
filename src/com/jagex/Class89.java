@@ -40,7 +40,7 @@ public class Class89
 		int i_5_ = -10660793;
 		Class53.method556(client.anInt5481 + i_4_, true, Node_Sub6.anInt7043 - -i, Class219.anInt2627, i_5_, graphicstoolkit, -16777216, Class362.anInt4492);
 		int i_6_ = 110 % ((-38 - b) / 32);
-		Class262_Sub4.aClass52_7721.method538(Node_Sub6.anInt7043 - -i + 3, client.anInt5481 - (-i_4_ + -14), Class22.aClass22_387.method297(-12273, Class35.anInt537), -1, 1, i_5_);
+		Class262_Sub4.aClass52_7721.method538(Node_Sub6.anInt7043 - -i + 3, client.anInt5481 - (-i_4_ + -14), Localization.chooseOption.getLocalizationFromLanguage(-12273, Class35.clientLanguage), -1, 1, i_5_);
 		int i_7_ = Class106.aClass93_1356.method1050((byte) -17) - -i;
 		int i_8_ = Class106.aClass93_1356.method1051(true) - -i_4_;
 		if (!Class194_Sub3_Sub1.aBoolean9375) {

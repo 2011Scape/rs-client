@@ -56,10 +56,10 @@ public class Node_Sub38_Sub16 extends Node_Sub38
 	
 	static final void method2840(int i) {
 		if (i == 0) {
-			if (Class22.anInt427 == 2) {
+			if (Localization.anInt427 == 2) {
 				GraphicsToolkit.aClass33Array1549[0].method364(Class364.aClass273Array4513[0]);
 				GraphicsToolkit.aClass33Array1549[1].method364(Class364.aClass273Array4513[1]);
-			} else if (Class22.anInt427 == 3) {
+			} else if (Localization.anInt427 == 3) {
 				GraphicsToolkit.aClass33Array1549[0].method364(Class364.aClass273Array4513[0]);
 				GraphicsToolkit.aClass33Array1549[1].method364(Class364.aClass273Array4513[1]);
 				GraphicsToolkit.aClass33Array1549[2].method364(Class364.aClass273Array4513[2]);
@@ -70,9 +70,9 @@ public class Node_Sub38_Sub16 extends Node_Sub38
 				GraphicsToolkit.aClass33Array1549[3].method364(Class364.aClass273Array4513[3]);
 			}
 		} else if (i == 1) {
-			if (Class22.anInt427 == 2) {
+			if (Localization.anInt427 == 2) {
 				GraphicsToolkit.aClass33Array1549[0].method364(Class364.aClass273Array4513[2]);
-			} else if (Class22.anInt427 == 3) {
+			} else if (Localization.anInt427 == 3) {
 				GraphicsToolkit.aClass33Array1549[0].method364(Class364.aClass273Array4513[3]);
 				GraphicsToolkit.aClass33Array1549[1].method364(Class364.aClass273Array4513[4]);
 			} else {
@@ -81,9 +81,9 @@ public class Node_Sub38_Sub16 extends Node_Sub38
 				GraphicsToolkit.aClass33Array1549[2].method364(Class364.aClass273Array4513[6]);
 			}
 		} else if (i == 2) {
-			if (Class22.anInt427 == 2) {
+			if (Localization.anInt427 == 2) {
 				GraphicsToolkit.aClass33Array1549[0].method364(Class364.aClass273Array4513[3]);
-			} else if (Class22.anInt427 == 3) {
+			} else if (Localization.anInt427 == 3) {
 				GraphicsToolkit.aClass33Array1549[0].method364(Class364.aClass273Array4513[5]);
 			} else {
 				GraphicsToolkit.aClass33Array1549[0].method364(Class364.aClass273Array4513[7]);

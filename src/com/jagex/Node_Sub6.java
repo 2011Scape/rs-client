@@ -340,7 +340,7 @@ public class Node_Sub6 extends Node
 										}
 									}
 									if (widget == Node_Sub25_Sub3.aWidget9990) {
-										string = Class22.aClass22_394.method297(-12273, Class35.anInt537);
+										string = Localization.pleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage);
 										i_44_ = widget.anInt4754;
 									}
 									if (Class204.aBoolean2454) {

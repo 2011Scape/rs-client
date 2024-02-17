@@ -102,7 +102,7 @@ public class Node_Sub38_Sub5 extends Node_Sub38
 			Class262_Sub23.method3212(false, 1295);
 		} else {
 			CacheNode_Sub8.anInt9493 = Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false);
-			Class22.method300(0, true, true);
+			Localization.method300(0, true, true);
 		}
 		anInt10128++;
 		Class369.aBoolean4555 = bool;

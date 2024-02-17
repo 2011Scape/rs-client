@@ -175,7 +175,7 @@ public class ItemDefinition
 			for (int i = 0; (i ^ 0xffffffff) > -5; i++)
 				aStringArray1901[i] = itemdefinition_5_.aStringArray1901[i];
 		}
-		aStringArray1901[4] = Class22.aClass22_369.method297(-12273, aClass86_1868.anInt1161);
+		aStringArray1901[4] = Localization.discard1.getLocalizationFromLanguage(-12273, aClass86_1868.anInt1161);
 	}
 	
 	final void method1677(ItemDefinition itemdefinition_7_, int i, ItemDefinition itemdefinition_8_) {
@@ -795,9 +795,9 @@ public class ItemDefinition
 			return "<col=ffff00>" + i_65_ + "</col>";
 		}
 		if ((i_65_ ^ 0xffffffff) > -10000001) {
-			return "<col=ffffff>" + i_65_ / 1000 + Class22.aClass22_399.method297(-12273, aClass86_1868.anInt1161) + "</col>";
+			return "<col=ffffff>" + i_65_ / 1000 + Localization.thousandsCharacter2.getLocalizationFromLanguage(-12273, aClass86_1868.anInt1161) + "</col>";
 		}
-		return "<col=00ff80>" + i_65_ / 1000000 + Class22.aClass22_397.method297(i + -34323, aClass86_1868.anInt1161) + "</col>";
+		return "<col=00ff80>" + i_65_ / 1000000 + Localization.millionsCharacter2.getLocalizationFromLanguage(i + -34323, aClass86_1868.anInt1161) + "</col>";
 	}
 	
 	private final void method1688(int i, int[] is, int i_66_) {
@@ -1003,7 +1003,7 @@ public class ItemDefinition
 			for (int i = 0; i < 4; i++)
 				aStringArray1901[i] = itemdefinition_84_.aStringArray1901[i];
 		}
-		aStringArray1901[4] = Class22.aClass22_370.method297(-12273, aClass86_1868.anInt1161);
+		aStringArray1901[4] = Localization.discard2.getLocalizationFromLanguage(-12273, aClass86_1868.anInt1161);
 	}
 	
 	public ItemDefinition() {

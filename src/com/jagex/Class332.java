@@ -35,7 +35,7 @@ public class Class332
 		}
 		if (Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false) != 0) {
 			Class213.aNode_Sub27_2512.method2690(104, 0, Class213.aNode_Sub27_2512.aClass320_Sub29_7291);
-			Class22.method300(0, true, false);
+			Localization.method300(0, true, false);
 		}
 		Node_Sub38_Sub31.method2893(1);
 		return i_0_;

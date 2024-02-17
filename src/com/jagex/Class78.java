@@ -101,7 +101,7 @@ public class Class78
 				if (i_8_ != -1 && i_9_ != -1) {
 					if (!Class87.aBoolean1185 || (0x40 & Class200_Sub2.anInt4943 ^ 0xffffffff) == -1) {
 						if (Class377_Sub1.aBoolean8778) {
-							Node_Sub32.method2731(false, -1, 0L, i_8_, i_9_, Class22.aClass22_390.method297(-12273, Class35.anInt537), 11, true, -1, "", (long) (i_9_ | i_8_ << 0), (byte) -18, true);
+							Node_Sub32.method2731(false, -1, 0L, i_8_, i_9_, Localization.faceHere.getLocalizationFromLanguage(-12273, Class35.clientLanguage), 11, true, -1, "", (long) (i_9_ | i_8_ << 0), (byte) -18, true);
 						}
 						Node_Sub32.method2731(false, -1, 0L, i_8_, i_9_, Class173.aString2085, 58, true, Class173.anInt2086, "", (long) (i_9_ | i_8_ << 0), (byte) -18, true);
 						InputStream_Sub1.anInt76++;

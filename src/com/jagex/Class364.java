@@ -28,7 +28,7 @@ public class Class364
 				Class94.anInt1249 = 0;
 			}
 			Class48.method478(i_0_, (byte) 97);
-			Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Class22.aClass22_375.method297(-12273, Class35.anInt537), true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
+			Class169_Sub3.method1779(Class93.aGraphicsToolkit1241, Localization.loadingPleaseWait.getLocalizationFromLanguage(-12273, Class35.clientLanguage), true, Class169_Sub3.aClass357_8820, StandardSprite.aClass52_8945, -16777216);
 			int i_2_ = Node_Sub53.anInt7668;
 			Node_Sub53.anInt7668 = 8 * (-(Node_Sub54.anInt7675 >> 4) + Player.anInt11178);
 			int i_3_ = Class320_Sub4.anInt8243;

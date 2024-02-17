@@ -72,7 +72,7 @@ public class Class160
 		anInt1999++;
 		int i_5_ = -22 / ((24 - i) / 34);
 		if (CacheNode_Sub8.anInt9493 >= 0 && (CacheNode_Sub8.anInt9493 ^ 0xffffffff) != -1) {
-			Class22.method300(CacheNode_Sub8.anInt9493, true, false);
+			Localization.method300(CacheNode_Sub8.anInt9493, true, false);
 			CacheNode_Sub8.anInt9493 = -1;
 		}
 	}

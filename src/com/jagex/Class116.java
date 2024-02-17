@@ -27,7 +27,7 @@ public class Class116 implements Interface7
 	
 	static final void method1163(int i) {
 		GameStub.anInt49 = (int) (34.46 * (double) Node_Sub54.anInt7675);
-		Class22.anInt430 = 200;
+		Localization.anInt430 = 200;
 		anInt5077++;
 		GameStub.anInt49 <<= i;
 		if (Class93.aGraphicsToolkit1241.p()) {

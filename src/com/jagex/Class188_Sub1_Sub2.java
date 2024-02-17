@@ -64,7 +64,7 @@ public class Class188_Sub1_Sub2 extends Class188_Sub1
 		if (Class83.aString5186 != null) {
 			string_5_ = "/p=" + Class83.aString5186;
 		}
-		String string_6_ = "http://" + string + string_4_ + "/l=" + Class35.anInt537 + "/a=" + Class170.anInt2056 + string_5_ + "/j" + (Animable_Sub2_Sub1.aBoolean10628 ? "1" : "0") + ",o" + (Node_Sub38_Sub21.aBoolean10320 ? "1" : "0") + ",a2";
+		String string_6_ = "http://" + string + string_4_ + "/l=" + Class35.clientLanguage + "/a=" + Class170.anInt2056 + string_5_ + "/j" + (Animable_Sub2_Sub1.aBoolean10628 ? "1" : "0") + ",o" + (Node_Sub38_Sub21.aBoolean10320 ? "1" : "0") + ",a2";
 		try {
 			Class158.aClient1983.getAppletContext().showDocument(new URL(string_6_), "_self");
 		} catch (Exception exception) {

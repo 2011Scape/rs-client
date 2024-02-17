@@ -277,7 +277,7 @@ public class Animable_Sub1_Sub1 extends Animable_Sub1 implements Interface19
 			int i_21_ = -18 + (i_17_ - (-(i_15_ / 2) + i_19_));
 			graphicstoolkit.d(i_20_ - 152, i_21_, 304, 34, GLDrawableModel.aColorArray5590[Class178.anInt2118].getRGB(), 0);
 			graphicstoolkit.aa(-150 + i_20_, i_21_ + 2, 3 * Node_Sub25_Sub1.anInt9947, 30, Class382.aColorArray5258[Class178.anInt2118].getRGB(), 0);
-			Class262_Sub4.aClass52_7721.method537(-1, (byte) 113, i_20_, Class22.aClass22_381.method297(i + 16284, Class35.anInt537), i_21_ + i_19_, Canvas.aColorArray73[Class178.anInt2118].getRGB());
+			Class262_Sub4.aClass52_7721.method537(-1, (byte) 113, i_20_, Localization.loading.getLocalizationFromLanguage(i + 16284, Class35.clientLanguage), i_21_ + i_19_, Canvas.aColorArray73[Class178.anInt2118].getRGB());
 		} else {
 			int i_22_ = Class94.anInt1250 - (int) ((float) i_18_ / Class20.aFloat327);
 			int i_23_ = Class327.anInt5360 + (int) ((float) i_15_ / Class20.aFloat327);

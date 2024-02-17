@@ -291,7 +291,7 @@ public class Class48
 		node_sub13.aPacket7113.method2210(Class170.anInt2056, -27);
 		node_sub13.aPacket7113.method2228(string_19_, 126);
 		node_sub13.aPacket7113.method2200(Node_Sub32.aLong7385, 1817671800);
-		node_sub13.aPacket7113.method2226(Class35.anInt537, false);
+		node_sub13.aPacket7113.method2226(Class35.clientLanguage, false);
 		node_sub13.aPacket7113.method2226(Class209.aClass353_2483.anInt4344, false);
 		EntityNode_Sub3.method941(i_20_ ^ 0x1b, node_sub13.aPacket7113);
 		String string_23_ = Node_Sub38_Sub18.aString10283;

@@ -1805,7 +1805,7 @@ public class Class305
 					return;
 				}
 				if (i == 3335) {
-					anIntArray3840[anInt3846++] = Class35.anInt537;
+					anIntArray3840[anInt3846++] = Class35.clientLanguage;
 					return;
 				}
 				if (i == 3336) {
@@ -2734,7 +2734,7 @@ public class Class305
 					return;
 				}
 				if (i == 4104) {
-					aStringArray3855[anInt3841++] = GLToolkit.method1437(17578, Class35.anInt537, Class25.method308(anIntArray3840[--anInt3846], false));
+					aStringArray3855[anInt3841++] = GLToolkit.method1437(17578, Class35.clientLanguage, Class25.method308(anIntArray3840[--anInt3846], false));
 					return;
 				}
 				if (i == 4105) {
@@ -2756,7 +2756,7 @@ public class Class305
 				}
 				if (i == 4107) {
 					anInt3841 -= 2;
-					anIntArray3840[anInt3846++] = r.method2359(aStringArray3855[anInt3841 + 1], (byte) -4, Class35.anInt537, aStringArray3855[anInt3841]);
+					anIntArray3840[anInt3846++] = r.method2359(aStringArray3855[anInt3841 + 1], (byte) -4, Class35.clientLanguage, aStringArray3855[anInt3841]);
 					return;
 				}
 				if (i == 4108) {
@@ -2887,7 +2887,7 @@ public class Class305
 				if (i == 4124) {
 					boolean bool_247_ = anIntArray3840[--anInt3846] != 0;
 					int i_248_ = anIntArray3840[--anInt3846];
-					aStringArray3855[anInt3841++] = Class301.method3503(Class35.anInt537, bool_247_, (long) i_248_, 0, true);
+					aStringArray3855[anInt3841++] = Class301.method3503(Class35.clientLanguage, bool_247_, (long) i_248_, 0, true);
 					return;
 				}
 				if (i == 4125) {
@@ -2898,7 +2898,7 @@ public class Class305
 					return;
 				}
 				if (i == 4126) {
-					aStringArray3855[anInt3841++] = Class350.method3999((long) anIntArray3840[--anInt3846] * 60000L, true, Class35.anInt537, 1) + " UTC";
+					aStringArray3855[anInt3841++] = Class350.method3999((long) anIntArray3840[--anInt3846] * 60000L, true, Class35.clientLanguage, 1) + " UTC";
 					return;
 				}
 				if (i == 4127) {
@@ -4985,7 +4985,7 @@ public class Class305
 			}
 			if (i == 6016) {
 				Class213.aNode_Sub27_2512.method2690(96, anIntArray3840[--anInt3846], Class213.aNode_Sub27_2512.aClass320_Sub13_7283);
-				Class22.method300(Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false), true, false);
+				Localization.method300(Class213.aNode_Sub27_2512.aClass320_Sub29_7270.method3791(false), true, false);
 				Node_Sub38_Sub31.method2893(1);
 				return;
 			}
@@ -5083,7 +5083,7 @@ public class Class305
 				if (i_470_ < 0 || i_470_ > 5) {
 					i_470_ = 2;
 				}
-				Class22.method300(i_470_, true, false);
+				Localization.method300(i_470_, true, false);
 				return;
 			}
 			if (i == 6032) {
@@ -6239,114 +6239,114 @@ public class Class305
 		if (Class339_Sub7.playerPrivilege != 0 || (!Node_Sub38_Sub18.aBoolean10282 || Class24.aBoolean436) && !Class290_Sub11.aBoolean8175) {
 			String string_566_ = string.toLowerCase();
 			int i_567_ = 0;
-			if (string_566_.startsWith(Class22.aClass22_410.method297(-12273, 0))) {
+			if (string_566_.startsWith(Localization.textEffectYellow.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 0;
-				string = string.substring(Class22.aClass22_410.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_411.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectYellow.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectRed.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 1;
-				string = string.substring(Class22.aClass22_411.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_412.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectRed.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectGreen.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 2;
-				string = string.substring(Class22.aClass22_412.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_413.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectGreen.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectCyan.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 3;
-				string = string.substring(Class22.aClass22_413.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_414.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectCyan.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectPurple.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 4;
-				string = string.substring(Class22.aClass22_414.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_415.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectPurple.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectWhite.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 5;
-				string = string.substring(Class22.aClass22_415.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_416.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectWhite.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectflash1.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 6;
-				string = string.substring(Class22.aClass22_416.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_417.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectflash1.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectFlash2.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 7;
-				string = string.substring(Class22.aClass22_417.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_418.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectFlash2.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectFlash3.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 8;
-				string = string.substring(Class22.aClass22_418.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_419.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectFlash3.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectGlow1.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 9;
-				string = string.substring(Class22.aClass22_419.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_420.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectGlow1.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectGlow2.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 10;
-				string = string.substring(Class22.aClass22_420.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_421.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectGlow2.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectGlow3.getLocalizationFromLanguage(-12273, 0))) {
 				i_567_ = 11;
-				string = string.substring(Class22.aClass22_421.method297(-12273, 0).length());
-			} else if (Class35.anInt537 != 0) {
-				if (string_566_.startsWith(Class22.aClass22_410.method297(-12273, Class35.anInt537))) {
+				string = string.substring(Localization.textEffectGlow3.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (Class35.clientLanguage != 0) {
+				if (string_566_.startsWith(Localization.textEffectYellow.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 0;
-					string = string.substring(Class22.aClass22_410.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_411.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectYellow.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectRed.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 1;
-					string = string.substring(Class22.aClass22_411.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_412.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectRed.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectGreen.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 2;
-					string = string.substring(Class22.aClass22_412.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_413.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectGreen.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectCyan.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 3;
-					string = string.substring(Class22.aClass22_413.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_414.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectCyan.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectPurple.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 4;
-					string = string.substring(Class22.aClass22_414.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_415.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectPurple.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectWhite.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 5;
-					string = string.substring(Class22.aClass22_415.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_416.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectWhite.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectflash1.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 6;
-					string = string.substring(Class22.aClass22_416.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_417.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectflash1.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectFlash2.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 7;
-					string = string.substring(Class22.aClass22_417.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_418.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectFlash2.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectFlash3.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 8;
-					string = string.substring(Class22.aClass22_418.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_419.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectFlash3.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectGlow1.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 9;
-					string = string.substring(Class22.aClass22_419.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_420.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectGlow1.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectGlow2.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 10;
-					string = string.substring(Class22.aClass22_420.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_421.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectGlow2.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectGlow3.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_567_ = 11;
-					string = string.substring(Class22.aClass22_421.method297(-12273, Class35.anInt537).length());
+					string = string.substring(Localization.textEffectGlow3.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
 				}
 			}
 			string_566_ = string.toLowerCase();
 			int i_568_ = 0;
-			if (string_566_.startsWith(Class22.aClass22_422.method297(-12273, 0))) {
+			if (string_566_.startsWith(Localization.textEffectWave.getLocalizationFromLanguage(-12273, 0))) {
 				i_568_ = 1;
-				string = string.substring(Class22.aClass22_422.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_423.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectWave.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectWave2.getLocalizationFromLanguage(-12273, 0))) {
 				i_568_ = 2;
-				string = string.substring(Class22.aClass22_423.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_424.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectWave2.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectShake.getLocalizationFromLanguage(-12273, 0))) {
 				i_568_ = 3;
-				string = string.substring(Class22.aClass22_424.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_425.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectShake.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectScroll.getLocalizationFromLanguage(-12273, 0))) {
 				i_568_ = 4;
-				string = string.substring(Class22.aClass22_425.method297(-12273, 0).length());
-			} else if (string_566_.startsWith(Class22.aClass22_426.method297(-12273, 0))) {
+				string = string.substring(Localization.textEffectScroll.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (string_566_.startsWith(Localization.textEffectSlide.getLocalizationFromLanguage(-12273, 0))) {
 				i_568_ = 5;
-				string = string.substring(Class22.aClass22_426.method297(-12273, 0).length());
-			} else if (Class35.anInt537 != 0) {
-				if (string_566_.startsWith(Class22.aClass22_422.method297(-12273, Class35.anInt537))) {
+				string = string.substring(Localization.textEffectSlide.getLocalizationFromLanguage(-12273, 0).length());
+			} else if (Class35.clientLanguage != 0) {
+				if (string_566_.startsWith(Localization.textEffectWave.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_568_ = 1;
-					string = string.substring(Class22.aClass22_422.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_423.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectWave.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectWave2.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_568_ = 2;
-					string = string.substring(Class22.aClass22_423.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_424.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectWave2.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectShake.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_568_ = 3;
-					string = string.substring(Class22.aClass22_424.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_425.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectShake.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectScroll.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_568_ = 4;
-					string = string.substring(Class22.aClass22_425.method297(-12273, Class35.anInt537).length());
-				} else if (string_566_.startsWith(Class22.aClass22_426.method297(-12273, Class35.anInt537))) {
+					string = string.substring(Localization.textEffectScroll.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
+				} else if (string_566_.startsWith(Localization.textEffectSlide.getLocalizationFromLanguage(-12273, Class35.clientLanguage))) {
 					i_568_ = 5;
-					string = string.substring(Class22.aClass22_426.method297(-12273, Class35.anInt537).length());
+					string = string.substring(Localization.textEffectSlide.getLocalizationFromLanguage(-12273, Class35.clientLanguage).length());
 				}
 			}
 			anInt3852++;

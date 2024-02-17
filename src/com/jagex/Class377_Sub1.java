@@ -106,7 +106,7 @@ public class Class377_Sub1 extends Class377
 	static final void method4130(boolean bool, int i) {
 		anInt8771++;
 		int i_7_ = GameStub.anInt49;
-		int i_8_ = Class22.anInt430;
+		int i_8_ = Localization.anInt430;
 		if (bool && Node_Sub15_Sub10.aBoolean9850) {
 			i_7_ <<= 1;
 			i_8_ = -i_7_;
