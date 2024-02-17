@@ -451,7 +451,7 @@ public class client extends GameStub
 						Buffer buffer = new Buffer(5);
 						buffer.method2226(Plane.aClass133_3409.anInt1688, false);
 						buffer.method2179((byte) -5, 667);
-						Node_Sub38_Sub33.aBufferedConnection10440.method429(0, 5, buffer.aByteArray7019, (byte) 78);
+						Node_Sub38_Sub33.aBufferedConnection10440.method429(0, 5, buffer.bufferData, (byte) 78);
 						Class290_Sub2.anInt8069++;
 						Node_Sub38_Sub36.aLong10462 = Class313.method3650(false);
 					}
@@ -474,7 +474,7 @@ public class client extends GameStub
 					boolean bool = RuntimeException_Sub1.method4207(Class151.anInt1843, 19154) || Class26.method311(Class151.anInt1843, -5) || Class329.method3833((byte) -61, Class151.anInt1843);
 					Class298[] class298s = Class298.method3481(-125);
 					Buffer buffer = new Buffer(4 * class298s.length);
-					Node_Sub38_Sub33.aBufferedConnection10440.method425(buffer.aByteArray7019.length, (byte) 112, 0, buffer.aByteArray7019);
+					Node_Sub38_Sub33.aBufferedConnection10440.method425(buffer.bufferData.length, (byte) 112, 0, buffer.bufferData);
 					for (int i_27_ = 0; class298s.length > i_27_; i_27_++)
 						class298s[i_27_].method3482((byte) -98, buffer.method2186(-86));
 					Class267.aClass266_3449.method3241(!bool, -118, Node_Sub38_Sub33.aBufferedConnection10440);

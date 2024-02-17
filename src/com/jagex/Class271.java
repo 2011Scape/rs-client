@@ -11,14 +11,14 @@ public class Class271
 	
 	final void method3311(int i, Buffer buffer, byte[] bs) {
 		anInt3481++;
-		if ((buffer.aByteArray7019[buffer.anInt7002] ^ 0xffffffff) != -32 || buffer.aByteArray7019[buffer.anInt7002 + 1] != -117) {
+		if ((buffer.bufferData[buffer.bufferLength] ^ 0xffffffff) != -32 || buffer.bufferData[buffer.bufferLength + 1] != -117) {
 			throw new RuntimeException("Invalid GZIP header!");
 		}
 		if (anInflater3480 == null) {
 			anInflater3480 = new Inflater(true);
 		}
 		try {
-			anInflater3480.setInput(buffer.aByteArray7019, i + buffer.anInt7002, -8 - buffer.anInt7002 - (10 - buffer.aByteArray7019.length));
+			anInflater3480.setInput(buffer.bufferData, i + buffer.bufferLength, -8 - buffer.bufferLength - (10 - buffer.bufferData.length));
 			anInflater3480.inflate(bs);
 		} catch (Exception exception) {
 			anInflater3480.reset();
@@ -33,10 +33,10 @@ public class Class271
 		if (bool != true) {
 			return null;
 		}
-		buffer.anInt7002 = bs.length - 4;
+		buffer.bufferLength = bs.length - 4;
 		int i = buffer.method2188(117);
 		byte[] bs_0_ = new byte[i];
-		buffer.anInt7002 = 0;
+		buffer.bufferLength = 0;
 		method3311(10, buffer, bs_0_);
 		return bs_0_;
 	}

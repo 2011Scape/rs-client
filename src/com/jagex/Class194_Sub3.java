@@ -39,11 +39,11 @@ class Class194_Sub3 extends Class194
 		if (i <= 8) {
 			return 38;
 		}
-		int i_1_ = buffer.anInt7002;
+		int i_1_ = buffer.bufferLength;
 		byte[] bs = Class320_Sub21.method3763(25, string);
 		buffer.method2189(bs.length, 32768);
-		buffer.anInt7002 += Class342.aClass163_4236.method1737(buffer.anInt7002, 0, bs.length, 47, buffer.aByteArray7019, bs);
-		return buffer.anInt7002 - i_1_;
+		buffer.bufferLength += Class342.aClass163_4236.method1737(buffer.bufferLength, 0, bs.length, 47, buffer.bufferData, bs);
+		return buffer.bufferLength - i_1_;
 	}
 	
 	static final void method1976(boolean bool, int i) {

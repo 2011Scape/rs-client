@@ -63,21 +63,21 @@ public class Class123
 	final void method1512(byte b) throws IOException {
 		anInt1561++;
 		if (aClass365_1557 != null && anInt1567 > 0) {
-			aBuffer1566.anInt7002 = 0;
+			aBuffer1566.bufferLength = 0;
 			for (;;) {
 				Node_Sub13 node_sub13 = (Node_Sub13) aClass312_1558.method3613(65280);
-				if (node_sub13 == null || (node_sub13.anInt7114 ^ 0xffffffff) < (aBuffer1566.aByteArray7019.length + -aBuffer1566.anInt7002 ^ 0xffffffff)) {
+				if (node_sub13 == null || (node_sub13.anInt7114 ^ 0xffffffff) < (aBuffer1566.bufferData.length + -aBuffer1566.bufferLength ^ 0xffffffff)) {
 					break;
 				}
-				aBuffer1566.method2223(node_sub13.anInt7114, (byte) 4, node_sub13.aPacket7113.aByteArray7019, 0);
+				aBuffer1566.method2223(node_sub13.anInt7114, (byte) 4, node_sub13.aPacket7113.bufferData, 0);
 				anInt1567 -= node_sub13.anInt7114;
 				node_sub13.method2160((byte) 36);
 				node_sub13.aPacket7113.method2202(b ^ 0x2a);
 				node_sub13.method2547(false);
 			}
-			aClass365_1557.method4067(aBuffer1566.aByteArray7019, aBuffer1566.anInt7002, (byte) -29, 0);
+			aClass365_1557.method4067(aBuffer1566.bufferData, aBuffer1566.bufferLength, (byte) -29, 0);
 			anInt1579 = 0;
-			anInt1583 += aBuffer1566.anInt7002;
+			anInt1583 += aBuffer1566.bufferLength;
 		}
 		if (b != -89) {
 			method1513(23);
@@ -98,8 +98,8 @@ public class Class123
 	final void method1514(int i, Node_Sub13 node_sub13) {
 		anInt1559++;
 		aClass312_1558.method3625((byte) -54, node_sub13);
-		node_sub13.anInt7114 = node_sub13.aPacket7113.anInt7002;
-		node_sub13.aPacket7113.anInt7002 = 0;
+		node_sub13.anInt7114 = node_sub13.aPacket7113.bufferLength;
+		node_sub13.aPacket7113.bufferLength = 0;
 		anInt1567 += node_sub13.anInt7114;
 		if (i <= 125) {
 			method1510(57);

@@ -33,7 +33,7 @@ public class Node_Sub33 extends Node
 		anInt7394++;
 		int i_1_ = 0;
 		FloatBuffer floatbuffer = aGLToolkit7407.aFloatBuffer6661;
-		floatbuffer.anInt7002 = 0;
+		floatbuffer.bufferLength = 0;
 		if (aGLToolkit7407.aBoolean6736) {
 			for (int i_2_ = 0; i_0_ > i_2_; i_2_++) {
 				int i_3_ = is[i_2_];
@@ -80,7 +80,7 @@ public class Node_Sub33 extends Node
 			}
 		}
 		if (i < i_1_) {
-			aClass200_Sub2_7387.method4(5123, floatbuffer.anInt7002, floatbuffer.aByteArray7019, i + 2712);
+			aClass200_Sub2_7387.method4(5123, floatbuffer.bufferLength, floatbuffer.bufferData, i + 2712);
 			aGLToolkit7407.method1482((byte) -108, aClass69_7386, aGLPlane7390.aClass69_7953, aGLPlane7390.aClass69_7945, aGLPlane7390.aClass69_7954);
 			aGLToolkit7407.method1458(anInt7400, (aGLPlane7390.anInt7911 & 0x7 ^ 0xffffffff) != -1, (aGLPlane7390.anInt7911 & 0x8 ^ 0xffffffff) != -1, false);
 			if (aGLToolkit7407.aBoolean6676) {

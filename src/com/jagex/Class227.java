@@ -36,7 +36,7 @@ public class Class227
 		aClass177_2705.method1810(buffer);
 		int i = buffer.method2233(255);
 		if (i != 0) {
-			buffer.anInt7002--;
+			buffer.bufferLength--;
 			aClass177_2703 = new Class177();
 			aClass177_2703.method1810(buffer);
 			aClass177_2693 = new Class177();
@@ -44,7 +44,7 @@ public class Class227
 		}
 		i = buffer.method2233(255);
 		if (i != 0) {
-			buffer.anInt7002--;
+			buffer.bufferLength--;
 			aClass177_2710 = new Class177();
 			aClass177_2710.method1810(buffer);
 			aClass177_2694 = new Class177();
@@ -52,7 +52,7 @@ public class Class227
 		}
 		i = buffer.method2233(255);
 		if (i != 0) {
-			buffer.anInt7002--;
+			buffer.bufferLength--;
 			aClass177_2696 = new Class177();
 			aClass177_2696.method1810(buffer);
 			aClass177_2697 = new Class177();

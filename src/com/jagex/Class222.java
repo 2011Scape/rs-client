@@ -39,12 +39,12 @@ public class Class222
 			Buffer buffer = new Buffer(bs);
 			Buffer buffer_0_ = new Buffer(bs);
 			buffer.method2233(255);
-			buffer.anInt7002 += 2;
+			buffer.bufferLength += 2;
 			int i = buffer.method2233(255);
 			int i_1_ = 0;
 			int i_2_ = -1;
 			int i_3_ = -1;
-			buffer_0_.anInt7002 = buffer.anInt7002 + i;
+			buffer_0_.bufferLength = buffer.bufferLength + i;
 			for (int i_4_ = 0; i_4_ < i; i_4_++) {
 				int i_5_ = aNode_Sub40_2634.anIntArray7511[i_4_];
 				if (i_5_ == 0) {
@@ -97,7 +97,7 @@ public class Class222
 					i_1_++;
 				}
 			}
-			if (buffer_0_.anInt7002 != bs.length) {
+			if (buffer_0_.bufferLength != bs.length) {
 				throw new RuntimeException();
 			}
 			anInt2642 = i_1_;

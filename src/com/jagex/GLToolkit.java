@@ -1202,7 +1202,7 @@ public class GLToolkit extends GraphicsToolkit
 				floatbuffer.method2252(-229385392, 0.0F);
 				floatbuffer.method2252(-229385392, 0.0F);
 			}
-			anInterface9_6728 = method1467(false, floatbuffer.anInt7002, floatbuffer.aByteArray7019, 20, -36);
+			anInterface9_6728 = method1467(false, floatbuffer.bufferLength, floatbuffer.bufferData, 20, -36);
 			aClass69_6681 = new Class69(anInterface9_6728, 5126, 3, 0);
 			aClass69_6698 = new Class69(anInterface9_6728, 5126, 2, 12);
 			aClass29_6601.method340(26802, this);

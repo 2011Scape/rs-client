@@ -127,7 +127,7 @@ public class Node_Sub38_Sub31 extends Node_Sub38
 			if ((class241.anInt2953 ^ 0xffffffff) == -2) {
 				fileondisk = (FileOnDisk) class241.anObject2956;
 				Buffer buffer = Class213.aNode_Sub27_2512.method2696(11665);
-				fileondisk.method1102((byte) 76, buffer.aByteArray7019, 0, buffer.anInt7002);
+				fileondisk.method1102((byte) 76, buffer.bufferData, 0, buffer.bufferLength);
 			}
 		} catch (Exception exception) {
 			/* empty */

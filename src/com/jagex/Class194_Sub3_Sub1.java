@@ -40,7 +40,7 @@ public class Class194_Sub3_Sub1 extends Class194_Sub3
 				if ((i_0_ ^ 0xffffffff) <= -51) {
 					break;
 				}
-				string += class123.aPacket1570.aByteArray7019[i_0_] + ",";
+				string += class123.aPacket1570.bufferData[i_0_] + ",";
 			}
 			ClanChat.method507(exception, string, -114);
 			Class127.method1542(i ^ 0x3d3e, false);

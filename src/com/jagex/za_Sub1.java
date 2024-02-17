@@ -14,7 +14,7 @@ public class za_Sub1 extends za
 				if (Class366.aSeekableFile4529 != null) {
 					try {
 						Class366.aSeekableFile4529.method3577(0L, false);
-						Class366.aSeekableFile4529.method3570(5033, i_0_, 24, buffer.aByteArray7019);
+						Class366.aSeekableFile4529.method3570(5033, i_0_, 24, buffer.bufferData);
 					} catch (Exception exception) {
 						break;
 					}

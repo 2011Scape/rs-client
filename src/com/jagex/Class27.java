@@ -13,7 +13,7 @@ public class Class27
 	private int[] anIntArray466;
 	
 	final boolean method315() {
-		if (aBuffer458.aByteArray7019 == null) {
+		if (aBuffer458.bufferData == null) {
 			return false;
 		}
 		return true;
@@ -29,11 +29,11 @@ public class Class27
 	}
 	
 	final void method318(int i) {
-		anIntArray465[i] = aBuffer458.anInt7002;
+		anIntArray465[i] = aBuffer458.bufferLength;
 	}
 	
 	final void method319() {
-		aBuffer458.aByteArray7019 = null;
+		aBuffer458.bufferData = null;
 		anIntArray462 = null;
 		anIntArray465 = null;
 		anIntArray459 = null;
@@ -45,7 +45,7 @@ public class Class27
 			int i_2_ = aBuffer458.method2233(255);
 			int i_3_ = aBuffer458.method2239(0);
 			if (i_2_ == 47) {
-				aBuffer458.anInt7002 += i_3_;
+				aBuffer458.bufferLength += i_3_;
 				return 1;
 			}
 			if (i_2_ == 81) {
@@ -54,10 +54,10 @@ public class Class27
 				int i_5_ = anIntArray459[i];
 				aLong461 += (long) i_5_ * (long) (anInt464 - i_4_);
 				anInt464 = i_4_;
-				aBuffer458.anInt7002 += i_3_;
+				aBuffer458.bufferLength += i_3_;
 				return 2;
 			}
-			aBuffer458.anInt7002 += i_3_;
+			aBuffer458.bufferLength += i_3_;
 			return 3;
 		}
 		byte b = aByteArray460[i_1_ - 128];
@@ -72,8 +72,8 @@ public class Class27
 	}
 	
 	final void method321(byte[] bs) {
-		aBuffer458.aByteArray7019 = bs;
-		aBuffer458.anInt7002 = 10;
+		aBuffer458.bufferData = bs;
+		aBuffer458.bufferLength = 10;
 		int i = aBuffer458.method2219(-130546744);
 		anInt463 = aBuffer458.method2219(-130546744);
 		anInt464 = 500000;
@@ -83,10 +83,10 @@ public class Class27
 			int i_8_ = aBuffer458.method2186(-53);
 			int i_9_ = aBuffer458.method2186(-116);
 			if (i_8_ == 1297379947) {
-				anIntArray462[i_7_] = aBuffer458.anInt7002;
+				anIntArray462[i_7_] = aBuffer458.bufferLength;
 				i_7_++;
 			}
-			aBuffer458.anInt7002 += i_9_;
+			aBuffer458.bufferLength += i_9_;
 		}
 		aLong461 = 0L;
 		anIntArray465 = new int[i];
@@ -110,11 +110,11 @@ public class Class27
 	}
 	
 	final void method323(int i) {
-		aBuffer458.anInt7002 = anIntArray465[i];
+		aBuffer458.bufferLength = anIntArray465[i];
 	}
 	
 	final void method324() {
-		aBuffer458.anInt7002 = -1;
+		aBuffer458.bufferLength = -1;
 	}
 	
 	public static void method325() {
@@ -127,32 +127,32 @@ public class Class27
 		for (int i_14_ = 0; i_14_ < i; i_14_++) {
 			anIntArray459[i_14_] = 0;
 			anIntArray466[i_14_] = 0;
-			aBuffer458.anInt7002 = anIntArray462[i_14_];
+			aBuffer458.bufferLength = anIntArray462[i_14_];
 			method329(i_14_);
-			anIntArray465[i_14_] = aBuffer458.anInt7002;
+			anIntArray465[i_14_] = aBuffer458.bufferLength;
 		}
 	}
 	
 	private final int method327(int i) {
-		int i_15_ = aBuffer458.aByteArray7019[aBuffer458.anInt7002];
+		int i_15_ = aBuffer458.bufferData[aBuffer458.bufferLength];
 		if (i_15_ < 0) {
 			i_15_ &= 0xff;
 			anIntArray466[i] = i_15_;
-			aBuffer458.anInt7002++;
+			aBuffer458.bufferLength++;
 		} else {
 			i_15_ = anIntArray466[i];
 		}
 		if (i_15_ == 240 || i_15_ == 247) {
 			int i_16_ = aBuffer458.method2239(0);
 			if (i_15_ == 247 && i_16_ > 0) {
-				int i_17_ = aBuffer458.aByteArray7019[aBuffer458.anInt7002] & 0xff;
+				int i_17_ = aBuffer458.bufferData[aBuffer458.bufferLength] & 0xff;
 				if (i_17_ >= 241 && i_17_ <= 243 || i_17_ == 246 || i_17_ == 248 || i_17_ >= 250 && i_17_ <= 252 || i_17_ == 254) {
-					aBuffer458.anInt7002++;
+					aBuffer458.bufferLength++;
 					anIntArray466[i] = i_17_;
 					return method320(i, i_17_);
 				}
 			}
-			aBuffer458.anInt7002 += i_16_;
+			aBuffer458.bufferLength += i_16_;
 			return 0;
 		}
 		return method320(i, i_15_);

@@ -63,7 +63,7 @@ public class Class29
 		float f_11_ = -f + f_2_;
 		float f_12_ = f_3_ - f_0_;
 		float f_13_ = f_4_ - f_1_;
-		aFloatBuffer476.anInt7002 = 0;
+		aFloatBuffer476.bufferLength = 0;
 		if (!gltoolkit.aBoolean6736) {
 			for (int i_14_ = i - 1; i_14_ >= 0; i_14_--) {
 				int i_15_ = anIntArray488[i_14_] <= 64 ? anIntArray488[i_14_] : 64;
@@ -275,10 +275,10 @@ public class Class29
 				}
 			}
 		}
-		if ((aFloatBuffer476.anInt7002 ^ 0xffffffff) != -1) {
-			anInterface9_482.method22(aFloatBuffer476.aByteArray7019, aFloatBuffer476.anInt7002, 24, (byte) 74);
+		if ((aFloatBuffer476.bufferLength ^ 0xffffffff) != -1) {
+			anInterface9_482.method22(aFloatBuffer476.bufferData, aFloatBuffer476.bufferLength, 24, (byte) 74);
 			gltoolkit.method1482((byte) 111, aClass69_483, null, aClass69_480, aClass69_484);
-			gltoolkit.method1441(7, 0, aFloatBuffer476.anInt7002 / 24, (byte) -42);
+			gltoolkit.method1441(7, 0, aFloatBuffer476.bufferLength / 24, (byte) -42);
 		}
 	}
 	

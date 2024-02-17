@@ -35,7 +35,7 @@ public class Node_Sub36_Sub3 extends Node_Sub36
 		anInt10060 = buffer.method2219(-130546744);
 		buffer.method2233(255);
 		if ((buffer.method2233(255) ^ 0xffffffff) != -256) {
-			buffer.anInt7002--;
+			buffer.bufferLength--;
 			buffer.method2235(-2023329376);
 		}
 	}

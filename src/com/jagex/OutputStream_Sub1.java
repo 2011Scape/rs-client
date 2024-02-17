@@ -23,8 +23,8 @@ public class OutputStream_Sub1 extends OutputStream
 		if (Class189.aBoolean2318) {
 			System.out.println("---endgpp---");
 		}
-		if ((packet.anInt7002 ^ 0xffffffff) != (i ^ 0xffffffff)) {
-			throw new RuntimeException("gpi1 pos:" + packet.anInt7002 + " psize:" + i);
+		if ((packet.bufferLength ^ 0xffffffff) != (i ^ 0xffffffff)) {
+			throw new RuntimeException("gpi1 pos:" + packet.bufferLength + " psize:" + i);
 		}
 	}
 	

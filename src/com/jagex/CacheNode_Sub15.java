@@ -35,7 +35,7 @@ public class CacheNode_Sub15 extends CacheNode
 		for (int i_1_ = 0; aByteArrayArray9596.length > i_1_; i_1_++) {
 			byte[] bs = aByteArrayArray9596[i_1_];
 			Buffer buffer = new Buffer(bs);
-			buffer.anInt7002 = 1;
+			buffer.bufferLength = 1;
 			int i_2_ = buffer.method2219(-130546744);
 			synchronized (Class145.aClass302_1799) {
 				bool &= Class145.aClass302_1799.method3510(i_2_, (byte) 63);
@@ -57,7 +57,7 @@ public class CacheNode_Sub15 extends CacheNode
 		for (int i_4_ = 0; is.length > i_4_; i_4_++) {
 			byte[] bs = aByteArrayArray9596[i_4_];
 			Buffer buffer = new Buffer(bs);
-			buffer.anInt7002 = 1;
+			buffer.bufferLength = 1;
 			int i_5_ = buffer.method2219(-130546744);
 			Node_Sub40 node_sub40 = null;
 			for (Node_Sub40 node_sub40_6_ = (Node_Sub40) class312.method3613(i + 65699); node_sub40_6_ != null; node_sub40_6_ = (Node_Sub40) class312.method3620(16776960)) {

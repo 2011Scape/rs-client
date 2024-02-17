@@ -84,10 +84,10 @@ public class Node_Sub25_Sub4 extends Node_Sub25
 					aFloat9996 = (float) ((long) anInt9995 * (l - -l_1_)) / (float) anInt10007;
 					aFloat10003 = (float) ((long) anInt9995 * l) / (float) anInt10007;
 					int i_3_ = buffer.method2188(119);
-					if (i_3_ < 0 || (buffer.aByteArray7019.length - buffer.anInt7002 ^ 0xffffffff) > (i_3_ ^ 0xffffffff)) {
+					if (i_3_ < 0 || (buffer.bufferData.length - buffer.bufferLength ^ 0xffffffff) > (i_3_ ^ 0xffffffff)) {
 						throw new IllegalStateException();
 					}
-					aString9992 = Class197.method2001((byte) -124, i_3_, buffer.aByteArray7019, buffer.anInt7002);
+					aString9992 = Class197.method2001((byte) -124, i_3_, buffer.bufferData, buffer.bufferLength);
 				}
 				if ((i_0_ | 0x80) != 0) {
 					return;
@@ -97,17 +97,17 @@ public class Node_Sub25_Sub4 extends Node_Sub25
 					throw new IllegalStateException();
 				}
 				if (anInt7234 == 0) {
-					buffer.anInt7002 += 23;
+					buffer.bufferLength += 23;
 					anInt10007 = buffer.method2188(125);
 					anInt9995 = buffer.method2188(112);
 					if ((anInt10007 ^ 0xffffffff) == -1 || anInt9995 == 0) {
 						throw new IllegalStateException();
 					}
 					Buffer buffer_4_ = new Buffer(16);
-					buffer.method2181(0, 16, buffer_4_.aByteArray7019, -19417);
+					buffer.method2181(0, 16, buffer_4_.bufferData, -19417);
 					aString9993 = buffer_4_.method2195(i + -18987);
-					buffer_4_.anInt7002 = 0;
-					buffer.method2181(0, 16, buffer_4_.aByteArray7019, -19417);
+					buffer_4_.bufferLength = 0;
+					buffer.method2181(0, 16, buffer_4_.bufferData, -19417);
 					aString9997 = buffer_4_.method2195(-1);
 				}
 			}

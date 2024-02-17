@@ -123,7 +123,7 @@ public class Class137
 					int i_28_ = i_26_ << anInt1711;
 					int i_29_ = i_26_ - -1 << anInt1711;
 					FloatBuffer floatbuffer = aGLToolkit1714.aFloatBuffer6661;
-					floatbuffer.anInt7002 = 0;
+					floatbuffer.bufferLength = 0;
 					for (int i_30_ = i_24_; i_30_ < i_25_; i_30_++) {
 						if (-i_14_ <= i_30_ + -i_13_ && (-i_13_ + i_30_ ^ 0xffffffff) >= (i_14_ ^ 0xffffffff)) {
 							int i_31_ = i_28_ + i_30_ * aGLPlane1707.anInt3408;
@@ -154,7 +154,7 @@ public class Class137
 						OpenGL.glScalef(f, f, 1.0F);
 						OpenGL.glTranslatef((float) -i_26_ / f, (float) -i_23_ / f, 1.0F);
 						OpenGL.glMatrixMode(5888);
-						aClass349ArrayArray1703[i_26_][i_23_].method3990(5123, floatbuffer.aByteArray7019, (byte) -78, i_27_);
+						aClass349ArrayArray1703[i_26_][i_23_].method3990(5123, floatbuffer.bufferData, (byte) -78, i_27_);
 					}
 				}
 			}

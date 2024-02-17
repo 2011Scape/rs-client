@@ -364,7 +364,7 @@ public class Class251
 			}
 		}
 		packet.method2255(-1431454110);
-		int i_75_ = (Class218.worldResponseBuffer.anInt1581 + -packet.anInt7002) / 16;
+		int i_75_ = (Class218.worldResponseBuffer.anInt1581 + -packet.bufferLength) / 16;
 		Class15.anIntArrayArray224 = new int[i_75_][4];
 		for (int i_76_ = 0; (i_75_ ^ 0xffffffff) < (i_76_ ^ 0xffffffff); i_76_++) {
 			for (int i_77_ = 0; (i_77_ ^ 0xffffffff) > -5; i_77_++)

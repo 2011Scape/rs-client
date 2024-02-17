@@ -27,13 +27,13 @@ public class CacheNode_Sub16_Sub1 extends CacheNode_Sub16
 	
 	final byte[] method2385(int i) {
 		anInt11071++;
-		if (aBoolean9602 || (aBuffer11072.aByteArray7019.length - aByte11069 ^ 0xffffffff) < (aBuffer11072.anInt7002 ^ 0xffffffff)) {
+		if (aBoolean9602 || (aBuffer11072.bufferData.length - aByte11069 ^ 0xffffffff) < (aBuffer11072.bufferLength ^ 0xffffffff)) {
 			throw new RuntimeException();
 		}
 		if (i != 15) {
 			aBuffer11072 = null;
 		}
-		return aBuffer11072.aByteArray7019;
+		return aBuffer11072.bufferData;
 	}
 	
 	public static void method2388(boolean bool) {
@@ -52,7 +52,7 @@ public class CacheNode_Sub16_Sub1 extends CacheNode_Sub16
 		if (aBuffer11072 == null) {
 			return 0;
 		}
-		return aBuffer11072.anInt7002 * 100 / (-aByte11069 + aBuffer11072.aByteArray7019.length);
+		return aBuffer11072.bufferLength * 100 / (-aByte11069 + aBuffer11072.bufferData.length);
 	}
 	
 	static final Class377_Sub1 method2389(int i) {

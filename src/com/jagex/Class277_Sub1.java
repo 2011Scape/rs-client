@@ -68,7 +68,7 @@ public class Class277_Sub1 extends Class277
 			if (i_17_ != 17986) {
 				method3360((byte) -79, null, null, null);
 			}
-			while (buffer.aByteArray7019.length > buffer.anInt7002) {
+			while (buffer.bufferData.length > buffer.bufferLength) {
 				int i_18_ = buffer.method2233(i_17_ + -17731);
 				if (i_18_ != 0) {
 					if ((i_18_ ^ 0xffffffff) != -2) {
@@ -650,7 +650,7 @@ public class Class277_Sub1 extends Class277
 			if (i_84_ != -1670) {
 				aClass318_8050 = null;
 			}
-			while ((buffer.anInt7002 ^ 0xffffffff) > (buffer.aByteArray7019.length ^ 0xffffffff)) {
+			while ((buffer.bufferLength ^ 0xffffffff) > (buffer.bufferData.length ^ 0xffffffff)) {
 				int i_93_ = buffer.method2233(255);
 				if ((i_93_ ^ 0xffffffff) == -1) {
 					if (class343 != null) {

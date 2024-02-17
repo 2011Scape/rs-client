@@ -153,7 +153,7 @@ public class Model
 		Buffer buffer_28_ = new Buffer(bs);
 		Buffer buffer_29_ = new Buffer(bs);
 		Buffer buffer_30_ = new Buffer(bs);
-		buffer.anInt7002 = -23 + bs.length;
+		buffer.bufferLength = -23 + bs.length;
 		anInt2599 = buffer.method2219(-130546744);
 		anInt2572 = buffer.method2219(-130546744);
 		anInt2611 = buffer.method2233(255);
@@ -163,9 +163,9 @@ public class Model
 		boolean bool_33_ = (i & 0x4 ^ 0xffffffff) == -5;
 		boolean bool_34_ = (i & 0x8 ^ 0xffffffff) == -9;
 		if (bool_34_) {
-			buffer.anInt7002 -= 7;
+			buffer.bufferLength -= 7;
 			anInt2614 = buffer.method2233(255);
-			buffer.anInt7002 += 6;
+			buffer.bufferLength += 6;
 		}
 		int i_35_ = buffer.method2233(255);
 		int i_36_ = buffer.method2233(255);
@@ -182,7 +182,7 @@ public class Model
 		int i_47_ = 0;
 		if ((anInt2611 ^ 0xffffffff) < -1) {
 			aByteArray2586 = new byte[anInt2611];
-			buffer.anInt7002 = 0;
+			buffer.bufferLength = 0;
 			for (int i_48_ = 0; (anInt2611 ^ 0xffffffff) < (i_48_ ^ 0xffffffff); i_48_++) {
 				byte b = aByteArray2586[i_48_] = buffer.method2214((byte) 112);
 				if (b == 0) {
@@ -256,7 +256,7 @@ public class Model
 		int i_70_ = i_49_;
 		i_49_ += i_46_ - -(2 * i_47_);
 		aShortArray2580 = new short[anInt2572];
-		buffer.anInt7002 = i_50_;
+		buffer.bufferLength = i_50_;
 		if (bool_31_) {
 			aByteArray2594 = new byte[anInt2572];
 		}
@@ -304,10 +304,10 @@ public class Model
 			anIntArray2602 = new int[anInt2572];
 		}
 		aShortArray2583 = new short[anInt2572];
-		buffer_25_.anInt7002 = i_61_;
-		buffer_26_.anInt7002 = i_62_;
-		buffer_27_.anInt7002 = i_63_;
-		buffer_28_.anInt7002 = i_55_;
+		buffer_25_.bufferLength = i_61_;
+		buffer_26_.bufferLength = i_62_;
+		buffer_27_.bufferLength = i_63_;
+		buffer_28_.bufferLength = i_55_;
 		int i_72_ = 0;
 		int i_73_ = 0;
 		int i_74_ = 0;
@@ -335,13 +335,13 @@ public class Model
 				anIntArray2598[i_75_] = buffer_28_.method2233(255);
 			}
 		}
-		buffer.anInt7002 = i_60_;
-		buffer_25_.anInt7002 = i_51_;
-		buffer_26_.anInt7002 = i_53_;
-		buffer_27_.anInt7002 = i_56_;
-		buffer_28_.anInt7002 = i_54_;
-		buffer_29_.anInt7002 = i_58_;
-		buffer_30_.anInt7002 = i_59_;
+		buffer.bufferLength = i_60_;
+		buffer_25_.bufferLength = i_51_;
+		buffer_26_.bufferLength = i_53_;
+		buffer_27_.bufferLength = i_56_;
+		buffer_28_.bufferLength = i_54_;
+		buffer_29_.bufferLength = i_58_;
+		buffer_30_.bufferLength = i_59_;
 		for (int i_80_ = 0; anInt2572 > i_80_; i_80_++) {
 			aShortArray2580[i_80_] = (short) buffer.method2219(-130546744);
 			if (bool_31_) {
@@ -368,8 +368,8 @@ public class Model
 			}
 		}
 		anInt2573 = -1;
-		buffer.anInt7002 = i_57_;
-		buffer_25_.anInt7002 = i_52_;
+		buffer.bufferLength = i_57_;
+		buffer_25_.bufferLength = i_52_;
 		short s = 0;
 		short s_81_ = 0;
 		short s_82_ = 0;
@@ -433,13 +433,13 @@ public class Model
 			}
 		}
 		if (bool == true) {
-			buffer.anInt7002 = i_64_;
+			buffer.bufferLength = i_64_;
 			anInt2573++;
-			buffer_25_.anInt7002 = i_65_;
-			buffer_26_.anInt7002 = i_67_;
-			buffer_27_.anInt7002 = i_68_;
-			buffer_28_.anInt7002 = i_69_;
-			buffer_29_.anInt7002 = i_70_;
+			buffer_25_.bufferLength = i_65_;
+			buffer_26_.bufferLength = i_67_;
+			buffer_27_.bufferLength = i_68_;
+			buffer_28_.bufferLength = i_69_;
+			buffer_29_.bufferLength = i_70_;
 			for (int i_87_ = 0; i_87_ < anInt2611; i_87_++) {
 				int i_88_ = aByteArray2586[i_87_] & 0xff;
 				if (i_88_ == 0) {
@@ -513,7 +513,7 @@ public class Model
 					anIntArray2617[i_87_] = buffer_29_.method2214((byte) -56);
 				}
 			}
-			buffer.anInt7002 = i_71_;
+			buffer.bufferLength = i_71_;
 			if (bool_32_) {
 				int i_89_ = buffer.method2233(255);
 				if (i_89_ > 0) {
@@ -704,7 +704,7 @@ public class Model
 		Buffer buffer_145_ = new Buffer(bs);
 		Buffer buffer_146_ = new Buffer(bs);
 		Buffer buffer_147_ = new Buffer(bs);
-		buffer.anInt7002 = bs.length + -18;
+		buffer.bufferLength = bs.length + -18;
 		anInt2599 = buffer.method2219(-130546744);
 		anInt2572 = buffer.method2219(-130546744);
 		anInt2611 = buffer.method2233(255);
@@ -770,7 +770,7 @@ public class Model
 			aShortArray2583 = new short[anInt2572];
 			anIntArray2576 = new int[anInt2599];
 			anIntArray2616 = new int[anInt2599];
-			buffer.anInt7002 = i_158_;
+			buffer.bufferLength = i_158_;
 			i_157_ += i_155_;
 			if ((anInt2611 ^ 0xffffffff) < -1) {
 				aShortArray2577 = new short[anInt2611];
@@ -788,10 +788,10 @@ public class Model
 			}
 			aShortArray2600 = new short[anInt2572];
 			aShortArray2589 = new short[anInt2572];
-			buffer_144_.anInt7002 = i_168_;
-			buffer_145_.anInt7002 = i_169_;
-			buffer_146_.anInt7002 = i_170_;
-			buffer_147_.anInt7002 = i_163_;
+			buffer_144_.bufferLength = i_168_;
+			buffer_145_.bufferLength = i_169_;
+			buffer_146_.bufferLength = i_170_;
+			buffer_147_.bufferLength = i_163_;
 			int i_171_ = 0;
 			int i_172_ = 0;
 			int i_173_ = 0;
@@ -819,11 +819,11 @@ public class Model
 					anIntArray2598[i_174_] = buffer_147_.method2233(255);
 				}
 			}
-			buffer.anInt7002 = i_166_;
-			buffer_144_.anInt7002 = i_162_;
-			buffer_145_.anInt7002 = i_160_;
-			buffer_146_.anInt7002 = i_164_;
-			buffer_147_.anInt7002 = i_161_;
+			buffer.bufferLength = i_166_;
+			buffer_144_.bufferLength = i_162_;
+			buffer_145_.bufferLength = i_160_;
+			buffer_146_.bufferLength = i_164_;
+			buffer_147_.bufferLength = i_161_;
 			for (int i_179_ = 0; anInt2572 > i_179_; i_179_++) {
 				aShortArray2580[i_179_] = (short) buffer.method2219(-130546744);
 				if (i_148_ == 1) {
@@ -857,8 +857,8 @@ public class Model
 				}
 			}
 			anInt2573 = -1;
-			buffer.anInt7002 = i_165_;
-			buffer_144_.anInt7002 = i_159_;
+			buffer.bufferLength = i_165_;
+			buffer_144_.bufferLength = i_159_;
 			short s = 0;
 			short s_181_ = 0;
 			short s_182_ = 0;
@@ -921,7 +921,7 @@ public class Model
 					}
 				}
 			}
-			buffer.anInt7002 = i_167_;
+			buffer.bufferLength = i_167_;
 			anInt2573++;
 			for (int i_187_ = 0; anInt2611 > i_187_; i_187_++) {
 				aByteArray2586[i_187_] = (byte) 0;

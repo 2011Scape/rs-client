@@ -260,7 +260,7 @@ public class Class302
 		} else {
 			bs = Class320_Sub15.method3739((byte) 127, true, anObjectArray3783[i_13_]);
 			Buffer buffer = new Buffer(bs);
-			buffer.method2231(5, is, buffer.aByteArray7019.length, -4901);
+			buffer.method2231(5, is, buffer.bufferData.length, -4901);
 		}
 		byte[] bs_18_ = Node_Sub38_Sub26.method2875(bs, (byte) -104);
 		if (aBoolean3819) {
@@ -283,7 +283,7 @@ public class Class302
 			int i_21_ = 0xff & bs_18_[--i_20_];
 			i_20_ -= i_21_ * (i_14_ * 4);
 			Buffer buffer = new Buffer(bs_18_);
-			buffer.anInt7002 = i_20_;
+			buffer.bufferLength = i_20_;
 			int[] is_22_ = new int[i_14_];
 			for (int i_23_ = 0; i_21_ > i_23_; i_23_++) {
 				int i_24_ = 0;
@@ -297,7 +297,7 @@ public class Class302
 				bs_26_[i_27_] = new byte[is_22_[i_27_]];
 				is_22_[i_27_] = 0;
 			}
-			buffer.anInt7002 = i_20_;
+			buffer.bufferLength = i_20_;
 			int i_28_ = 0;
 			for (int i_29_ = 0; i_29_ < i_21_; i_29_++) {
 				int i_30_ = 0;
@@ -327,7 +327,7 @@ public class Class302
 			i_34_ -= i_35_ * (i_14_ * 4);
 			Buffer buffer = new Buffer(bs_18_);
 			int i_36_ = 0;
-			buffer.anInt7002 = i_34_;
+			buffer.bufferLength = i_34_;
 			int i_37_ = 0;
 			for (int i_38_ = 0; i_38_ < i_35_; i_38_++) {
 				int i_39_ = 0;
@@ -349,7 +349,7 @@ public class Class302
 				return true;
 			}
 			byte[] bs_42_ = new byte[i_36_];
-			buffer.anInt7002 = i_34_;
+			buffer.bufferLength = i_34_;
 			i_36_ = 0;
 			int i_43_ = 0;
 			for (int i_44_ = 0; (i_44_ ^ 0xffffffff) > (i_35_ ^ 0xffffffff); i_44_++) {

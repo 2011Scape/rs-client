@@ -151,8 +151,8 @@ public class GLPlane extends Plane
 				aGLToolkit7926.method1430((byte) 62);
 			}
 			aGLToolkit7926.method1482((byte) -47, aClass69_7952, aClass69_7953, aClass69_7945, aClass69_7954);
-			if (aGLToolkit7926.aFloatBuffer6661.aByteArray7019.length >= 2 * anInt7919) {
-				aGLToolkit7926.aFloatBuffer6661.anInt7002 = 0;
+			if (aGLToolkit7926.aFloatBuffer6661.bufferData.length >= 2 * anInt7919) {
+				aGLToolkit7926.aFloatBuffer6661.bufferLength = 0;
 			} else {
 				aGLToolkit7926.aFloatBuffer6661 = new FloatBuffer(anInt7919 * 2);
 			}
@@ -192,7 +192,7 @@ public class GLPlane extends Plane
 				}
 			}
 			if (i_22_ > 0) {
-				Class200_Sub2 class200_sub2 = new Class200_Sub2(aGLToolkit7926, 5123, floatbuffer.aByteArray7019, floatbuffer.anInt7002);
+				Class200_Sub2 class200_sub2 = new Class200_Sub2(aGLToolkit7926, 5123, floatbuffer.bufferData, floatbuffer.bufferLength);
 				aGLToolkit7926.method1477((byte) 101, 0, 4, class200_sub2, i_22_);
 			}
 		}
@@ -668,7 +668,7 @@ public class GLPlane extends Plane
 			if (i_158_ > aGLToolkit7926.anIntArray6748.length) {
 				aGLToolkit7926.anIntArray6748 = new int[i_158_];
 			}
-			if ((aGLToolkit7926.aFloatBuffer6661.aByteArray7019.length ^ 0xffffffff) > (anInt7919 * 2 ^ 0xffffffff)) {
+			if ((aGLToolkit7926.aFloatBuffer6661.bufferData.length ^ 0xffffffff) > (anInt7919 * 2 ^ 0xffffffff)) {
 				aGLToolkit7926.aFloatBuffer6661 = new FloatBuffer(anInt7919 * 2);
 			}
 			int i_159_ = i_153_ - i_155_;

@@ -54,10 +54,10 @@ public class Class266
 		anInt3371++;
 		if (aBufferedConnection3389 != null) {
 			try {
-				aBuffer3392.anInt7002 = 0;
+				aBuffer3392.bufferLength = 0;
 				aBuffer3392.method2226(6, false);
 				aBuffer3392.method2225((byte) 109, 3);
-				aBufferedConnection3389.method429(0, 4, aBuffer3392.aByteArray7019, (byte) 78);
+				aBufferedConnection3389.method429(0, 4, aBuffer3392.bufferData, (byte) 78);
 			} catch (IOException ioexception) {
 				try {
 					aBufferedConnection3389.method430(20692);
@@ -136,17 +136,17 @@ public class Class266
 				aClass158_3386 = null;
 			}
 			for (/**/; cachenode_sub16_sub1 != null; cachenode_sub16_sub1 = (CacheNode_Sub16_Sub1) aClass158_3384.method1721(0)) {
-				aBuffer3392.anInt7002 = 0;
+				aBuffer3392.bufferLength = 0;
 				aBuffer3392.method2226(1, false);
 				aBuffer3392.method2225((byte) 66, (int) cachenode_sub16_sub1.aLong7037);
-				aBufferedConnection3389.method429(0, 4, aBuffer3392.aByteArray7019, (byte) 78);
+				aBufferedConnection3389.method429(0, 4, aBuffer3392.bufferData, (byte) 78);
 				aClass158_3386.method1719(true, cachenode_sub16_sub1);
 			}
 			for (CacheNode_Sub16_Sub1 cachenode_sub16_sub1_0_ = (CacheNode_Sub16_Sub1) aClass158_3387.method1723(b ^ 0x4b); cachenode_sub16_sub1_0_ != null; cachenode_sub16_sub1_0_ = (CacheNode_Sub16_Sub1) aClass158_3387.method1721(0)) {
-				aBuffer3392.anInt7002 = 0;
+				aBuffer3392.bufferLength = 0;
 				aBuffer3392.method2226(0, false);
 				aBuffer3392.method2225((byte) 99, (int) cachenode_sub16_sub1_0_.aLong7037);
-				aBufferedConnection3389.method429(0, 4, aBuffer3392.aByteArray7019, (byte) 78);
+				aBufferedConnection3389.method429(0, 4, aBuffer3392.bufferData, (byte) 78);
 				aClass158_3388.method1719(true, cachenode_sub16_sub1_0_);
 			}
 			for (int i = 0; i < 100; i++) {
@@ -165,19 +165,19 @@ public class Class266
 					i_2_ = 1;
 				}
 				if (i_2_ > 0) {
-					int i_3_ = -aBuffer3396.anInt7002 + i_2_;
+					int i_3_ = -aBuffer3396.bufferLength + i_2_;
 					if (i_1_ < i_3_) {
 						i_3_ = i_1_;
 					}
-					aBufferedConnection3389.method425(i_3_, (byte) 48, aBuffer3396.anInt7002, aBuffer3396.aByteArray7019);
+					aBufferedConnection3389.method425(i_3_, (byte) 48, aBuffer3396.bufferLength, aBuffer3396.bufferData);
 					if ((aByte3395 ^ 0xffffffff) != -1) {
 						for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff); i_4_++)
-							aBuffer3396.aByteArray7019[aBuffer3396.anInt7002 - -i_4_] = (byte) Node_Sub19.method2612(aBuffer3396.aByteArray7019[aBuffer3396.anInt7002 + i_4_], aByte3395);
+							aBuffer3396.bufferData[aBuffer3396.bufferLength - -i_4_] = (byte) Node_Sub19.method2612(aBuffer3396.bufferData[aBuffer3396.bufferLength + i_4_], aByte3395);
 					}
-					aBuffer3396.anInt7002 += i_3_;
-					if (i_2_ <= aBuffer3396.anInt7002) {
+					aBuffer3396.bufferLength += i_3_;
+					if (i_2_ <= aBuffer3396.bufferLength) {
 						if (aCacheNode_Sub16_Sub1_3397 == null) {
-							aBuffer3396.anInt7002 = 0;
+							aBuffer3396.bufferLength = 0;
 							int i_5_ = aBuffer3396.method2233(255);
 							int i_6_ = aBuffer3396.method2219(-130546744);
 							int i_7_ = aBuffer3396.method2233(255);
@@ -209,12 +209,12 @@ public class Class266
 							aCacheNode_Sub16_Sub1_3397.aBuffer11072.method2226(i_9_, false);
 							aCacheNode_Sub16_Sub1_3397.aBuffer11072.method2179((byte) -5, i_8_);
 							aCacheNode_Sub16_Sub1_3397.anInt11070 = 8;
-							aBuffer3396.anInt7002 = 0;
+							aBuffer3396.bufferLength = 0;
 						} else if (aCacheNode_Sub16_Sub1_3397.anInt11070 == 0) {
-							if (aBuffer3396.aByteArray7019[0] != -1) {
+							if (aBuffer3396.bufferData[0] != -1) {
 								aCacheNode_Sub16_Sub1_3397 = null;
 							} else {
-								aBuffer3396.anInt7002 = 0;
+								aBuffer3396.bufferLength = 0;
 								aCacheNode_Sub16_Sub1_3397.anInt11070 = 1;
 							}
 						} else {
@@ -222,22 +222,22 @@ public class Class266
 						}
 					}
 				} else {
-					int i_12_ = -aCacheNode_Sub16_Sub1_3397.aByte11069 + aCacheNode_Sub16_Sub1_3397.aBuffer11072.aByteArray7019.length;
+					int i_12_ = -aCacheNode_Sub16_Sub1_3397.aByte11069 + aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferData.length;
 					int i_13_ = 512 - aCacheNode_Sub16_Sub1_3397.anInt11070;
-					if ((i_13_ ^ 0xffffffff) < (-aCacheNode_Sub16_Sub1_3397.aBuffer11072.anInt7002 + i_12_ ^ 0xffffffff)) {
-						i_13_ = -aCacheNode_Sub16_Sub1_3397.aBuffer11072.anInt7002 + i_12_;
+					if ((i_13_ ^ 0xffffffff) < (-aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferLength + i_12_ ^ 0xffffffff)) {
+						i_13_ = -aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferLength + i_12_;
 					}
 					if (i_13_ > i_1_) {
 						i_13_ = i_1_;
 					}
-					aBufferedConnection3389.method425(i_13_, (byte) 67, aCacheNode_Sub16_Sub1_3397.aBuffer11072.anInt7002, aCacheNode_Sub16_Sub1_3397.aBuffer11072.aByteArray7019);
+					aBufferedConnection3389.method425(i_13_, (byte) 67, aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferLength, aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferData);
 					if ((aByte3395 ^ 0xffffffff) != -1) {
 						for (int i_14_ = 0; i_14_ < i_13_; i_14_++)
-							aCacheNode_Sub16_Sub1_3397.aBuffer11072.aByteArray7019[aCacheNode_Sub16_Sub1_3397.aBuffer11072.anInt7002 - -i_14_] = (byte) Node_Sub19.method2612(aCacheNode_Sub16_Sub1_3397.aBuffer11072.aByteArray7019[aCacheNode_Sub16_Sub1_3397.aBuffer11072.anInt7002 + i_14_], aByte3395);
+							aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferData[aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferLength - -i_14_] = (byte) Node_Sub19.method2612(aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferData[aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferLength + i_14_], aByte3395);
 					}
-					aCacheNode_Sub16_Sub1_3397.aBuffer11072.anInt7002 += i_13_;
+					aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferLength += i_13_;
 					aCacheNode_Sub16_Sub1_3397.anInt11070 += i_13_;
-					if ((i_12_ ^ 0xffffffff) == (aCacheNode_Sub16_Sub1_3397.aBuffer11072.anInt7002 ^ 0xffffffff)) {
+					if ((i_12_ ^ 0xffffffff) == (aCacheNode_Sub16_Sub1_3397.aBuffer11072.bufferLength ^ 0xffffffff)) {
 						aCacheNode_Sub16_Sub1_3397.method2275(-65);
 						aCacheNode_Sub16_Sub1_3397.aBoolean9602 = false;
 						aCacheNode_Sub16_Sub1_3397 = null;
@@ -278,10 +278,10 @@ public class Class266
 		anInt3378++;
 		if (aBufferedConnection3389 != null) {
 			try {
-				aBuffer3392.anInt7002 = i;
+				aBuffer3392.bufferLength = i;
 				aBuffer3392.method2226(bool ? 2 : 3, false);
 				aBuffer3392.method2225((byte) 85, 0);
-				aBufferedConnection3389.method429(0, 4, aBuffer3392.aByteArray7019, (byte) 78);
+				aBufferedConnection3389.method429(0, 4, aBuffer3392.bufferData, (byte) 78);
 			} catch (IOException ioexception) {
 				try {
 					aBufferedConnection3389.method430(20692);
@@ -312,7 +312,7 @@ public class Class266
 		method3234((byte) 0);
 		method3240(bool, 0);
 		aCacheNode_Sub16_Sub1_3397 = null;
-		aBuffer3396.anInt7002 = 0;
+		aBuffer3396.bufferLength = 0;
 		for (;;) {
 			CacheNode_Sub16_Sub1 cachenode_sub16_sub1 = (CacheNode_Sub16_Sub1) aClass158_3386.method1717(-119);
 			if (cachenode_sub16_sub1 == null) {
@@ -329,11 +329,11 @@ public class Class266
 		}
 		if (aByte3395 != 0) {
 			try {
-				aBuffer3392.anInt7002 = 0;
+				aBuffer3392.bufferLength = 0;
 				aBuffer3392.method2226(4, false);
 				aBuffer3392.method2226(aByte3395, false);
 				aBuffer3392.method2210(0, -85);
-				aBufferedConnection3389.method429(0, 4, aBuffer3392.aByteArray7019, (byte) 78);
+				aBufferedConnection3389.method429(0, 4, aBuffer3392.bufferData, (byte) 78);
 			} catch (IOException ioexception) {
 				try {
 					aBufferedConnection3389.method430(20692);
@@ -353,13 +353,13 @@ public class Class266
 		anInt3369++;
 		if (aBufferedConnection3389 != null) {
 			try {
-				aBuffer3392.anInt7002 = 0;
+				aBuffer3392.bufferLength = 0;
 				aBuffer3392.method2226(7, false);
 				if (i >= -104) {
 					method3244(-53);
 				}
 				aBuffer3392.method2225((byte) 65, 0);
-				aBufferedConnection3389.method429(0, 4, aBuffer3392.aByteArray7019, (byte) 78);
+				aBufferedConnection3389.method429(0, 4, aBuffer3392.bufferData, (byte) 78);
 			} catch (IOException ioexception) {
 				try {
 					aBufferedConnection3389.method430(20692);

@@ -28,7 +28,7 @@ abstract class Class201
 					}
 					Buffer buffer = new Buffer(Class194.aByteArrayArray2373[i_1_]);
 					int i_4_ = 0;
-					while (Class194.aByteArrayArray2373[i_1_].length > buffer.anInt7002) {
+					while (Class194.aByteArrayArray2373[i_1_].length > buffer.bufferLength) {
 						if (i_4_ >= 511 || (Node_Sub25_Sub3.anInt9987 ^ 0xffffffff) <= -1024) {
 							break;
 						}

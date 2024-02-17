@@ -1034,9 +1034,9 @@ public class ObjectDefinition
 		if (b == -111) {
 			int i = buffer.method2233(255);
 			for (int i_80_ = 0; (i_80_ ^ 0xffffffff) > (i ^ 0xffffffff); i_80_++) {
-				buffer.anInt7002++;
+				buffer.bufferLength++;
 				int i_81_ = buffer.method2233(255);
-				buffer.anInt7002 += 2 * i_81_;
+				buffer.bufferLength += 2 * i_81_;
 			}
 		}
 	}

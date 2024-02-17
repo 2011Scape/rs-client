@@ -3130,9 +3130,9 @@ public class Class305
 							Class144_Sub3.aByte6822 = (byte) -1;
 							Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class232.aClass318_2772, Class218.lobbyResponseBuffer.anIsaacCipher1571);
 							node_sub13.aPacket7113.method2226(0, false);
-							int i_282_ = node_sub13.aPacket7113.anInt7002;
+							int i_282_ = node_sub13.aPacket7113.bufferLength;
 							node_sub13.aPacket7113.method2228(string, 85);
-							node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 - i_282_, (byte) -128);
+							node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.bufferLength - i_282_, (byte) -128);
 							Class218.lobbyResponseBuffer.method1514(126, node_sub13);
 							return;
 						}
@@ -3613,10 +3613,10 @@ public class Class305
 					Class123 class123 = Class262_Sub23.method3213((byte) -78);
 					Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class133.aClass318_1687, class123.anIsaacCipher1571);
 					node_sub13.aPacket7113.method2210(0, -95);
-					int i_327_ = node_sub13.aPacket7113.anInt7002;
+					int i_327_ = node_sub13.aPacket7113.bufferLength;
 					node_sub13.aPacket7113.method2228(string, 112);
 					Class194_Sub3.method1975(36, node_sub13.aPacket7113, string_326_);
-					node_sub13.aPacket7113.method2194(node_sub13.aPacket7113.anInt7002 - i_327_, -2887);
+					node_sub13.aPacket7113.method2194(node_sub13.aPacket7113.bufferLength - i_327_, -2887);
 					class123.method1514(127, node_sub13);
 					return;
 				}
@@ -3808,11 +3808,11 @@ public class Class305
 				Class123 class123 = Class262_Sub23.method3213((byte) -77);
 				Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class245.aClass318_3101, class123.anIsaacCipher1571);
 				node_sub13.aPacket7113.method2226(0, false);
-				int i_352_ = node_sub13.aPacket7113.anInt7002;
+				int i_352_ = node_sub13.aPacket7113.bufferLength;
 				node_sub13.aPacket7113.method2226(0, false);
 				node_sub13.aPacket7113.method2210(aClass16_3856.anInt231, -70);
 				aClass16_3856.aCacheNode_Sub10_229.method2330(node_sub13.aPacket7113, aClass16_3856.anIntArray230, 121);
-				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 - i_352_, (byte) -128);
+				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.bufferLength - i_352_, (byte) -128);
 				class123.method1514(127, node_sub13);
 				return;
 			}
@@ -3822,11 +3822,11 @@ public class Class305
 				Class123 class123 = Class262_Sub23.method3213((byte) -127);
 				Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class235_Sub1.aClass318_8979, class123.anIsaacCipher1571);
 				node_sub13.aPacket7113.method2226(0, false);
-				int i_353_ = node_sub13.aPacket7113.anInt7002;
+				int i_353_ = node_sub13.aPacket7113.bufferLength;
 				node_sub13.aPacket7113.method2228(string, 116);
 				node_sub13.aPacket7113.method2210(aClass16_3856.anInt231, -26);
 				aClass16_3856.aCacheNode_Sub10_229.method2330(node_sub13.aPacket7113, aClass16_3856.anIntArray230, 126);
-				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 - i_353_, (byte) -128);
+				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.bufferLength - i_353_, (byte) -128);
 				class123.method1514(127, node_sub13);
 				return;
 			}
@@ -3835,11 +3835,11 @@ public class Class305
 				Class123 class123 = Class262_Sub23.method3213((byte) -75);
 				Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class245.aClass318_3101, class123.anIsaacCipher1571);
 				node_sub13.aPacket7113.method2226(0, false);
-				int i_354_ = node_sub13.aPacket7113.anInt7002;
+				int i_354_ = node_sub13.aPacket7113.bufferLength;
 				node_sub13.aPacket7113.method2226(1, false);
 				node_sub13.aPacket7113.method2210(aClass16_3856.anInt231, -74);
 				aClass16_3856.aCacheNode_Sub10_229.method2330(node_sub13.aPacket7113, aClass16_3856.anIntArray230, 125);
-				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 - i_354_, (byte) -128);
+				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.bufferLength - i_354_, (byte) -128);
 				class123.method1514(126, node_sub13);
 				return;
 			}
@@ -3944,11 +3944,11 @@ public class Class305
 				Class123 class123 = Class262_Sub23.method3213((byte) -66);
 				Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class245.aClass318_3101, class123.anIsaacCipher1571);
 				node_sub13.aPacket7113.method2226(0, false);
-				int i_375_ = node_sub13.aPacket7113.anInt7002;
+				int i_375_ = node_sub13.aPacket7113.bufferLength;
 				node_sub13.aPacket7113.method2226(2, false);
 				node_sub13.aPacket7113.method2210(aClass16_3856.anInt231, -66);
 				aClass16_3856.aCacheNode_Sub10_229.method2330(node_sub13.aPacket7113, aClass16_3856.anIntArray230, 126);
-				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 - i_375_, (byte) -128);
+				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.bufferLength - i_375_, (byte) -128);
 				class123.method1514(127, node_sub13);
 				return;
 			}
@@ -3956,11 +3956,11 @@ public class Class305
 				Class123 class123 = Class262_Sub23.method3213((byte) -122);
 				Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class245.aClass318_3101, class123.anIsaacCipher1571);
 				node_sub13.aPacket7113.method2226(0, false);
-				int i_376_ = node_sub13.aPacket7113.anInt7002;
+				int i_376_ = node_sub13.aPacket7113.bufferLength;
 				node_sub13.aPacket7113.method2226(3, false);
 				node_sub13.aPacket7113.method2210(aClass16_3856.anInt231, -97);
 				aClass16_3856.aCacheNode_Sub10_229.method2330(node_sub13.aPacket7113, aClass16_3856.anIntArray230, 125);
-				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 - i_376_, (byte) -128);
+				node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.bufferLength - i_376_, (byte) -128);
 				class123.method1514(127, node_sub13);
 				return;
 			}
@@ -6237,6 +6237,9 @@ public class Class305
 	
 	private static final void sendChatMessagePacket(String chatMessage, int i) {
 		if (Class339_Sub7.playerPrivilege != 0 || (!Node_Sub38_Sub18.aBoolean10282 || Class24.aBoolean436) && !Class290_Sub11.aBoolean8175) {
+
+			// Checking for localized color strings at the start of the message
+			// Checks for english before trying the client language
 			String chatMessageLowerCase = chatMessage.toLowerCase();
 			int chatMessageColorId = 0;
 			if (chatMessageLowerCase.startsWith(Localization.textEffectYellow.getLocalizationString(-12273, 0))) {
@@ -6314,6 +6317,9 @@ public class Class305
 					chatMessage = chatMessage.substring(Localization.textEffectGlow3.getLocalizationString(-12273, Class35.clientLanguage).length());
 				}
 			}
+
+			// Checking for localized effect strings at the start of the message
+			// Checks for english before trying the client language
 			chatMessageLowerCase = chatMessage.toLowerCase();
 			int chatMessageEffectId = 0;
 			if (chatMessageLowerCase.startsWith(Localization.textEffectWave.getLocalizationString(-12273, 0))) {
@@ -6353,11 +6359,11 @@ public class Class305
 			Class123 class123 = Class262_Sub23.method3213((byte) -110);
 			Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Node_Sub38_Sub11.aClass318_10221, class123.anIsaacCipher1571);
 			node_sub13.aPacket7113.method2226(0, false);
-			int i_569_ = node_sub13.aPacket7113.anInt7002;
+			int i_569_ = node_sub13.aPacket7113.bufferLength;
 			node_sub13.aPacket7113.method2226(chatMessageColorId, false);
 			node_sub13.aPacket7113.method2226(chatMessageEffectId, false);
 			Class194_Sub3.method1975(56, node_sub13.aPacket7113, chatMessage);
-			node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 - i_569_, (byte) -128);
+			node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.bufferLength - i_569_, (byte) -128);
 			class123.method1514(127, node_sub13);
 		}
 	}

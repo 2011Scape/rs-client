@@ -84,11 +84,11 @@ public class Node_Sub4 extends Node
 	}
 	
 	private Node_Sub4(Buffer buffer) {
-		buffer.anInt7002 = buffer.aByteArray7019.length - 3;
+		buffer.bufferLength = buffer.bufferData.length - 3;
 		int i = buffer.method2233(255);
 		int i_16_ = buffer.method2219(-130546744);
 		int i_17_ = 14 + i * 10;
-		buffer.anInt7002 = 0;
+		buffer.bufferLength = 0;
 		int i_18_ = 0;
 		int i_19_ = 0;
 		int i_20_ = 0;
@@ -135,12 +135,12 @@ public class Node_Sub4 extends Node
 		i_17_ += 5 * i_18_;
 		i_17_ += 2 * (i_20_ + i_21_ + i_19_ + i_22_ + i_24_);
 		i_17_ += i_23_ + i_25_;
-		int i_29_ = buffer.anInt7002;
+		int i_29_ = buffer.bufferLength;
 		int i_30_ = i + i_18_ + i_19_ + i_20_ + i_21_ + i_22_ + i_23_ + i_24_ + i_25_;
 		for (int i_31_ = 0; i_31_ < i_30_; i_31_++)
 			buffer.method2239(0);
-		i_17_ += buffer.anInt7002 - i_29_;
-		int i_32_ = buffer.anInt7002;
+		i_17_ += buffer.bufferLength - i_29_;
+		int i_32_ = buffer.bufferLength;
 		int i_33_ = 0;
 		int i_34_ = 0;
 		int i_35_ = 0;
@@ -185,48 +185,48 @@ public class Node_Sub4 extends Node
 			}
 		}
 		int i_47_ = 0;
-		int i_48_ = buffer.anInt7002;
-		buffer.anInt7002 += i_43_;
-		int i_49_ = buffer.anInt7002;
-		buffer.anInt7002 += i_24_;
-		int i_50_ = buffer.anInt7002;
-		buffer.anInt7002 += i_23_;
-		int i_51_ = buffer.anInt7002;
-		buffer.anInt7002 += i_22_;
-		int i_52_ = buffer.anInt7002;
-		buffer.anInt7002 += i_33_;
-		int i_53_ = buffer.anInt7002;
-		buffer.anInt7002 += i_35_;
-		int i_54_ = buffer.anInt7002;
-		buffer.anInt7002 += i_37_;
-		int i_55_ = buffer.anInt7002;
-		buffer.anInt7002 += i_20_ + i_21_ + i_24_;
-		int i_56_ = buffer.anInt7002;
-		buffer.anInt7002 += i_20_;
-		int i_57_ = buffer.anInt7002;
-		buffer.anInt7002 += i_44_;
-		int i_58_ = buffer.anInt7002;
-		buffer.anInt7002 += i_21_;
-		int i_59_ = buffer.anInt7002;
-		buffer.anInt7002 += i_34_;
-		int i_60_ = buffer.anInt7002;
-		buffer.anInt7002 += i_36_;
-		int i_61_ = buffer.anInt7002;
-		buffer.anInt7002 += i_38_;
-		int i_62_ = buffer.anInt7002;
-		buffer.anInt7002 += i_25_;
-		int i_63_ = buffer.anInt7002;
-		buffer.anInt7002 += i_22_;
-		int i_64_ = buffer.anInt7002;
-		buffer.anInt7002 += i_39_;
-		int i_65_ = buffer.anInt7002;
-		buffer.anInt7002 += i_40_;
-		int i_66_ = buffer.anInt7002;
-		buffer.anInt7002 += i_41_;
-		int i_67_ = buffer.anInt7002;
-		buffer.anInt7002 += i_42_;
-		int i_68_ = buffer.anInt7002;
-		buffer.anInt7002 += i_18_ * 3;
+		int i_48_ = buffer.bufferLength;
+		buffer.bufferLength += i_43_;
+		int i_49_ = buffer.bufferLength;
+		buffer.bufferLength += i_24_;
+		int i_50_ = buffer.bufferLength;
+		buffer.bufferLength += i_23_;
+		int i_51_ = buffer.bufferLength;
+		buffer.bufferLength += i_22_;
+		int i_52_ = buffer.bufferLength;
+		buffer.bufferLength += i_33_;
+		int i_53_ = buffer.bufferLength;
+		buffer.bufferLength += i_35_;
+		int i_54_ = buffer.bufferLength;
+		buffer.bufferLength += i_37_;
+		int i_55_ = buffer.bufferLength;
+		buffer.bufferLength += i_20_ + i_21_ + i_24_;
+		int i_56_ = buffer.bufferLength;
+		buffer.bufferLength += i_20_;
+		int i_57_ = buffer.bufferLength;
+		buffer.bufferLength += i_44_;
+		int i_58_ = buffer.bufferLength;
+		buffer.bufferLength += i_21_;
+		int i_59_ = buffer.bufferLength;
+		buffer.bufferLength += i_34_;
+		int i_60_ = buffer.bufferLength;
+		buffer.bufferLength += i_36_;
+		int i_61_ = buffer.bufferLength;
+		buffer.bufferLength += i_38_;
+		int i_62_ = buffer.bufferLength;
+		buffer.bufferLength += i_25_;
+		int i_63_ = buffer.bufferLength;
+		buffer.bufferLength += i_22_;
+		int i_64_ = buffer.bufferLength;
+		buffer.bufferLength += i_39_;
+		int i_65_ = buffer.bufferLength;
+		buffer.bufferLength += i_40_;
+		int i_66_ = buffer.bufferLength;
+		buffer.bufferLength += i_41_;
+		int i_67_ = buffer.bufferLength;
+		buffer.bufferLength += i_42_;
+		int i_68_ = buffer.bufferLength;
+		buffer.bufferLength += i_18_ * 3;
 		aByteArray6951 = new byte[i_17_];
 		Buffer buffer_69_ = new Buffer(aByteArray6951);
 		buffer_69_.method2179((byte) -5, 1297377380);
@@ -234,7 +234,7 @@ public class Node_Sub4 extends Node
 		buffer_69_.method2210(i > 1 ? 1 : 0, -42);
 		buffer_69_.method2210(i, -124);
 		buffer_69_.method2210(i_16_, -114);
-		buffer.anInt7002 = i_29_;
+		buffer.bufferLength = i_29_;
 		int i_70_ = 0;
 		int i_71_ = 0;
 		int i_72_ = 0;
@@ -246,15 +246,15 @@ public class Node_Sub4 extends Node
 		i_45_ = 0;
 		for (int i_77_ = 0; i_77_ < i; i_77_++) {
 			buffer_69_.method2179((byte) -5, 1297379947);
-			buffer_69_.anInt7002 += 4;
-			int i_78_ = buffer_69_.anInt7002;
+			buffer_69_.bufferLength += 4;
+			int i_78_ = buffer_69_.bufferLength;
 			int i_79_ = -1;
 		while_5_:
 			do {
 				for (;;) {
 					int i_80_ = buffer.method2239(0);
 					buffer_69_.method2232(65280, i_80_);
-					int i_81_ = buffer.aByteArray7019[i_47_++] & 0xff;
+					int i_81_ = buffer.bufferData[i_47_++] & 0xff;
 					boolean bool = i_81_ != i_79_;
 					i_79_ = i_81_ & 0xf;
 					if (i_81_ == 7) {
@@ -271,60 +271,60 @@ public class Node_Sub4 extends Node
 						}
 						buffer_69_.method2226(81, false);
 						buffer_69_.method2226(3, false);
-						buffer_69_.method2226(buffer.aByteArray7019[i_68_++], false);
-						buffer_69_.method2226(buffer.aByteArray7019[i_68_++], false);
-						buffer_69_.method2226(buffer.aByteArray7019[i_68_++], false);
+						buffer_69_.method2226(buffer.bufferData[i_68_++], false);
+						buffer_69_.method2226(buffer.bufferData[i_68_++], false);
+						buffer_69_.method2226(buffer.bufferData[i_68_++], false);
 					} else {
 						i_70_ ^= i_81_ >> 4;
 						if (i_79_ == 0) {
 							if (bool) {
 								buffer_69_.method2226(144 + i_70_, false);
 							}
-							i_71_ += buffer.aByteArray7019[i_55_++];
-							i_72_ += buffer.aByteArray7019[i_56_++];
+							i_71_ += buffer.bufferData[i_55_++];
+							i_72_ += buffer.bufferData[i_56_++];
 							buffer_69_.method2226(i_71_ & 0x7f, false);
 							buffer_69_.method2226(i_72_ & 0x7f, false);
 						} else if (i_79_ == 1) {
 							if (bool) {
 								buffer_69_.method2226(128 + i_70_, false);
 							}
-							i_71_ += buffer.aByteArray7019[i_55_++];
-							i_73_ += buffer.aByteArray7019[i_58_++];
+							i_71_ += buffer.bufferData[i_55_++];
+							i_73_ += buffer.bufferData[i_58_++];
 							buffer_69_.method2226(i_71_ & 0x7f, false);
 							buffer_69_.method2226(i_73_ & 0x7f, false);
 						} else if (i_79_ == 2) {
 							if (bool) {
 								buffer_69_.method2226(176 + i_70_, false);
 							}
-							i_45_ = i_45_ + buffer.aByteArray7019[i_32_++] & 0x7f;
+							i_45_ = i_45_ + buffer.bufferData[i_32_++] & 0x7f;
 							buffer_69_.method2226(i_45_, false);
 							int i_82_;
 							if (i_45_ == 0 || i_45_ == 32) {
-								i_82_ = buffer.aByteArray7019[i_62_++];
+								i_82_ = buffer.bufferData[i_62_++];
 							} else if (i_45_ == 1) {
-								i_82_ = buffer.aByteArray7019[i_52_++];
+								i_82_ = buffer.bufferData[i_52_++];
 							} else if (i_45_ == 33) {
-								i_82_ = buffer.aByteArray7019[i_59_++];
+								i_82_ = buffer.bufferData[i_59_++];
 							} else if (i_45_ == 7) {
-								i_82_ = buffer.aByteArray7019[i_53_++];
+								i_82_ = buffer.bufferData[i_53_++];
 							} else if (i_45_ == 39) {
-								i_82_ = buffer.aByteArray7019[i_60_++];
+								i_82_ = buffer.bufferData[i_60_++];
 							} else if (i_45_ == 10) {
-								i_82_ = buffer.aByteArray7019[i_54_++];
+								i_82_ = buffer.bufferData[i_54_++];
 							} else if (i_45_ == 42) {
-								i_82_ = buffer.aByteArray7019[i_61_++];
+								i_82_ = buffer.bufferData[i_61_++];
 							} else if (i_45_ == 99) {
-								i_82_ = buffer.aByteArray7019[i_64_++];
+								i_82_ = buffer.bufferData[i_64_++];
 							} else if (i_45_ == 98) {
-								i_82_ = buffer.aByteArray7019[i_65_++];
+								i_82_ = buffer.bufferData[i_65_++];
 							} else if (i_45_ == 101) {
-								i_82_ = buffer.aByteArray7019[i_66_++];
+								i_82_ = buffer.bufferData[i_66_++];
 							} else if (i_45_ == 100) {
-								i_82_ = buffer.aByteArray7019[i_67_++];
+								i_82_ = buffer.bufferData[i_67_++];
 							} else if (i_45_ == 64 || i_45_ == 65 || i_45_ == 120 || i_45_ == 121 || i_45_ == 123) {
-								i_82_ = buffer.aByteArray7019[i_48_++];
+								i_82_ = buffer.bufferData[i_48_++];
 							} else {
-								i_82_ = buffer.aByteArray7019[i_57_++];
+								i_82_ = buffer.bufferData[i_57_++];
 							}
 							i_82_ += is[i_45_];
 							is[i_45_] = i_82_;
@@ -333,22 +333,22 @@ public class Node_Sub4 extends Node
 							if (bool) {
 								buffer_69_.method2226(224 + i_70_, false);
 							}
-							i_74_ += buffer.aByteArray7019[i_63_++];
-							i_74_ += buffer.aByteArray7019[i_51_++] << 7;
+							i_74_ += buffer.bufferData[i_63_++];
+							i_74_ += buffer.bufferData[i_51_++] << 7;
 							buffer_69_.method2226(i_74_ & 0x7f, false);
 							buffer_69_.method2226(i_74_ >> 7 & 0x7f, false);
 						} else if (i_79_ == 4) {
 							if (bool) {
 								buffer_69_.method2226(208 + i_70_, false);
 							}
-							i_75_ += buffer.aByteArray7019[i_50_++];
+							i_75_ += buffer.bufferData[i_50_++];
 							buffer_69_.method2226(i_75_ & 0x7f, false);
 						} else if (i_79_ == 5) {
 							if (bool) {
 								buffer_69_.method2226(160 + i_70_, false);
 							}
-							i_71_ += buffer.aByteArray7019[i_55_++];
-							i_76_ += buffer.aByteArray7019[i_49_++];
+							i_71_ += buffer.bufferData[i_55_++];
+							i_76_ += buffer.bufferData[i_49_++];
 							buffer_69_.method2226(i_71_ & 0x7f, false);
 							buffer_69_.method2226(i_76_ & 0x7f, false);
 						} else {
@@ -358,13 +358,13 @@ public class Node_Sub4 extends Node
 							if (bool) {
 								buffer_69_.method2226(192 + i_70_, false);
 							}
-							buffer_69_.method2226(buffer.aByteArray7019[i_62_++], false);
+							buffer_69_.method2226(buffer.bufferData[i_62_++], false);
 						}
 					}
 				}
 				throw new RuntimeException();
 			} while (false);
-			buffer_69_.method2204(buffer_69_.anInt7002 - i_78_, (byte) 127);
+			buffer_69_.method2204(buffer_69_.bufferLength - i_78_, (byte) 127);
 		}
 	}
 }

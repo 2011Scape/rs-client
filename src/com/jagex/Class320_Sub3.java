@@ -132,7 +132,7 @@ public class Class320_Sub3 extends Class320
 		}
 		Class117_Sub2.aBuffer5154.method2223(bs.length, (byte) 4, bs, 0);
 		if (bool) {
-			Class361.method4045(2, Class117_Sub2.aBuffer5154.aByteArray7019);
+			Class361.method4045(2, Class117_Sub2.aBuffer5154.bufferData);
 			Class180.aClass377_Sub1Array2143 = new Class377_Sub1[Class254.anInt3212];
 			int i = 0;
 			for (int i_1_ = Mobile_Sub4.anInt10972; i_1_ <= Node_Sub9_Sub5.anInt9757; i_1_++) {

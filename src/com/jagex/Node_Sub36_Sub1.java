@@ -92,7 +92,7 @@ public class Node_Sub36_Sub1 extends Node_Sub36
 	final void method2756(Buffer buffer, int i) {
 		anInt10034++;
 		if (buffer.method2233(255) != 255) {
-			buffer.anInt7002--;
+			buffer.bufferLength--;
 			aLong10032 = buffer.method2235(-2023329376);
 		}
 		aString10033 = buffer.method2240((byte) -46);

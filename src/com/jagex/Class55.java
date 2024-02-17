@@ -21,15 +21,15 @@ public class Class55
 		if (b != -119) {
 			anIntArray834 = null;
 		}
-		int i = node_sub13.aPacket7113.anInt7002;
+		int i = node_sub13.aPacket7113.bufferLength;
 		node_sub13.aPacket7113.method2210(667, b + -4);
 		int[] is = Class355.method4014(-5410, node_sub13);
-		int i_0_ = node_sub13.aPacket7113.anInt7002;
+		int i_0_ = node_sub13.aPacket7113.bufferLength;
 		node_sub13.aPacket7113.method2228(string, b ^ ~0x27);
 		node_sub13.aPacket7113.method2226(Class35.clientLanguage, false);
-		node_sub13.aPacket7113.anInt7002 += 7;
-		node_sub13.aPacket7113.method2203(is, i_0_, false, node_sub13.aPacket7113.anInt7002);
-		node_sub13.aPacket7113.method2194(-i + node_sub13.aPacket7113.anInt7002, b + -2768);
+		node_sub13.aPacket7113.bufferLength += 7;
+		node_sub13.aPacket7113.method2203(is, i_0_, false, node_sub13.aPacket7113.bufferLength);
+		node_sub13.aPacket7113.method2194(-i + node_sub13.aPacket7113.bufferLength, b + -2768);
 		Class218.lobbyResponseBuffer.method1514(127, node_sub13);
 		Node_Sub36_Sub4.anInt10073 = -3;
 		Class51_Sub2.anInt9069 = 0;

@@ -817,7 +817,7 @@ class Class20
 		int[] is_184_ = new int[i_183_];
 		for (int i_185_ = 0; i_185_ < i_183_; i_185_++)
 			is_184_[i_185_] = buffer.method2233(255);
-		while (buffer.anInt7002 < buffer.aByteArray7019.length) {
+		while (buffer.bufferLength < buffer.bufferData.length) {
 			if (buffer.method2233(255) == 0) {
 				int i_186_ = buffer.method2233(255);
 				int i_187_ = buffer.method2233(255);

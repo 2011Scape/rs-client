@@ -29,7 +29,7 @@ public class Packet extends Buffer
 	}
 	
 	final void method2255(int i) {
-		anInt7002 = (7 + anInt9400) / 8;
+		bufferLength = (7 + anInt9400) / 8;
 		if (i != -1431454110) {
 			aClass42_9402 = null;
 		}
@@ -44,13 +44,13 @@ public class Packet extends Buffer
 		anInt9400 += i;
 		int i_3_ = -33 / ((b - -66) / 57);
 		for (/**/; i_1_ < i; i_1_ = 8) {
-			i_2_ += (CacheNode_Sub17.anIntArray8846[i_1_] & aByteArray7019[i_0_++]) << -i_1_ + i;
+			i_2_ += (CacheNode_Sub17.anIntArray8846[i_1_] & bufferData[i_0_++]) << -i_1_ + i;
 			i -= i_1_;
 		}
 		if (i != i_1_) {
-			i_2_ += aByteArray7019[i_0_] >> i_1_ + -i & CacheNode_Sub17.anIntArray8846[i];
+			i_2_ += bufferData[i_0_] >> i_1_ + -i & CacheNode_Sub17.anIntArray8846[i];
 		} else {
-			i_2_ += aByteArray7019[i_0_] & CacheNode_Sub17.anIntArray8846[i_1_];
+			i_2_ += bufferData[i_0_] & CacheNode_Sub17.anIntArray8846[i_1_];
 		}
 		return i_2_;
 	}
@@ -64,7 +64,7 @@ public class Packet extends Buffer
 			return false;
 		}
 		anInt9390++;
-		int i = 0xff & aByteArray7019[anInt7002] - anIsaacCipher9399.method1670((byte) -21);
+		int i = 0xff & bufferData[bufferLength] - anIsaacCipher9399.method1670((byte) -21);
 		if ((i ^ 0xffffffff) > -129) {
 			return false;
 		}
@@ -95,14 +95,14 @@ public class Packet extends Buffer
 	final void method2260(byte[] bs, int i, int i_4_, boolean bool) {
 		anInt9391++;
 		for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > (i ^ 0xffffffff); i_5_++)
-			bs[i_5_ + i_4_] = (byte) (aByteArray7019[anInt7002++] + -anIsaacCipher9399.method1667((byte) -96));
+			bs[i_5_ + i_4_] = (byte) (bufferData[bufferLength++] + -anIsaacCipher9399.method1667((byte) -96));
 		if (bool != true) {
 			anIsaacCipher9399 = null;
 		}
 	}
 	
 	final void method2261(int i) {
-		anInt9400 = 8 * anInt7002;
+		anInt9400 = 8 * bufferLength;
 		if (i != 107347906) {
 			anInt9386 = 5;
 		}
@@ -112,7 +112,7 @@ public class Packet extends Buffer
 	final void method2262(int i, int i_6_) {
 		anInt9396++;
 		if (i == 1) {
-			aByteArray7019[anInt7002++] = (byte) (i_6_ + anIsaacCipher9399.method1667((byte) -96));
+			bufferData[bufferLength++] = (byte) (i_6_ + anIsaacCipher9399.method1667((byte) -96));
 		}
 	}
 	
@@ -137,11 +137,11 @@ public class Packet extends Buffer
 		if (i != 1351295303) {
 			method2263(70);
 		}
-		int i_8_ = 0xff & aByteArray7019[anInt7002++] + -anIsaacCipher9399.method1667((byte) -96);
+		int i_8_ = 0xff & bufferData[bufferLength++] + -anIsaacCipher9399.method1667((byte) -96);
 		if (i_8_ < 128) {
 			return i_8_;
 		}
-		return (0xff & aByteArray7019[anInt7002++] - anIsaacCipher9399.method1667((byte) -96)) + (-128 + i_8_ << 8);
+		return (0xff & bufferData[bufferLength++] - anIsaacCipher9399.method1667((byte) -96)) + (-128 + i_8_ << 8);
 	}
 	
 	final void method2266(IsaacCipher isaaccipher, int i) {

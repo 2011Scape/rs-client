@@ -1045,8 +1045,8 @@ public class GLDrawableModel extends DrawableModel
 	}
 	
 	private final void method648(boolean bool, int i) {
-		if ((6 * anInt5616 ^ 0xffffffff) >= (aGLToolkit5692.aFloatBuffer6661.aByteArray7019.length ^ 0xffffffff)) {
-			aGLToolkit5692.aFloatBuffer6661.anInt7002 = 0;
+		if ((6 * anInt5616 ^ 0xffffffff) >= (aGLToolkit5692.aFloatBuffer6661.bufferData.length ^ 0xffffffff)) {
+			aGLToolkit5692.aFloatBuffer6661.bufferLength = 0;
 		} else {
 			aGLToolkit5692.aFloatBuffer6661 = new FloatBuffer((anInt5616 - -100) * 6);
 		}
@@ -1068,14 +1068,14 @@ public class GLDrawableModel extends DrawableModel
 		if (i != 5123) {
 			anInterface9_5696 = null;
 		}
-		if ((floatbuffer.anInt7002 ^ 0xffffffff) != -1) {
+		if ((floatbuffer.bufferLength ^ 0xffffffff) != -1) {
 			if (!bool) {
-				aClass107_5675.anInterface1_1365 = aGLToolkit5692.method1453(26099, false, floatbuffer.anInt7002, 5123, floatbuffer.aByteArray7019);
+				aClass107_5675.anInterface1_1365 = aGLToolkit5692.method1453(26099, false, floatbuffer.bufferLength, 5123, floatbuffer.bufferData);
 			} else {
 				if (anInterface1_5643 != null) {
-					anInterface1_5643.method4(5123, floatbuffer.anInt7002, floatbuffer.aByteArray7019, 2712);
+					anInterface1_5643.method4(5123, floatbuffer.bufferLength, floatbuffer.bufferData, 2712);
 				} else {
-					anInterface1_5643 = aGLToolkit5692.method1453(26099, true, floatbuffer.anInt7002, 5123, floatbuffer.aByteArray7019);
+					anInterface1_5643 = aGLToolkit5692.method1453(26099, true, floatbuffer.bufferLength, 5123, floatbuffer.bufferData);
 				}
 				aClass107_5675.anInterface1_1365 = anInterface1_5643;
 			}
@@ -2105,8 +2105,8 @@ public class GLDrawableModel extends DrawableModel
 			b_457_ += 8;
 		}
 		if (b_457_ != 0) {
-			if (aGLToolkit5692.aFloatBuffer6661.aByteArray7019.length >= b_457_ * anInt5665) {
-				aGLToolkit5692.aFloatBuffer6661.anInt7002 = 0;
+			if (aGLToolkit5692.aFloatBuffer6661.bufferData.length >= b_457_ * anInt5665) {
+				aGLToolkit5692.aFloatBuffer6661.bufferLength = 0;
 			} else {
 				aGLToolkit5692.aFloatBuffer6661 = new FloatBuffer(b_457_ * (anInt5665 + 100));
 			}
@@ -2124,7 +2124,7 @@ public class GLDrawableModel extends DrawableModel
 							if (i_468_ == -1) {
 								break;
 							}
-							floatbuffer.anInt7002 = i_468_ * b_457_;
+							floatbuffer.bufferLength = i_468_ * b_457_;
 							floatbuffer.method2237(0, i_462_);
 							floatbuffer.method2237(0, i_463_);
 							floatbuffer.method2237(b + -41, i_464_);
@@ -2142,7 +2142,7 @@ public class GLDrawableModel extends DrawableModel
 							if ((i_475_ ^ 0xffffffff) == 0) {
 								break;
 							}
-							floatbuffer.anInt7002 = b_457_ * i_475_;
+							floatbuffer.bufferLength = b_457_ * i_475_;
 							floatbuffer.method2179((byte) -5, i_469_);
 							floatbuffer.method2179((byte) -5, i_470_);
 							floatbuffer.method2179((byte) -5, i_471_);
@@ -2207,7 +2207,7 @@ public class GLDrawableModel extends DrawableModel
 						} else if ((i_492_ ^ 0xffffffff) < -256) {
 							i_492_ = 255;
 						}
-						floatbuffer.anInt7002 = b_459_ + i_484_ * b_457_;
+						floatbuffer.bufferLength = b_459_ + i_484_ * b_457_;
 						floatbuffer.method2226(i_490_, false);
 						floatbuffer.method2226(i_491_, false);
 						floatbuffer.method2226(i_492_, false);
@@ -2233,7 +2233,7 @@ public class GLDrawableModel extends DrawableModel
 						} else if ((i_491_ ^ 0xffffffff) < -256) {
 							i_491_ = 255;
 						}
-						floatbuffer.anInt7002 = i_484_ * b_457_ + b_459_;
+						floatbuffer.bufferLength = i_484_ * b_457_ + b_459_;
 						if ((i_492_ ^ 0xffffffff) <= -1) {
 							if ((i_492_ ^ 0xffffffff) < -256) {
 								i_492_ = 255;
@@ -2266,7 +2266,7 @@ public class GLDrawableModel extends DrawableModel
 							i_491_ = 255;
 						}
 						i_492_ = (int) (f_486_ * f_489_);
-						floatbuffer.anInt7002 = b_457_ * i_484_ + b_459_;
+						floatbuffer.bufferLength = b_457_ * i_484_ + b_459_;
 						if (i_492_ < 0) {
 							i_492_ = 0;
 						} else if (i_492_ > 255) {
@@ -2280,11 +2280,11 @@ public class GLDrawableModel extends DrawableModel
 				} else {
 					for (int i = 0; i < anInt5709; i++) {
 						int i_493_ = method643(false, aByteArray5658[i], aShortArray5693[i], aShort5608, aShortArray5699[i]);
-						floatbuffer.anInt7002 = b_457_ * aShortArray5622[i] + b_459_;
+						floatbuffer.bufferLength = b_457_ * aShortArray5622[i] + b_459_;
 						floatbuffer.method2179((byte) -5, i_493_);
-						floatbuffer.anInt7002 = b_457_ * aShortArray5683[i] + b_459_;
+						floatbuffer.bufferLength = b_457_ * aShortArray5683[i] + b_459_;
 						floatbuffer.method2179((byte) -5, i_493_);
-						floatbuffer.anInt7002 = aShortArray5706[i] * b_457_ + b_459_;
+						floatbuffer.bufferLength = aShortArray5706[i] * b_457_ + b_459_;
 						floatbuffer.method2179((byte) -5, i_493_);
 					}
 				}
@@ -2306,7 +2306,7 @@ public class GLDrawableModel extends DrawableModel
 					bs = aByteArray5640;
 				}
 				float f = 3.0F / (float) aShort5664;
-				floatbuffer.anInt7002 = b_460_;
+				floatbuffer.bufferLength = b_460_;
 				float f_496_ = 3.0F / (float) (aShort5664 / 2 + aShort5664);
 				if (aGLToolkit5692.aBoolean6736) {
 					for (int i = 0; (anInt5665 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
@@ -2321,7 +2321,7 @@ public class GLDrawableModel extends DrawableModel
 							floatbuffer.method2251(8, f_498_ * (float) ses[i]);
 							floatbuffer.method2251(8, (float) ses_495_[i] * f_498_);
 						}
-						floatbuffer.anInt7002 += b_457_ - 12;
+						floatbuffer.bufferLength += b_457_ - 12;
 					}
 				} else {
 					for (int i = 0; (anInt5665 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
@@ -2336,38 +2336,38 @@ public class GLDrawableModel extends DrawableModel
 							floatbuffer.method2252(-229385392, f_496_ * (float) ses[i]);
 							floatbuffer.method2252(-229385392, f_496_ * (float) ses_495_[i]);
 						}
-						floatbuffer.anInt7002 += -12 + b_457_;
+						floatbuffer.bufferLength += -12 + b_457_;
 					}
 				}
 			}
 			if (bool_456_) {
-				floatbuffer.anInt7002 = b_461_;
+				floatbuffer.bufferLength = b_461_;
 				if (!aGLToolkit5692.aBoolean6736) {
 					for (int i = 0; anInt5665 > i; i++) {
 						floatbuffer.method2252(b + -229385433, aFloatArray5609[i]);
 						floatbuffer.method2252(-229385392, aFloatArray5650[i]);
-						floatbuffer.anInt7002 += b_457_ - 8;
+						floatbuffer.bufferLength += b_457_ - 8;
 					}
 				} else {
 					for (int i = 0; (i ^ 0xffffffff) > (anInt5665 ^ 0xffffffff); i++) {
 						floatbuffer.method2251(b + -33, aFloatArray5609[i]);
 						floatbuffer.method2251(b + -33, aFloatArray5650[i]);
-						floatbuffer.anInt7002 += -8 + b_457_;
+						floatbuffer.bufferLength += -8 + b_457_;
 					}
 				}
 			}
-			floatbuffer.anInt7002 = anInt5665 * b_457_;
+			floatbuffer.bufferLength = anInt5665 * b_457_;
 			Interface9 interface9;
 			if (bool) {
 				if (anInterface9_5696 == null) {
-					anInterface9_5696 = aGLToolkit5692.method1467(true, floatbuffer.anInt7002, floatbuffer.aByteArray7019, b_457_, b + -87);
+					anInterface9_5696 = aGLToolkit5692.method1467(true, floatbuffer.bufferLength, floatbuffer.bufferData, b_457_, b + -87);
 				} else {
-					anInterface9_5696.method22(floatbuffer.aByteArray7019, floatbuffer.anInt7002, b_457_, (byte) 74);
+					anInterface9_5696.method22(floatbuffer.bufferData, floatbuffer.bufferLength, b_457_, (byte) 74);
 				}
 				interface9 = anInterface9_5696;
 				aByte5651 = (byte) 0;
 			} else {
-				interface9 = aGLToolkit5692.method1467(false, floatbuffer.anInt7002, floatbuffer.aByteArray7019, b_457_, -119);
+				interface9 = aGLToolkit5692.method1467(false, floatbuffer.bufferLength, floatbuffer.bufferData, b_457_, -119);
 				aBoolean5611 = true;
 			}
 			if (b != 41) {

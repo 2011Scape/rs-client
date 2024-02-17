@@ -244,7 +244,7 @@ public class Class349
 					}
 				}
 			}
-			anInterface1_4313 = aGLToolkit4304.method1453(26099, false, buffer.anInt7002, 5123, buffer.aByteArray7019);
+			anInterface1_4313 = aGLToolkit4304.method1453(26099, false, buffer.bufferLength, 5123, buffer.bufferData);
 			aClass200_Sub2_4311 = new Class200_Sub2(aGLToolkit4304, 5123, null, 1);
 		}
 	}

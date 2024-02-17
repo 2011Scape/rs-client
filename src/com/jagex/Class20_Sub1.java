@@ -69,8 +69,8 @@ public class Class20_Sub1 extends Class20
 			Node_Sub32.anInt7380 = Class12.aHashTable187.method1519((byte) -90);
 			Class12.aHashTable187.method1523((byte) -112, Class314.aNode_Sub41Array4017);
 		}
-		if ((Class218.worldResponseBuffer.aPacket1570.anInt7002 ^ 0xffffffff) != (Class218.worldResponseBuffer.anInt1581 ^ 0xffffffff)) {
-			throw new RuntimeException("gnp1 pos:" + Class218.worldResponseBuffer.aPacket1570.anInt7002 + " psize:" + Class218.worldResponseBuffer.anInt1581);
+		if ((Class218.worldResponseBuffer.aPacket1570.bufferLength ^ 0xffffffff) != (Class218.worldResponseBuffer.anInt1581 ^ 0xffffffff)) {
+			throw new RuntimeException("gnp1 pos:" + Class218.worldResponseBuffer.aPacket1570.bufferLength + " psize:" + Class218.worldResponseBuffer.anInt1581);
 		}
 		for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (Node_Sub25_Sub3.anInt9987 ^ 0xffffffff); i_4_++) {
 			if (Class12.aHashTable187.method1518(i + 28644, (long) Class54.anIntArray816[i_4_]) == null) {

@@ -420,7 +420,7 @@ public class Node_Sub38_Sub20 extends Node_Sub38
 		int i_49_ = packet.method2219(-130546744);
 		Class95.method1066(-111);
 		Animable_Sub2.method837((byte) -82, i_47_);
-		int i_50_ = (Class218.worldResponseBuffer.anInt1581 + -packet.anInt7002) / 16;
+		int i_50_ = (Class218.worldResponseBuffer.anInt1581 + -packet.bufferLength) / 16;
 		Class15.anIntArrayArray224 = new int[i_50_][4];
 		for (int i_51_ = 0; i_51_ < i_50_; i_51_++) {
 			for (int i_52_ = 0; (i_52_ ^ 0xffffffff) > -5; i_52_++)

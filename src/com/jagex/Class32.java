@@ -84,13 +84,13 @@ public class Class32
 		anInt513++;
 		CacheNode_Sub9 cachenode_sub9 = new CacheNode_Sub9();
 		Buffer buffer = new Buffer(bs);
-		buffer.anInt7002 = -2 + buffer.aByteArray7019.length;
+		buffer.bufferLength = -2 + buffer.bufferData.length;
 		int i = buffer.method2219(-130546744);
-		int i_9_ = buffer.aByteArray7019.length - (2 - -i) - 16;
+		int i_9_ = buffer.bufferData.length - (2 - -i) - 16;
 		if (bool != false) {
 			method359(null, -93);
 		}
-		buffer.anInt7002 = i_9_;
+		buffer.bufferLength = i_9_;
 		int i_10_ = buffer.method2186(-107);
 		cachenode_sub9.anInt9499 = buffer.method2219(-130546744);
 		cachenode_sub9.anInt9506 = buffer.method2219(-130546744);
@@ -112,11 +112,11 @@ public class Class32
 				}
 			}
 		}
-		buffer.anInt7002 = 0;
+		buffer.bufferLength = 0;
 		cachenode_sub9.aString9497 = buffer.method2240((byte) -46);
 		cachenode_sub9.anIntArray9500 = new int[i_10_];
 		int i_16_ = 0;
-		while (buffer.anInt7002 < i_9_) {
+		while (buffer.bufferLength < i_9_) {
 			int i_17_ = buffer.method2219(-130546744);
 			if ((i_17_ ^ 0xffffffff) == -4) {
 				if (cachenode_sub9.aStringArray9504 == null) {

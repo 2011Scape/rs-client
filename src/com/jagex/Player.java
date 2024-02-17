@@ -368,7 +368,7 @@ public class Player extends Actor
 	}
 	
 	final void method889(Buffer buffer, int i) {
-		buffer.anInt7002 = 0;
+		buffer.bufferLength = 0;
 		anInt11181++;
 		int i_45_ = buffer.method2233(255);
 		aByte11150 = (byte) (0x1 & i_45_);

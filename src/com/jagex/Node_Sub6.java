@@ -718,35 +718,35 @@ public class Node_Sub6 extends Node
 		aByteArray7046 = new byte[128];
 		Buffer buffer = new Buffer(bs);
 		int i;
-		for (i = 0; buffer.aByteArray7019[i + buffer.anInt7002] != 0; i++) {
+		for (i = 0; buffer.bufferData[i + buffer.bufferLength] != 0; i++) {
 			/* empty */
 		}
 		byte[] bs_71_ = new byte[i];
 		for (int i_72_ = 0; (i_72_ ^ 0xffffffff) > (i ^ 0xffffffff); i_72_++)
 			bs_71_[i_72_] = buffer.method2214((byte) -114);
 		i++;
-		buffer.anInt7002++;
-		int i_73_ = buffer.anInt7002;
-		buffer.anInt7002 += i;
+		buffer.bufferLength++;
+		int i_73_ = buffer.bufferLength;
+		buffer.bufferLength += i;
 		int i_74_;
-		for (i_74_ = 0; buffer.aByteArray7019[buffer.anInt7002 + i_74_] != 0; i_74_++) {
+		for (i_74_ = 0; buffer.bufferData[buffer.bufferLength + i_74_] != 0; i_74_++) {
 			/* empty */
 		}
 		byte[] bs_75_ = new byte[i_74_];
 		for (int i_76_ = 0; (i_74_ ^ 0xffffffff) < (i_76_ ^ 0xffffffff); i_76_++)
 			bs_75_[i_76_] = buffer.method2214((byte) 52);
 		i_74_++;
-		buffer.anInt7002++;
-		int i_77_ = buffer.anInt7002;
-		buffer.anInt7002 += i_74_;
+		buffer.bufferLength++;
+		int i_77_ = buffer.bufferLength;
+		buffer.bufferLength += i_74_;
 		int i_78_;
-		for (i_78_ = 0; (buffer.aByteArray7019[i_78_ + buffer.anInt7002] ^ 0xffffffff) != -1; i_78_++) {
+		for (i_78_ = 0; (buffer.bufferData[i_78_ + buffer.bufferLength] ^ 0xffffffff) != -1; i_78_++) {
 			/* empty */
 		}
 		byte[] bs_79_ = new byte[i_78_];
 		for (int i_80_ = 0; i_80_ < i_78_; i_80_++)
 			bs_79_[i_80_] = buffer.method2214((byte) 58);
-		buffer.anInt7002++;
+		buffer.bufferLength++;
 		byte[] bs_81_ = new byte[++i_78_];
 		int i_82_;
 		if ((i_78_ ^ 0xffffffff) < -2) {
@@ -786,14 +786,14 @@ public class Node_Sub6 extends Node
 		i_88_ = buffer.method2233(255);
 		byte[] bs_90_ = (i_88_ ^ 0xffffffff) < -1 ? new byte[i_88_ * 2] : null;
 		int i_91_;
-		for (i_91_ = 0; (buffer.aByteArray7019[i_91_ + buffer.anInt7002] ^ 0xffffffff) != -1; i_91_++) {
+		for (i_91_ = 0; (buffer.bufferData[i_91_ + buffer.bufferLength] ^ 0xffffffff) != -1; i_91_++) {
 			/* empty */
 		}
 		byte[] bs_92_ = new byte[i_91_];
 		for (int i_93_ = 0; i_91_ > i_93_; i_93_++)
 			bs_92_[i_93_] = buffer.method2214((byte) 115);
 		i_91_++;
-		buffer.anInt7002++;
+		buffer.bufferLength++;
 		int i_94_ = 0;
 		for (int i_95_ = 0; i_95_ < 128; i_95_++) {
 			i_94_ += buffer.method2233(255);
@@ -826,7 +826,7 @@ public class Node_Sub6 extends Node
 		for (int i_102_ = 0; i_102_ < 128; i_102_++) {
 			if ((anIntArray7055[i_102_] ^ 0xffffffff) != -1) {
 				if ((i_97_ ^ 0xffffffff) == -1) {
-					i_101_ = -1 + buffer.aByteArray7019[i_73_++];
+					i_101_ = -1 + buffer.bufferData[i_73_++];
 					if (bs_71_.length > i_98_) {
 						i_97_ = bs_71_[i_98_++];
 					} else {
@@ -848,7 +848,7 @@ public class Node_Sub6 extends Node
 					} else {
 						i_97_ = bs_75_[i_98_++];
 					}
-					i_103_ = buffer.aByteArray7019[i_77_++] + 16 << 2;
+					i_103_ = buffer.bufferData[i_77_++] + 16 << 2;
 				}
 				i_97_--;
 				aByteArray7046[i_104_] = (byte) i_103_;

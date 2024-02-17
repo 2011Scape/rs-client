@@ -26,7 +26,7 @@ public class Node_Sub8 extends Node
 		Class320_Sub23.aClass123_8432.method1511((byte) 126);
 		anInt7069++;
 		Class320_Sub23.aClass123_8432.aClass192_1576 = null;
-		Class320_Sub23.aClass123_8432.aPacket1570.anInt7002 = 0;
+		Class320_Sub23.aClass123_8432.aPacket1570.bufferLength = 0;
 		Class320_Sub23.aClass123_8432.anInt1578 = 0;
 		Class320_Sub23.aClass123_8432.aClass192_1573 = null;
 		Class320_Sub23.aClass123_8432.aClass192_1582 = null;

@@ -152,7 +152,7 @@ abstract class Class144
 					buffer.method2179((byte) -5, Class320_Sub22.anIntArray8417[i]);
 				}
 			}
-			fileondisk.method1102((byte) 76, buffer.aByteArray7019, 0, buffer.anInt7002);
+			fileondisk.method1102((byte) 76, buffer.bufferData, 0, buffer.bufferLength);
 		} catch (Exception exception) {
 			/* empty */
 		}

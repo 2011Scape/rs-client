@@ -103,8 +103,8 @@ public class Class45 implements Interface12
 				}
 				if (Class4.anInt124 == 4) {
 					if (Class218.lobbyResponseBuffer.aClass365_1557.method4068(1, b ^ 0x3f)) {
-						Class218.lobbyResponseBuffer.aClass365_1557.method4065((byte) -78, Class218.lobbyResponseBuffer.aPacket1570.aByteArray7019, 1, 0);
-						int i = 0xff & Class218.lobbyResponseBuffer.aPacket1570.aByteArray7019[0];
+						Class218.lobbyResponseBuffer.aClass365_1557.method4065((byte) -78, Class218.lobbyResponseBuffer.aPacket1570.bufferData, 1, 0);
+						int i = 0xff & Class218.lobbyResponseBuffer.aPacket1570.bufferData[0];
 						Class4.anInt124 = 0;
 						Node_Sub36_Sub4.anInt10073 = i;
 						Class218.lobbyResponseBuffer.method1513(-28176);

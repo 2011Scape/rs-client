@@ -617,11 +617,11 @@ public class DevConsoleNode extends Node
 					Class123 class123 = Class262_Sub23.method3213((byte) -60);
 					Node_Sub13 node_sub13 = FloatBuffer.method2250(-386, Class133.aClass318_1687, class123.anIsaacCipher1571);
 					node_sub13.aPacket7113.method2226(0, false);
-					int i_24_ = node_sub13.aPacket7113.anInt7002;
+					int i_24_ = node_sub13.aPacket7113.bufferLength;
 					int i_25_ = string.indexOf(" ", 4);
 					node_sub13.aPacket7113.method2228(string.substring(3, i_25_), 64);
 					Class194_Sub3.method1975(69, node_sub13.aPacket7113, string.substring(i_25_));
-					node_sub13.aPacket7113.method2217(-i_24_ + node_sub13.aPacket7113.anInt7002, (byte) -128);
+					node_sub13.aPacket7113.method2217(-i_24_ + node_sub13.aPacket7113.bufferLength, (byte) -128);
 					class123.method1514(126, node_sub13);
 					return;
 				}

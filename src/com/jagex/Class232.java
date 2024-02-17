@@ -41,10 +41,10 @@ public class Class232
 			return false;
 		}
 		Buffer buffer = new Buffer(aCacheNode_Sub16_Sub1_2770.method2385(15));
-		buffer.anInt7002 = 5;
+		buffer.bufferLength = 5;
 		int i_0_ = buffer.method2233(i);
-		buffer.anInt7002 += 72 * i_0_;
-		byte[] bs = new byte[buffer.aByteArray7019.length - buffer.anInt7002];
+		buffer.bufferLength += 72 * i_0_;
+		byte[] bs = new byte[buffer.bufferData.length - buffer.bufferLength];
 		buffer.method2181(0, bs.length, bs, -19417);
 		byte[] bs_1_;
 		if (aBigInteger2773 != null && aBigInteger2779 != null) {
@@ -57,7 +57,7 @@ public class Class232
 		if ((bs_1_.length ^ 0xffffffff) != -66) {
 			throw new RuntimeException();
 		}
-		byte[] bs_3_ = GLXToolkit.method1399((byte) 125, buffer.aByteArray7019, -bs.length + buffer.anInt7002 - 5, 5);
+		byte[] bs_3_ = GLXToolkit.method1399((byte) 125, buffer.bufferData, -bs.length + buffer.bufferLength - 5, 5);
 		if (i != 255) {
 			aBooleanArray2781 = null;
 		}
@@ -90,7 +90,7 @@ public class Class232
 		if (aClass34_Sub1Array2777[i] != null) {
 			return aClass34_Sub1Array2777[i];
 		}
-		aBuffer2775.anInt7002 = i * 72 - -6;
+		aBuffer2775.bufferLength = i * 72 - -6;
 		int i_8_ = aBuffer2775.method2186(-59);
 		int i_9_ = aBuffer2775.method2186(-61);
 		byte[] bs = new byte[i_7_];

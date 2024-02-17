@@ -22,12 +22,12 @@ public class Class383
 	
 	private static final Class383[] method4188(byte[] bs) {
 		Buffer buffer = new Buffer(bs);
-		buffer.anInt7002 = bs.length - 2;
+		buffer.bufferLength = bs.length - 2;
 		int i = buffer.method2219(-130546744);
 		Class383[] class383s = new Class383[i];
 		for (int i_1_ = 0; i_1_ < i; i_1_++)
 			class383s[i_1_] = new Class383();
-		buffer.anInt7002 = bs.length - 7 - i * 8;
+		buffer.bufferLength = bs.length - 7 - i * 8;
 		int i_2_ = buffer.method2219(-130546744);
 		int i_3_ = buffer.method2219(-130546744);
 		int i_4_ = (buffer.method2233(255) & 0xff) + 1;
@@ -44,7 +44,7 @@ public class Class383
 			class383.anInt4901 = i_2_ - class383.anInt4897 - class383.anInt4902;
 			class383.anInt4899 = i_3_ - class383.anInt4900 - class383.anInt4898;
 		}
-		buffer.anInt7002 = bs.length - 7 - i * 8 - (i_4_ - 1) * 3;
+		buffer.bufferLength = bs.length - 7 - i * 8 - (i_4_ - 1) * 3;
 		int[] is = new int[i_4_];
 		for (int i_10_ = 1; i_10_ < i_4_; i_10_++) {
 			is[i_10_] = buffer.method2220(1819759595);
@@ -54,7 +54,7 @@ public class Class383
 		}
 		for (int i_11_ = 0; i_11_ < i; i_11_++)
 			class383s[i_11_].anIntArray4904 = is;
-		buffer.anInt7002 = 0;
+		buffer.bufferLength = 0;
 		for (int i_12_ = 0; i_12_ < i; i_12_++) {
 			Class383 class383 = class383s[i_12_];
 			int i_13_ = class383.anInt4897 * class383.anInt4900;

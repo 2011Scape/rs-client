@@ -16,7 +16,7 @@ public class Class220 implements Interface14
 		Class320_Sub23.aClass123_8432.aClass192_1573 = null;
 		Class320_Sub23.aClass123_8432.aClass192_1582 = null;
 		Class320_Sub23.aClass123_8432.aClass192_1574 = null;
-		Class320_Sub23.aClass123_8432.aPacket1570.anInt7002 = 0;
+		Class320_Sub23.aClass123_8432.aPacket1570.bufferLength = 0;
 		Node_Sub38_Sub7.method2806((byte) -1);
 		if (i != 19810) {
 			method2098(false);

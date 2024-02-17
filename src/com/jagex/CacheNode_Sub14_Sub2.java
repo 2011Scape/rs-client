@@ -52,15 +52,15 @@ public class CacheNode_Sub14_Sub2 extends CacheNode_Sub14
 	
 	static final void method2353(byte b, Buffer buffer) {
 		anInt11031++;
-		if ((buffer.aByteArray7019.length - buffer.anInt7002 ^ 0xffffffff) <= -2) {
+		if ((buffer.bufferData.length - buffer.bufferLength ^ 0xffffffff) <= -2) {
 			int i = buffer.method2233(255);
 			if (i >= 0 && (i ^ 0xffffffff) >= -2) {
 				if (b > -21) {
 					method2354(null, -121, true, -60, -117, 43, false);
 				}
-				if ((buffer.aByteArray7019.length + -buffer.anInt7002 ^ 0xffffffff) <= -3) {
+				if ((buffer.bufferData.length + -buffer.bufferLength ^ 0xffffffff) <= -3) {
 					int i_2_ = buffer.method2219(-130546744);
-					if ((6 * i_2_ ^ 0xffffffff) >= (buffer.aByteArray7019.length - buffer.anInt7002 ^ 0xffffffff)) {
+					if ((6 * i_2_ ^ 0xffffffff) >= (buffer.bufferData.length - buffer.bufferLength ^ 0xffffffff)) {
 						for (int i_3_ = 0; (i_2_ ^ 0xffffffff) < (i_3_ ^ 0xffffffff); i_3_++) {
 							int i_4_ = buffer.method2219(-130546744);
 							int i_5_ = buffer.method2186(71);

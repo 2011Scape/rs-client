@@ -62,7 +62,7 @@ public class Node_Sub27 extends Node
 	
 	private final void method2688(Buffer buffer, boolean bool) {
 		anInt7307++;
-		if (buffer == null || buffer.aByteArray7019 == null) {
+		if (buffer == null || buffer.bufferData == null) {
 			method2689(true, (byte) -2);
 		} else {
 			int i = buffer.method2233(255);

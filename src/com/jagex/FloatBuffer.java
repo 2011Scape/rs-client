@@ -64,17 +64,17 @@ public class FloatBuffer extends Buffer
 				if (!class365.method4068(1, 91)) {
 					return false;
 				}
-				class365.method4065((byte) -118, class123.aPacket1570.aByteArray7019, 1, 0);
+				class365.method4065((byte) -118, class123.aPacket1570.bufferData, 1, 0);
 				class123.anInt1578 = 0;
 				class123.anInt1575++;
 				class123.aBoolean1584 = false;
 			}
-			packet.anInt7002 = 0;
+			packet.bufferLength = 0;
 			if (packet.method2257(true)) {
 				if (!class365.method4068(1, 68)) {
 					return false;
 				}
-				class365.method4065((byte) -116, class123.aPacket1570.aByteArray7019, 1, 1);
+				class365.method4065((byte) -116, class123.aPacket1570.bufferData, 1, 1);
 				class123.anInt1575++;
 				class123.anInt1578 = 0;
 			}
@@ -82,7 +82,7 @@ public class FloatBuffer extends Buffer
 			Class192[] class192s = Class310.method3596((byte) -59);
 			int i_2_ = packet.method2265(1351295303);
 			if (i_2_ < 0 || class192s.length <= i_2_) {
-				throw new IOException("invo:" + i_2_ + " ip:" + packet.anInt7002);
+				throw new IOException("invo:" + i_2_ + " ip:" + packet.bufferLength);
 			}
 			class123.aClass192_1576 = class192s[i_2_];
 			class123.anInt1581 = class123.aClass192_1576.anInt2355;
@@ -91,8 +91,8 @@ public class FloatBuffer extends Buffer
 			if (!class365.method4068(1, 126)) {
 				return false;
 			}
-			class365.method4065((byte) -66, packet.aByteArray7019, 1, 0);
-			class123.anInt1581 = packet.aByteArray7019[0] & 0xff;
+			class365.method4065((byte) -66, packet.bufferData, 1, 0);
+			class123.anInt1581 = packet.bufferData[0] & 0xff;
 			class123.anInt1575++;
 			class123.anInt1578 = 0;
 		}
@@ -100,8 +100,8 @@ public class FloatBuffer extends Buffer
 			if (!class365.method4068(2, 19)) {
 				return false;
 			}
-			class365.method4065((byte) -59, packet.aByteArray7019, 2, 0);
-			packet.anInt7002 = 0;
+			class365.method4065((byte) -59, packet.bufferData, 2, 0);
+			packet.bufferLength = 0;
 			class123.anInt1581 = packet.method2219(-130546744);
 			class123.anInt1575 += 2;
 			class123.anInt1578 = 0;
@@ -110,8 +110,8 @@ public class FloatBuffer extends Buffer
 			if (!class365.method4068(class123.anInt1581, 38)) {
 				return false;
 			}
-			packet.anInt7002 = 0;
-			class365.method4065((byte) -88, packet.aByteArray7019, class123.anInt1581, 0);
+			packet.bufferLength = 0;
+			class365.method4065((byte) -88, packet.bufferData, class123.anInt1581, 0);
 			class123.anInt1575 += class123.anInt1581;
 			class123.anInt1578 = 0;
 		}
@@ -391,7 +391,7 @@ public class FloatBuffer extends Buffer
 			return false;
 		}
 		if (class123.aClass192_1576 == Class168.aClass192_2045) {
-			while ((packet.anInt7002 ^ 0xffffffff) > (class123.anInt1581 ^ 0xffffffff)) {
+			while ((packet.bufferLength ^ 0xffffffff) > (class123.anInt1581 ^ 0xffffffff)) {
 				boolean bool = packet.method2233(255) == 1;
 				String string = packet.method2195(-1);
 				String string_37_ = packet.method2195(-1);
@@ -623,7 +623,7 @@ public class FloatBuffer extends Buffer
 			int i_81_ = packet.method2219(-130546744);
 			int i_82_ = packet.method2233(255);
 			boolean bool = (i_82_ & 0x1) == 1;
-			while (class123.anInt1581 > packet.anInt7002) {
+			while (class123.anInt1581 > packet.bufferLength) {
 				int i_83_ = packet.method2227(true);
 				int i_84_ = packet.method2219(-130546744);
 				int i_85_ = 0;
@@ -813,8 +813,8 @@ public class FloatBuffer extends Buffer
 			}
 			int i_107_ = packet.method2233(255);
 			Mobile.aBuffer9128 = new Buffer(i_107_);
-			Mobile.aBuffer9128.method2223(i_107_, (byte) 4, packet.aByteArray7019, packet.anInt7002);
-			packet.anInt7002 += i_107_;
+			Mobile.aBuffer9128.method2223(i_107_, (byte) 4, packet.bufferData, packet.bufferLength);
+			packet.bufferLength += i_107_;
 			class123.aClass192_1576 = null;
 			return false;
 		}
@@ -1003,7 +1003,7 @@ public class FloatBuffer extends Buffer
 				} else {
 					class223.anInt2658 = packet.method2219(-130546744);
 					class223.anInt2651 = packet.method2219(-130546744);
-					packet.anInt7002 += 4;
+					packet.bufferLength += 4;
 				}
 				class223.anInt2666 = packet.method2219(-130546744);
 				if (class223.anInt2666 == 65535) {
@@ -1022,9 +1022,9 @@ public class FloatBuffer extends Buffer
 			return true;
 		}
 		if (class123.aClass192_1576 == Class165.aClass192_2032) {
-			packet.anInt7002 += 28;
+			packet.bufferLength += 28;
 			if (packet.method2216(0)) {
-				za_Sub1.method2992(95, -28 + packet.anInt7002, packet);
+				za_Sub1.method2992(95, -28 + packet.bufferLength, packet);
 			}
 			class123.aClass192_1576 = null;
 			return true;
@@ -1062,7 +1062,7 @@ public class FloatBuffer extends Buffer
 		if (class123.aClass192_1576 == CacheNode_Sub16_Sub1.aClass192_11073) {
 			int i_143_ = packet.method2233(255);
 			if (packet.method2233(255) != 0) {
-				packet.anInt7002--;
+				packet.bufferLength--;
 				Node_Sub15_Sub2.aClass138Array9784[i_143_] = new Class138(packet);
 			} else {
 				Node_Sub15_Sub2.aClass138Array9784[i_143_] = new Class138();
@@ -1751,7 +1751,7 @@ public class FloatBuffer extends Buffer
 			Class333.anInt4155 = packet.method2236(-735307888) << 3;
 			Class50.anInt783 = packet.method2211(4255);
 			Node_Sub21.anInt7184 = packet.method2214((byte) -114) << 3;
-			while ((packet.anInt7002 ^ 0xffffffff) > (class123.anInt1581 ^ 0xffffffff)) {
+			while ((packet.bufferLength ^ 0xffffffff) > (class123.anInt1581 ^ 0xffffffff)) {
 				Class257 class257 = Packet.method2263(31303)[packet.method2233(255)];
 				Class320_Sub29.method3788(0, class257);
 			}
@@ -2352,22 +2352,22 @@ public class FloatBuffer extends Buffer
 	final void method2251(int i, float f) {
 		anInt9383++;
 		int i_337_ = Stream.floatToRawIntBits(f);
-		aByteArray7019[anInt7002++] = (byte) (i_337_ >> 24);
-		aByteArray7019[anInt7002++] = (byte) (i_337_ >> 16);
-		aByteArray7019[anInt7002++] = (byte) (i_337_ >> 8);
+		bufferData[bufferLength++] = (byte) (i_337_ >> 24);
+		bufferData[bufferLength++] = (byte) (i_337_ >> 16);
+		bufferData[bufferLength++] = (byte) (i_337_ >> 8);
 		if (i == 8) {
-			aByteArray7019[anInt7002++] = (byte) i_337_;
+			bufferData[bufferLength++] = (byte) i_337_;
 		}
 	}
 	
 	final void method2252(int i, float f) {
 		anInt9382++;
 		int i_338_ = Stream.floatToRawIntBits(f);
-		aByteArray7019[anInt7002++] = (byte) i_338_;
+		bufferData[bufferLength++] = (byte) i_338_;
 		if (i == -229385392) {
-			aByteArray7019[anInt7002++] = (byte) (i_338_ >> 8);
-			aByteArray7019[anInt7002++] = (byte) (i_338_ >> 16);
-			aByteArray7019[anInt7002++] = (byte) (i_338_ >> 24);
+			bufferData[bufferLength++] = (byte) (i_338_ >> 8);
+			bufferData[bufferLength++] = (byte) (i_338_ >> 16);
+			bufferData[bufferLength++] = (byte) (i_338_ >> 24);
 		}
 	}
 	

@@ -46,7 +46,7 @@ public class Class207
 				i_1_ = i;
 			}
 			byte[] bs = new byte[i_1_];
-			buffer.anInt7002 += Class342.aClass163_4236.method1735(bs, -1, buffer.aByteArray7019, i_1_, buffer.anInt7002, 0);
+			buffer.bufferLength += Class342.aClass163_4236.method1735(bs, -1, buffer.bufferData, i_1_, buffer.bufferLength, 0);
 			if (i_0_ != -24709) {
 				method2040(null, -44, 108);
 			}

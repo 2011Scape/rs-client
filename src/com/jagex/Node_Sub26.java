@@ -295,8 +295,8 @@ public class Node_Sub26 extends Node
 				}
 				i_53_++;
 			}
-			anInterface1_7256 = aGLToolkit7240.method1453(26099, false, aBuffer7251.anInt7002, 5123, aBuffer7251.aByteArray7019);
-			anInterface9_7254 = aGLToolkit7240.method1467(false, aFloatBuffer7246.anInt7002, aFloatBuffer7246.aByteArray7019, 16, -53);
+			anInterface1_7256 = aGLToolkit7240.method1453(26099, false, aBuffer7251.bufferLength, 5123, aBuffer7251.bufferData);
+			anInterface9_7254 = aGLToolkit7240.method1467(false, aFloatBuffer7246.bufferLength, aFloatBuffer7246.bufferData, 16, -53);
 			aClass69_7244 = new Class69(anInterface9_7254, 5126, 3, 0);
 			aClass69_7248 = new Class69(anInterface9_7254, 5121, 4, 12);
 		}

@@ -78,7 +78,7 @@ public class Class65
 		for (int i = 0; i < 10; i++) {
 			int i_10_ = buffer.method2233(255);
 			if (i_10_ != 0) {
-				buffer.anInt7002--;
+				buffer.bufferLength--;
 				aClass227Array925[i] = new Class227();
 				aClass227Array925[i].method2116(buffer);
 			}

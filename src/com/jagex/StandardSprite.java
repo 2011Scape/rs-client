@@ -303,7 +303,7 @@ public class StandardSprite extends GLSprite
 				}
 			}
 			if (!bool) {
-				int i_56_ = packet.anInt7002;
+				int i_56_ = packet.bufferLength;
 				packet.method2179((byte) -5, node_sub53.anInt7665);
 				for (int i_57_ = 0; node_sub53.anInt7658 > i_57_; i_57_++) {
 					if (node_sub53.anIntArray7663[i_57_] != 0) {

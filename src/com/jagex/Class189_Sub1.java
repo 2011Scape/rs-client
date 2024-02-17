@@ -57,8 +57,8 @@ public class Class189_Sub1 extends Class189
 			if (bs_2_ == null) {
 				throw new IllegalStateException("");
 			}
-			aBuffer6889.aByteArray7019 = bs_2_;
-			aBuffer6889.anInt7002 = 0;
+			aBuffer6889.bufferData = bs_2_;
+			aBuffer6889.bufferLength = 0;
 			int i_3_ = bs_2_.length >> 1;
 			anIntArray6886 = new int[i_3_];
 			for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff); i_4_++)
@@ -68,40 +68,40 @@ public class Class189_Sub1 extends Class189
 			return -1;
 		}
 		method1937(103);
-		aBuffer6889.aByteArray7019 = bs;
-		aBuffer6889.anInt7002 = 0;
-		while ((aBuffer6889.anInt7002 ^ 0xffffffff) > (aBuffer6889.aByteArray7019.length ^ 0xffffffff)) {
-			if (aBuffer6883.aByteArray7019 == null) {
+		aBuffer6889.bufferData = bs;
+		aBuffer6889.bufferLength = 0;
+		while ((aBuffer6889.bufferLength ^ 0xffffffff) > (aBuffer6889.bufferData.length ^ 0xffffffff)) {
+			if (aBuffer6883.bufferData == null) {
 				if (aByteArrayArray6884[0] == null) {
-					aBuffer6889.aByteArray7019 = null;
-					return aBuffer6889.anInt7002;
+					aBuffer6889.bufferData = null;
+					return aBuffer6889.bufferLength;
 				}
-				aBuffer6883.aByteArray7019 = aByteArrayArray6884[0];
+				aBuffer6883.bufferData = aByteArrayArray6884[0];
 			}
-			int i_5_ = -aBuffer6889.anInt7002 + aBuffer6889.aByteArray7019.length;
-			int i_6_ = -aBuffer6883.anInt7002 + aBuffer6883.aByteArray7019.length;
+			int i_5_ = -aBuffer6889.bufferLength + aBuffer6889.bufferData.length;
+			int i_6_ = -aBuffer6883.bufferLength + aBuffer6883.bufferData.length;
 			if ((i_6_ ^ 0xffffffff) >= (i_5_ ^ 0xffffffff)) {
-				aBuffer6889.method2223(i_6_, (byte) 4, aBuffer6883.aByteArray7019, aBuffer6883.anInt7002);
-				aBuffer6883.anInt7002 = 0;
+				aBuffer6889.method2223(i_6_, (byte) 4, aBuffer6883.bufferData, aBuffer6883.bufferLength);
+				aBuffer6883.bufferLength = 0;
 				anInt6888++;
-				aBuffer6883.aByteArray7019 = null;
+				aBuffer6883.bufferData = null;
 				for (int i_7_ = 0; i_7_ < 9; i_7_++)
 					aByteArrayArray6884[i_7_] = aByteArrayArray6884[1 + i_7_];
 				aByteArrayArray6884[9] = null;
 				if ((anIntArray6886.length ^ 0xffffffff) >= (anInt6888 ^ 0xffffffff)) {
-					aBuffer6889.aByteArray7019 = null;
-					return aBuffer6889.anInt7002;
+					aBuffer6889.bufferData = null;
+					return aBuffer6889.bufferLength;
 				}
 			} else {
-				aBuffer6883.method2181(aBuffer6889.anInt7002, i_5_, aBuffer6889.aByteArray7019, -19417);
-				aBuffer6889.aByteArray7019 = null;
+				aBuffer6883.method2181(aBuffer6889.bufferLength, i_5_, aBuffer6889.bufferData, -19417);
+				aBuffer6889.bufferData = null;
 				return bs.length;
 			}
 		}
 		if (i != 1) {
 			anInt6888 = 98;
 		}
-		aBuffer6889.aByteArray7019 = null;
+		aBuffer6889.bufferData = null;
 		return bs.length;
 	}
 }

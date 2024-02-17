@@ -146,9 +146,9 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 				while (Widget.method4152(i ^ 0x6f753f36)) {
 					Node_Sub13 node_sub13 = FloatBuffer.method2250(i ^ ~0x397f, Class338.aClass318_4184, Class218.worldResponseBuffer.anIsaacCipher1571);
 					node_sub13.aPacket7113.method2226(0, false);
-					int i_6_ = node_sub13.aPacket7113.anInt7002;
+					int i_6_ = node_sub13.aPacket7113.bufferLength;
 					StandardSprite.method1213(-2, node_sub13.aPacket7113);
-					node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.anInt7002 + -i_6_, (byte) -128);
+					node_sub13.aPacket7113.method2217(node_sub13.aPacket7113.bufferLength + -i_6_, (byte) -128);
 					Class218.worldResponseBuffer.method1514(i + -14463, node_sub13);
 				}
 				if (Class117.aNode_Sub7_1472 != null) {
@@ -167,7 +167,7 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 					Node_Sub13 node_sub13 = null;
 					int i_7_ = 0;
 					for (Node_Sub5 node_sub5_8_ = (Node_Sub5) Node_Sub38_Sub35.aClass312_10452.method3613(65280); node_sub5_8_ != null; node_sub5_8_ = (Node_Sub5) Node_Sub38_Sub35.aClass312_10452.method3620(16776960)) {
-						if (node_sub13 != null && (-i_7_ + node_sub13.aPacket7113.anInt7002 ^ 0xffffffff) <= -241) {
+						if (node_sub13 != null && (-i_7_ + node_sub13.aPacket7113.bufferLength ^ 0xffffffff) <= -241) {
 							break;
 						}
 						node_sub5_8_.method2160((byte) 50);
@@ -190,7 +190,7 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 								Class57.anInt842++;
 								node_sub13 = FloatBuffer.method2250(i + -14976, Class277_Sub1.aClass318_8050, Class218.worldResponseBuffer.anIsaacCipher1571);
 								node_sub13.aPacket7113.method2226(0, false);
-								i_7_ = node_sub13.aPacket7113.anInt7002;
+								i_7_ = node_sub13.aPacket7113.bufferLength;
 							}
 							int i_11_ = -Class99.anInt1283 + i_10_;
 							Class99.anInt1283 = i_10_;
@@ -227,7 +227,7 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 						}
 					}
 					if (node_sub13 != null) {
-						node_sub13.aPacket7113.method2217(-i_7_ + node_sub13.aPacket7113.anInt7002, (byte) -128);
+						node_sub13.aPacket7113.method2217(-i_7_ + node_sub13.aPacket7113.bufferLength, (byte) -128);
 						Class218.worldResponseBuffer.method1514(126, node_sub13);
 					}
 				}
@@ -301,10 +301,10 @@ public class Node_Sub38_Sub38 extends Node_Sub38
 					Class243.anInt3071++;
 					Node_Sub13 node_sub13 = FloatBuffer.method2250(i ^ ~0x397f, Animable_Sub3_Sub1.aClass318_11004, Class218.worldResponseBuffer.anIsaacCipher1571);
 					node_sub13.aPacket7113.method2226(0, false);
-					int i_19_ = node_sub13.aPacket7113.anInt7002;
+					int i_19_ = node_sub13.aPacket7113.bufferLength;
 					Buffer buffer = Class213.aNode_Sub27_2512.method2696(i ^ 0x156f);
-					node_sub13.aPacket7113.method2223(buffer.anInt7002, (byte) 4, buffer.aByteArray7019, 0);
-					node_sub13.aPacket7113.method2217(-i_19_ + node_sub13.aPacket7113.anInt7002, (byte) -128);
+					node_sub13.aPacket7113.method2223(buffer.bufferLength, (byte) 4, buffer.bufferData, 0);
+					node_sub13.aPacket7113.method2217(-i_19_ + node_sub13.aPacket7113.bufferLength, (byte) -128);
 					Class218.worldResponseBuffer.method1514(127, node_sub13);
 					Class269.aBoolean3472 = true;
 				}
