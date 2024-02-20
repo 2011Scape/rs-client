@@ -7,6 +7,8 @@
   <br>
 </p>
 
+# THIS REPOSITORY HAS BEEN DEPRECATED / ARCHIVED. USE RUNETEK5-CLIENT REPO
+
 # RS2 Client
 
 This repository hosts the com.jagex.client files. The main loader class is com.jagex.RS2Loader and requires JDK11.
